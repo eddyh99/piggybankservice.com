@@ -135,7 +135,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #4154f1;
+  background: #1B8036;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -148,14 +148,15 @@ section {
   line-height: 0;
 }
 
-.back-to-top:hover {
-  background: #6776f4;
+.back-to-top.active:hover {
+  background: #1B8036;
   color: #fff;
+  opacity: 1;
 }
 
 .back-to-top.active {
   visibility: visible;
-  opacity: 1;
+  opacity: 0.5;
 }
 
 /*--------------------------------------------------------------
@@ -174,12 +175,14 @@ section {
   transition: all 0.5s;
   z-index: 997;
   padding: 20px 0;
+  background: #fff;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
 .header.header-scrolled {
   background: #fff;
   padding: 15px 0;
-  box-shadow: 0px 2px 20px rgba(1, 41, 112, 0.1);
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
 }
 
 .header .logo {
@@ -2230,7 +2233,7 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+  background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -2409,7 +2412,7 @@ section {
 
 /* Freedy */
 .text-blue-freedy {
-  color: #2E43F7 !important;
+  color: rgba(28, 103, 1, 1) !important;
 }
 
 .text-blue-freedy.black {
@@ -2499,34 +2502,28 @@ section {
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 8px;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .slider-freedy h1 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 110%;
-    letter-spacing: 0.005em;
+    font-size: 40px;
+    line-height: 114%;
 
-    color: #274D75;
+    color: #1B8036;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
   .slider-freedy h2 {
@@ -2563,9 +2560,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
-    border-radius: 44px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
 
     font-size: 16px;
   }
@@ -2640,7 +2637,7 @@ section {
     line-height: 110%;
     letter-spacing: 0.005em;
 
-    color: #274D75;
+    color: #137212;
   }
 
   .content-freedy p {
@@ -2656,10 +2653,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 15px #3430FA;
-    border-radius: 8px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .phone-content {
@@ -2738,9 +2734,11 @@ section {
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
-    padding: 3px 0px 0.5rem 2rem;
+    background-size: auto;
+    padding: 0 0 0 2rem;
     list-style: none;
-    margin: 0;
+    margin: 0 0 10px 0;
+    background-size: auto 100%;
   }
 
   .content-freedy.minus ul li {
@@ -2876,25 +2874,25 @@ section {
   }
 
   .bg-login {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-forgot-pass {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -4565,34 +4563,28 @@ section {
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 8px;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .slider-freedy h1 {
     font-weight: 700;
-    font-size: 36px;
-    line-height: 110%;
-    letter-spacing: 0.005em;
+    font-size: 40px;
+    line-height: 114%;
 
-    color: #274D75;
+    color: #1B8036;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
   .slider-freedy h2 {
@@ -4629,9 +4621,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
-    border-radius: 44px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
 
     font-size: 16px;
   }
@@ -4706,7 +4698,7 @@ section {
     line-height: 110%;
     letter-spacing: 0.005em;
 
-    color: #274D75;
+    color: #137212;
   }
 
   .content-freedy p {
@@ -4722,10 +4714,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 15px #3430FA;
-    border-radius: 8px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .phone-content {
@@ -4805,9 +4796,11 @@ section {
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
-    padding: 3px 0px 0.5rem 2rem;
+    background-size: auto;
+    padding: 0 0 0 2rem;
     list-style: none;
-    margin: 0;
+    margin: 0 0 10px 0;
+    background-size: auto 100%;
   }
 
   .content-freedy.minus ul li {
@@ -4942,25 +4935,25 @@ section {
   }
 
   .bg-login {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-forgot-pass {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -6570,35 +6563,28 @@ section {
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 8px;
-    font-size: 22px;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .slider-freedy h1 {
     font-weight: 700;
-    font-size: 49.6203px;
-    line-height: 110%;
-    letter-spacing: 0.005em;
+    font-size: 64px;
+    line-height: 114%;
 
-    color: #274D75;
+    color: #1B8036;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
   .slider-freedy h2 {
@@ -6636,9 +6622,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
-    border-radius: 44px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .box-card-freedy {
@@ -6711,7 +6697,7 @@ section {
     line-height: 110%;
     letter-spacing: 0.005em;
 
-    color: #274D75;
+    color: #137212;
   }
 
   .content-freedy p {
@@ -6727,10 +6713,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 15px #3430FA;
-    border-radius: 8px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .phone-content {
@@ -6810,9 +6795,11 @@ section {
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
-    padding: 3px 0px 0.5rem 2rem;
+    background-size: auto;
+    padding: 0 0 0 2rem;
     list-style: none;
-    margin: 0;
+    margin: 0 0 10px 0;
+    background-size: auto 100%;
   }
 
   .content-freedy.minus ul li {
@@ -6948,19 +6935,19 @@ section {
   }
 
   .bg-login {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
-    background: url(../img/bg-login-hp.png);
+    background: url(../img/bg-login-mobile.png);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -8820,35 +8807,28 @@ section {
   .navbar .btn-login:focus {
     padding: 8px 20px;
     margin-left: 30px;
-    border-radius: 8px;
-    font-size: 18px;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
-
-    border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    background-clip: text;
-    text-fill-color: transparent;
+    border: 4px solid #1B8036;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+    border-radius: 26.386px;
+    color: #1B8036;
   }
 
   .slider-freedy h1 {
     font-weight: 700;
-    font-size: 49.6203px;
-    line-height: 110%;
-    letter-spacing: 0.005em;
+    font-size: 64px;
+    line-height: 114%;
 
-    color: #274D75;
+    color: #1B8036;
+    text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
   .slider-freedy h2 {
@@ -8886,9 +8866,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
-    border-radius: 44px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .box-card-freedy {
@@ -8961,7 +8941,7 @@ section {
     line-height: 110%;
     letter-spacing: 0.005em;
 
-    color: #274D75;
+    color: #137212;
   }
 
   .content-freedy p {
@@ -8977,10 +8957,9 @@ section {
     transition: 0.5s;
     color: #fff;
 
-
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 15px #3430FA;
-    border-radius: 8px;
+    background: #1B8036;
+    box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
+    border-radius: 26.386px;
   }
 
   .phone-content {
@@ -9059,9 +9038,11 @@ section {
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
-    padding: 3px 0px 0.5rem 2rem;
+    background-size: auto;
+    padding: 0 0 0 2rem;
     list-style: none;
-    margin: 0;
+    margin: 0 0 10px 0;
+    background-size: auto 100%;
   }
 
   .content-freedy ul {
@@ -10851,4 +10832,129 @@ section {
 
 .iconside-serach a {
   text-decoration: none;
+}
+
+.bg-layout-singup {
+  background: #EBFDF0;
+}
+
+/* Landingpage PiggyBank */
+.list-toright ul li {
+  background: url(../img/rock-list.png) no-repeat left top;
+  background-size: auto 100%;
+  padding: 0 0 0 2rem;
+  list-style: none;
+  display: inline-block;
+  margin: 0 1rem 0 0;
+}
+
+.list-toright ul {
+  padding: 0;
+}
+
+.powered-top {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  font-size: 16px;
+}
+
+.powered-top img {
+  height: 35px;
+  margin-left: 10px;
+}
+
+.footer-links .list a .icon {
+  width: 25px;
+  height: 25px;
+  background: #fff;
+  color: #1B8036;
+  border-radius: 100%;
+  display: grid;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.footer-links .list a .icon i {
+  text-align: center;
+}
+
+.list-different .items-different {
+  background: #FFFFFF;
+  box-shadow: 0px 12px 30px 17px rgba(0, 115, 25, 0.08);
+  border-radius: 10px;
+  min-height: 250px;
+}
+
+.list-different .items-different img {
+  height: 50px;
+}
+
+.list-different .items-different span.title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+
+  color: #292D33;
+}
+
+.list-different .items-different a {
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 24px;
+  text-decoration-line: underline;
+
+  color: #1C6701;
+}
+
+.line-green {
+  border: 1px solid #000000;
+}
+
+.reward {
+  background: #1B8036;
+  border: 1px solid #000000;
+  border-radius: 20px;
+}
+
+.reward img {
+  border-radius: 25px;
+}
+
+.reward h2 {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 68px;
+  line-height: 110%;
+
+  color: #FFFFFF;
+}
+
+.reward h2 {
+font-weight: 700;
+font-size: 68px;
+line-height: 110%;
+
+color: #FFFFFF;
+
+}
+
+.reward p,
+.reward span.shareit {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 180%;
+  color: #FFFFFF;
+
+}
+
+.reward a.readmore {
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 20px;
+
+  color: #FFFFFF;
+  border: 4px solid #FFFFFF;
+  filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
+  border-radius: 26.386px;
 }

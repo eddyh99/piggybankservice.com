@@ -94,3 +94,16 @@ sandbox server
     "https://sandbox.tracklessbank.com"
 */
 define('URLAPI', "https://sandbox.tracklessbank.com");
+
+/*
+custom link qrcode
+
+live server:
+    "/wallet/send"
+
+local server
+    "/piggybank.com/wallet/send"
+*/
+define('LINKQRCODE', "/piggybank.com/wallet/send");
+
+define('NAMETITLE', "Piggybank");
