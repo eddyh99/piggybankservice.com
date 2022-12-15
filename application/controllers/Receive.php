@@ -7,7 +7,7 @@ class Receive extends CI_Controller
     {
         parent::__construct();
         if (empty($this->session->userdata('user_id'))) {
-            redirect(base_url());
+            redirect(base_url('auth/login'));
         }
     }
 
@@ -26,6 +26,7 @@ class Receive extends CI_Controller
         $data['title'] = NAMETITLE . " - Add Receive";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/topup/receive');
         $this->load->view('tamplate/footer');

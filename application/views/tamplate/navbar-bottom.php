@@ -1,5 +1,6 @@
 <div class="navbar-app fixed-bottom d-flex justify-content-center">
-    <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center">
+    <div
+        class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center top">
         <a href="<?= base_url() ?>homepage/wallet" class="d-flex align-items-center border-0 me-auto">
             <div class="icon-menus d-flex align-items-center home-svg">
                 <svg width="41" height="35" viewBox="0 0 41 35" fill="none" xmlns="http://www.w3.org/2000/svg">

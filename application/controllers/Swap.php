@@ -7,7 +7,7 @@ class Swap extends CI_Controller
     {
         parent::__construct();
         if (empty($this->session->userdata('user_id'))) {
-            redirect(base_url());
+            redirect(base_url('auth/login'));
         }
     }
 
@@ -23,6 +23,7 @@ class Swap extends CI_Controller
         $footer['extra'] = "member/swap/js/js_swap";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/swap/swap', $body);
         $this->load->view('tamplate/footer', $footer);

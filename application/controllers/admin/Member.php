@@ -26,7 +26,7 @@ class Member extends CI_Controller
     public function get_all()
     {
         $mdata = array(
-            "bank_id"  => 2,
+            "bank_id"  => 3,
             "timezone"  => $_SESSION["time_location"]
         );
         $result = apitrackless(URLAPI . "/v1/trackless/user/getAll", json_encode($mdata));
@@ -176,15 +176,15 @@ class Member extends CI_Controller
         $mail = $this->phpmailer_lib->load();
 
         $mail->isSMTP();
-        $mail->Host         = 'mail.tracklessbank.com';
+        $mail->Host         = 'mail.piggybankservice.com';
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'eeinformationservice@gmail.com';
-        $mail->Password     = 'NaBbrvu[*Tn^';
+        $mail->Username     = '';
+        $mail->Password     = '';
         $mail->SMTPAutoTLS    = false;
         $mail->SMTPSecure    = false;
         $mail->Port            = 587;
 
-        $mail->setFrom('eeinformationservice@gmail.com', 'FreedyBank');
+        $mail->setFrom('', 'PiggyBank Service');
         $mail->isHTML(true);
 
         $mail->ClearAllRecipients();

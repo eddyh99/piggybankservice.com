@@ -6,6 +6,9 @@ class Soon extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if (empty($this->session->userdata('user_id'))) {
+            redirect(base_url('auth/login'));
+        }
     }
 
     public function index()
@@ -13,6 +16,7 @@ class Soon extends CI_Controller
         $data['title'] = NAMETITLE . " - Search";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/soon');
         $this->load->view('tamplate/footer');

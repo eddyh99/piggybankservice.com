@@ -7,7 +7,7 @@ class Bank extends CI_Controller
     {
         parent::__construct();
         if (empty($this->session->userdata('user_id'))) {
-            redirect(base_url());
+            redirect(base_url('auth/login'));
         }
     }
 
@@ -16,6 +16,7 @@ class Bank extends CI_Controller
         $data['title'] = NAMETITLE . " - Wallet to Bank";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/tobank/bank');
         $this->load->view('tamplate/footer');

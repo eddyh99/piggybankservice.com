@@ -6,6 +6,9 @@ class Search extends CI_Controller
     public function __construct()
     {
         parent::__construct();
+        if (empty($this->session->userdata('user_id'))) {
+            redirect(base_url('auth/login'));
+        }
     }
 
     public function index()
@@ -14,6 +17,7 @@ class Search extends CI_Controller
         $footer["extra"]    = "member/js/js_index";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/search');
         $this->load->view('tamplate/footer', $footer);

@@ -34,6 +34,7 @@ class Wallet extends CI_Controller
         $data['title'] = NAMETITLE . " - Wallet to Wallet";
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/wallet/wallet');
         $this->load->view('tamplate/footer');
@@ -77,17 +78,15 @@ class Wallet extends CI_Controller
             }
         }
 
-        $data['title'] = NAMETITLE . " - Wallet to Wallet";
         $footer['extra'] = "admin/js/js_btn_disabled";
 
         $data = array(
-            'title' => 'Freedy - Wallet to Wallet',
+            'title' => NAMETITLE . ' - Wallet to Wallet',
             'ucode' => @$ucode,
             'amount' => @$amount
         );
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/wallet/wallet-send');
         $this->load->view('tamplate/footer', $footer);
     }
@@ -184,7 +183,6 @@ class Wallet extends CI_Controller
         $data['title'] = NAMETITLE . " - Wallet to Wallet";
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/wallet/wallet-receive');
         $this->load->view('tamplate/footer');
     }
@@ -195,7 +193,6 @@ class Wallet extends CI_Controller
         $footer['extra'] = "admin/js/js_btn_disabled";
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('tamplate/navbar-bottom', $data);
         $this->load->view('member/wallet/wallet-request');
         $this->load->view('tamplate/footer', $footer);
     }
@@ -225,7 +222,7 @@ class Wallet extends CI_Controller
 
         $this->qrcode($linkqr, $nameqr);
         $data = array(
-            'title' => 'Freedy - Wallet to Wallet',
+            'title' => NAMETITLE . ' - Wallet to Wallet',
             'nameqr' => $nameqr,
             'linkqr' => $linkqr
         );

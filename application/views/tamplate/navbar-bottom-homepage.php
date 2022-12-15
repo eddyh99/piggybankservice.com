@@ -1,5 +1,5 @@
 <div class="navbar-app fixed-bottom d-flex justify-content-center">
-    <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex justify-content-end align-items-center">
+    <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex justify-content-end align-items-center top">
         <a href="<?= base_url() ?>auth/logout" class="d-flex align-items-center border-0">
             <span>Log out</span>
             <div class="icon-menus d-flex align-items-center home-svg">
