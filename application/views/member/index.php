@@ -2,7 +2,7 @@
     <div class="col-12 col-lg-8 col-xl-6">
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
-                <div class="row">
+                <div class="row" style="margin-top: 5rem;">
                     <div class="col-12 d-flex justify-content-center">
                         <div class="col-9 box-code-freedy px-4 py-3">
                             <div class="copy-uqcode mt-3 mb-2 d-flex flex-row align-items-center">

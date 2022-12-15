@@ -277,21 +277,21 @@ class Link extends CI_Controller
         $mail = $this->phpmailer_lib->load();
 
         $mail->isSMTP();
-        $mail->Host         = 'mail.tracklessbank.com';
+        $mail->Host         = 'mail.piggybankservice.com';
         $mail->SMTPAuth     = true;
-        $mail->Username     = 'no-reply@freedybank.com';
+        $mail->Username     = 'no-reply@piggybankservice.com';
         $mail->Password     = '_v2!~h;x4o$G';
         $mail->SMTPAutoTLS  = false;
         $mail->SMTPSecure   = false;
         $mail->Port         = 587;
 
-        $mail->setFrom('no-reply@freedybank.com', 'Freedy Bank Notification');
+        $mail->setFrom('no-reply@piggybankservice.com', 'PiggyBank Bank Notification');
         $mail->addReplyTo($email);
         $mail->isHTML(true);
 
         $mail->ClearAllRecipients();
 
-        $mail->Subject = 'Ask about Freedy';
+        $mail->Subject = 'Ask about PiggyBank';
         $mail->AddAddress('eeinformationservice@gmail.com');
 
         $mail->msgHTML($message);

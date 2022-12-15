@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" style="margin-top: 5rem;">
     <div class="col-12 d-flex justify-content-center flex-column">
         <div class="col-12 box-code-freedy px-4 py-3">
             <div class="copy-uqcode mt-3 mb-2 d-flex flex-row align-items-center">

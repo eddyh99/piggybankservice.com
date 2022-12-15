@@ -7,7 +7,7 @@ class Homepage extends CI_Controller
     {
         parent::__construct();
         if (empty($this->session->userdata('user_id'))) {
-            redirect(base_url());
+            redirect(base_url('auth/login'));
         }
     }
 
@@ -39,6 +39,7 @@ class Homepage extends CI_Controller
 
 
         $this->load->view('tamplate/header', $data);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('member/index', $body);
         $this->load->view('tamplate/footer', $footer);
@@ -86,6 +87,7 @@ class Homepage extends CI_Controller
 
         $this->load->view('tamplate/header', $data);
         $this->load->view('member/mywallet', $body);
+        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('tamplate/footer', $footer);
     }

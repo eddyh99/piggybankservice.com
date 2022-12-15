@@ -6,11 +6,12 @@
                     action="<?= base_url(); ?>member">
                     <div class="col-12 mt-auto text-center my-auto">
                         <a href="<?= base_url() ?>">
-                            <img src="<?= base_url(); ?>assets/img/logo-app-2.png" alt="" class="succes-regis-logo">
+                            <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="" class="succes-regis-logo">
                         </a>
                     </div>
                     <div class="col-12 d-grid gap-2">
-                        <p class="text-center f-roboto">To activate your FreedyBank account click the link receive in
+                        <p class="text-center f-roboto">To activate your <b translate="no">PiggyBank</b> account click
+                            the link receive in
                             your registration email
                             <br><br>
                             <b>ATTENTION:</b>

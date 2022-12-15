@@ -116,8 +116,8 @@ class Auth extends CI_Controller
 		if ($result->code == 200) {
 			//kirim email registrasi
 
-			$subject = "FreedyBank Registration";
-			$message = "Thank you for registering on freedybank<br><br>
+			$subject = "PiggyBank Registration";
+			$message = "Thank you for registering on PiggyBank<br><br>
 			username : " . $email . "<br>
 			password : (your chosen password)<br><br>
 			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate yout account<br><br>
@@ -330,7 +330,7 @@ class Auth extends CI_Controller
 		$result = apitrackless($url);
 		if (!empty(@$result->code == 200)) {
 
-			$subject = "Reset Password for FreedyBank Account";
+			$subject = "Reset Password for PiggyBank Account";
 			// kirim email forgot password dengan token validasi, lebih dari 1jam expired tokennya
 			$message = "Hi,<br><br>
 
@@ -399,15 +399,15 @@ class Auth extends CI_Controller
 		$mail = $this->phpmailer_lib->load();
 
 		$mail->isSMTP();
-		$mail->Host         = 'mail.freedybank.com';
+		$mail->Host         = 'mail.piggybankservice.com';
 		$mail->SMTPAuth     = true;
-		$mail->Username     = 'no-reply@freedybank.com';
-		$mail->Password     = 'GIvn[f58&YMb';
+		$mail->Username     = 'no-reply@piggybankservice.com';
+		$mail->Password     = 'c4?v9JAM+6rG';
 		$mail->SMTPAutoTLS	= false;
 		$mail->SMTPSecure	= false;
 		$mail->Port			= 587;
 
-		$mail->setFrom('no-reply@freedybank.com', 'FreedyBank');
+		$mail->setFrom('no-reply@piggybankservice.com', 'PiggyBank Service');
 		$mail->isHTML(true);
 
 		$mail->ClearAllRecipients();

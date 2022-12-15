@@ -26,8 +26,7 @@
 <section id="" class="hero pb-0">
     <div class="container">
         <div class="row">
-            <div
-                class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-lg-start text-center">
+            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
                     Anonymous and free multi-currency wallet with the
@@ -54,7 +53,7 @@
         <div class="row">
             <div class="col-12 text-center bg-layout-singup my-5 py-5">
                 <h2 class="f-lexend m-0">
-                    Get your PiggyBank account in a minute
+                    Get your <b translate="no">PiggyBank</b> account in a minute
                 </h2>
                 <div class="text-center">
                     <a href="<?= base_url(); ?>auth/signup"
@@ -80,7 +79,7 @@
                     <div class="content-freedy p-r">
                         <h2 class="f-lexend">Immediate Opening</h2>
                         <p class="f-lexend">
-                            PiggyBank is easy and immediately to open, you need to sign
+                            <b translate="no">PiggyBank</b> is easy and immediately to open, you need to sign
                             up just using an email and password and your account will be immediately active and
                             ready to use without any restriction. <br>
                             <span class="text-blue-freedy">(No KYC & No AML)</span>
@@ -91,12 +90,12 @@
                             <div class="content-freedy">
                                 <h2 class="f-lexend">Free of Charge</h2>
                                 <ul class="p-0 f-lexend">
-                                    <li>Piggybank account opening is free of charge</li>
+                                    <li><b translate="no">PiggyBank</b> account opening is free of charge</li>
                                     <li>No monthly or annual fees</li>
                                     <li>Integration to your bussiness without any extra cost</li>
                                     <li>Convert currencies with zero fees</li>
                                 </ul>
-                                <div class="text-center text-lg-start">
+                                <div class="text-start">
                                     <a href="<?= base_url(); ?>auth/signup"
                                         class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Sign up</span>
@@ -122,7 +121,7 @@
                 </div>
                 <div class="col-12">
                     <div class="row d-flex flax-wrap justify-content-center align-items-center">
-                        <div class="col-3 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-1.png" alt="">
@@ -130,7 +129,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
@@ -138,7 +137,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
@@ -147,7 +146,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
@@ -156,7 +155,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-5.png" alt="">
@@ -165,7 +164,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-3 px-2 mb-3 list-different">
+                        <div class="col-10 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-6.png" alt="">
@@ -197,7 +196,7 @@
                                 <li>Use it on ApplePay, GooglePay & others</li>
                             </ul>
                         </div>
-                        <div class="text-center text-lg-start">
+                        <div class="text-start">
                             <a href="<?= base_url(); ?>auth/signup"
                                 class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Sign up</span>
@@ -219,16 +218,126 @@
             <div class="row gx-0">
                 <div class="col-12 mb-5">
                     <div class="content-freedy p-r text-center">
-                        <h2 class="f-lexend">PiggyBank utilities</h2>
+                        <h2 class="f-lexend"><b translate="no">PiggyBank</b> utilities</h2>
                     </div>
                     <div class="col-12 my-5">
                         <div class="row d-flex justify-content-center">
-                            <div class="col-3">
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-around">
+                                    <div class="col-10 col-lg-3 p-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Capital Exportation</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-3 p-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Daily use</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-6 text-center">
+                            <div class="col-12 col-lg-3 d-grid align-items-center">
+                                <div class="row d-flex justify-content-around">
+                                    <div class="col-10 col-lg-12 px-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 me-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Collections and Payments</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 d-none text-center d-lg-grid align-items-center">
                                 <img src="<?= base_url() ?>assets/img/img-4.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-3">
+                            <div class="col-12 col-lg-3 d-grid align-items-center">
+                                <div class="row d-flex justify-content-around">
+                                    <div class="col-10 col-lg-12 px-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap ">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 ms-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Essential for your trip</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <div class="row d-flex justify-content-around">
+                                    <div class="col-10 col-lg-3 p-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-3.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Find me</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-lg-3 p-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-6.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Search</h4>
+                                                <a class="f-lexend" href="#">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Section -->
+
+    <!-- ======= Section ======= -->
+    <section id="reward" class="about">
+        <div class="container p-r">
+            <div class="row gx-0 d-flex justify-content-center">
+                <div class="col-12 my-5 d-flex justify-content-center">
+                    <div class="reward p-3 p-md-5">
+                        <div class="row">
+                            <div class="col-12 col-md-8 p-3">
+                                <h2>Get Reward</h2>
+                                <p>
+                                    With the use of your referral link you are rewarded for every operation
+                                    carried out by those who signed up using your link.
+                                </p>
+                                <span class="shareit d-block mb-4">Share it !</span>
+                                <a href="" class="readmore px-3 py-2">Read more</a>
+                            </div>
+                            <div class="col-4 d-none d-md-grid align-items-center">
+                                <img src="<?= base_url() ?>assets/img/img-5.png" alt="" class="img-fluid roundend">
                             </div>
                         </div>
                     </div>
@@ -241,22 +350,84 @@
     <section id="reward" class="about">
         <div class="container p-r">
             <div class="row gx-0">
-                <div class="col-12 my-5 d-flex justify-content-center">
-                    <div class="reward p-5">
-                        <div class="row">
-                            <div class="col-6">
-                                <h2>Get Reward</h2>
-                                <p>
-                                    With the use of your referral link you are rewarded for every operation
-                                    carried out by those who signed up using your link.
-                                </p>
-                                <span class="shareit d-block mb-4">Share it !</span>
-                                <a href="" class="readmore px-3 py-2">Read more</a>
-                            </div>
-                            <div class="col-6 d-grid align-items-center">
-                                <img src="<?= base_url() ?>assets/img/img-5.png" alt="" class="img-fluid roundend">
+                <div class="col-12 mb-5">
+                    <div class="content-freedy p-r text-center">
+                        <h2 class="f-lexend">Features</h2>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row d-flex justify-content-center">
+                        <div class="col-12 features-freedy">
+                            <div
+                                class="features-freedy text-center d-flex align-items-center justify-content-center flex-wrap">
+                                <div class="col-10 col-sm-6 col-lg-3">
+                                    <div
+                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                        <img src="<?= base_url(); ?>assets/img/features-1.png" alt="">
+                                        <h4 class="f-lexend mb-auto mt-3">100% Secure</h4>
+                                        <a class="f-lexend" href="#">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-6 col-lg-3">
+                                    <div
+                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                        <img src="<?= base_url(); ?>assets/img/features-2.png" alt="">
+                                        <h4 class="f-lexend mb-auto mt-3">Wallet</h4>
+                                        <a class="f-lexend" href="#">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-6 col-lg-3">
+                                    <div
+                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                        <img src="<?= base_url(); ?>assets/img/features-3.png" alt="">
+                                        <h4 class="f-lexend mb-auto mt-3">Technology</h4>
+                                        <a class="f-lexend" href="#">Learn
+                                            more</a>
+                                    </div>
+                                </div>
+                                <div class="col-10 col-sm-6 col-lg-3">
+                                    <div
+                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                        <img src="<?= base_url(); ?>assets/img/features-4.png" alt="">
+                                        <h4 class="f-lexend mb-auto mt-3">Missions</h4>
+                                        <a class="f-lexend" href="#">Learn
+                                            more</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><!-- Section -->
+
+    <!-- ======= Section ======= -->
+    <section id="reward" class="about">
+        <div class="container p-r">
+            <div class="row gx-0">
+                <div class="col-12 mb-5">
+                    <div class="box-contactus px-3 py-5">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <img src="<?= base_url() ?>assets/img/sendmail.png" alt="" class="mx-auto d-none d-md-grid">
+                            <div class="form-contactus py-2 mx-auto">
+                                <form class="d-flex flex-row justify-content-center align-items-center">
+                                    <input type="text" placeholder="Enter your email address" class="ms-4">
+                                    <button class="mx-3 py-2 btn-contactus">
+                                        <span class="mx-3 d-none d-sm-grid">Contact us</span>
+                                        <img src="<?= base_url() ?>assets/img/arrow-contactus.png" alt="" class="mx-1">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="powered-top">
+                        <span class="fw-bold">Powered By</span>
+                        <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
                     </div>
                 </div>
             </div>
@@ -301,7 +472,7 @@
                 </div>
                 <div class="col-lg col-12 pe-2 footer-links">
                     <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>" style="color:#fff;">About PiggyBank</a>
+                        <a href="<?= base_url(); ?>" style="color:#fff;">About <b translate="no">PiggyBank</b></a>
                     </h4>
                 </div>
             </div>
