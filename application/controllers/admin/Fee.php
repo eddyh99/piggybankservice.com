@@ -15,7 +15,7 @@ class Fee extends CI_Controller
 	{
 
 		$data = array(
-			"title"     => "PiggyBank - Default Fee",
+			"title"     => NAMETITLE . " - Default Fee",
 			"content"   => "admin/fee/fee",
 			"mn_fee"    => "active",
 			"extra"     => "admin/fee/js/js_fee",
@@ -136,7 +136,7 @@ class Fee extends CI_Controller
 		}
 
 		$data = array(
-			"title"     => "PiggyBank - Edit Default Fee",
+			"title"     => NAMETITLE . " - Edit Default Fee",
 			"content"   => "admin/fee/editfee",
 			"extra"     => "admin/js/js_btn_disabled",
 			"mn_fee"    => "active",
