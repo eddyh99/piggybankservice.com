@@ -5,7 +5,7 @@
             <div class="col-12">
                 <div class="link-back p-0">
                     <a href="<?= base_url() ?>link/lern_transparency">
-                        <img src="<?= base_url() ?>assets/img/back.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/back-link.png" alt="">
                     </a>
                 </div>
             </div>
@@ -37,7 +37,7 @@
                     </ul>
 
                     <h4 class="f-lexend text-start my-3 text-blue-freedy">
-                        Bank transfers <?= $getcurrency ?>
+                        Bank transfers
                     </h4>
                     <ul class="list-group">
                         <li

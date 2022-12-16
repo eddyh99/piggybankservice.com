@@ -1,7 +1,7 @@
 <div class="login bg-forgot-pass">
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center">
-            <div class="col-10 col-sm-8 col-md-6 col-lg-5 box-form">
+            <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form">
                 <a href="<?= base_url(); ?>auth/changepass" class="link-back">
                     <img src="<?= base_url() ?>assets/img/back.png" alt="">
                 </a>
