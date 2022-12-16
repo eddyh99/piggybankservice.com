@@ -121,7 +121,7 @@
                 </div>
                 <div class="col-12">
                     <div class="row d-flex flax-wrap justify-content-center align-items-center">
-                        <div class="col-10 col-lg-3 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-1.png" alt="">
@@ -129,7 +129,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
@@ -137,7 +137,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
@@ -146,7 +146,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
@@ -155,7 +155,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-5.png" alt="">
@@ -164,7 +164,7 @@
                                 <a href="#" class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-lg-3 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-6.png" alt="">
@@ -224,7 +224,7 @@
                         <div class="row d-flex justify-content-center">
                             <div class="col-12">
                                 <div class="row d-flex justify-content-around">
-                                    <div class="col-10 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
@@ -236,7 +236,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-10 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
@@ -250,7 +250,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-lg-3 d-grid align-items-center">
+                            <div class="col-12 col-md-6 col-lg-3 d-grid align-items-center">
                                 <div class="row d-flex justify-content-around">
                                     <div class="col-10 col-lg-12 px-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
@@ -267,9 +267,9 @@
                                 </div>
                             </div>
                             <div class="col-6 d-none text-center d-lg-grid align-items-center">
-                                <img src="<?= base_url() ?>assets/img/img-4.png" alt="" class="img-fluid">
+                                <img src="<?= base_url() ?>assets/img/img-4-2.png" alt="" class="img-fluid">
                             </div>
-                            <div class="col-12 col-lg-3 d-grid align-items-center">
+                            <div class="col-12 col-md-6 col-lg-3 d-grid align-items-center">
                                 <div class="row d-flex justify-content-around">
                                     <div class="col-10 col-lg-12 px-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap ">
@@ -287,7 +287,7 @@
                             </div>
                             <div class="col-12">
                                 <div class="row d-flex justify-content-around">
-                                    <div class="col-10 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
@@ -299,7 +299,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-10 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">

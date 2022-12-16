@@ -6,10 +6,10 @@
                     action="<?= base_url(); ?>member">
                     <div class="col-12 mt-auto text-center my-auto">
                         <a href="<?= base_url() ?>">
-                            <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="" class="succes-regis-logo">
+                            <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="" class="img-fluid">
                         </a>
                     </div>
-                    <div class="col-12 d-grid gap-2">
+                    <div class="col-12 d-grid gap-2 my-auto">
                         <p class="text-center f-roboto">To activate your <b translate="no">PiggyBank</b> account click
                             the link receive in
                             your registration email
@@ -22,7 +22,7 @@
                         </ul>
                     </div>
                     <div class="col-12 d-grid gap-2">
-                        <a href="<?= base_url() ?>" class="btn btn-login f-roboto">Back</a>
+                        <a href="<?= base_url() ?>auth/login" class="btn btn-login f-roboto">Back</a>
                     </div>
                 </form>
             </div>

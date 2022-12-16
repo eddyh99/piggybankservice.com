@@ -2882,24 +2882,28 @@ section {
 
   .bg-login {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-forgot-pass {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -3139,7 +3143,7 @@ section {
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
-    height: 50px;
+    height: 75px;
   }
 
   .app-logo {
@@ -5073,24 +5077,28 @@ section {
 
   .bg-login {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-forgot-pass {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -5315,7 +5323,7 @@ section {
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
-    height: 50px;
+    height: 75px;
   }
 
   .app-logo {
@@ -7203,18 +7211,21 @@ section {
 
   .bg-login {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
 
   .bg-signin-succes {
     background: url(../img/bg-login-mobile.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% 100%;
   }
@@ -7260,7 +7271,7 @@ section {
   }
 
   .box-form img.succes-regis-logo {
-    height: 150px;
+    height: 100px;
     display: inline-block;
   }
 
@@ -7436,7 +7447,7 @@ section {
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
-    height: 50px;
+    height: 75px;
   }
 
   .app-logo {
@@ -8961,24 +8972,25 @@ section {
 
   .bg-login {
     background: url(../img/bg-login.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   .bg-signin {
-    background: url(../img/bg-signin.png);
+    background: url(../img/bg-login.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   .bg-signin-succes {
-    background: url(../img/bg-signin-succes.png);
+    background: url(../img/bg-login.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
 
   .bg-forgot-pass {
-    background: url(../img/bg-forgotpass.png);
+    background: url(../img/bg-login.png);
     background-repeat: no-repeat;
     background-size: 100% auto;
   }
@@ -9024,7 +9036,7 @@ section {
   }
 
   .box-form img.succes-regis-logo {
-    height: 150px;
+    height: 100px;
     display: inline-block;
   }
 
@@ -9594,6 +9606,7 @@ section {
 
   .bg-login {
     background: url(../img/bg-login.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -9602,6 +9615,7 @@ section {
 
   .bg-signin {
     background: url(../img/bg-login.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -9610,6 +9624,7 @@ section {
 
   .bg-signin-succes {
     background: url(../img/bg-login.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -9618,6 +9633,7 @@ section {
 
   .bg-forgot-pass {
     background: url(../img/bg-login.png);
+    background-color: rgba(225, 255, 217, 1);
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-attachment: fixed;
@@ -9667,7 +9683,7 @@ section {
   }
 
   .box-form img.succes-regis-logo {
-    height: 150px;
+    height: 100px;
     display: inline-block;
   }
 
@@ -9844,7 +9860,7 @@ section {
   }
 
   .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
-    height: 50px;
+    height: 75px;
   }
 
   .app-logo {
