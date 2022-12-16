@@ -34,7 +34,7 @@ class Auth extends CI_Controller
 		$this->load->view('tamplate/footer');
 	}
 
-	public function signup()
+	public function signup_refferal()
 	{
 		$data['title'] = NAMETITLE . " - Signup";
 
@@ -47,8 +47,60 @@ class Auth extends CI_Controller
 		}
 
 		$this->load->view('tamplate/header', $data);
+		$this->load->view('auth/signup-refferal');
+		$this->load->view('tamplate/footer');
+	}
+
+	public function signup()
+	{
+		$data['title'] = NAMETITLE . " - Signup";
+
+		if ($this->session->userdata('user_id')) {
+			if ($this->session->userdata('role') == 'member') {
+				redirect("homepage");
+			} elseif ($this->session->userdata('role') == 'admin') {
+				redirect("/admin/dashboard");
+			}
+		}
+
+		if (!$this->session->userdata('referral')) {
+			redirect("auth/signup_refferal");
+		}
+
+		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
 		$this->load->view('tamplate/footer');
+	}
+
+	public function register_refferal()
+	{
+		if ($this->session->userdata('user_id')) {
+			if ($this->session->userdata('role') == 'member') {
+				redirect("homepage");
+			} elseif ($this->session->userdata('role') == 'admin') {
+				redirect("/admin/dashboard");
+			}
+		}
+
+		$this->form_validation->set_rules('referral', 'Refferal', 'trim|required');
+
+		if ($this->form_validation->run() == FALSE) {
+			$this->session->set_flashdata('failed', "<p style='color:black'>" . validation_errors() . "</p>");
+			$this->session->set_flashdata('referral', set_value('referral'));
+			redirect(base_url() . "auth/register_refferal");
+			return;
+		}
+
+		$input		= $this->input;
+		$referral	= $this->security->xss_clean($input->post("referral"));
+
+		$session_referral = array(
+			'referral'   => $referral
+		);
+		$this->session->set_userdata($session_referral);
+
+		redirect(base_url() . "auth/signup");
+		return;
 	}
 
 	public function register()

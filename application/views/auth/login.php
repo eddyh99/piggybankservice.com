@@ -1,7 +1,7 @@
 <div class="login bg-login">
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center">
-            <div class="col-10 col-sm-8 col-md-6 col-lg-5 box-form">
+            <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form">
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
                     action="<?= base_url(); ?>auth/auth_login">
                     <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
@@ -19,13 +19,12 @@
                         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                     </div>
                     <?php } ?>
-                    <div class="col-12 mb-4 text-center">
-                        <span class="my-3 title f-poppins">LOGIN</span>
+                    <div class="col-12 text-center  my-auto">
                         <a href="<?= base_url() ?>">
-                            <img src="<?= base_url(); ?>assets/img/logo.png" alt="">
+                            <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="">
                         </a>
                     </div>
-                    <div class="col-12 mb-4">
+                    <div class="col-12 mb-3">
                         <label for="email" class="form-label f-publicsans">Email</label>
                         <div class="input-group">
                             <input type="email" class="form-control f-publicsans" id="email" name="email"
@@ -50,13 +49,13 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-12 mb-auto">
+                    <div class="col-12">
                         <div class="d-flex justify-content-between">
-                            <a href="<?= base_url(); ?>auth/signup" class="f-publicsans">Sign up</a>
+                            <a href="<?= base_url(); ?>auth/signup_refferal" class="f-publicsans">Sign up</a>
                             <a href="<?= base_url(); ?>auth/forget_pass" class="f-publicsans">Forgot password?</a>
                         </div>
                     </div>
-                    <div class="col-12 d-grid gap-2 mt-3">
+                    <div class="col-12 d-grid gap-2 mt-auto">
                         <button type="submit" class="btn btn-login f-roboto">Log in</button>
                     </div>
                 </form>

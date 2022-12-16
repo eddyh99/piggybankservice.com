@@ -30,14 +30,14 @@ class Link extends CI_Controller
         $this->load->view('tamplate/wrapper', $data);
     }
 
-    public function whychoosing()
+    public function utilities()
     {
-        $choose = $_GET['choose'];
+        $utilities = base64_decode($_GET['utilities']);
 
         $data = array(
             "title"     => NAMETITLE . " - Work with us",
-            "content"   => "auth/landingpage/why-choosing-us",
-            "choose"   => $choose,
+            "content"   => "auth/landingpage/utilities",
+            "utilities"   => $utilities,
             // "extra"     => "auth/landingpage/js/js_index",
         );
 
@@ -46,8 +46,7 @@ class Link extends CI_Controller
 
     public function service()
     {
-        $service = $_GET['service'];
-
+        $service = base64_decode($_GET['service']);
         $data = array(
             "title"     => NAMETITLE . " - Work with us",
             "content"   => "auth/landingpage/service",

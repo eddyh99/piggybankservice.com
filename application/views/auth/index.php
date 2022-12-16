@@ -7,10 +7,12 @@
 
         <nav id="navbar" class="navbar">
             <ul class="px-5">
-                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="<?= base_url(); ?>">Features</a></li>
+                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#features">Features</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#services">Services</a></li>
-                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#contact">Prices</a></li>
-                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="<?= base_url(); ?>">Translate</a></li>
+                <li><a class="f-bevietnam nav-link navbar-freedy scrollto"
+                        href="<?= base_url(); ?>link/lern_transparency">Prices</a></li>
+                <li><a class="f-bevietnam nav-link navbar-freedy scrollto"
+                        href="<?= base_url(); ?>link/translate">Translate</a></li>
                 <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login"
                         href="<?= base_url(); ?>auth/login">Log
                         in</a>
@@ -23,7 +25,7 @@
 </header><!-- End Header -->
 
 <!-- ======= Hero Section ======= -->
-<section id="" class="hero pb-0">
+<section id="top" class="hero pb-0">
     <div class="container">
         <div class="row">
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
@@ -56,7 +58,7 @@
                     Get your <b translate="no">PiggyBank</b> account in a minute
                 </h2>
                 <div class="text-center">
-                    <a href="<?= base_url(); ?>auth/signup"
+                    <a href="<?= base_url(); ?>auth/signup_refferal"
                         class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                         <span>Sign up</span>
                     </a>
@@ -82,7 +84,9 @@
                             <b translate="no">PiggyBank</b> is easy and immediately to open, you need to sign
                             up just using an email and password and your account will be immediately active and
                             ready to use without any restriction. <br>
-                            <span class="text-blue-freedy">(No KYC & No AML)</span>
+                            (<a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
+                                class="text-blue-freedy">No KYC & No
+                                AML</a>)
                         </p>
                     </div>
                     <div class="row d-flex justify-content-end my-3">
@@ -96,7 +100,7 @@
                                     <li>Convert currencies with zero fees</li>
                                 </ul>
                                 <div class="text-start">
-                                    <a href="<?= base_url(); ?>auth/signup"
+                                    <a href="<?= base_url(); ?>auth/signup_refferal"
                                         class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Sign up</span>
                                     </a>
@@ -111,7 +115,7 @@
 
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about bg-layout-singup">
+    <section id="services" class="about bg-layout-singup">
         <div class="container p-r">
             <div class="row gx-0">
                 <div class="col-12 mb-5">
@@ -126,7 +130,8 @@
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-1.png" alt="">
                                 <span class="title mt-2 mb-auto">No KYC & No AML</span>
-                                <a href="#" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
@@ -134,7 +139,8 @@
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
                                 <span class="title mt-2 mb-auto">Receive funds in 10 currencies</span>
-                                <a href="#" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
@@ -143,16 +149,17 @@
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
                                 <span class="title mt-2 mb-auto">Convert, custody & send in over 50 currencies
                                     worldwide</span>
-                                <a href="#" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
-                                <span class="title mt-2 mb-auto">Zero exchange fees &
-                                    competitive exchange rates</span>
-                                <a href="#" class="title">Read more</a>
+                                <span class="title mt-2 mb-auto">Zero exchange fees & competitive exchange rates</span>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('4') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
@@ -161,7 +168,7 @@
                                 <img src="<?= base_url() ?>assets/img/different-icon-5.png" alt="">
                                 <span class="title mt-2 mb-auto">Clear and transparent prices without hidden
                                     costs</span>
-                                <a href="#" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/lern_transparency" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
@@ -169,7 +176,8 @@
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-6.png" alt="">
                                 <span class="title mt-2 mb-auto">Integration to your bussiness API/Plugin</span>
-                                <a href="#" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('6') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -180,7 +188,7 @@
 
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about">
+    <section id="" class="about">
         <div class="container p-r">
             <div class="row gx-0 d-flex justify-content-center">
                 <div class="col-lg-8 mb-5 ps-lg-5">
@@ -197,7 +205,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?= base_url(); ?>auth/signup"
+                            <a href="<?= base_url(); ?>auth/signup_refferal"
                                 class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Sign up</span>
                             </a>
@@ -213,7 +221,7 @@
     </section><!-- Section -->
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about">
+    <section id="" class="about">
         <div class="container p-r">
             <div class="row gx-0">
                 <div class="col-12 mb-5">
@@ -321,7 +329,7 @@
     </section><!-- Section -->
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about">
+    <section id="" class="about">
         <div class="container p-r">
             <div class="row gx-0 d-flex justify-content-center">
                 <div class="col-12 my-5 d-flex justify-content-center">
@@ -347,7 +355,7 @@
     </section><!-- Section -->
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about">
+    <section id="features" class="about">
         <div class="container p-r">
             <div class="row gx-0">
                 <div class="col-12 mb-5">
@@ -480,5 +488,5 @@
     </div>
 </footer><!-- End Footer -->
 
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+<a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>

@@ -1,7 +1,7 @@
 <div class="login bg-signin-succes">
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center">
-            <div class="col-10 col-sm-8 col-md-6 col-lg-5 box-form hide-bg">
+            <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form hide-bg">
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
                     action="<?= base_url(); ?>member">
                     <div class="col-12 mt-auto text-center my-auto">
