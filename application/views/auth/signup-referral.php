@@ -3,7 +3,7 @@
         <div class="row d-flex d-lg-inline-grid justify-content-center align-items-center">
             <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form">
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
-                    action="<?= base_url(); ?>auth/register_refferal">
+                    action="<?= base_url(); ?>auth/register_referral">
                     <?php if (@isset($_SESSION["failed"])) { ?>
                     <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
                         <span class="notif-login f-poppins"><?= $_SESSION["failed"] ?></span>
@@ -25,8 +25,7 @@
                         </a>
                     </div>
                     <div class="col-12 mb-5">
-                        <label for="email" class="form-label f-publicsans">Refferal code <span class="text-mute">(
-                                optional )</span>
+                        <label for="email" class="form-label f-publicsans">Refferal code</span>
                         </label>
                         <div class="input-group">
                             <input type="text" class="form-control f-publicsans py-2" id="referral" name="referral"

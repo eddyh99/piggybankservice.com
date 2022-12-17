@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center">
             <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form">
-                <a href="<?= base_url(); ?>auth/signup_refferal" class="link-back">
+                <a href="<?= base_url(); ?>auth/signup_referral" class="link-back">
                     <img src="<?= base_url() ?>assets/img/back.png" alt="">
                 </a>
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
@@ -22,6 +22,7 @@
                     <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
                         value="<?php echo $this->security->get_csrf_hash(); ?>">
                     <input type="hidden" name="time_location" id="time_location">
+                    <input type="hidden" name="referral" value="<?= @$_SESSION["referral"] ?>">
                     <div class="col-12 mb-5 text-center">
                         <a href="<?= base_url() ?>">
                             <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="">

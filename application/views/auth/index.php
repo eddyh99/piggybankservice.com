@@ -58,7 +58,7 @@
                     Get your <b translate="no">PiggyBank</b> account in a minute
                 </h2>
                 <div class="text-center">
-                    <a href="<?= base_url(); ?>auth/signup_refferal"
+                    <a href="<?= base_url(); ?>auth/signup_referral"
                         class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                         <span>Sign up</span>
                     </a>
@@ -100,7 +100,7 @@
                                     <li>Convert currencies with zero fees</li>
                                 </ul>
                                 <div class="text-start">
-                                    <a href="<?= base_url(); ?>auth/signup_refferal"
+                                    <a href="<?= base_url(); ?>auth/signup_referral"
                                         class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Sign up</span>
                                     </a>
@@ -205,7 +205,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?= base_url(); ?>auth/signup_refferal"
+                            <a href="<?= base_url(); ?>auth/signup_referral"
                                 class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Sign up</span>
                             </a>
@@ -239,7 +239,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Capital Exportation</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -251,7 +252,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Daily use</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('2') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -267,7 +269,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Collections and Payments</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('3') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -286,7 +289,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Essential for your trip</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -302,7 +306,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-3.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Find me</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('5') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -314,7 +319,8 @@
                                                 <img src="<?= base_url(); ?>assets/img/untilities-6.png" alt=""
                                                     class="my-auto">
                                                 <h4 class="f-lexend my-auto">Search</h4>
-                                                <a class="f-lexend" href="#">Learn
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('6') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
