@@ -19,6 +19,7 @@ class Auth extends CI_Controller
 
 	public function login()
 	{
+		$this->session->unset_userdata('referral');
 		$data['title'] = NAMETITLE . " - Login";
 
 		if ($this->session->userdata('user_id')) {
@@ -34,7 +35,7 @@ class Auth extends CI_Controller
 		$this->load->view('tamplate/footer');
 	}
 
-	public function signup_refferal()
+	public function signup_referral()
 	{
 		$data['title'] = NAMETITLE . " - Signup";
 
@@ -47,7 +48,7 @@ class Auth extends CI_Controller
 		}
 
 		$this->load->view('tamplate/header', $data);
-		$this->load->view('auth/signup-refferal');
+		$this->load->view('auth/signup-referral');
 		$this->load->view('tamplate/footer');
 	}
 
@@ -63,16 +64,35 @@ class Auth extends CI_Controller
 			}
 		}
 
-		if (!$this->session->userdata('referral')) {
-			redirect("auth/signup_refferal");
+		if (@$_GET['ref'] == '') {
+			if (!$this->session->userdata('referral')) {
+				$this->session->set_flashdata('failed', 'Must enter Referral Code');
+				redirect(base_url() . "auth/signup_referral");
+				return;
+			} else {
+				$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_SESSION['referral']);
+				if ($cek->code == '5051') {
+					$this->session->set_flashdata('failed', $cek->message);
+					$this->session->set_flashdata('referral', set_value('referral'));
+					redirect(base_url() . "auth/signup_referral");
+					return;
+				}
+			}
+		} else {
+			$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_GET['ref']);
+			if ($cek->code == '5051') {
+				$this->session->set_flashdata('failed', $cek->message);
+				$this->session->set_flashdata('referral', set_value('referral'));
+				redirect(base_url() . "auth/signup_referral");
+				return;
+			}
 		}
-
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
 		$this->load->view('tamplate/footer');
 	}
 
-	public function register_refferal()
+	public function register_referral()
 	{
 		if ($this->session->userdata('user_id')) {
 			if ($this->session->userdata('role') == 'member') {
@@ -82,25 +102,33 @@ class Auth extends CI_Controller
 			}
 		}
 
-		$this->form_validation->set_rules('referral', 'Refferal', 'trim|required');
+		$this->form_validation->set_rules('referral', 'Referral', 'trim|required');
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('failed', "<p style='color:black'>" . validation_errors() . "</p>");
 			$this->session->set_flashdata('referral', set_value('referral'));
-			redirect(base_url() . "auth/register_refferal");
+			redirect(base_url() . "auth/signup_referral");
 			return;
 		}
 
 		$input		= $this->input;
 		$referral	= $this->security->xss_clean($input->post("referral"));
 
-		$session_referral = array(
-			'referral'   => $referral
-		);
-		$this->session->set_userdata($session_referral);
+		$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $referral);
 
-		redirect(base_url() . "auth/signup");
-		return;
+		if ($cek->code != '5051') {
+			$session_referral = array(
+				'referral'   => $referral
+			);
+			$this->session->set_userdata($session_referral);
+			redirect(base_url() . "auth/signup");
+			return;
+		} else {
+			$this->session->set_flashdata('failed', $cek->message);
+			$this->session->set_flashdata('referral', set_value('referral'));
+			redirect(base_url() . "auth/signup_referral");
+			return;
+		}
 	}
 
 	public function register()
@@ -135,13 +163,12 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules('confirmemail', 'Confirm Email', 'trim|required|valid_email|matches[email]');
 		$this->form_validation->set_rules('pass', 'Password', 'trim|required|min_length[9]|max_length[15]');
 		$this->form_validation->set_rules('confirmpass', 'Confirm Password', 'trim|required|matches[pass]');
-		$this->form_validation->set_rules('referral', 'Refferal', 'trim');
+		$this->form_validation->set_rules('referral', 'Referral', 'trim|required');
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('failed', "<p style='color:black'>" . validation_errors() . "</p>");
 			$this->session->set_flashdata('email', set_value('email'));
 			$this->session->set_flashdata('confirmemail', set_value('confirmemail'));
-			$this->session->set_flashdata('referral', set_value('referral'));
 			redirect(base_url() . "auth/signup");
 			return;
 		}
@@ -172,7 +199,7 @@ class Auth extends CI_Controller
 			$message = "Thank you for registering on PiggyBank<br><br>
 			username : " . $email . "<br>
 			password : (your chosen password)<br><br>
-			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate yout account<br><br>
+			click this <a href='" . base_url("auth/activate?token=") . $result->message->token . "'>link</a> to activate your account<br><br>
 			";
 
 			$urlqr = base_url() . 'wallet/send?' . base64_encode('cur=' . $_SESSION["currency"] . '&ucode=' . $result->message->ucode);
@@ -180,6 +207,7 @@ class Auth extends CI_Controller
 			$this->qrcodeuser($result->message->ucode);
 			$this->qrcodereceive($urlqr, $result->message->ucode);
 
+			$this->session->unset_userdata('referral');
 			$this->session->set_flashdata('success', "<p style='color:black'>You have successfully register</p>");
 			redirect(base_url() . "auth/signup_notif");
 			return;
