@@ -11,10 +11,11 @@ class Auth extends CI_Controller
 	public function index()
 	{
 		$data['title'] = NAMETITLE . " - Digital Bank";
+		$data['extra'] = "auth/landingpage/js/js_index";
 
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/index');
-		$this->load->view('tamplate/footer');
+		$this->load->view('tamplate/footer', $data);
 	}
 
 	public function login()

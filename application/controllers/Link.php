@@ -8,11 +8,11 @@ class Link extends CI_Controller
         parent::__construct();
     }
 
-    public function work_with_us()
+    public function lern_reward()
     {
         $data = array(
-            "title"     => NAMETITLE . " - Work with us",
-            "content"   => "auth/landingpage/work-us",
+            "title"     => NAMETITLE . " - Lern Get Reward",
+            "content"   => "auth/landingpage/lern_reward",
             "extra"     => "auth/landingpage/js/js_index",
         );
 
@@ -59,10 +59,10 @@ class Link extends CI_Controller
 
     public function features()
     {
-        $features = $_GET['features'];
+        $features = base64_decode($_GET['features']);
 
         $data = array(
-            "title"     => NAMETITLE . " - Work with us",
+            "title"     => NAMETITLE . " - Features",
             "content"   => "auth/landingpage/features",
             "features"   => $features,
             "extra"     => "auth/landingpage/js/js_index",
@@ -191,69 +191,35 @@ class Link extends CI_Controller
         $this->load->view('tamplate/wrapper', $data);
     }
 
-    public function send_message()
-    {
-        $data = array(
-            "title"     => NAMETITLE . " - Send Message",
-            "content"   => "auth/landingpage/message",
-            "extra"     => "auth/landingpage/js/js_index",
-        );
-
-        $this->load->view('tamplate/wrapper', $data);
-    }
-
-    public function check_ucode()
-    {
-        $ucode = $_GET['ucode'];
-        $url = URLAPI . "/v1/auth/getmember_byucode?ucode=" . $ucode;
-        $result   = apitrackless($url);
-
-        $mdata = array();
-        if (@$result->code == 200) {
-            $mdata = array(
-                "type" => 'show',
-                "url" => $url,
-            );
-        } else {
-            $mdata = array(
-                "type" => 'hide',
-                "url" => $url
-            );
-        }
-
-        echo json_encode($mdata);
-    }
-
     public function mailproses()
     {
-        $this->form_validation->set_rules('ucode', 'Ucode', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required');
-        $this->form_validation->set_rules('message', 'Message', 'trim|required');
 
         if ($this->form_validation->run() == FALSE) {
             $this->session->set_flashdata('failed', validation_errors());
-            redirect(base_url("link/send_message"));
+            redirect(base_url('#contactus'));
             return;
         }
 
         $input        = $this->input;
-        $ucode   = $this->security->xss_clean($input->post("ucode"));
         $email   = $this->security->xss_clean($input->post("email"));
-        $message   = $this->security->xss_clean($input->post("message"));
 
-        $result = $this->send_email($email, $message);
+        $result = $this->send_email($email);
         if ($result) {
             $this->session->set_flashdata("success", "Message successfully sent!");
-            redirect('link/send_message');
+            redirect(base_url('#contactus'));
+            return;
         } else {
             $this->session->set_flashdata("failed", 'Message failed to send!');
+            redirect(base_url('#contactus'));
+            return;
         }
     }
 
-    public function aboutus()
+    public function about()
     {
         $data = array(
-            "title"     => NAMETITLE . " - About Us",
+            "title"     => NAMETITLE . " - About Piggybank",
             "content"   => "auth/landingpage/aboutus",
             "extra"     => "auth/landingpage/js/js_index",
         );
@@ -271,7 +237,7 @@ class Link extends CI_Controller
         $this->load->view('tamplate/wrapper', $data);
     }
 
-    public function send_email($email, $message)
+    public function send_email($email)
     {
         $mail = $this->phpmailer_lib->load();
 
@@ -291,7 +257,10 @@ class Link extends CI_Controller
         $mail->ClearAllRecipients();
 
         $mail->Subject = 'Ask about PiggyBank';
-        $mail->AddAddress('eeinformationservice@gmail.com');
+        $mail->AddAddress('');
+        $message = "
+			Detail Information:<br><br>
+			Email : " . $email . "<br>";
 
         $mail->msgHTML($message);
         $mail->send();

@@ -33,7 +33,7 @@
                         <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="pageOne"
                             data-bs-parent="#accordionFreedy">
                             <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
-                                <?php $this->load->view('auth/landingpage/work-us-1'); ?>
+                                <?php $this->load->view('auth/landingpage/lern_reward-1'); ?>
                             </div>
                         </div>
                     </div>
@@ -51,7 +51,7 @@
                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="pageTwo"
                             data-bs-parent="#accordionFreedy">
                             <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
-                                <?php $this->load->view('auth/landingpage/work-us-2'); ?>
+                                <?php $this->load->view('auth/landingpage/lern_reward-2'); ?>
                             </div>
                         </div>
                     </div>
