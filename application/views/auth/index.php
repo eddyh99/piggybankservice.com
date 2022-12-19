@@ -43,7 +43,9 @@
                 </div>
                 <div class="powered-top">
                     <span>Powered By</span>
-                    <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                    <a href="https://tracklessbank.com/">
+                        <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                    </a>
                 </div>
             </div>
             <div class="d-none d-lg-flex col-lg-4 hero-img align-items-center">
@@ -348,7 +350,7 @@
                                     carried out by those who signed up using your link.
                                 </p>
                                 <span class="shareit d-block mb-4">Share it !</span>
-                                <a href="" class="readmore px-3 py-2">Read more</a>
+                                <a href="<?= base_url() ?>link/lern_reward" class="readmore px-3 py-2">Read more</a>
                             </div>
                             <div class="col-4 d-none d-md-grid align-items-center">
                                 <img src="<?= base_url() ?>assets/img/img-5.png" alt="" class="img-fluid roundend">
@@ -379,7 +381,8 @@
                                         class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-1.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">100% Secure</h4>
-                                        <a class="f-lexend" href="#">Learn
+                                        <a class="f-lexend"
+                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('1') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
@@ -388,7 +391,8 @@
                                         class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-2.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">Wallet</h4>
-                                        <a class="f-lexend" href="#">Learn
+                                        <a class="f-lexend"
+                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('2') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
@@ -397,7 +401,8 @@
                                         class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-3.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">Technology</h4>
-                                        <a class="f-lexend" href="#">Learn
+                                        <a class="f-lexend"
+                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('3') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
@@ -406,7 +411,8 @@
                                         class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-4.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">Missions</h4>
-                                        <a class="f-lexend" href="#">Learn
+                                        <a class="f-lexend"
+                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('4') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
@@ -419,7 +425,7 @@
     </section><!-- Section -->
 
     <!-- ======= Section ======= -->
-    <section id="reward" class="about">
+    <section id="contactus" class="about">
         <div class="container p-r">
             <div class="row gx-0">
                 <div class="col-12 mb-5">
@@ -427,9 +433,14 @@
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <img src="<?= base_url() ?>assets/img/sendmail.png" alt="" class="mx-auto d-none d-md-grid">
                             <div class="form-contactus py-2 mx-auto">
-                                <form class="d-flex flex-row justify-content-center align-items-center">
-                                    <input type="text" placeholder="Enter your email address" class="ms-4">
-                                    <button class="mx-3 py-2 btn-contactus">
+                                <form id="form_submit" method="POST" action="<?= base_url(); ?>link/mailproses"
+                                    class="d-flex flex-row justify-content-center align-items-center"
+                                    onsubmit="return validate()">
+                                    <input type="hidden" id="token"
+                                        name="<?php echo $this->security->get_csrf_token_name(); ?>"
+                                        value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                    <input name="email" type="text" placeholder="Enter your email address" class="ms-4">
+                                    <button class="mx-3 py-2 btn-contactus" type="submit" id="btnconfirm">
                                         <span class="mx-3 d-none d-sm-grid">Contact us</span>
                                         <img src="<?= base_url() ?>assets/img/arrow-contactus.png" alt="" class="mx-1">
                                     </button>
@@ -441,7 +452,9 @@
                 <div class="col-12">
                     <div class="powered-top">
                         <span class="fw-bold">Powered By</span>
-                        <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                        <a href="https://tracklessbank.com/">
+                            <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -481,12 +494,13 @@
                 </div>
                 <div class="col-lg col-12 pe-2 footer-links">
                     <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>" style="color:#fff;">FAQ</a>
+                        <a href="<?= base_url(); ?>link/faq" style="color:#fff;">FAQ</a>
                     </h4>
                 </div>
                 <div class="col-lg col-12 pe-2 footer-links">
                     <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>" style="color:#fff;">About <b translate="no">PiggyBank</b></a>
+                        <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b
+                                translate="no">PiggyBank</b></a>
                     </h4>
                 </div>
             </div>
@@ -496,3 +510,23 @@
 
 <a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
+
+<?php if (@isset($_SESSION["success"])) { ?>
+<div class="alert alert-success alert-dismissible" id="success-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
+left: 0;
+right: 0;
+max-width: 300px;
+margin: 0 auto;">
+    <?= $_SESSION["success"]; ?>
+</div>
+<?php } ?>
+
+<?php if (@isset($_SESSION["failed"])) { ?>
+<div class="alert alert-danger alert-dismissible" id="danger-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
+left: 0;
+right: 0;
+max-width: 300px;
+margin: 0 auto;">
+    <?= $_SESSION["failed"]; ?>
+</div>
+<?php } ?>

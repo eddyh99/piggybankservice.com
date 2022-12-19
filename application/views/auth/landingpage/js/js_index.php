@@ -86,4 +86,26 @@ $("#ucode").on("change", function() {
         }
     })
 });
+
+
+$(document).ready(function() {
+    window.setTimeout(function() {
+        $("#success-alert").fadeTo(1000, 0).slideUp(1000, function() {
+            $(this).remove();
+        });
+    }, 5000);
+});
+
+$(document).ready(function() {
+    window.setTimeout(function() {
+        $("#danger-alert").fadeTo(1000, 0).slideUp(1000, function() {
+            $(this).remove();
+        });
+    }, 5000);
+});
+
+function validate() {
+    $("#btnconfirm").attr("disabled", true);
+    $("#form_submit").submit();
+}
 </script>
