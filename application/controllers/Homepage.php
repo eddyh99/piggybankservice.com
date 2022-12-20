@@ -39,9 +39,18 @@ class Homepage extends CI_Controller
 
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('member/index', $body);
+        $this->load->view('tamplate/footer', $footer);
+    }
+
+    public function crypto()
+    {
+        $data['title'] = NAMETITLE . " - Homepage";
+        $footer["extra"]    = "member/js/js_index";
+
+        $this->load->view('tamplate/header', $data);
+        $this->load->view('member/crypto');
         $this->load->view('tamplate/footer', $footer);
     }
 
@@ -87,7 +96,6 @@ class Homepage extends CI_Controller
 
         $this->load->view('tamplate/header', $data);
         $this->load->view('member/mywallet', $body);
-        $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom-homepage', $data);
         $this->load->view('tamplate/footer', $footer);
     }

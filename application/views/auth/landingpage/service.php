@@ -18,15 +18,14 @@
                         <h2 class="fw-bold subtitle-top-header">We Care About Your Privacy</h2>
                         <div class="my-3">
                             <p>
-                                As <b translate="no">PiggyBank</b>, being part of the TracklessBank circuit, can operate
-                                by
-                                using several bank licenses under different jurisdictions and providing offshore escrow
-                                accounts and is not obliged to perform the Know You Customer (KYC) procedure.<br>
-                                <b translate="no">PiggyBank</b> does not carry out Anti-money laundering (AML)
-                                compliance
-                                policy, as it legally makes use of the AML which, mandatorily by law, is carried out by
-                                the
-                                banking institution that introduced fiat into the banking circuit
+                                Since <b translate="no">PiggyBank</b>, being part of the TracklessBank circuit, can
+                                operate using multiple banking licenses, under different jurisdictions and providing
+                                offshore escrow accounts, it is not obliged to perform the Know your Customer (KYC)
+                                procedure.
+
+                                <b translate="no">PiggyBank</b> does not carry out anti-money laundering (AML)
+                                compliance activities, as it legally makes use of the AML which, without fail by law, is
+                                carried out by the banking institutes that introduce FIAT into the banking circuit.
                             </p>
                         </div>
                     </div>
@@ -42,8 +41,7 @@
         <div class="col-12 my-5 px-md-5">
             <div class="row">
                 <div class="col-12 col-md-8 mb-5 text-start mx-auto">
-                    <h2 class="title-top-header fw-bold">Receive funds in 10 currencies</h2>
-                    <h2 class="fw-bold subtitle-top-header">We make money work in your favor</h2>
+                    <h2 class="fw-bold title-top-header">We make money work in your favor</h2>
                     <div class="my-3">
                         <p>
                             Opening a <b translate="no">PiggyBank</b> account you can activate banking data, for free,
@@ -63,8 +61,7 @@
         <div class="col-12 my-5 px-md-5">
             <div class="row">
                 <div class="col-12 col-md-8 mb-5 text-start mx-auto">
-                    <h2 class="title-top-header fw-bold">Convert, custody and send in over 50 currencies worldwide</h2>
-                    <h2 class="fw-bold subtitle-top-header">Easy fast wherever you are</h2>
+                    <h2 class="title-top-header fw-bold">Easy and fast wherever you are</h2>
                     <div class="my-3 content-freedy text-start">
                         <ul class="p-0">
                             <li>Custody and send money in more than 50 currencies.</li>

@@ -11555,3 +11555,30 @@ section {
 .navbar-app>.box-navbar-freedy.bottom {
   border-bottom: 1px solid #1B8036;
 }
+
+.btn-head-crypto {
+  border: 1px solid #1B8036;
+  border-radius: 8px;
+}
+
+.btn-head-crypto .crypto {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 113%;
+
+  display: inline-block;
+  background: transparent;
+  border-radius: 8px;
+  color: #1B8036;
+}
+
+.btn-head-crypto .crypto.active {
+  background: #1B8036;
+  border-radius: 8px;
+  color: #FFFFFF;
+}
+
+.btn-head-crypto .crypto:hover,
+.btn-head-crypto .crypto.active:hover {
+  color: #000000;
+}

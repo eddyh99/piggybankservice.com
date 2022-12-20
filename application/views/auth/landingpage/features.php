@@ -25,7 +25,7 @@
                     <div class="col-12 col-md-6 col-md-8 text-start">
                         <h2 class="title-top-header fw-bold mb-3 f-lexend">Why you can trust <b
                                 translate="no">PiggyBank</b> ?</h2>
-                        <p>Your money are protected by global banks, our clients' funds are entirely deposited in
+                        <p>Your money is protected by global banks, our clients' funds are entirely deposited in
                             encrypted escrow accounts at the main credit institutions with which our payment gateway
                             works in the various countries.<br>
                         <p>To give total security to our customers, only the account holder will have access to the
@@ -80,12 +80,12 @@
                         </p>
                     </div>
                     <div class="col-12 col-md-6 text-start my-auto">
-                        <h2 class="fw-bold mb-3 f-lexend">From Bank to wallet</h2>
+                        <h2 class="fw-bold mb-3 f-lexend">From Bank to Wallet</h2>
                         <p>
-                            You can receive bank transfer in your wallet in 10 currencies (<a
+                            You can receive bank transfers into your wallet in 10 currencies (<a
                                 href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>">find out which
                                 they are</a>) from any
-                            iban even if not under your name.
+                            IBAN even if not under your name.
                         </p>
                     </div>
                     <div class="col-6 d-none d-md-grid my-auto">
@@ -134,37 +134,6 @@
 
                         </p>
                     </div>
-                    <div class="col-12 col-md-6 text-start my-auto">
-                        <h2 class="fw-bold mb-3 f-lexend">Top up EURO by cash into SEPA circuit</h2>
-                        <p>
-                            Those who want to make a bank transfer without a current account can go to the bank and ask
-                            to make a transfer by paying the necessary money directly at the counter. This is procedure
-                            is called "Cash Transfer by Cash". Wire transfer is a transfer of money to a beneficiary
-                            bank account. The transfer can still be made, but the ordering party will have to go to the
-                            bank counter, it is obviously not possible to do it online as there is no account from which
-                            to transfer the sum, and bring the cash needed for the transaction.
-                        </p>
-                        <p class="fw-bold">Procedure for transfer without current account :</p>
-                        <ol>
-                            <li>Go to a bank/postal counter</li>
-                            <li>Collect and fill the appropriate form</li>
-                        </ol>
-                    </div>
-                    <div class="col-4 d-none d-md-grid m-auto">
-                        <img src="<?= base_url() ?>assets/img/img-24.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col-12 mt-5">
-                        <div class="col-6 freedy-accordion-item shadow-none py-2 px-3" style="filter: none;">
-                            <p class="fw-bold">ATTENTION : </p>
-                            <ul>
-                                <li>PLEASE NOTE THAT THE IDENTIFICATION DETAILS OF THE BENEFICIARY ARE WRITTEN IN THE
-                                    EURO CURRENCY, SECTION ‘’ ADD/RECEIVE SEPA’’</li>
-                                <li>CASH TRANSFER LIMITS AND COSTS VARY FROM INSTITUTE TO INSTITUTE AND FROM COUNTRY TO
-                                    COUNTRY, ACCORDING TO THE LAW IN FORCE</li>
-                                <li>REMEMBER TO WRITE THE CAUSAL CORRECTLY WITHOUT ADDING OR OMITTING CHARACTERS</li>
-                            </ul>
-                        </div>
-                    </div>
                 </div>
             </div>
 
@@ -180,18 +149,21 @@
             <div class="col-12 mb-5">
                 <div class="row">
                     <div class="col-12 col-lg-6 text-start my-auto">
-                        <p>
-                            <b translate="no">PiggyBank</b> is a DApp that running on NP, considered the evolution of
+                        <p>is a Dapp running on NP
+                            <b translate="no">PiggyBank</b> is a Dapp running on NP, considered the evolution of
                             the blockchain and it
                             uses SECC (SMART ELECTRONIC CREDIT CERTIFICATE), developed by MONEY INDUSTRIAL FACTORY on NP
                             and issued by PBS Online which converts FIAT by capitalizing the SECC 1: 1 with the currency
                             on which it is pegged to offer a cheaper and faster alternative to normal Stable coins such
                             as Tether and others and with greater security and transparency than the complicated Smart
-                            Contracts that run on Etherium and on the others blockchain.<br>
+                            Contracts that run on Ethereum and on the others blockchain.<br>
                             NP is a brand new decentralized and distributed storage system, designed and built as a
                             neural network and not as a chain. This makes it immune to attacks by 51% and solves the
                             main problems of blockchain technology; this technology has come to completion after more
                             than 5 years of research and development.
+
+
+
                         </p>
                     </div>
                     <div class="col-6 d-none d-lg-grid">
@@ -219,8 +191,9 @@
                             WinMX, etc.) rewritten from scratch in Golang and rusty, with direct acyclic graph,
                             effectively making double spending impossible.<br>
                             NP is 100% anonymous, no data will be recorded or saved on an external source, but only an
-                            encrypted SHA256 file.log saved exclusively on your device is created; this will make it
-                            impossible for anyone to connect a user to their wallet, even with forensic techniques, and,
+                            encrypted SHA256 file.log saved exclusively on your device is created;
+                            This will make impossible for anyone to connect a user to their wallet, even with forensic
+                            techniques, and,
                             through the implementation of CryptoNote, it will be impossible for anyone to see balances
                             and transactions, except for the user himself. NP has a different concept of the block,
                             compared to traditional blockchains, where the block carries within it all the historical
@@ -244,7 +217,8 @@
                             NP solves the scalability problem by transforming each user into a validating node every
                             time he performs an operation, thus giving double the necessary computing power.<br>
                             all the users of FreedyBank will be repaid with part of the<br>
-                            commissions in a clear, transparent and fair manner, as described in the section earn with
+                            <b>commissions in a clear, transparent and fair manner, as described in the section Earn
+                                with</b>
                             <b translate="no">PiggyBank</b>.
                         </p>
                     </div>

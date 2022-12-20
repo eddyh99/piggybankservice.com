@@ -123,8 +123,8 @@
                 <div class="row">
                     <div class="col-12 col-md-6">
                         <p>
-                            <b translate="no">PiggyBank</b> offers your company, a multi-currency collection and payment
-                            system that can be easily integrated into your e-commerce :
+                            <b translate="no">PiggyBank</b> offers to your company a multi-currency collection and
+                            payment system that can be easily integrated into you e-commerce:
                         </p>
                         <div class="col-12 d-flex flex-column justify-content-center">
                             <div class="content-freedy circle text-start">
@@ -155,7 +155,7 @@
             <div class="col-12 my-5">
                 <div class="logo-text text-center">
                     <img src="<?= base_url() ?>assets/img/u-img-4.png" alt="">
-                    <span class="f-lexend text-blue-freedy">Essential for your trip</span>
+                    <span class="f-lexend text-blue-freedy">Essential for your trips</span>
                 </div>
             </div>
             <div class="col-12 mb-5">
@@ -164,7 +164,7 @@
                         <h3 class="text-dark">With PiggyBank your money travels with you.</h3>
                         <p>
                             Thanks to the best exchange rates you can find on the market and the absence of fees you
-                            can, from your multi-currency wallet, instantly convert your balances into the currency of
+                            can, from your multi-currency wallet, instantly convert your balance into the currency of
                             the country you are in and carry out comfortably all the payments you want, quickly and
                             easily.
                         </p>
