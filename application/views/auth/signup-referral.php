@@ -46,7 +46,8 @@
                     <div class="col-12 d-grid gap-2 mt-5">
                         <p class="text-center f-roboto"><b>ATTENTION</b> : it is necessary to have a REFERRAL CODE for
                             the
-                            subscription on the platform, if you do not have it follow us on our Instagram page and
+                            subscription on the platform, if you do not have it follow us on our <a
+                                href="https://instagram.com/piggybankservice?igshid=YmMyMTA2M2Y=">Instagram</a> page and
                             request it.
                         </p>
                     </div>

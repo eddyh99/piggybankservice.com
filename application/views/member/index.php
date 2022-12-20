@@ -4,7 +4,7 @@
             <div class="app-container py-5">
                 <div class="row" style="margin-top: 5rem;">
                     <div class="col-12 d-flex justify-content-center">
-                        <div class="col-9 box-code-freedy px-4 py-3">
+                        <div class="col-12 box-code-freedy px-4 py-3">
                             <div class="copy-uqcode mt-3 mb-2 d-flex flex-row align-items-center">
                                 <span class="me-2">UNIQUE CODE : </span>
                                 <input class="me-2" type="text" name="" id="uqcode" value="<?= $_SESSION["ucode"] ?>"
@@ -33,11 +33,12 @@
                                     </svg>
                                 </a>
                             </div>
-                        </div>
-                        <div class="col-3 iconside-serach d-grid justify-content-center align-items-center">
-                            <a href="<?= base_url() ?>soon">
-                                <img src="<?= base_url() ?>assets/img/icon-search.png" alt="" class="img-fluid">
-                            </a>
+                            <div class="w-100 text-center">
+                                <div class="d-inline-block btn-head-crypto">
+                                    <a class="crypto px-4 py-2 active" href="<?= base_url() ?>homepage/">FIAT</a>
+                                    <a class="crypto px-4 py-2" href="<?= base_url() ?>homepage/crypto">CRYPTO</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

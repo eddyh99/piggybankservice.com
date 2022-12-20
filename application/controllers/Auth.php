@@ -73,19 +73,23 @@ class Auth extends CI_Controller
 			} else {
 				$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_SESSION['referral']);
 				if ($cek->code == '5051') {
-					$this->session->set_flashdata('failed', $cek->message);
-					$this->session->set_flashdata('referral', set_value('referral'));
-					redirect(base_url() . "auth/signup_referral");
-					return;
+					if ($_SESSION['referral'] != "p1ggy34") {
+						$this->session->set_flashdata('failed', $cek->message);
+						$this->session->set_flashdata('referral', set_value('referral'));
+						redirect(base_url() . "auth/signup_referral");
+						return;
+					}
 				}
 			}
 		} else {
 			$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_GET['ref']);
 			if ($cek->code == '5051') {
-				$this->session->set_flashdata('failed', $cek->message);
-				$this->session->set_flashdata('referral', set_value('referral'));
-				redirect(base_url() . "auth/signup_referral");
-				return;
+				if ($_GET['ref'] != "p1ggy34") {
+					$this->session->set_flashdata('failed', $cek->message);
+					$this->session->set_flashdata('referral', set_value('referral'));
+					redirect(base_url() . "auth/signup_referral");
+					return;
+				}
 			}
 		}
 		$this->load->view('tamplate/header', $data);
@@ -125,10 +129,19 @@ class Auth extends CI_Controller
 			redirect(base_url() . "auth/signup");
 			return;
 		} else {
-			$this->session->set_flashdata('failed', $cek->message);
-			$this->session->set_flashdata('referral', set_value('referral'));
-			redirect(base_url() . "auth/signup_referral");
-			return;
+			if ($referral == "p1ggy34") {
+				$session_referral = array(
+					'referral'   => $referral
+				);
+				$this->session->set_userdata($session_referral);
+				redirect(base_url() . "auth/signup");
+				return;
+			} else {
+				$this->session->set_flashdata('failed', $cek->message);
+				$this->session->set_flashdata('referral', set_value('referral'));
+				redirect(base_url() . "auth/signup_referral");
+				return;
+			}
 		}
 	}
 
@@ -182,6 +195,10 @@ class Auth extends CI_Controller
 
 		if (empty($time_location)) {
 			$time_location = "Asia/Singapore";
+		}
+
+		if ($referral == "p1ggy34") {
+			$referral = NULL;
 		}
 
 		$mdata = array(

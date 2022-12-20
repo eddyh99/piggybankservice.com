@@ -1,3 +1,20 @@
+<div class="navbar-app fixed-top d-flex justify-content-center">
+    <div
+        class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center bottom">
+        <a href="<?= base_url() ?>homepage" class="d-flex align-items-center border-0 ms-0 me-auto">
+            <div class="icon-menus d-flex align-items-center home-svg py-0">
+                <img src="<?= base_url() ?>assets/img/logo-login.png" alt="">
+            </div>
+        </a>
+
+        <a href="<?= base_url() ?>soon" class="d-flex align-items-center border-0 mx-2">
+            <div class="icon-menus d-flex align-items-center home-svg py-0">
+                <img src="<?= base_url() ?>assets/img/icon-search.png" alt="">
+            </div>
+        </a>
+    </div>
+</div>
+
 <div class="navbar-app fixed-bottom d-flex justify-content-center">
     <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex justify-content-end align-items-center top">
         <a href="<?= base_url() ?>auth/logout" class="d-flex align-items-center border-0">
@@ -29,7 +46,6 @@
                         </linearGradient>
                     </defs>
                 </svg>
-
             </div>
         </a>
     </div>
