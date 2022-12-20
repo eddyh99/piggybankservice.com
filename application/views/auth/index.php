@@ -140,7 +140,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
-                                <span class="title mt-2 mb-auto">Receive funds in 10 currencies</span>
+                                <span class="title mt-2 mb-auto">We make money work in your favor</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -149,8 +149,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
-                                <span class="title mt-2 mb-auto">Convert, custody & send in over 50 currencies
-                                    worldwide</span>
+                                <span class="title mt-2 mb-auto">Easy and fast wherever you are</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -290,7 +289,7 @@
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 ms-auto">
                                                 <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
                                                     class="my-auto">
-                                                <h4 class="f-lexend my-auto">Essential for your trip</h4>
+                                                <h4 class="f-lexend my-auto">Essential for your trips</h4>
                                                 <a class="f-lexend"
                                                     href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
                                                     more</a>
@@ -344,7 +343,7 @@
                     <div class="reward p-3 p-md-5">
                         <div class="row">
                             <div class="col-12 col-md-8 p-3">
-                                <h2>Get Reward</h2>
+                                <h2>Get Rewards</h2>
                                 <p>
                                     With the use of your referral link you are rewarded for every operation
                                     carried out by those who signed up using your link.
