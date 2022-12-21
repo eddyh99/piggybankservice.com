@@ -409,7 +409,7 @@
                                     <div
                                         class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-4.png" alt="">
-                                        <h4 class="f-lexend mb-auto mt-3">Missions</h4>
+                                        <h4 class="f-lexend mb-auto mt-3">Mission</h4>
                                         <a class="f-lexend"
                                             href="<?= base_url(); ?>link/features?features=<?= base64_encode('4') ?>">Learn
                                             more</a>
