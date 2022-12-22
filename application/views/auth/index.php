@@ -43,8 +43,8 @@
                 </div>
                 <div class="powered-top">
                     <span>Powered By</span>
-                    <a href="https://tracklessbank.com/">
-                        <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                    <a href="https://tracklessproject.com/">
+                        <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                     </a>
                 </div>
             </div>
@@ -451,8 +451,8 @@
                 <div class="col-12">
                     <div class="powered-top">
                         <span class="fw-bold">Powered By</span>
-                        <a href="https://tracklessbank.com/">
-                            <img src="<?= base_url() ?>assets/img/tc-bank.png" alt="">
+                        <a href="https://tracklessproject.com/">
+                            <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                         </a>
                     </div>
                 </div>
