@@ -71,7 +71,7 @@
                             ?>
                             <a href="<?= base_url() ?>homepage/wallet?cur=<?= $dt->currency ?>"
                                 class="d-block text-center curencies-list py-4 px-3 my-2">
-                                <span><?= $dt->symbol; ?> <?= number_format($dt->balance, 2, ".", ",") ?></span>
+                                <span><?= $dt->symbol; ?> <?= number_format($dt->balance, 4, ".", ",") ?></span>
                             </a>
                             <?php }
                                 }
@@ -83,7 +83,7 @@
                             ?>
                             <a href="<?= base_url() ?>homepage/wallet?cur=<?= $dt->currency ?>"
                                 class="d-block text-center curencies-list py-4 px-3 my-2">
-                                <span><?= $dt->symbol; ?> <?= number_format($dt->balance, 2, ".", ",") ?></span>
+                                <span><?= $dt->symbol; ?> <?= number_format($dt->balance, 4, ".", ",") ?></span>
                             </a>
                             <?php }
                                 }
