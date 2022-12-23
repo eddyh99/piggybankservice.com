@@ -138,11 +138,53 @@
         <?php if ($service == 6) { ?>
         <div class="col-12 my-5 px-md-5">
             <div class="row">
-                <div class="col-12 text-center mx-auto">
-                    <h2 class="title-top-header fw-bold">Integration to your bussiness API/Plugin</h2>
-                </div>
                 <div class="col-12 mb-5 text-center mx-auto">
                     <h2 class="fw-bold subtitle-top-header">COMING SOON</h2>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+
+        <?php if ($service == 7) { ?>
+        <div class="col-12 my-5 px-md-5">
+            <div class="row">
+                <div class="col-12 text-start mx-auto">
+                    <h2 class="title-top-header mb-5 fw-bold">Fees for Fiat to crypto and crypto to FIAT</h2>
+                </div>
+                <div class="col-12 text-start mx-auto table-responsive">
+                    <table class="table tbl-piggy-service text-center">
+                        <tr>
+                            <th></th>
+                            <th>Maker</th>
+                            <th>Taker</th>
+                        </tr>
+                        <tr>
+                            <th>Buy</th>
+                            <td>0.05%</td>
+                            <td>0.05%</td>
+                        </tr>
+                        <tr>
+                            <th>Sell</th>
+                            <td>0.05%</td>
+                            <td>0.05%</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <?php } ?>
+
+        <?php if ($service == 8) { ?>
+        <div class="col-12 my-5 px-md-5">
+            <div class="row">
+                <div class="col-12 col-md-8 text-start mx-auto">
+                    <h2 class="title-top-header mb-5 fw-bold">PiggyBank provides you<br>
+                        ''Non-Custodial Wallet''</h2>
+                    <p>With a non-custodial wallet, you have sole control of your private keys, which in turn control
+                        your currencies and prove the funds are yours.</p>
+                </div>
+                <div class="col-12 col-md-4 d-none d-md-grid m-auto">
+                    <img src="<?= base_url() ?>assets/img/img-27.png" alt="" class="img-fluid">
                 </div>
             </div>
         </div>

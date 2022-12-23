@@ -31,21 +31,37 @@
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
-                    Anonymous and free multi-currency wallet with the
-                    main functions of a bank account.
+                    Anonymous and free multi currency non-custodial wallet with the
+                    main functions of a bank account and with a shared order book integrated where to buy and sell
+                    crypto with FIAT
                 </p>
-                <div class="list-toright mb-3">
-                    <ul>
-                        <li>Created for companies</li>
-                        <li>Great for individuals</li>
-                        <li>Useful for travelers</li>
-                    </ul>
+                <div class="d-flex flex-wrap mb-3">
+                    <div class="list-toright">
+                        <ul>
+                            <li>Created for companies</li>
+                            <li>Useful for travelers</li>
+                        </ul>
+                    </div>
+                    <div class="list-toright">
+                        <ul>
+                            <li>Great for individuals</li>
+                            <li>Perfect for traders</li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="powered-top">
-                    <span>Powered By</span>
-                    <a href="https://tracklessproject.com/">
-                        <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
-                    </a>
+                <div class="d-flex flex-wrap">
+                    <div class="powered-top mb-3 me-5">
+                        <span>Powered By</span>
+                        <a href="https://tracklessproject.com/">
+                            <img src="<?= base_url() ?>assets/img/tc-project.png" alt="">
+                        </a>
+                    </div>
+                    <div class="powered-top mb-3">
+                        <span>Powered By</span>
+                        <a href="https://tracklesscrypto.com/">
+                            <img src="<?= base_url() ?>assets/img/tc-crypto-black.png" alt="">
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="d-none d-lg-flex col-lg-4 hero-img align-items-center">
@@ -99,7 +115,7 @@
                                     <li><b translate="no">PiggyBank</b> account opening is free of charge</li>
                                     <li>No monthly or annual fees</li>
                                     <li>Integration to your bussiness without any extra cost</li>
-                                    <li>Convert currencies with zero fees</li>
+                                    <li>Convert FIAT currencies with zero fees</li>
                                 </ul>
                                 <div class="text-start">
                                     <a href="<?= base_url(); ?>auth/signup_referral"
@@ -130,13 +146,22 @@
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                <img src="<?= base_url() ?>assets/img/different-icon-8.png" alt="">
+                                <span class="title mt-2 mb-auto">Non-custodial wallet</span>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('8') ?>"
+                                    class="title">Read more</a>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
+                            <div
+                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-1.png" alt="">
                                 <span class="title mt-2 mb-auto">No KYC & No AML</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
                                     class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
@@ -145,7 +170,7 @@
                                     class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
@@ -154,7 +179,7 @@
                                     class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
@@ -163,7 +188,7 @@
                                     class="title">Read more</a>
                             </div>
                         </div>
-                        <div class="col-10 col-md-5 col-lg-4 px-2 mb-3 list-different">
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-5.png" alt="">
@@ -181,6 +206,15 @@
                                     class="title">Read more</a>
                             </div>
                         </div>
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
+                            <div
+                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                <img src="<?= base_url() ?>assets/img/different-icon-7.png" alt="">
+                                <span class="title mt-2 mb-auto">Fees for FIAT to crypto and crypto to FIAT </span>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('7') ?>"
+                                    class="title">Read more</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -191,6 +225,32 @@
     <!-- ======= Section ======= -->
     <section id="" class="about">
         <div class="container p-r">
+            <div class="row gx-0 d-flex justify-content-center mb-5">
+                <div class="col-6 d-none d-lg-grid align-items-center text-center">
+                    <img src="<?= base_url(); ?>assets/img/img-26.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-6 mb-5 ps-lg-5">
+                    <div class="content-freedy">
+                        <h2 class="f-lexend">Revolutionary bank with crypto trading service integrated</h2>
+                        <div class="my-3">
+                            <ul class="p-0 f-lexend">
+                                <li>Trade off platform</li>
+                                <li>Shared order book</li>
+                                <li>Distributed and decentralized</li>
+                                <li>Buy crypto from your FIAT balance of your PiggyBank wallet</li>
+                                <li>Withdraw your earning by bank transfer in more than
+                                    50 currencies to any bank account even not under your name</li>
+                            </ul>
+                        </div>
+                        <div class="text-start">
+                            <a href="#"
+                                class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                                <span class="f-lexend">Learn more</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="row gx-0 d-flex justify-content-center">
                 <div class="col-lg-8 mb-5 ps-lg-5">
                     <div class="content-freedy">
@@ -227,7 +287,7 @@
             <div class="row gx-0">
                 <div class="col-12 mb-5">
                     <div class="content-freedy p-r text-center">
-                        <h2 class="f-lexend"><b translate="no">PiggyBank</b> utilities</h2>
+                        <h2 class="f-lexend m-plus-5 d-block"><b translate="no">PiggyBank</b> utilities</h2>
                     </div>
                     <div class="col-12 my-5">
                         <div class="row d-flex justify-content-center">
@@ -242,6 +302,19 @@
                                                 <h4 class="f-lexend my-auto">Capital Exportation</h4>
                                                 <a class="f-lexend"
                                                     href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-5 col-lg-3 p-0 m-min-5">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-7.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Crypto trading</h4>
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('7') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -279,7 +352,7 @@
                                 </div>
                             </div>
                             <div class="col-6 d-none text-center d-lg-grid align-items-center">
-                                <img src="<?= base_url() ?>assets/img/img-4-2.png" alt="" class="img-fluid">
+                                <img src="<?= base_url() ?>assets/img/img-4-3.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-12 col-md-6 col-lg-3 d-grid align-items-center">
                                 <div class="row d-flex justify-content-around">
@@ -345,8 +418,8 @@
                             <div class="col-12 col-md-8 p-3">
                                 <h2>Get Rewards</h2>
                                 <p>
-                                    With the use of your referral link you are rewarded for every operation
-                                    carried out by those who signed up using your link.
+                                    With the use of your referral link you are rewarded for every FIAT or crypto
+                                    operation carried out by those who signed up using your link.
                                 </p>
                                 <span class="shareit d-block mb-4">Share it !</span>
                                 <a href="<?= base_url() ?>link/lern_reward" class="readmore px-3 py-2">Read more</a>
@@ -449,11 +522,19 @@
                     </div>
                 </div>
                 <div class="col-12">
-                    <div class="powered-top">
-                        <span class="fw-bold">Powered By</span>
-                        <a href="https://tracklessproject.com/">
-                            <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
-                        </a>
+                    <div class="d-flex flex-wrap">
+                        <div class="powered-top mb-3 me-5">
+                            <span>Powered By</span>
+                            <a href="https://tracklessproject.com/">
+                                <img src="<?= base_url() ?>assets/img/tc-project.png" alt="">
+                            </a>
+                        </div>
+                        <div class="powered-top mb-3">
+                            <span>Powered By</span>
+                            <a href="https://tracklesscrypto.com/">
+                                <img src="<?= base_url() ?>assets/img/tc-crypto-black.png" alt="">
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
