@@ -22,11 +22,11 @@
 <script src="<?= base_url() ?>assets/js/form.js"></script>
 <?php
 if (isset($extra)) {
-  $this->load->view($extra);
+    $this->load->view($extra);
 }
 ?>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-8TYM4CBBPQ"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFML05LDNP"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -36,7 +36,7 @@ function gtag() {
 }
 gtag('js', new Date());
 
-gtag('config', 'G-8TYM4CBBPQ');
+gtag('config', 'G-TFML05LDNP');
 
 
 function input(ele) {

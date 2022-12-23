@@ -15,30 +15,30 @@
             </div>
         </div>
     </div>
-    <div class="col-12 mb-5">
-        <div class="col-12 text-center mb-5">
-            <h4 class="text-blue-freedy black link-lp fw-bold f-lexend">For example:</h2>
-        </div>
-        <div class="d-flex flex-column flex-md-row">
-            <div class="col-12 col-md-4 card-arrow-freedy px-3 px-md-4 px-lg-3 py-3 py-md-0">
-                <p class="mb-5 me-lg-5 my-md-0">If you invite 100 persons/companies to open an account using
-                    your link</p>
-                <img class="arrow" src="<?= base_url() ?>assets/img/arrow-right.png" alt="">
-            </div>
-            <div class="col-12 col-md-4 card-arrow-freedy px-3 px-md-4 px-lg-3 py-3 py-md-0">
-                <p class="mt-5 mb-5 me-lg-5 my-md-0">They do 5 operations a day
-                    (payment by card, wallet to wallet etc)</p>
-                <img class="arrow" src="<?= base_url() ?>assets/img/arrow-right.png" alt="">
-            </div>
-            <div class="mt-5 my-md-0 col-12 col-md-4 card-arrow-freedy px-3 px-md-4 px-lg-3 py-3 py-md-0">
-                <p>You would earn 750 euros monthly,
-                    accedited directly to your wallet.</p>
-            </div>
-        </div>
-    </div>
-    <div class="col-12 my-5">
-        <div class="col-12 text-center content-freedy">
-            <p class="fw-bold">PiggyBank Has created a system that rewards its users.</p>
+    <div class="col-12 text-center">
+        <h2 class="title-top-header fw-bold">Referral earning</h2>
+        <span class="fw-bold">(Select currency to see all referral earning)</span>
+        <div class="col-12 text-start mx-auto table-responsive my-5">
+            <table class="table tbl-piggy-service text-center">
+                <tr>
+                    <th>Select currency</th>
+                    <th>Top up</th>
+                    <th>Wallet to wallet receive</th>
+                    <th>Wallet to wallet send</th>
+                    <th>Wallet to bank</th>
+                    <th>Buy crypto</th>
+                    <th>Sell crypto</th>
+                </tr>
+                <tr>
+                    <td>Referral earning</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
