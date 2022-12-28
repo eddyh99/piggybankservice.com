@@ -59,7 +59,7 @@
                                         </linearGradient>
                                     </defs>
                                 </svg>
-                                <span class="ms-2">Sellect Currencies</span>
+                                <span class="ms-2">Select Currencies</span>
                             </a>
                         </div>
                     </div>
