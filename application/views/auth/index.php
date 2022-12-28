@@ -53,13 +53,7 @@
                     <div class="powered-top mb-3 me-5">
                         <span>Powered By</span>
                         <a href="https://tracklessproject.com/">
-                            <img src="<?= base_url() ?>assets/img/tc-project.png" alt="">
-                        </a>
-                    </div>
-                    <div class="powered-top mb-3">
-                        <span>Powered By</span>
-                        <a href="https://tracklesscrypto.com/">
-                            <img src="<?= base_url() ?>assets/img/tc-crypto-black.png" alt="">
+                            <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -526,13 +520,7 @@
                         <div class="powered-top mb-3 me-5">
                             <span>Powered By</span>
                             <a href="https://tracklessproject.com/">
-                                <img src="<?= base_url() ?>assets/img/tc-project.png" alt="">
-                            </a>
-                        </div>
-                        <div class="powered-top mb-3">
-                            <span>Powered By</span>
-                            <a href="https://tracklesscrypto.com/">
-                                <img src="<?= base_url() ?>assets/img/tc-crypto-black.png" alt="">
+                                <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                             </a>
                         </div>
                     </div>

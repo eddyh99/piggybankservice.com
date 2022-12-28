@@ -75,18 +75,7 @@
 
                         <li class="list-group-item d-flex justify-content-between align-items-center">
                             <span class="w-50 me-auto text-start">Receiving International</span>
-                            <?php
-                                        if (($getcurrency == "USD") ||
-                                            ($getcurrency == "EUR") ||
-                                            ($getcurrency == "AUD") ||
-                                            ($getcurrency == "NZD") ||
-                                            ($getcurrency == "CAD") ||
-                                            ($getcurrency == "HUF") ||
-                                            ($getcurrency == "SGD") ||
-                                            ($getcurrency == "TRY") ||
-                                            ($getcurrency == "GBP") ||
-                                            ($getcurrency == "RON")
-                                        ) { ?>
+                            <?php if (($getcurrency == "USD") || ($getcurrency == "EUR") || ($getcurrency == "GBP")) { ?>
                             <span
                                 class="w-50 text-end text-blue-freedy"><?= number_format(($cost['topup_outside_fxd'] + $fee['topup_outside_fxd'] + $fee['referral_topup_fxd']), 2, ".", ",") ?>
                                 +
