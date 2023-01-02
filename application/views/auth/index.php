@@ -159,7 +159,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
-                                <span class="title mt-2 mb-auto">We make money work in your favor</span>
+                                <span class="title mt-2 mb-auto">Receive funds in 10 FIAT currencies</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -168,7 +168,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
-                                <span class="title mt-2 mb-auto">Easy and fast wherever you are</span>
+                                <span class="title mt-2 mb-auto">Convert, custody, send worldwide in over 50 FIAT currencies</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -237,7 +237,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="#"
+                            <a href="<?=base_url()?>link/soon"
                                 class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Learn more</span>
                             </a>
@@ -536,7 +536,7 @@
         <div class="container py-5">
             <div class="row gy-4">
                 <div class="col-lg col-12 pe-2 footer-links">
-                    <h4 class="f-lexend">Contact us</h4>
+                    <h4 class="f-lexend">Follow us</h4>
                     <div class="list">
                         <a href="#" class="d-flex align-items-center justify-content-start my-1">
                             <!-- <i class="fa fa-envelope"></i> -->
@@ -561,9 +561,9 @@
                     </div>
                 </div>
                 <div class="col-lg col-12 pe-2 footer-links">
-                    <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>link/faq" style="color:#fff;">FAQ</a>
-                    </h4>
+                    <h4 class="f-lexend">&nbsp;
+<!--                        <a href="<?= base_url(); ?>link/faq" style="color:#fff;">FAQ</a>
+-->                    </h4>
                 </div>
                 <div class="col-lg col-12 pe-2 footer-links">
                     <h4 class="f-lexend">
@@ -573,6 +573,11 @@
                 </div>
             </div>
         </div>
+        <div class="container pt-5 pb-4" style="z-index: 99; position: relative;">
+            <div class="credits f-lexend">
+                PiggyBankService (USA) is a service  subject to partnership with licensee PBS Online LLC.
+            </div>
+        </div>        
     </div>
 </footer><!-- End Footer -->
 
