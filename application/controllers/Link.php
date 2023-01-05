@@ -226,11 +226,11 @@ class Link extends CI_Controller
 
         $this->load->view('tamplate/wrapper', $data);
     }
-    public function faq()
+    public function soon()
     {
         $data = array(
-            "title"     => NAMETITLE . " - FAQ",
-            "content"   => "auth/landingpage/faq",
+            "title"     => NAMETITLE . " - Coming Soon",
+            "content"   => "auth/landingpage/soon",
             "extra"     => "auth/landingpage/js/js_index",
         );
 
