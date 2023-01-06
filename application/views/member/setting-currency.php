@@ -49,6 +49,9 @@
                                 ?>
                             </div>
                             <div class="col-9 mb-3">
+                                <!--<span class="com-currency-bimg">If your Topup hasn't arrived, contact the following email address:
+                           support-topup@tracklessmail.com</span>-->
+
                                 <span class="com-currency-bimg">*scroll to see more</span>
                             </div>
                             <div class="col-9 mb-3">

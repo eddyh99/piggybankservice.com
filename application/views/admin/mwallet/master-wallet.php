@@ -20,7 +20,7 @@
                         <thead class="table-success">
                             <tr>
                                 <th>Description</th>
-                                <th>Cost</th>
+                                <th>Trackless Cost</th>
                                 <th>Referral Comission</th>
                                 <th>Piggy Cost</th>
                                 <th>Income</th>

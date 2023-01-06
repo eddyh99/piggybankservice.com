@@ -16,7 +16,7 @@
                         <thead class="table-success">
                             <tr>
                                 <th>Description</th>
-                                <th>Cost</th>
+                                <th>Trackless Cost</th>
                                 <th>Referral Sender</th>
                                 <th>Referral Receiver</th>
                                 <th>Piggy Sender Cost</th>

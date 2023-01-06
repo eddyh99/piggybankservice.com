@@ -29,6 +29,7 @@ $('#tgl').daterangepicker({
 
 var tblhistory =
     $('#tbl_history').DataTable({
+        "order": [[5, 'desc']],
         "scrollX": true,
         "responsive": true,
         "ajax": {
@@ -80,5 +81,8 @@ var tblhistory =
 $('#tgl').on("change", function(e) {
     e.preventDefault();
     tblhistory.ajax.reload();
+    $($.fn.dataTable.tables(true)).DataTable()
+      .columns.adjust()
+      .responsive.recalc();
 });
 </script>
