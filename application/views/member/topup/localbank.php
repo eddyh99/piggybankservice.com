@@ -5,6 +5,7 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12 infobank-list-app input-piggy-style">
                         <div class="py-4">
+                            <img src="<?=base_url()?>assets/img/notif-receive-1.png" alt="" class="img-fluid mb-2">
                             <?php
                             if ($currency == "EUR") {
                             ?>

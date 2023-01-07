@@ -18,7 +18,7 @@ body {
 }
 
 a {
-  color: #1B8036;
+  color: #1b8036;
   text-decoration: none;
 }
 
@@ -54,7 +54,7 @@ section {
   letter-spacing: 1px;
   font-weight: 700;
   margin: 0;
-  color: #1B8036;
+  color: #1b8036;
   text-transform: uppercase;
 }
 
@@ -64,7 +64,7 @@ section {
   font-size: 38px;
   line-height: 42px;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 @media (max-width: 768px) {
@@ -79,7 +79,7 @@ section {
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
-  background: #1B8036;
+  background: #1b8036;
   min-height: 40px;
   margin-top: 82px;
   color: #fff;
@@ -114,11 +114,11 @@ section {
   text-decoration: underline;
 }
 
-.breadcrumbs ol li+li {
+.breadcrumbs ol li + li {
   padding-left: 10px;
 }
 
-.breadcrumbs ol li+li::before {
+.breadcrumbs ol li + li::before {
   display: inline-block;
   padding-right: 10px;
   color: #8894f6;
@@ -135,7 +135,7 @@ section {
   right: 15px;
   bottom: 15px;
   z-index: 99999;
-  background: #1B8036;
+  background: #1b8036;
   width: 40px;
   height: 40px;
   border-radius: 4px;
@@ -149,7 +149,7 @@ section {
 }
 
 .back-to-top.active:hover {
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
   opacity: 1;
 }
@@ -198,7 +198,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #1B8036;
+  color: #1b8036;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -249,13 +249,13 @@ section {
 .navbar a:hover,
 .navbar .active,
 .navbar .active:focus,
-.navbar li:hover>a {
-  color: #1B8036;
+.navbar li:hover > a {
+  color: #1b8036;
 }
 
 .navbar .getstarted,
 .navbar .getstarted:focus {
-  background: #1B8036;
+  background: #1b8036;
   padding: 8px 20px;
   margin-left: 30px;
   border-radius: 4px;
@@ -301,11 +301,11 @@ section {
 
 .navbar .dropdown ul a:hover,
 .navbar .dropdown ul .active:hover,
-.navbar .dropdown ul li:hover>a {
-  color: #1B8036;
+.navbar .dropdown ul li:hover > a {
+  color: #1b8036;
 }
 
-.navbar .dropdown:hover>ul {
+.navbar .dropdown:hover > ul {
   opacity: 1;
   top: 100%;
   visibility: visible;
@@ -317,7 +317,7 @@ section {
   visibility: hidden;
 }
 
-.navbar .dropdown .dropdown:hover>ul {
+.navbar .dropdown .dropdown:hover > ul {
   opacity: 1;
   top: 0;
   left: 100%;
@@ -329,7 +329,7 @@ section {
     left: -90%;
   }
 
-  .navbar .dropdown .dropdown:hover>ul {
+  .navbar .dropdown .dropdown:hover > ul {
     left: -100%;
   }
 }
@@ -395,13 +395,13 @@ section {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
-.navbar-mobile li:hover>a {
-  color: #1B8036;
+.navbar-mobile li:hover > a {
+  color: #1b8036;
 }
 
 .navbar-mobile .getstarted,
@@ -435,11 +435,11 @@ section {
 
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
-.navbar-mobile .dropdown ul li:hover>a {
-  color: #1B8036;
+.navbar-mobile .dropdown ul li:hover > a {
+  color: #1b8036;
 }
 
-.navbar-mobile .dropdown>.dropdown-active {
+.navbar-mobile .dropdown > .dropdown-active {
   display: block;
 }
 
@@ -458,7 +458,7 @@ section {
   margin: 0;
   font-size: 48px;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .hero h2 {
@@ -474,7 +474,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1B8036;
+  background: #1b8036;
   box-shadow: 0px 5px 30px rgba(65, 84, 241, 0.4);
 }
 
@@ -554,14 +554,14 @@ section {
 .about h3 {
   font-size: 14px;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
   text-transform: uppercase;
 }
 
 .about h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .about p {
@@ -575,7 +575,7 @@ section {
   border-radius: 4px;
   transition: 0.5s;
   color: #fff;
-  background: #1B8036;
+  background: #1b8036;
   box-shadow: 0px 5px 25px rgba(65, 84, 241, 0.3);
 }
 
@@ -615,7 +615,7 @@ section {
 
 .values .box h3 {
   font-size: 24px;
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   margin-bottom: 18px;
 }
@@ -648,7 +648,7 @@ section {
   font-size: 42px;
   line-height: 0;
   margin-right: 20px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .counts .count-box span {
@@ -677,7 +677,7 @@ section {
 
 .features .feature-box h3 {
   font-size: 18px;
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   margin: 0;
 }
@@ -693,7 +693,7 @@ section {
 }
 
 .features .feature-box:hover i {
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
 }
 
@@ -702,7 +702,7 @@ section {
 }
 
 .features .feture-tabs h3 {
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 10px;
@@ -723,7 +723,7 @@ section {
   text-transform: uppercase;
   font-size: 15px;
   font-weight: 600;
-  color: #1B8036;
+  color: #1b8036;
   padding: 12px 0;
   margin-right: 25px;
   margin-bottom: -2px;
@@ -731,22 +731,22 @@ section {
 }
 
 .features .feture-tabs .nav-link.active {
-  color: #1B8036;
-  border-bottom: 3px solid #1B8036;
+  color: #1b8036;
+  border-bottom: 3px solid #1b8036;
 }
 
 .features .feture-tabs .tab-content h4 {
   font-size: 18px;
   margin: 0;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .features .feture-tabs .tab-content i {
   font-size: 24px;
   line-height: 0;
   margin-right: 8px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .features .feature-icons {
@@ -754,7 +754,7 @@ section {
 }
 
 .features .feature-icons h3 {
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   font-size: 32px;
   margin-bottom: 20px;
@@ -775,7 +775,7 @@ section {
   font-size: 20px;
   font-weight: 700;
   margin: 0 0 10px 0;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .features .feature-icons .content .icon-box i {
@@ -1016,18 +1016,18 @@ section {
   display: inline-block;
   padding: 8px 40px 10px 40px;
   border-radius: 50px;
-  color: #1B8036;
+  color: #1b8036;
   transition: none;
   font-size: 16px;
   font-weight: 400;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   transition: 0.3s;
-  border: 1px solid #1B8036;
+  border: 1px solid #1b8036;
 }
 
 .pricing .btn-buy:hover {
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
 }
 
@@ -1040,7 +1040,7 @@ section {
   z-index: 1;
   font-size: 14px;
   padding: 1px 0 3px 0;
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
 }
 
@@ -1066,7 +1066,7 @@ section {
 
 .faq .accordion-button:not(.collapsed) {
   background: none;
-  color: #1B8036;
+  color: #1b8036;
   border-bottom: 0;
 }
 
@@ -1104,8 +1104,8 @@ section {
 
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
-  color: #1B8036;
-  border-color: #1B8036;
+  color: #1b8036;
+  border-color: #1b8036;
 }
 
 .portfolio #portfolio-flters li:last-child {
@@ -1183,12 +1183,12 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-info h4 {
   font-size: 20px;
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
 }
 
 .portfolio .portfolio-wrap .portfolio-info p {
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 600;
   font-size: 14px;
   text-transform: uppercase;
@@ -1203,7 +1203,7 @@ section {
 
 .portfolio .portfolio-wrap .portfolio-links a {
   color: #fff;
-  background: #1B8036;
+  background: #1b8036;
   margin: 10px 2px;
   width: 36px;
   height: 36px;
@@ -1265,16 +1265,22 @@ section {
   position: relative;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet {
   width: 12px;
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1B8036;
+  border: 1px solid #1b8036;
 }
 
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1B8036;
+.portfolio-details
+  .portfolio-details-slider
+  .swiper-pagination
+  .swiper-pagination-bullet-active {
+  background-color: #1b8036;
 }
 
 .portfolio-details .portfolio-info {
@@ -1296,7 +1302,7 @@ section {
   font-size: 15px;
 }
 
-.portfolio-details .portfolio-info ul li+li {
+.portfolio-details .portfolio-info ul li + li {
   margin-top: 10px;
 }
 
@@ -1374,11 +1380,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1B8036;
+  border: 1px solid #1b8036;
 }
 
 .testimonials .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1B8036;
+  background-color: #1b8036;
 }
 
 .testimonials .swiper-slide {
@@ -1472,7 +1478,7 @@ section {
   font-weight: 700;
   margin-bottom: 5px;
   font-size: 20px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .team .member .member-info span {
@@ -1522,11 +1528,11 @@ section {
   height: 12px;
   background-color: #fff;
   opacity: 1;
-  border: 1px solid #1B8036;
+  border: 1px solid #1b8036;
 }
 
 .clients .clients-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #1B8036;
+  background-color: #1b8036;
 }
 
 /*--------------------------------------------------------------
@@ -1564,7 +1570,7 @@ section {
 
 .recent-blog-posts .post-box .post-title {
   font-size: 24px;
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   margin-bottom: 18px;
   position: relative;
@@ -1586,7 +1592,7 @@ section {
 }
 
 .recent-blog-posts .post-box:hover .post-title {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .recent-blog-posts .post-box:hover .post-img img {
@@ -1605,12 +1611,12 @@ section {
 .contact .info-box i {
   font-size: 38px;
   line-height: 0;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #1B8036;
+  color: #1b8036;
   font-weight: 700;
   margin: 20px 0 10px 0;
 }
@@ -1679,7 +1685,7 @@ section {
 
 .contact .php-email-form input:focus,
 .contact .php-email-form textarea:focus {
-  border-color: #1B8036;
+  border-color: #1b8036;
 }
 
 .contact .php-email-form input {
@@ -1690,8 +1696,8 @@ section {
   padding: 12px 15px;
 }
 
-.contact .php-email-form button[type=submit] {
-  background: #1B8036;
+.contact .php-email-form button[type="submit"] {
+  background: #1b8036;
   border: 0;
   padding: 10px 30px;
   color: #fff;
@@ -1699,7 +1705,7 @@ section {
   border-radius: 4px;
 }
 
-.contact .php-email-form button[type=submit]:hover {
+.contact .php-email-form button[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -1750,12 +1756,12 @@ section {
 }
 
 .blog .entry .entry-title a {
-  color: #1B8036;
+  color: #1b8036;
   transition: 0.3s;
 }
 
 .blog .entry .entry-title a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .entry .entry-meta {
@@ -1772,7 +1778,7 @@ section {
   margin: 0;
 }
 
-.blog .entry .entry-meta ul li+li {
+.blog .entry .entry-meta ul li + li {
   padding-left: 20px;
 }
 
@@ -1800,7 +1806,7 @@ section {
 
 .blog .entry .entry-content .read-more a {
   display: inline-block;
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
   padding: 6px 20px;
   transition: 0.3s;
@@ -1843,7 +1849,7 @@ section {
   top: 0;
   bottom: 0;
   width: 3px;
-  background-color: #1B8036;
+  background-color: #1b8036;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -1864,7 +1870,7 @@ section {
 }
 
 .blog .entry .entry-footer a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .entry .entry-footer .cats {
@@ -1889,7 +1895,7 @@ section {
   display: inline-block;
 }
 
-.blog .entry .entry-footer .tags li+li::before {
+.blog .entry .entry-footer .tags li + li::before {
   padding-right: 6px;
   color: #6c757d;
   content: ",";
@@ -1923,7 +1929,7 @@ section {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .blog-author .social-links {
@@ -1973,12 +1979,12 @@ section {
 }
 
 .blog .blog-comments .comment h5 a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .blog-comments .comment h5 .reply i {
@@ -2041,7 +2047,7 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #1B8036;
+  background-color: #1b8036;
 }
 
 .blog .blog-comments .reply-form .btn-primary:hover {
@@ -2065,7 +2071,7 @@ section {
 }
 
 .blog .blog-pagination li a {
-  color: #1B8036;
+  color: #1b8036;
   padding: 7px 16px;
   display: flex;
   align-items: center;
@@ -2074,7 +2080,7 @@ section {
 
 .blog .blog-pagination li.active,
 .blog .blog-pagination li:hover {
-  background: #1B8036;
+  background: #1b8036;
 }
 
 .blog .blog-pagination li.active a,
@@ -2093,7 +2099,7 @@ section {
   font-weight: 700;
   padding: 0 0 0 0;
   margin: 0 0 15px 0;
-  color: #1B8036;
+  color: #1b8036;
   position: relative;
 }
 
@@ -2108,7 +2114,7 @@ section {
   position: relative;
 }
 
-.blog .sidebar .search-form form input[type=text] {
+.blog .sidebar .search-form form input[type="text"] {
   border: 0;
   padding: 4px;
   border-radius: 4px;
@@ -2125,7 +2131,7 @@ section {
   font-size: 16px;
   padding: 0 15px;
   margin: -1px;
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
   transition: 0.3s;
   border-radius: 0 4px 4px 0;
@@ -2145,17 +2151,17 @@ section {
   padding: 0;
 }
 
-.blog .sidebar .categories ul li+li {
+.blog .sidebar .categories ul li + li {
   padding-top: 10px;
 }
 
 .blog .sidebar .categories ul a {
-  color: #1B8036;
+  color: #1b8036;
   transition: 0.3s;
 }
 
 .blog .sidebar .categories ul a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .sidebar .categories ul a span {
@@ -2164,7 +2170,7 @@ section {
   font-size: 14px;
 }
 
-.blog .sidebar .recent-posts .post-item+.post-item {
+.blog .sidebar .recent-posts .post-item + .post-item {
   margin-top: 15px;
 }
 
@@ -2180,12 +2186,12 @@ section {
 }
 
 .blog .sidebar .recent-posts h4 a {
-  color: #1B8036;
+  color: #1b8036;
   transition: 0.3s;
 }
 
 .blog .sidebar .recent-posts h4 a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .blog .sidebar .recent-posts time {
@@ -2221,8 +2227,8 @@ section {
 
 .blog .sidebar .tags ul a:hover {
   color: #fff;
-  border: 1px solid #1B8036;
-  background: #1B8036;
+  border: 1px solid #1b8036;
+  background: #1b8036;
 }
 
 .blog .sidebar .tags ul a span {
@@ -2235,7 +2241,12 @@ section {
 # Footer
 --------------------------------------------------------------*/
 .footer {
-  background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
+  background: linear-gradient(
+    100.66deg,
+    #1b8036 23.13%,
+    rgba(8, 63, 26, 0.92) 82.12%,
+    rgba(8, 63, 26, 0.86) 97.79%
+  );
   padding: 0 0 30px 0;
   font-size: 14px;
 }
@@ -2252,7 +2263,7 @@ section {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .footer .footer-newsletter form {
@@ -2264,13 +2275,13 @@ section {
   border: 1px solid #e1ecff;
 }
 
-.footer .footer-newsletter form input[type=email] {
+.footer .footer-newsletter form input[type="email"] {
   border: 0;
   padding: 8px;
   width: calc(100% - 140px);
 }
 
-.footer .footer-newsletter form input[type=submit] {
+.footer .footer-newsletter form input[type="submit"] {
   position: absolute;
   top: 0;
   right: 0;
@@ -2280,13 +2291,13 @@ section {
   font-size: 16px;
   padding: 0 30px;
   margin: 3px;
-  background: #1B8036;
+  background: #1b8036;
   color: #fff;
   transition: 0.3s;
   border-radius: 4px;
 }
 
-.footer .footer-newsletter form input[type=submit]:hover {
+.footer .footer-newsletter form input[type="submit"]:hover {
   background: #5969f3;
 }
 
@@ -2322,7 +2333,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
-  color: #1B8036;
+  color: #1b8036;
   font-family: "Nunito", sans-serif;
   margin-top: 3px;
 }
@@ -2344,13 +2355,13 @@ section {
 }
 
 .footer .footer-top .social-links a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .footer .footer-top h4 {
   font-size: 16px;
   font-weight: bold;
-  color: #1B8036;
+  color: #1b8036;
   text-transform: uppercase;
   position: relative;
   padding-bottom: 12px;
@@ -2391,7 +2402,7 @@ section {
 }
 
 .footer .footer-top .footer-links ul a:hover {
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .footer .footer-top .footer-contact p {
@@ -2411,7 +2422,6 @@ section {
   color: #fff;
 }
 
-
 /* Freedy */
 .text-blue-freedy {
   color: rgba(28, 103, 1, 1) !important;
@@ -2426,41 +2436,40 @@ section {
 }
 
 .f-lexend {
-  font-family: 'Lexend', sans-serif !important;
+  font-family: "Lexend", sans-serif !important;
 }
 
 .f-bevietnam {
-  font-family: 'Be Vietnam Pro', sans-serif !important;
+  font-family: "Be Vietnam Pro", sans-serif !important;
 }
 
 .f-poppins {
-  font-family: 'Poppins', sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 
 .f-roboto {
-  font-family: 'Roboto', sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 
 .f-publicsans {
-  font-family: 'Public Sans', sans-serif !important;
+  font-family: "Public Sans", sans-serif !important;
 }
 
 .g-b {
-  color: #4285F4;
+  color: #4285f4;
 }
 
 .g-r {
-  color: #DB4437;
+  color: #db4437;
 }
 
 .g-y {
-  color: #F4B400;
+  color: #f4b400;
 }
 
 .g-g {
-  color: #0F9D58;
+  color: #0f9d58;
 }
-
 
 @media (max-width: 575px) {
   .nav-link.navbar-freedy {
@@ -2480,19 +2489,22 @@ section {
   }
 
   .nav-link.navbar-freedy.active {
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-signin,
   .navbar .btn-signin:focus {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 8px;
     color: #fff;
 
     border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border-image-source: linear-gradient(
+      to left rgba(52, 48, 250, 1),
+      rgba(24, 147, 237, 1)
+    );
   }
 
   .navbar .btn-signin:hover,
@@ -2505,19 +2517,19 @@ section {
     padding: 8px 20px;
     margin-left: 30px;
 
-    background: #FFF;
-    border: 4px solid #1B8036;
+    background: #fff;
+    border: 4px solid #1b8036;
     filter: drop-shadow(3px 3px 3px rgba(327, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     filter: drop-shadow(4px 4px 4px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .slider-freedy h1 {
@@ -2525,7 +2537,7 @@ section {
     font-size: 40px;
     line-height: 114%;
 
-    color: #1B8036;
+    color: #1b8036;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
@@ -2536,7 +2548,7 @@ section {
 
     letter-spacing: -0.015em;
 
-    color: #2384E9;
+    color: #2384e9;
   }
 
   .slider-freedy p {
@@ -2553,7 +2565,7 @@ section {
 
     /* Style */
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .hero .btn-slider-signin {
@@ -2563,7 +2575,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
 
@@ -2575,7 +2587,7 @@ section {
     padding: 30px;
     box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     border-radius: 18px;
     /* min-width: 417px; */
     min-height: 222px;
@@ -2593,7 +2605,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy span {
@@ -2601,7 +2613,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy a {
@@ -2611,7 +2623,7 @@ section {
 
     text-decoration-line: underline;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy:hover {
@@ -2648,7 +2660,7 @@ section {
     font-size: 14px;
     line-height: 180%;
 
-    color: #6D6E70;
+    color: #6d6e70;
   }
 
   .about .btn-content-freedy {
@@ -2656,7 +2668,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -2704,9 +2716,8 @@ section {
   }
 
   .service-freedy .box-service {
-
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     /* Drop Shadow */
 
     box-shadow: 0px 8px 8px 6px rgba(0, 0, 0, 0.25);
@@ -2719,7 +2730,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .service-freedy .box-service a {
@@ -2768,7 +2779,7 @@ section {
     background: url(../img/line-list.png) no-repeat left center !important;
     background-size: 1rem auto !important;
     padding: 0 0 0 2rem;
-    margin: 0 0 .75rem 0;
+    margin: 0 0 0.75rem 0;
     list-style: none;
   }
 
@@ -2792,8 +2803,8 @@ section {
 
   .features-freedy .box-features {
     min-height: 250px;
-    background: #FFF;
-    border: 3px solid #1B8036;
+    background: #fff;
+    border: 3px solid #1b8036;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
   }
@@ -2812,7 +2823,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .features-freedy .box-features img {
@@ -2825,8 +2836,8 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3430fa;
     border-radius: 44px;
   }
 
@@ -2846,7 +2857,6 @@ section {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom;
-
   }
 
   .logo-footer img {
@@ -2871,14 +2881,14 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-links .list a {
     font-weight: 400;
     font-size: 10px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .book-footer {
@@ -2926,7 +2936,7 @@ section {
   }
 
   .box-form {
-    background: #FFFFFF;
+    background: #ffffff;
 
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -2974,7 +2984,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-form img {
@@ -2995,7 +3005,7 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy input,
@@ -3020,7 +3030,7 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
     background: transparent;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
 
     font-weight: 400;
     font-size: 12px;
@@ -3028,17 +3038,17 @@ section {
   }
 
   .form-login-freedy .bg-black {
-    background: #161E25 !important;
+    background: #161e25 !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black.bg-disable {
     background: rgba(22, 30, 37, 0.45) !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black textarea {
@@ -3071,7 +3081,7 @@ section {
     font-weight: 600;
     font-size: 12px;
     line-height: 16px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy label {
@@ -3091,7 +3101,7 @@ section {
   }
 
   .form-login-freedy .btn-login {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 5px;
     font-weight: 500;
     font-size: 12px;
@@ -3100,13 +3110,13 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-login {
     position: fixed;
     bottom: 0;
-    background: #1B8036;
+    background: #1b8036;
     height: 10vh;
   }
 
@@ -3118,48 +3128,47 @@ section {
     font-size: 17px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
-  .navbar-app>.box-navbar-freedy {
-    background: #FFFFFF;
+  .navbar-app > .box-navbar-freedy {
+    background: #ffffff;
 
     padding: 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a {
+  .navbar-app > .box-navbar-freedy a {
     margin: 0 2rem;
 
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    color: #1B8036;
+    color: #1b8036;
     text-align: center;
 
-
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     border-radius: 10px;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #1B8036;
-    padding: 1rem .25rem;
+  .navbar-app > .box-navbar-freedy a .icon-menus {
+    color: #1b8036;
+    padding: 1rem 0.25rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus>svg {
-    stroke: #1B8036;
-    fill: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus > svg {
+    stroke: #1b8036;
+    fill: #1b8036;
     width: auto;
     height: 20px;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>svg {
-    stroke: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > svg {
+    stroke: #1b8036;
     fill: #fff;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > img {
     height: 75px;
   }
 
@@ -3174,23 +3183,33 @@ section {
   }
 
   .box-code-freedy .currency-btn-setting a {
-
-    background: #1B8036;
-    border: 1px solid rgba(35, 131, 44, .47);
+    background: #1b8036;
+    border: 1px solid rgba(35, 131, 44, 0.47);
     border-radius: 10px;
 
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-  .box-code-freedy>span {
+  .box-code-freedy > span {
     font-weight: 600;
     font-size: 9px;
     line-height: 17px;
-    color: #1B8036;
+    color: #1b8036;
+  }
+
+  .text-green-alert {
+    font-weight: 600;
+    font-size: 9px;
+    line-height: 17px;
+    color: #1b8036 !important;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .copy-uqcode span {
@@ -3200,7 +3219,7 @@ section {
     font-size: 14px;
     line-height: 17px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .copy-uqcode img {
@@ -3219,7 +3238,7 @@ section {
     font-size: 16px;
     line-height: 30px;
 
-    background: #FBFBFB;
+    background: #fbfbfb;
     border-radius: 13px;
     border: 3px solid rgba(35, 131, 44, 1);
     color: #000000;
@@ -3242,8 +3261,8 @@ section {
   }
 
   .copy-refcode input {
-    background: #BDFFCF;
-    color: #1C6701 !important;
+    background: #bdffcf;
+    color: #1c6701 !important;
   }
 
   .copy-uqcode input {
@@ -3265,19 +3284,19 @@ section {
   }
 
   .menus-list-app a {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
 
     font-weight: 500;
     font-size: 21px;
     line-height: 32px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .menus-list-app a.menus-blue {
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
     border-radius: 20px;
     color: #000000;
 
@@ -3287,9 +3306,9 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
-    color: #FFF;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
+    color: #fff;
   }
 
   .menus-list-app a.menus-blue svg {
@@ -3298,7 +3317,7 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover svg {
-    fill: #FFFFFF;
+    fill: #ffffff;
     stroke: none;
   }
 
@@ -3321,11 +3340,10 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .curencies-list-app .curencies-list {
-
     border: 1px solid rgba(35, 131, 44, 1);
     border-radius: 5px;
     color: #000000;
@@ -3333,19 +3351,18 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
     border-radius: 5px;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .currency-selection .select-hidden {
@@ -3370,7 +3387,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -3393,7 +3410,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -3427,9 +3444,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -3443,7 +3460,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .currency-selection .select-options li:hover,
@@ -3457,7 +3474,7 @@ section {
   }
 
   .setting-currency {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -3467,7 +3484,7 @@ section {
 
     color: #000000;
 
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .setting-currency svg {
@@ -3480,7 +3497,7 @@ section {
     font-size: 45px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .saldo-freedy input {
@@ -3495,7 +3512,7 @@ section {
     font-size: 24px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .balance-text {
@@ -3511,11 +3528,11 @@ section {
   }
 
   .transaction {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .transaction .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -3529,7 +3546,6 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-
 
     color: #000000;
   }
@@ -3545,7 +3561,7 @@ section {
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -3557,10 +3573,9 @@ section {
     display: none;
   }
 
-
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
   }
 
   .list-transaction img {
@@ -3588,7 +3603,7 @@ section {
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .transaction .info-saldo-wallet span {
@@ -3604,18 +3619,18 @@ section {
   }
 
   .form-send-wallet input {
-    border: 1px solid #1B8036;
-    filter: drop-shadow(0px 2px 2px #00D1FF);
+    border: 1px solid #1b8036;
+    filter: drop-shadow(0px 2px 2px #00d1ff);
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .form-send-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .settings-currency .back-btn-transaction img {
@@ -3623,10 +3638,10 @@ section {
   }
 
   .settings-currency .btn-currency {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 35px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 35px #3430fa;
     border-radius: 44px;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
     color: #fff;
     font-size: 24px;
   }
@@ -3658,7 +3673,7 @@ section {
     font-size: 14px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency {
@@ -3682,14 +3697,14 @@ section {
     font-size: 12px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency input.pill-currency {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #EFEFEF !important;
+    background-color: #efefef !important;
     background: url(../img/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -3701,7 +3716,7 @@ section {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -3709,7 +3724,7 @@ section {
   }
 
   .form-confirm .form-confirm-input {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 25px;
     min-height: 200px;
     padding: 1rem;
@@ -3719,11 +3734,11 @@ section {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .btn-selected-receive {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 45px;
     padding: 1rem 2rem;
     margin: 0 1rem;
@@ -3731,8 +3746,8 @@ section {
 
   .btn-selected-receive input,
   .btn-selected-receive label {
-    margin: 0 .5rem;
-    padding: .5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
   }
 
   .btn-selected-receive label {
@@ -3747,7 +3762,7 @@ section {
   }
 
   .box-tab-currency {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 1rem 1.5rem;
@@ -3784,7 +3799,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -3807,7 +3822,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -3841,9 +3856,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -3857,7 +3872,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .swap-selection .select-options li:hover,
@@ -3875,8 +3890,8 @@ section {
   }
 
   .swap-form-icon {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
   }
 
@@ -3884,33 +3899,33 @@ section {
   .swap-form-icon input {
     border: 0;
     box-shadow: 0;
-    padding: .5rem 2rem;
-    background: #FFFFFF;
+    padding: 0.5rem 2rem;
+    background: #ffffff;
     border-radius: 20px;
     margin-bottom: 0;
   }
 
   .swap-form-icon input[readonly] {
-    background: #FFFFFF !important;
+    background: #ffffff !important;
   }
 
   .swap .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .app-container .title-confirm {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .border-top-freedy {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .back-btn-transaction span.title-top {
@@ -3926,7 +3941,7 @@ section {
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-confirm span.title-convert {
@@ -3938,24 +3953,23 @@ section {
   }
 
   .form-confirm span.amout-convert {
-    background: #FFFFFF;
+    background: #ffffff;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 5px 15px 25px rgba(47, 102, 246, 0.25);
     border-radius: 12px;
     padding: 1rem 2rem;
     text-align: end;
 
-
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-tab-bank input {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -3963,7 +3977,7 @@ section {
   }
 
   .box-tab-bank select {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -3971,7 +3985,7 @@ section {
 
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
   }
 
@@ -3981,13 +3995,13 @@ section {
 
   .box-tab-bank input:focus,
   .box-tab-bank select:focus {
-    background: #1B8036;
+    background: #1b8036;
     border: 0;
     color: #fff;
   }
 
   .search-page .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -4002,46 +4016,43 @@ section {
     font-size: 12px;
     line-height: 21px;
 
-
     color: #000000;
   }
 
   .select-transaction a {
-    background: #1B8036;
-    border: 3px solid #1B8036;
+    background: #1b8036;
+    border: 3px solid #1b8036;
     border-radius: 20px;
     padding: 1rem;
-
 
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
 
-
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .select-transaction a:hover {
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     border-radius: 20px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .qr-receive-wallet img {
     height: 300px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 20px;
     padding: 1rem;
   }
 
   .qr-receive-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
     font-size: 16px;
   }
 
@@ -4054,19 +4065,18 @@ section {
   }
 
   .app-confirm span {
-
     font-weight: 300;
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-title span {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-note span {
@@ -4096,7 +4106,7 @@ section {
   }
 
   .recive-bank a {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -4107,7 +4117,7 @@ section {
   }
 
   .recive-bank a:hover {
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -4118,8 +4128,8 @@ section {
   }
 
   .infobank-list-app {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -4127,9 +4137,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border-radius: 14px;
   }
 
@@ -4137,9 +4147,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border-radius: 14px;
   }
 
@@ -4148,7 +4158,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .b-qr {
@@ -4156,7 +4166,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .list-send-wallet span {
@@ -4164,7 +4174,7 @@ section {
     font-size: 20px;
     line-height: 24px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .w-receive img {
@@ -4183,14 +4193,14 @@ section {
   }
 
   .swap-selection select {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
 
     background-color: #fff !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
 
     width: 150px;
@@ -4218,7 +4228,7 @@ section {
     font-weight: 600;
     font-size: 24px !important;
     line-height: 110%;
-    color: #1B8036 !important;
+    color: #1b8036 !important;
   }
 
   .subtitle-top-header {
@@ -4229,7 +4239,7 @@ section {
   }
 
   .freedy-accordion-item {
-    border: 3px solid #1B8036 !important;
+    border: 3px solid #1b8036 !important;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
   }
@@ -4237,7 +4247,6 @@ section {
   .freedy-accordion-button {
     border-radius: 10px !important;
   }
-
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
@@ -4253,7 +4262,7 @@ section {
     font-weight: 700;
     font-size: 16px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-title-accordion .small {
@@ -4271,18 +4280,18 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 5px;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
   .freedy-card.piggy {
-    background: #DBFFE9;
+    background: #dbffe9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
@@ -4296,7 +4305,6 @@ section {
     line-height: 110%;
 
     color: #000000;
-
   }
 
   .freedy-card .card-text {
@@ -4372,13 +4380,12 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 52px;
-    color: #474C51;
+    color: #474c51;
   }
 
   .translate-link:hover {
-    color: #474C51;
+    color: #474c51;
   }
-
 
   .hori-timeline .events .event-list {
     display: block;
@@ -4411,7 +4418,7 @@ section {
   .list-inline .list-inline-item:not(:last-child):after {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 0;
     position: absolute;
     left: 7.5rem;
@@ -4421,7 +4428,7 @@ section {
   .list-inline .list-inline-item:not(:first-child):before {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 0;
     position: absolute;
     right: 7.5rem;
@@ -4429,7 +4436,7 @@ section {
   }
 
   .bg-line-circle {
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     height: 25px !important;
     width: 25px !important;
     border-radius: 100% !important;
@@ -4439,7 +4446,7 @@ section {
     position: absolute;
     top: 25px;
     font-size: 24px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .currency-img-list img {
@@ -4458,7 +4465,7 @@ section {
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     background-color: transparent;
   }
 
@@ -4481,12 +4488,12 @@ section {
     font-size: 14px;
     line-height: 22px;
     text-decoration-line: underline;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .attention-modal {
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -4512,20 +4519,19 @@ section {
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     color: #000000;
   }
 
   .attention-modal .modal-body ul li img {
     height: 125px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
-
 
   /* PIGGY */
   .reward {
-    background: #1B8036;
+    background: #1b8036;
     border: 1px solid #000000;
     border-radius: 20px;
   }
@@ -4539,8 +4545,7 @@ section {
     font-size: 36px;
     line-height: 110%;
 
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward p,
@@ -4548,8 +4553,7 @@ section {
     font-weight: 500;
     font-size: 16px;
     line-height: 180%;
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward a.readmore {
@@ -4557,14 +4561,14 @@ section {
     font-size: 16px;
     line-height: 20px;
 
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
+    color: #ffffff;
+    border: 4px solid #ffffff;
     filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
   }
 
   .list-different .items-different {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 12px 30px 17px rgba(0, 115, 25, 0.08);
     border-radius: 10px;
     min-height: 250px;
@@ -4579,7 +4583,7 @@ section {
     font-size: 18px;
     line-height: 30px;
 
-    color: #292D33;
+    color: #292d33;
   }
 
   .list-different .items-different a {
@@ -4588,11 +4592,16 @@ section {
     line-height: 24px;
     text-decoration-line: underline;
 
-    color: #1C6701;
+    color: #1c6701;
   }
 
   .box-contactus {
-    background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
+    background: linear-gradient(
+      100.66deg,
+      #1b8036 23.13%,
+      rgba(8, 63, 26, 0.92) 82.12%,
+      rgba(8, 63, 26, 0.86) 97.79%
+    );
     border-radius: 24.8718px;
   }
 
@@ -4601,7 +4610,7 @@ section {
   }
 
   .form-contactus {
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 107.698px;
 
     display: flex;
@@ -4619,15 +4628,15 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #6C6B6B;
+    color: #6c6b6b;
 
     max-width: 125px;
   }
 
   .btn-contactus {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 30.1554px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     display: flex;
     flex-direction: row;
@@ -4638,7 +4647,6 @@ section {
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-
   }
 
   .btn-contactus img {
@@ -4647,8 +4655,8 @@ section {
 
   .crypto-list-page {
     min-height: auto;
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     text-align: center;
   }
 
@@ -4662,7 +4670,7 @@ section {
     font-size: 20px;
     line-height: 42px;
 
-    background: linear-gradient(0deg, #1B8036, #1B8036);
+    background: linear-gradient(0deg, #1b8036, #1b8036);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -4678,46 +4686,42 @@ section {
 }
 
 @media (min-width: 375px) {
-
-  .navbar-app>.box-navbar-freedy {
-    background: #FFFFFF;
+  .navbar-app > .box-navbar-freedy {
+    background: #ffffff;
 
     padding: 1rem;
   }
 
-
-  .navbar-app>.box-navbar-freedy a {
+  .navbar-app > .box-navbar-freedy a {
     margin: 0 2rem;
 
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    color: #1B8036;
+    color: #1b8036;
     text-align: center;
 
-
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     border-radius: 10px;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #1B8036;
-    padding: 1rem .25rem;
+  .navbar-app > .box-navbar-freedy a .icon-menus {
+    color: #1b8036;
+    padding: 1rem 0.25rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus>svg {
-    stroke: #1B8036;
-    fill: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus > svg {
+    stroke: #1b8036;
+    fill: #1b8036;
     width: auto;
     height: 20px;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>svg {
-    stroke: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > svg {
+    stroke: #1b8036;
     fill: #fff;
   }
-
 }
 
 @media (min-width: 576px) {
@@ -4738,19 +4742,22 @@ section {
   }
 
   .nav-link.navbar-freedy.active {
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-signin,
   .navbar .btn-signin:focus {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 8px;
     color: #fff;
 
     border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border-image-source: linear-gradient(
+      to left rgba(52, 48, 250, 1),
+      rgba(24, 147, 237, 1)
+    );
   }
 
   .navbar .btn-signin:hover,
@@ -4763,19 +4770,19 @@ section {
     padding: 8px 20px;
     margin-left: 30px;
 
-    background: #FFF;
-    border: 4px solid #1B8036;
+    background: #fff;
+    border: 4px solid #1b8036;
     filter: drop-shadow(3px 3px 3px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     filter: drop-shadow(4px 4px 4px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .slider-freedy h1 {
@@ -4783,7 +4790,7 @@ section {
     font-size: 40px;
     line-height: 114%;
 
-    color: #1B8036;
+    color: #1b8036;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
@@ -4794,7 +4801,7 @@ section {
 
     letter-spacing: -0.015em;
 
-    color: #2384E9;
+    color: #2384e9;
   }
 
   .slider-freedy p {
@@ -4811,7 +4818,7 @@ section {
 
     /* Style */
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .hero .btn-slider-signin {
@@ -4821,7 +4828,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
 
@@ -4833,7 +4840,7 @@ section {
     padding: 30px;
     box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     border-radius: 18px;
     /* min-width: 417px; */
     min-height: 222px;
@@ -4851,7 +4858,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy span {
@@ -4859,7 +4866,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy a {
@@ -4869,7 +4876,7 @@ section {
 
     text-decoration-line: underline;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy:hover {
@@ -4906,7 +4913,7 @@ section {
     font-size: 16px;
     line-height: 180%;
 
-    color: #6D6E70;
+    color: #6d6e70;
   }
 
   .about .btn-content-freedy {
@@ -4914,7 +4921,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -4962,9 +4969,8 @@ section {
   }
 
   .service-freedy .box-service {
-
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     /* Drop Shadow */
 
     box-shadow: 0px 8px 8px 6px rgba(0, 0, 0, 0.25);
@@ -4977,7 +4983,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .service-freedy .box-service a {
@@ -4996,7 +5002,6 @@ section {
   .img-fluid.phone-card {
     max-width: 300px;
   }
-
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
@@ -5027,7 +5032,7 @@ section {
     background: url(../img/line-list.png) no-repeat left center !important;
     background-size: 1rem auto !important;
     padding: 0 0 0 2rem;
-    margin: 0 0 .75rem 0;
+    margin: 0 0 0.75rem 0;
     list-style: none;
   }
 
@@ -5051,8 +5056,8 @@ section {
 
   .features-freedy .box-features {
     min-height: 250px;
-    background: #FFF;
-    border: 3px solid #1B8036;
+    background: #fff;
+    border: 3px solid #1b8036;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
   }
@@ -5071,7 +5076,7 @@ section {
     font-size: 16px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .features-freedy .box-features img {
@@ -5084,8 +5089,8 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3430fa;
     border-radius: 44px;
   }
 
@@ -5129,14 +5134,14 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-links .list a {
     font-weight: 400;
     font-size: 12px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .book-footer {
@@ -5184,7 +5189,7 @@ section {
   }
 
   .box-form {
-    background: #FFFFFF;
+    background: #ffffff;
 
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -5217,7 +5222,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-form img {
@@ -5238,7 +5243,7 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy input,
@@ -5263,7 +5268,7 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
     background: transparent;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
 
     font-weight: 400;
     font-size: 14px;
@@ -5271,17 +5276,17 @@ section {
   }
 
   .form-login-freedy .bg-black {
-    background: #161E25 !important;
+    background: #161e25 !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black.bg-disable {
     background: rgba(22, 30, 37, 0.45) !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black textarea {
@@ -5314,7 +5319,7 @@ section {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy label {
@@ -5334,7 +5339,7 @@ section {
   }
 
   .form-login-freedy .btn-login {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 5px;
     font-weight: 500;
     font-size: 14px;
@@ -5343,13 +5348,13 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-login {
     position: fixed;
     bottom: 0;
-    background: #1B8036;
+    background: #1b8036;
     height: 10vh;
   }
 
@@ -5361,48 +5366,47 @@ section {
     font-size: 17px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
-  .navbar-app>.box-navbar-freedy {
-    background: #FFFFFF;
+  .navbar-app > .box-navbar-freedy {
+    background: #ffffff;
 
     padding: 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a {
+  .navbar-app > .box-navbar-freedy a {
     margin: 0 2rem;
 
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    color: #1B8036;
+    color: #1b8036;
     text-align: center;
 
-
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     border-radius: 10px;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #1B8036;
-    padding: 1rem .25rem;
+  .navbar-app > .box-navbar-freedy a .icon-menus {
+    color: #1b8036;
+    padding: 1rem 0.25rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus>svg {
-    stroke: #1B8036;
-    fill: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus > svg {
+    stroke: #1b8036;
+    fill: #1b8036;
     width: auto;
     height: 25px;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>svg {
-    stroke: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > svg {
+    stroke: #1b8036;
     fill: #fff;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > img {
     height: 75px;
   }
 
@@ -5417,23 +5421,33 @@ section {
   }
 
   .box-code-freedy .currency-btn-setting a {
-
-    background: #1B8036;
-    border: 1px solid rgba(35, 131, 44, .47);
+    background: #1b8036;
+    border: 1px solid rgba(35, 131, 44, 0.47);
     border-radius: 10px;
 
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-  .box-code-freedy>span {
+  .box-code-freedy > span {
     font-weight: 600;
     font-size: 10px;
     line-height: 17px;
-    color: #1B8036;
+    color: #1b8036;
+  }
+
+  .text-green-alert {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 17px;
+    color: #1b8036 !important;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .copy-uqcode span {
@@ -5443,7 +5457,7 @@ section {
     font-size: 14px;
     line-height: 17px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .copy-uqcode img {
@@ -5462,7 +5476,7 @@ section {
     font-size: 16px;
     line-height: 30px;
 
-    background: #FBFBFB;
+    background: #fbfbfb;
     border-radius: 13px;
     border: 3px solid rgba(35, 131, 44, 1);
     color: #000000;
@@ -5485,8 +5499,8 @@ section {
   }
 
   .copy-refcode input {
-    background: #BDFFCF;
-    color: #1C6701 !important;
+    background: #bdffcf;
+    color: #1c6701 !important;
   }
 
   .copy-uqcode input {
@@ -5508,19 +5522,19 @@ section {
   }
 
   .menus-list-app a {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
 
     font-weight: 500;
     font-size: 21px;
     line-height: 32px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .menus-list-app a.menus-blue {
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
     border-radius: 20px;
     color: #000000;
 
@@ -5530,9 +5544,9 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
-    color: #FFF;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
+    color: #fff;
   }
 
   .menus-list-app a.menus-blue svg {
@@ -5541,7 +5555,7 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover svg {
-    fill: #FFFFFF;
+    fill: #ffffff;
     stroke: none;
   }
 
@@ -5560,16 +5574,14 @@ section {
   }
 
   .curencies-list-app .title-curencies-list span {
-
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .curencies-list-app .curencies-list {
-
     border: 1px solid rgba(35, 131, 44, 1);
     border-radius: 5px;
     color: #000000;
@@ -5580,15 +5592,15 @@ section {
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
     border-radius: 5px;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .currency-selection .select-hidden {
@@ -5613,7 +5625,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -5636,7 +5648,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -5670,9 +5682,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -5686,7 +5698,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .currency-selection .select-options li:hover,
@@ -5700,7 +5712,7 @@ section {
   }
 
   .setting-currency {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -5710,7 +5722,7 @@ section {
 
     color: #000000;
 
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .setting-currency svg {
@@ -5723,7 +5735,7 @@ section {
     font-size: 45px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .saldo-freedy input {
@@ -5738,7 +5750,7 @@ section {
     font-size: 24px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .balance-text {
@@ -5754,11 +5766,11 @@ section {
   }
 
   .transaction {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .transaction .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -5772,7 +5784,6 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-
 
     color: #000000;
   }
@@ -5788,7 +5799,7 @@ section {
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -5800,10 +5811,9 @@ section {
     display: none;
   }
 
-
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
   }
 
   .list-transaction img {
@@ -5831,7 +5841,7 @@ section {
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .transaction .info-saldo-wallet span {
@@ -5847,18 +5857,18 @@ section {
   }
 
   .form-send-wallet input {
-    border: 1px solid #1B8036;
-    filter: drop-shadow(0px 2px 2px #00D1FF);
+    border: 1px solid #1b8036;
+    filter: drop-shadow(0px 2px 2px #00d1ff);
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .form-send-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .settings-currency .back-btn-transaction img {
@@ -5866,10 +5876,10 @@ section {
   }
 
   .settings-currency .btn-currency {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 35px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 35px #3430fa;
     border-radius: 44px;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
     color: #fff;
     font-size: 24px;
   }
@@ -5901,7 +5911,7 @@ section {
     font-size: 14px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency {
@@ -5925,14 +5935,14 @@ section {
     font-size: 12px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency input.pill-currency {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #EFEFEF !important;
+    background-color: #efefef !important;
     background: url(../img/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -5944,7 +5954,7 @@ section {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -5952,7 +5962,7 @@ section {
   }
 
   .form-confirm .form-confirm-input {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 25px;
     min-height: 200px;
     padding: 1rem;
@@ -5962,11 +5972,11 @@ section {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .btn-selected-receive {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 45px;
     padding: 1rem 2rem;
     margin: 0 1rem;
@@ -5974,8 +5984,8 @@ section {
 
   .btn-selected-receive input,
   .btn-selected-receive label {
-    margin: 0 .5rem;
-    padding: .5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
   }
 
   .btn-selected-receive label {
@@ -5990,7 +6000,7 @@ section {
   }
 
   .box-tab-currency {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 1rem 1.5rem;
@@ -6027,7 +6037,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -6050,7 +6060,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -6084,9 +6094,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -6100,7 +6110,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .swap-selection .select-options li:hover,
@@ -6118,8 +6128,8 @@ section {
   }
 
   .swap-form-icon {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
   }
 
@@ -6127,33 +6137,33 @@ section {
   .swap-form-icon input {
     border: 0;
     box-shadow: 0;
-    padding: .5rem 2rem;
-    background: #FFFFFF;
+    padding: 0.5rem 2rem;
+    background: #ffffff;
     border-radius: 20px;
     margin-bottom: 0;
   }
 
   .swap-form-icon input[readonly] {
-    background: #FFFFFF !important;
+    background: #ffffff !important;
   }
 
   .swap .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .app-container .title-confirm {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .border-top-freedy {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .back-btn-transaction span.title-top {
@@ -6169,7 +6179,7 @@ section {
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-confirm span.title-convert {
@@ -6181,24 +6191,23 @@ section {
   }
 
   .form-confirm span.amout-convert {
-    background: #FFFFFF;
+    background: #ffffff;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 5px 15px 25px rgba(47, 102, 246, 0.25);
     border-radius: 12px;
     padding: 1rem 2rem;
     text-align: end;
 
-
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-tab-bank input {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -6206,7 +6215,7 @@ section {
   }
 
   .box-tab-bank select {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -6214,7 +6223,7 @@ section {
 
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
   }
 
@@ -6224,13 +6233,13 @@ section {
 
   .box-tab-bank input:focus,
   .box-tab-bank select:focus {
-    background: #1B8036;
+    background: #1b8036;
     border: 0;
     color: #fff;
   }
 
   .search-page .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -6245,46 +6254,43 @@ section {
     font-size: 12px;
     line-height: 21px;
 
-
     color: #000000;
   }
 
   .select-transaction a {
-    background: #1B8036;
-    border: 3px solid #1B8036;
+    background: #1b8036;
+    border: 3px solid #1b8036;
     border-radius: 20px;
     padding: 1rem;
-
 
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
 
-
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .select-transaction a:hover {
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     border-radius: 20px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .qr-receive-wallet img {
     height: 300px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 20px;
     padding: 1rem;
   }
 
   .qr-receive-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
     font-size: 16px;
   }
 
@@ -6297,19 +6303,18 @@ section {
   }
 
   .app-confirm span {
-
     font-weight: 300;
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-title span {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-note span {
@@ -6339,7 +6344,7 @@ section {
   }
 
   .recive-bank a {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -6350,7 +6355,7 @@ section {
   }
 
   .recive-bank a:hover {
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -6361,8 +6366,8 @@ section {
   }
 
   .infobank-list-app {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -6370,9 +6375,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border-radius: 14px;
   }
 
@@ -6380,9 +6385,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border-radius: 14px;
   }
 
@@ -6391,7 +6396,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .b-qr {
@@ -6399,7 +6404,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .list-send-wallet span {
@@ -6407,7 +6412,7 @@ section {
     font-size: 20px;
     line-height: 24px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .w-receive img {
@@ -6426,14 +6431,14 @@ section {
   }
 
   .swap-selection select {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
 
     background-color: #fff !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
 
     width: 150px;
@@ -6461,7 +6466,7 @@ section {
     font-weight: 600;
     font-size: 24px !important;
     line-height: 110%;
-    color: #1B8036 !important;
+    color: #1b8036 !important;
   }
 
   .subtitle-top-header {
@@ -6472,7 +6477,7 @@ section {
   }
 
   .freedy-accordion-item {
-    border: 3px solid #1B8036 !important;
+    border: 3px solid #1b8036 !important;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
   }
@@ -6480,7 +6485,6 @@ section {
   .freedy-accordion-button {
     border-radius: 10px !important;
   }
-
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
@@ -6496,7 +6500,7 @@ section {
     font-weight: 700;
     font-size: 16px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-title-accordion .small {
@@ -6514,18 +6518,18 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 5px;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
   .freedy-card.piggy {
-    background: #DBFFE9;
+    background: #dbffe9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
@@ -6539,7 +6543,6 @@ section {
     line-height: 110%;
 
     color: #000000;
-
   }
 
   .freedy-card .card-text {
@@ -6615,11 +6618,11 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 52px;
-    color: #474C51;
+    color: #474c51;
   }
 
   .translate-link:hover {
-    color: #474C51;
+    color: #474c51;
   }
 
   .hori-timeline .events .event-list {
@@ -6653,7 +6656,7 @@ section {
   .list-inline .list-inline-item:not(:last-child):after {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 0;
     position: absolute;
     left: 7.5rem;
@@ -6663,7 +6666,7 @@ section {
   .list-inline .list-inline-item:not(:first-child):before {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 0;
     position: absolute;
     right: 7.5rem;
@@ -6671,7 +6674,7 @@ section {
   }
 
   .bg-line-circle {
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     height: 25px !important;
     width: 25px !important;
     border-radius: 100% !important;
@@ -6681,7 +6684,7 @@ section {
     position: absolute;
     top: 25px;
     font-size: 24px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .currency-img-list img {
@@ -6700,7 +6703,7 @@ section {
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     background-color: transparent;
   }
 
@@ -6723,12 +6726,12 @@ section {
     font-size: 14px;
     line-height: 22px;
     text-decoration-line: underline;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .attention-modal {
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -6754,20 +6757,19 @@ section {
     font-weight: 400;
     font-size: 11px;
     line-height: 13px;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     color: #000000;
   }
 
   .attention-modal .modal-body ul li img {
     height: 125px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
-
 
   /* PIGGY */
   .reward {
-    background: #1B8036;
+    background: #1b8036;
     border: 1px solid #000000;
     border-radius: 20px;
   }
@@ -6781,8 +6783,7 @@ section {
     font-size: 36px;
     line-height: 110%;
 
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward p,
@@ -6790,8 +6791,7 @@ section {
     font-weight: 500;
     font-size: 16px;
     line-height: 180%;
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward a.readmore {
@@ -6799,15 +6799,14 @@ section {
     font-size: 16px;
     line-height: 20px;
 
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
+    color: #ffffff;
+    border: 4px solid #ffffff;
     filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
   }
 
-
   .list-different .items-different {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 12px 30px 17px rgba(0, 115, 25, 0.08);
     border-radius: 10px;
     min-height: 250px;
@@ -6822,7 +6821,7 @@ section {
     font-size: 18px;
     line-height: 30px;
 
-    color: #292D33;
+    color: #292d33;
   }
 
   .list-different .items-different a {
@@ -6831,11 +6830,16 @@ section {
     line-height: 24px;
     text-decoration-line: underline;
 
-    color: #1C6701;
+    color: #1c6701;
   }
 
   .box-contactus {
-    background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
+    background: linear-gradient(
+      100.66deg,
+      #1b8036 23.13%,
+      rgba(8, 63, 26, 0.92) 82.12%,
+      rgba(8, 63, 26, 0.86) 97.79%
+    );
     border-radius: 24.8718px;
   }
 
@@ -6844,7 +6848,7 @@ section {
   }
 
   .form-contactus {
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 107.698px;
 
     display: flex;
@@ -6862,13 +6866,13 @@ section {
     font-weight: 400;
     font-size: 16px;
     line-height: 23px;
-    color: #6C6B6B;
+    color: #6c6b6b;
   }
 
   .btn-contactus {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 30.1554px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     display: flex;
     flex-direction: row;
@@ -6879,7 +6883,6 @@ section {
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-
   }
 
   .btn-contactus img {
@@ -6888,8 +6891,8 @@ section {
 
   .crypto-list-page {
     min-height: auto;
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     text-align: center;
   }
 
@@ -6903,7 +6906,7 @@ section {
     font-size: 20px;
     line-height: 42px;
 
-    background: linear-gradient(0deg, #1B8036, #1B8036);
+    background: linear-gradient(0deg, #1b8036, #1b8036);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -6916,7 +6919,6 @@ section {
     line-height: 30px;
     color: #000000;
   }
-
 }
 
 @media (min-width: 768px) {
@@ -6934,12 +6936,12 @@ section {
   }
 
   .nav-link.navbar-freedy.active {
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-signin,
   .navbar .btn-signin:focus {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 8px;
@@ -6947,7 +6949,10 @@ section {
     font-size: 22px;
 
     border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border-image-source: linear-gradient(
+      to left rgba(52, 48, 250, 1),
+      rgba(24, 147, 237, 1)
+    );
   }
 
   .navbar .btn-signin:hover,
@@ -6960,19 +6965,19 @@ section {
     padding: 8px 20px;
     margin-left: 30px;
 
-    background: #FFF;
-    border: 4px solid #1B8036;
+    background: #fff;
+    border: 4px solid #1b8036;
     filter: drop-shadow(3px 3px 3px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     filter: drop-shadow(4px 4px 4px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .slider-freedy h1 {
@@ -6980,7 +6985,7 @@ section {
     font-size: 64px;
     line-height: 114%;
 
-    color: #1B8036;
+    color: #1b8036;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
@@ -6991,7 +6996,7 @@ section {
 
     letter-spacing: -0.015em;
 
-    color: #2384E9;
+    color: #2384e9;
   }
 
   .slider-freedy p {
@@ -7009,7 +7014,7 @@ section {
 
     /* Style */
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .hero .btn-slider-signin {
@@ -7019,7 +7024,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -7029,7 +7034,7 @@ section {
     padding: 30px;
     box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     border-radius: 18px;
     /* min-width: 417px; */
     min-height: 222px;
@@ -7047,7 +7052,7 @@ section {
     font-size: 26px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy span {
@@ -7055,7 +7060,7 @@ section {
     font-size: 20px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy a {
@@ -7065,7 +7070,7 @@ section {
 
     text-decoration-line: underline;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy:hover {
@@ -7102,7 +7107,7 @@ section {
     font-size: 20px;
     line-height: 180%;
 
-    color: #6D6E70;
+    color: #6d6e70;
   }
 
   .about .btn-content-freedy {
@@ -7110,7 +7115,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -7158,9 +7163,8 @@ section {
   }
 
   .service-freedy .box-service {
-
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     /* Drop Shadow */
 
     box-shadow: 0px 8px 8px 6px rgba(0, 0, 0, 0.25);
@@ -7173,7 +7177,7 @@ section {
     font-size: 20px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .service-freedy .box-service a {
@@ -7192,7 +7196,6 @@ section {
   .img-fluid.phone-card {
     max-width: 300px;
   }
-
 
   .content-freedy ul li {
     background: url(../img/check_ring_round.png) no-repeat left top;
@@ -7223,7 +7226,7 @@ section {
     background: url(../img/line-list.png) no-repeat left center !important;
     background-size: 1rem auto !important;
     padding: 0 0 0 2rem;
-    margin: 0 0 .75rem 0;
+    margin: 0 0 0.75rem 0;
     list-style: none;
   }
 
@@ -7247,8 +7250,8 @@ section {
 
   .features-freedy .box-features {
     min-height: 250px;
-    background: #FFF;
-    border: 3px solid #1B8036;
+    background: #fff;
+    border: 3px solid #1b8036;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
   }
@@ -7267,7 +7270,7 @@ section {
     font-size: 20px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .features-freedy .box-features img {
@@ -7280,8 +7283,8 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3430fa;
     border-radius: 44px;
   }
 
@@ -7301,7 +7304,6 @@ section {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom;
-
   }
 
   .logo-footer img {
@@ -7326,14 +7328,14 @@ section {
     font-weight: 400;
     font-size: 22px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-links .list a {
     font-weight: 400;
     font-size: 18px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .book-footer {
@@ -7374,7 +7376,7 @@ section {
   }
 
   .box-form {
-    background: #FFFFFF;
+    background: #ffffff;
 
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -7405,7 +7407,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-form img {
@@ -7426,7 +7428,7 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy input,
@@ -7451,7 +7453,7 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
     background: transparent;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
 
     font-weight: 400;
     font-size: 14px;
@@ -7459,17 +7461,17 @@ section {
   }
 
   .form-login-freedy .bg-black {
-    background: #161E25 !important;
+    background: #161e25 !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black.bg-disable {
     background: rgba(22, 30, 37, 0.45) !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black textarea {
@@ -7502,7 +7504,7 @@ section {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy label {
@@ -7522,7 +7524,7 @@ section {
   }
 
   .form-login-freedy .btn-login {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -7531,13 +7533,13 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-login {
     position: fixed;
     bottom: 0;
-    background: #1B8036;
+    background: #1b8036;
     height: 10vh;
   }
 
@@ -7548,48 +7550,47 @@ section {
     font-size: 17px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
-  .navbar-app>.box-navbar-freedy {
-    background: #FFFFFF;
+  .navbar-app > .box-navbar-freedy {
+    background: #ffffff;
 
     padding: 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a {
+  .navbar-app > .box-navbar-freedy a {
     margin: 0 2rem;
 
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    color: #1B8036;
+    color: #1b8036;
     text-align: center;
 
-
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     border-radius: 10px;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #1B8036;
-    padding: 1rem .25rem;
+  .navbar-app > .box-navbar-freedy a .icon-menus {
+    color: #1b8036;
+    padding: 1rem 0.25rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus>svg {
-    stroke: #1B8036;
-    fill: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus > svg {
+    stroke: #1b8036;
+    fill: #1b8036;
     width: auto;
     height: 35px;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>svg {
-    stroke: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > svg {
+    stroke: #1b8036;
     fill: #fff;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > img {
     height: 75px;
   }
 
@@ -7604,23 +7605,33 @@ section {
   }
 
   .box-code-freedy .currency-btn-setting a {
-
-    background: #1B8036;
-    border: 1px solid rgba(35, 131, 44, .47);
+    background: #1b8036;
+    border: 1px solid rgba(35, 131, 44, 0.47);
     border-radius: 10px;
 
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-  .box-code-freedy>span {
+  .box-code-freedy > span {
     font-weight: 600;
     font-size: 10px;
     line-height: 17px;
-    color: #1B8036;
+    color: #1b8036;
+  }
+
+  .text-green-alert {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 17px;
+    color: #1b8036 !important;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .copy-uqcode span {
@@ -7630,7 +7641,7 @@ section {
     font-size: 14px;
     line-height: 17px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .copy-uqcode img {
@@ -7649,7 +7660,7 @@ section {
     font-size: 18px;
     line-height: 30px;
 
-    background: #FBFBFB;
+    background: #fbfbfb;
     border-radius: 13px;
     border: 3px solid rgba(35, 131, 44, 1);
     color: #000000;
@@ -7672,8 +7683,8 @@ section {
   }
 
   .copy-refcode input {
-    background: #BDFFCF;
-    color: #1C6701 !important;
+    background: #bdffcf;
+    color: #1c6701 !important;
   }
 
   .copy-uqcode input {
@@ -7695,19 +7706,19 @@ section {
   }
 
   .menus-list-app a {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
 
     font-weight: 500;
     font-size: 21px;
     line-height: 32px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .menus-list-app a.menus-blue {
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
     border-radius: 20px;
     color: #000000;
 
@@ -7717,9 +7728,9 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
-    color: #FFF;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
+    color: #fff;
   }
 
   .menus-list-app a.menus-blue svg {
@@ -7728,7 +7739,7 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover svg {
-    fill: #FFFFFF;
+    fill: #ffffff;
     stroke: none;
   }
 
@@ -7747,16 +7758,14 @@ section {
   }
 
   .curencies-list-app .title-curencies-list span {
-
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .curencies-list-app .curencies-list {
-
     border: 1px solid rgba(35, 131, 44, 1);
     border-radius: 5px;
     color: #000000;
@@ -7767,15 +7776,15 @@ section {
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
     border-radius: 5px;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .currency-selection .select-hidden {
@@ -7800,7 +7809,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -7823,7 +7832,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -7857,9 +7866,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -7873,7 +7882,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .currency-selection .select-options li:hover,
@@ -7887,7 +7896,7 @@ section {
   }
 
   .setting-currency {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -7897,7 +7906,7 @@ section {
 
     color: #000000;
 
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .setting-currency svg {
@@ -7910,7 +7919,7 @@ section {
     font-size: 45px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .saldo-freedy input {
@@ -7925,7 +7934,7 @@ section {
     font-size: 24px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .balance-text {
@@ -7941,11 +7950,11 @@ section {
   }
 
   .transaction {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .transaction .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -7959,7 +7968,6 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-
 
     color: #000000;
   }
@@ -7975,7 +7983,7 @@ section {
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -7987,10 +7995,9 @@ section {
     display: none;
   }
 
-
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
   }
 
   .list-transaction img {
@@ -8018,7 +8025,7 @@ section {
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .transaction .info-saldo-wallet span {
@@ -8034,18 +8041,18 @@ section {
   }
 
   .form-send-wallet input {
-    border: 1px solid #1B8036;
-    filter: drop-shadow(0px 2px 2px #00D1FF);
+    border: 1px solid #1b8036;
+    filter: drop-shadow(0px 2px 2px #00d1ff);
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .form-send-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .settings-currency .back-btn-transaction img {
@@ -8053,10 +8060,10 @@ section {
   }
 
   .settings-currency .btn-currency {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 35px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 35px #3430fa;
     border-radius: 44px;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
     color: #fff;
     font-size: 24px;
   }
@@ -8088,7 +8095,7 @@ section {
     font-size: 14px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency {
@@ -8112,14 +8119,14 @@ section {
     font-size: 12px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency input.pill-currency {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #EFEFEF !important;
+    background-color: #efefef !important;
     background: url(../img/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -8131,7 +8138,7 @@ section {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -8139,7 +8146,7 @@ section {
   }
 
   .form-confirm .form-confirm-input {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 25px;
     min-height: 200px;
     padding: 1rem;
@@ -8149,11 +8156,11 @@ section {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .btn-selected-receive {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 45px;
     padding: 1rem 2rem;
     margin: 0 1rem;
@@ -8161,8 +8168,8 @@ section {
 
   .btn-selected-receive input,
   .btn-selected-receive label {
-    margin: 0 .5rem;
-    padding: .5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
   }
 
   .btn-selected-receive label {
@@ -8177,7 +8184,7 @@ section {
   }
 
   .box-tab-currency {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 1rem 1.5rem;
@@ -8214,7 +8221,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -8237,7 +8244,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -8271,9 +8278,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -8287,7 +8294,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .swap-selection .select-options li:hover,
@@ -8305,8 +8312,8 @@ section {
   }
 
   .swap-form-icon {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
   }
 
@@ -8314,33 +8321,33 @@ section {
   .swap-form-icon input {
     border: 0;
     box-shadow: 0;
-    padding: .5rem 2rem;
-    background: #FFFFFF;
+    padding: 0.5rem 2rem;
+    background: #ffffff;
     border-radius: 20px;
     margin-bottom: 0;
   }
 
   .swap-form-icon input[readonly] {
-    background: #FFFFFF !important;
+    background: #ffffff !important;
   }
 
   .swap .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .app-container .title-confirm {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .border-top-freedy {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .back-btn-transaction span.title-top {
@@ -8356,7 +8363,7 @@ section {
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-confirm span.title-convert {
@@ -8368,24 +8375,23 @@ section {
   }
 
   .form-confirm span.amout-convert {
-    background: #FFFFFF;
+    background: #ffffff;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 5px 15px 25px rgba(47, 102, 246, 0.25);
     border-radius: 12px;
     padding: 1rem 2rem;
     text-align: end;
 
-
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-tab-bank input {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -8393,7 +8399,7 @@ section {
   }
 
   .box-tab-bank select {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -8401,7 +8407,7 @@ section {
 
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
   }
 
@@ -8411,13 +8417,13 @@ section {
 
   .box-tab-bank input:focus,
   .box-tab-bank select:focus {
-    background: #1B8036;
+    background: #1b8036;
     border: 0;
     color: #fff;
   }
 
   .search-page .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -8432,46 +8438,43 @@ section {
     font-size: 12px;
     line-height: 21px;
 
-
     color: #000000;
   }
 
   .select-transaction a {
-    background: #1B8036;
-    border: 3px solid #1B8036;
+    background: #1b8036;
+    border: 3px solid #1b8036;
     border-radius: 20px;
     padding: 1rem;
-
 
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
 
-
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .select-transaction a:hover {
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     border-radius: 20px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .qr-receive-wallet img {
     height: 300px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 20px;
     padding: 1rem;
   }
 
   .qr-receive-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
     font-size: 16px;
   }
 
@@ -8484,19 +8487,18 @@ section {
   }
 
   .app-confirm span {
-
     font-weight: 300;
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-title span {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-note span {
@@ -8526,7 +8528,7 @@ section {
   }
 
   .recive-bank a {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -8537,7 +8539,7 @@ section {
   }
 
   .recive-bank a:hover {
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -8548,8 +8550,8 @@ section {
   }
 
   .infobank-list-app {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -8557,9 +8559,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border-radius: 14px;
   }
 
@@ -8567,9 +8569,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border-radius: 14px;
   }
 
@@ -8578,7 +8580,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .b-qr {
@@ -8586,7 +8588,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .list-send-wallet span {
@@ -8594,7 +8596,7 @@ section {
     font-size: 20px;
     line-height: 24px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .w-receive img {
@@ -8613,14 +8615,14 @@ section {
   }
 
   .swap-selection select {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
 
     background-color: #fff !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
 
     width: 150px;
@@ -8648,7 +8650,7 @@ section {
     font-weight: 600;
     font-size: 26px !important;
     line-height: 110%;
-    color: #1B8036 !important;
+    color: #1b8036 !important;
   }
 
   .subtitle-top-header {
@@ -8659,7 +8661,7 @@ section {
   }
 
   .freedy-accordion-item {
-    border: 3px solid #1B8036 !important;
+    border: 3px solid #1b8036 !important;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
   }
@@ -8667,7 +8669,6 @@ section {
   .freedy-accordion-button {
     border-radius: 10px !important;
   }
-
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
@@ -8683,7 +8684,7 @@ section {
     font-weight: 700;
     font-size: 18px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-title-accordion .small {
@@ -8701,18 +8702,18 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 5px;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
   .freedy-card.piggy {
-    background: #DBFFE9;
+    background: #dbffe9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: auto;
   }
 
@@ -8726,7 +8727,6 @@ section {
     line-height: 110%;
 
     color: #000000;
-
   }
 
   .freedy-card .card-text {
@@ -8806,11 +8806,11 @@ section {
     font-weight: 400;
     font-size: 24px;
     line-height: 52px;
-    color: #474C51;
+    color: #474c51;
   }
 
   .translate-link:hover {
-    color: #474C51;
+    color: #474c51;
   }
 
   .hori-timeline .events .event-list {
@@ -8842,7 +8842,7 @@ section {
   .list-inline .list-inline-item:not(:last-child):after {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 50%;
     position: absolute;
     left: 50%;
@@ -8852,7 +8852,7 @@ section {
   .list-inline .list-inline-item:not(:first-child):before {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 50%;
     position: absolute;
     right: 50%;
@@ -8860,7 +8860,7 @@ section {
   }
 
   .bg-line-circle {
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     height: 25px !important;
     width: 25px !important;
     border-radius: 100% !important;
@@ -8870,7 +8870,7 @@ section {
     position: absolute;
     top: -50px;
     font-size: 24px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .currency-img-list img {
@@ -8889,7 +8889,7 @@ section {
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     background-color: transparent;
   }
 
@@ -8912,12 +8912,12 @@ section {
     font-size: 18px;
     line-height: 22px;
     text-decoration-line: underline;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .attention-modal {
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -8943,19 +8943,19 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     color: #000000;
   }
 
   .attention-modal .modal-body ul li img {
     height: 150px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   /* PIGGY */
   .reward {
-    background: #1B8036;
+    background: #1b8036;
     border: 1px solid #000000;
     border-radius: 20px;
   }
@@ -8969,8 +8969,7 @@ section {
     font-size: 38px;
     line-height: 110%;
 
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward p,
@@ -8978,8 +8977,7 @@ section {
     font-weight: 500;
     font-size: 18px;
     line-height: 180%;
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward a.readmore {
@@ -8987,15 +8985,14 @@ section {
     font-size: 18px;
     line-height: 20px;
 
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
+    color: #ffffff;
+    border: 4px solid #ffffff;
     filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
   }
 
-
   .list-different .items-different {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 12px 30px 17px rgba(0, 115, 25, 0.08);
     border-radius: 10px;
     min-height: 250px;
@@ -9010,7 +9007,7 @@ section {
     font-size: 22px;
     line-height: 30px;
 
-    color: #292D33;
+    color: #292d33;
   }
 
   .list-different .items-different a {
@@ -9019,11 +9016,16 @@ section {
     line-height: 24px;
     text-decoration-line: underline;
 
-    color: #1C6701;
+    color: #1c6701;
   }
 
   .box-contactus {
-    background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
+    background: linear-gradient(
+      100.66deg,
+      #1b8036 23.13%,
+      rgba(8, 63, 26, 0.92) 82.12%,
+      rgba(8, 63, 26, 0.86) 97.79%
+    );
     border-radius: 24.8718px;
   }
 
@@ -9032,7 +9034,7 @@ section {
   }
 
   .form-contactus {
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 107.698px;
 
     display: flex;
@@ -9050,13 +9052,13 @@ section {
     font-weight: 400;
     font-size: 18px;
     line-height: 23px;
-    color: #6C6B6B;
+    color: #6c6b6b;
   }
 
   .btn-contactus {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 30.1554px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     display: flex;
     flex-direction: row;
@@ -9067,7 +9069,6 @@ section {
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-
   }
 
   .btn-contactus img {
@@ -9082,11 +9083,10 @@ section {
     margin-bottom: 0 !important;
   }
 
-
   .crypto-list-page {
     min-height: 375px;
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     text-align: center;
   }
 
@@ -9100,7 +9100,7 @@ section {
     font-size: 24px;
     line-height: 42px;
 
-    background: linear-gradient(0deg, #1B8036, #1B8036);
+    background: linear-gradient(0deg, #1b8036, #1b8036);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -9122,7 +9122,6 @@ section {
     right: 0;
     display: none;
   }
-
 
   .mt-slider-8 {
     margin-top: 8rem;
@@ -9147,7 +9146,6 @@ section {
     top: -100px;
     right: 0px;
 
-
     height: 100px;
   }
 
@@ -9155,7 +9153,6 @@ section {
     position: absolute;
     bottom: 0px;
     right: -50px;
-
 
     height: 100px;
   }
@@ -9194,7 +9191,7 @@ section {
   }
 
   .box-form {
-    background: #FFFFFF;
+    background: #ffffff;
 
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -9225,7 +9222,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-form img {
@@ -9246,7 +9243,7 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy input,
@@ -9271,7 +9268,7 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
     background: transparent;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
 
     font-weight: 400;
     font-size: 14px;
@@ -9279,17 +9276,17 @@ section {
   }
 
   .form-login-freedy .bg-black {
-    background: #161E25 !important;
+    background: #161e25 !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black.bg-disable {
     background: rgba(22, 30, 37, 0.45) !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black textarea {
@@ -9322,7 +9319,7 @@ section {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy label {
@@ -9342,7 +9339,7 @@ section {
   }
 
   .form-login-freedy .btn-login {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -9351,13 +9348,13 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-login {
     position: fixed;
     bottom: 0;
-    background: #1B8036;
+    background: #1b8036;
     height: 10vh;
   }
 
@@ -9384,12 +9381,12 @@ section {
   }
 
   .nav-link.navbar-freedy.active {
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-signin,
   .navbar .btn-signin:focus {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     padding: 8px 20px;
     margin-left: 30px;
     border-radius: 8px;
@@ -9397,7 +9394,10 @@ section {
     font-size: 18px;
 
     border: solid 1px;
-    border-image-source: linear-gradient(to left rgba(52, 48, 250, 1), rgba(24, 147, 237, 1));
+    border-image-source: linear-gradient(
+      to left rgba(52, 48, 250, 1),
+      rgba(24, 147, 237, 1)
+    );
   }
 
   .navbar .btn-signin:hover,
@@ -9410,19 +9410,19 @@ section {
     padding: 8px 20px;
     margin-left: 30px;
 
-    background: #FFF;
-    border: 4px solid #1B8036;
+    background: #fff;
+    border: 4px solid #1b8036;
     filter: drop-shadow(3px 3px 3px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .navbar .btn-login:hover,
   .navbar .btn-login:focus:hover {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     filter: drop-shadow(4px 4px 4px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .slider-freedy h1 {
@@ -9430,7 +9430,7 @@ section {
     font-size: 64px;
     line-height: 114%;
 
-    color: #1B8036;
+    color: #1b8036;
     text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
   }
 
@@ -9441,7 +9441,7 @@ section {
 
     letter-spacing: -0.015em;
 
-    color: #2384E9;
+    color: #2384e9;
   }
 
   .slider-freedy p {
@@ -9459,7 +9459,7 @@ section {
 
     /* Style */
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .hero .btn-slider-signin {
@@ -9469,7 +9469,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -9479,7 +9479,7 @@ section {
     padding: 30px;
     box-shadow: 0px 0 5px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
     border-radius: 18px;
     /* min-width: 417px; */
     min-height: 222px;
@@ -9497,7 +9497,7 @@ section {
     font-size: 34.73px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy span {
@@ -9505,7 +9505,7 @@ section {
     font-size: 20px;
     line-height: 110%;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy a {
@@ -9515,7 +9515,7 @@ section {
 
     text-decoration-line: underline;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .box-card-freedy:hover {
@@ -9552,7 +9552,7 @@ section {
     font-size: 20px;
     line-height: 180%;
 
-    color: #6D6E70;
+    color: #6d6e70;
   }
 
   .about .btn-content-freedy {
@@ -9560,7 +9560,7 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: #1B8036;
+    background: #1b8036;
     box-shadow: 3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.45);
     border-radius: 26.386px;
   }
@@ -9608,9 +9608,8 @@ section {
   }
 
   .service-freedy .box-service {
-
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     /* Drop Shadow */
 
     box-shadow: 0px 8px 8px 6px rgba(0, 0, 0, 0.25);
@@ -9623,7 +9622,7 @@ section {
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .service-freedy .box-service a {
@@ -9677,7 +9676,7 @@ section {
     background: url(../img/line-list.png) no-repeat left center !important;
     background-size: 1rem auto !important;
     padding: 0 0 0 2rem;
-    margin: 0 0 .75rem 0;
+    margin: 0 0 0.75rem 0;
     list-style: none;
   }
 
@@ -9690,7 +9689,6 @@ section {
     top: -100px;
     right: 0px;
 
-
     height: 100px;
   }
 
@@ -9698,7 +9696,6 @@ section {
     position: absolute;
     bottom: 0px;
     right: 0px;
-
 
     height: 100px;
   }
@@ -9714,8 +9711,8 @@ section {
 
   .features-freedy .box-features {
     min-height: 250px;
-    background: #FFF;
-    border: 3px solid #1B8036;
+    background: #fff;
+    border: 3px solid #1b8036;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 15px;
   }
@@ -9734,7 +9731,7 @@ section {
     font-size: 20px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .features-freedy .box-features img {
@@ -9747,8 +9744,8 @@ section {
     transition: 0.5s;
     color: #fff;
 
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3430fa;
     border-radius: 44px;
   }
 
@@ -9768,7 +9765,6 @@ section {
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: bottom;
-
   }
 
   .logo-footer img {
@@ -9793,14 +9789,14 @@ section {
     font-weight: 400;
     font-size: 22px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-links .list a {
     font-weight: 400;
     font-size: 18px;
     line-height: 110%;
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .book-footer {
@@ -9856,7 +9852,7 @@ section {
   }
 
   .box-form {
-    background: #FFFFFF;
+    background: #ffffff;
 
     box-shadow: 0px 1px 20px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -9889,7 +9885,7 @@ section {
     font-size: 24px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-form img {
@@ -9910,7 +9906,7 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy input,
@@ -9935,7 +9931,7 @@ section {
     border-bottom: 1px solid rgba(0, 0, 0, 0.44);
     background: transparent;
     border-radius: 0;
-    color: #FFF;
+    color: #fff;
 
     font-weight: 400;
     font-size: 14px;
@@ -9943,17 +9939,17 @@ section {
   }
 
   .form-login-freedy .bg-black {
-    background: #161E25 !important;
+    background: #161e25 !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black.bg-disable {
     background: rgba(22, 30, 37, 0.45) !important;
     border-radius: 10px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .form-login-freedy .bg-black textarea {
@@ -9986,7 +9982,7 @@ section {
     font-weight: 600;
     font-size: 14px;
     line-height: 16px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-login-freedy label {
@@ -10006,7 +10002,7 @@ section {
   }
 
   .form-login-freedy .btn-login {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 5px;
     font-weight: 500;
     font-size: 15px;
@@ -10015,13 +10011,13 @@ section {
     letter-spacing: 0.46px;
     text-transform: uppercase;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .footer-login {
     position: fixed;
     bottom: 0;
-    background: #1B8036;
+    background: #1b8036;
     height: 10vh;
   }
 
@@ -10033,48 +10029,47 @@ section {
     font-size: 17px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
-  .navbar-app>.box-navbar-freedy {
-    background: #FFFFFF;
+  .navbar-app > .box-navbar-freedy {
+    background: #ffffff;
 
     padding: 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a {
+  .navbar-app > .box-navbar-freedy a {
     margin: 0 2rem;
 
     font-weight: 700;
     font-size: 12px;
     line-height: 20px;
-    color: #1B8036;
+    color: #1b8036;
     text-align: center;
 
-
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     border-radius: 10px;
     padding: 0 1rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus {
-    color: #1B8036;
-    padding: 1rem .25rem;
+  .navbar-app > .box-navbar-freedy a .icon-menus {
+    color: #1b8036;
+    padding: 1rem 0.25rem;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus>svg {
-    stroke: #1B8036;
-    fill: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus > svg {
+    stroke: #1b8036;
+    fill: #1b8036;
     width: auto;
     height: 35px;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>svg {
-    stroke: #1B8036;
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > svg {
+    stroke: #1b8036;
     fill: #fff;
   }
 
-  .navbar-app>.box-navbar-freedy a .icon-menus.home-svg>img {
+  .navbar-app > .box-navbar-freedy a .icon-menus.home-svg > img {
     height: 75px;
   }
 
@@ -10089,23 +10084,33 @@ section {
   }
 
   .box-code-freedy .currency-btn-setting a {
-
-    background: #1B8036;
-    border: 1px solid rgba(35, 131, 44, .47);
+    background: #1b8036;
+    border: 1px solid rgba(35, 131, 44, 0.47);
     border-radius: 10px;
 
     font-weight: 600;
     font-size: 12px;
     line-height: 15px;
 
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
-  .box-code-freedy>span {
+  .box-code-freedy > span {
     font-weight: 600;
     font-size: 14px;
     line-height: 17px;
-    color: #1B8036;
+    color: #1b8036;
+  }
+
+  .text-green-alert {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #1b8036 !important;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
   }
 
   .copy-uqcode span {
@@ -10115,7 +10120,7 @@ section {
     font-size: 18px;
     line-height: 17px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .copy-uqcode img {
@@ -10134,7 +10139,7 @@ section {
     font-size: 18px;
     line-height: 30px;
 
-    background: #FBFBFB;
+    background: #fbfbfb;
     border-radius: 13px;
     border: 3px solid rgba(35, 131, 44, 1);
     color: #000000;
@@ -10157,8 +10162,8 @@ section {
   }
 
   .copy-refcode input {
-    background: #BDFFCF;
-    color: #1C6701 !important;
+    background: #bdffcf;
+    color: #1c6701 !important;
   }
 
   .copy-uqcode input {
@@ -10180,32 +10185,31 @@ section {
   }
 
   .menus-list-app a {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
 
     font-weight: 500;
     font-size: 21px;
     line-height: 32px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .menus-list-app a.menus-blue {
-    border: 1px solid #C6C6C6;
+    border: 1px solid #c6c6c6;
     border-radius: 20px;
     color: #000000;
 
     font-weight: 500;
     font-size: 21px;
     line-height: 32px;
-
   }
 
   .menus-list-app a.menus-blue:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
-    color: #FFF;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
+    color: #fff;
   }
 
   .menus-list-app a.menus-blue svg {
@@ -10214,7 +10218,7 @@ section {
   }
 
   .menus-list-app a.menus-blue:hover svg {
-    fill: #FFFFFF;
+    fill: #ffffff;
     stroke: none;
   }
 
@@ -10233,16 +10237,14 @@ section {
   }
 
   .curencies-list-app .title-curencies-list span {
-
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .curencies-list-app .curencies-list {
-
     border: 1px solid rgba(35, 131, 44, 1);
     border-radius: 5px;
     color: #000000;
@@ -10253,15 +10255,15 @@ section {
   }
 
   .curencies-list-app .curencies-list:hover {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
-    border: 1px solid #C6C6C6;
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
+    border: 1px solid #c6c6c6;
     border-radius: 5px;
 
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
 
-    color: #FFF;
+    color: #fff;
   }
 
   .currency-selection .select-hidden {
@@ -10286,7 +10288,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -10309,7 +10311,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -10343,9 +10345,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -10359,7 +10361,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .currency-selection .select-options li:hover,
@@ -10373,7 +10375,7 @@ section {
   }
 
   .setting-currency {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 15px;
     font-weight: 600;
     font-size: 15px;
@@ -10383,7 +10385,7 @@ section {
 
     color: #000000;
 
-    padding: .5rem 2rem;
+    padding: 0.5rem 2rem;
   }
 
   .setting-currency svg {
@@ -10396,7 +10398,7 @@ section {
     font-size: 45px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .saldo-freedy input {
@@ -10411,7 +10413,7 @@ section {
     font-size: 24px;
     line-height: 18px;
     letter-spacing: 0.008em;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .balance-text {
@@ -10427,11 +10429,11 @@ section {
   }
 
   .transaction {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .transaction .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -10445,7 +10447,6 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
-
 
     color: #000000;
   }
@@ -10461,7 +10462,7 @@ section {
     max-height: 300px;
     padding: 1rem;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 0px 8px 40px rgba(0, 0, 0, 0.05);
     border-radius: 8px;
 
@@ -10473,10 +10474,9 @@ section {
     display: none;
   }
 
-
   .list-transaction {
     padding: 1rem;
-    border-bottom: 1px solid #EFEFEF;
+    border-bottom: 1px solid #efefef;
   }
 
   .list-transaction img {
@@ -10504,7 +10504,7 @@ section {
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .transaction .info-saldo-wallet span {
@@ -10520,18 +10520,18 @@ section {
   }
 
   .form-send-wallet input {
-    border: 1px solid #1B8036;
-    filter: drop-shadow(0px 2px 2px #00D1FF);
+    border: 1px solid #1b8036;
+    filter: drop-shadow(0px 2px 2px #00d1ff);
     border-radius: 5px;
-    padding: .5rem 1rem;
+    padding: 0.5rem 1rem;
   }
 
   .form-send-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .settings-currency .back-btn-transaction img {
@@ -10539,10 +10539,10 @@ section {
   }
 
   .settings-currency .btn-currency {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 35px #3430FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 35px #3430fa;
     border-radius: 44px;
-    padding: .5rem 3rem;
+    padding: 0.5rem 3rem;
     color: #fff;
     font-size: 24px;
   }
@@ -10574,7 +10574,7 @@ section {
     font-size: 14px;
     line-height: 21px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency {
@@ -10598,14 +10598,14 @@ section {
     font-size: 12px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .check-currency input.pill-currency {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #EFEFEF !important;
+    background-color: #efefef !important;
     background: url(../img/checkbox-ball.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -10617,7 +10617,7 @@ section {
     margin-left: 0 !important;
     width: 3.5em;
     height: 1.5em;
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     background: url(../img/checkbox-ball-chacked.png);
     background-repeat: no-repeat;
     background-size: auto 100%;
@@ -10625,7 +10625,7 @@ section {
   }
 
   .form-confirm .form-confirm-input {
-    border: 2px solid #1B8036;
+    border: 2px solid #1b8036;
     border-radius: 25px;
     min-height: 200px;
     padding: 1rem;
@@ -10635,11 +10635,11 @@ section {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .btn-selected-receive {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 45px;
     padding: 1rem 2rem;
     margin: 0 1rem;
@@ -10647,8 +10647,8 @@ section {
 
   .btn-selected-receive input,
   .btn-selected-receive label {
-    margin: 0 .5rem;
-    padding: .5rem;
+    margin: 0 0.5rem;
+    padding: 0.5rem;
   }
 
   .btn-selected-receive label {
@@ -10663,7 +10663,7 @@ section {
   }
 
   .box-tab-currency {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 5px 15px 10px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     padding: 1rem 1.5rem;
@@ -10700,7 +10700,7 @@ section {
     letter-spacing: 0.008em;
 
     color: #000000;
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -10723,7 +10723,7 @@ section {
     width: 0;
     height: 0;
     border: 7px solid transparent;
-    border-color: #1B8036 transparent transparent transparent;
+    border-color: #1b8036 transparent transparent transparent;
     position: absolute;
     top: 16px;
     right: 10px;
@@ -10757,9 +10757,9 @@ section {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
 
-    border-left: 3px solid #1B8036;
-    border-right: 3px solid #1B8036;
-    border-bottom: 3px solid #1B8036;
+    border-left: 3px solid #1b8036;
+    border-right: 3px solid #1b8036;
+    border-bottom: 3px solid #1b8036;
 
     margin: 0 -3px;
   }
@@ -10773,7 +10773,7 @@ section {
     -webkit-transition: all 0.15s ease-in;
     transition: all 0.15s ease-in;
 
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .swap-selection .select-options li:hover,
@@ -10791,8 +10791,8 @@ section {
   }
 
   .swap-form-icon {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
   }
 
@@ -10800,33 +10800,33 @@ section {
   .swap-form-icon input {
     border: 0;
     box-shadow: 0;
-    padding: .5rem 2rem;
-    background: #FFFFFF;
+    padding: 0.5rem 2rem;
+    background: #ffffff;
     border-radius: 20px;
     margin-bottom: 0;
   }
 
   .swap-form-icon input[readonly] {
-    background: #FFFFFF !important;
+    background: #ffffff !important;
   }
 
   .swap .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
   }
 
   .app-container .title-confirm {
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .border-top-freedy {
-    border-top: 1px solid #1B8036;
+    border-top: 1px solid #1b8036;
   }
 
   .back-btn-transaction span.title-top {
@@ -10842,7 +10842,7 @@ section {
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .form-confirm span.title-convert {
@@ -10854,24 +10854,23 @@ section {
   }
 
   .form-confirm span.amout-convert {
-    background: #FFFFFF;
+    background: #ffffff;
 
-    border: 1px solid #1B8036;
+    border: 1px solid #1b8036;
     box-shadow: 5px 15px 25px rgba(47, 102, 246, 0.25);
     border-radius: 12px;
     padding: 1rem 2rem;
     text-align: end;
 
-
     font-weight: 700;
     font-size: 35px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-tab-bank input {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -10879,7 +10878,7 @@ section {
   }
 
   .box-tab-bank select {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 10px;
     border: 0;
     font-size: 16px;
@@ -10887,7 +10886,7 @@ section {
 
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
   }
 
@@ -10897,13 +10896,13 @@ section {
 
   .box-tab-bank input:focus,
   .box-tab-bank select:focus {
-    background: #1B8036;
+    background: #1b8036;
     border: 0;
     color: #fff;
   }
 
   .search-page .search {
-    background: #EBEBEB;
+    background: #ebebeb;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 32px;
   }
@@ -10918,46 +10917,43 @@ section {
     font-size: 12px;
     line-height: 21px;
 
-
     color: #000000;
   }
 
   .select-transaction a {
-    background: #1B8036;
-    border: 3px solid #1B8036;
+    background: #1b8036;
+    border: 3px solid #1b8036;
     border-radius: 20px;
     padding: 1rem;
-
 
     font-weight: 500;
     font-size: 30px;
     line-height: 100%;
 
-
-    color: #FFFFFF;
+    color: #ffffff;
   }
 
   .select-transaction a:hover {
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     border-radius: 20px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .qr-receive-wallet img {
     height: 300px;
-    background: #F6F7FB;
+    background: #f6f7fb;
     border-radius: 20px;
     padding: 1rem;
   }
 
   .qr-receive-wallet .btn-next {
-    background: linear-gradient(180deg, #3430FA 0%, #1893ED 100%);
-    box-shadow: 0px 4px 25px #3081FA;
+    background: linear-gradient(180deg, #3430fa 0%, #1893ed 100%);
+    box-shadow: 0px 4px 25px #3081fa;
     border-radius: 44px;
-    color: #FFF;
-    padding: .5rem 2rem;
+    color: #fff;
+    padding: 0.5rem 2rem;
     font-size: 16px;
   }
 
@@ -10970,19 +10966,18 @@ section {
   }
 
   .app-confirm span {
-
     font-weight: 300;
     font-size: 25px;
     line-height: 110%;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-title span {
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .receive-note span {
@@ -11012,11 +11007,10 @@ section {
   }
 
   .recive-bank a {
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
-
 
     font-weight: 600;
     font-size: 23px;
@@ -11024,7 +11018,7 @@ section {
   }
 
   .recive-bank a:hover {
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border: 1px solid #000000;
     color: #000000;
     border-radius: 8px;
@@ -11035,8 +11029,8 @@ section {
   }
 
   .infobank-list-app {
-    background: #FFFFFF;
-    border: 1px solid #1B8036;
+    background: #ffffff;
+    border: 1px solid #1b8036;
     border-radius: 5px;
   }
 
@@ -11044,9 +11038,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+    background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
     border-radius: 14px;
   }
 
@@ -11054,9 +11048,9 @@ section {
     font-weight: 600;
     font-size: 18px;
     line-height: 22px;
-    color: #FFFFFF;
+    color: #ffffff;
 
-    background: linear-gradient(180deg, #1C6701 0%, #23832C 100%);
+    background: linear-gradient(180deg, #1c6701 0%, #23832c 100%);
     border-radius: 14px;
   }
 
@@ -11065,7 +11059,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .b-qr {
@@ -11073,7 +11067,7 @@ section {
     font-size: 15px;
     line-height: 18px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .list-send-wallet span {
@@ -11081,7 +11075,7 @@ section {
     font-size: 20px;
     line-height: 24px;
 
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .w-receive img {
@@ -11100,14 +11094,14 @@ section {
   }
 
   .swap-selection select {
-    background: #FFFFFF;
-    border: 2px solid #1B8036;
+    background: #ffffff;
+    border: 2px solid #1b8036;
     border-radius: 20px;
 
     background-color: #fff !important;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e") !important;
     background-repeat: no-repeat !important;
-    background-position: right .75rem center !important;
+    background-position: right 0.75rem center !important;
     background-size: 16px 12px !important;
 
     width: 150px;
@@ -11135,7 +11129,7 @@ section {
     font-weight: 600;
     font-size: 45px !important;
     line-height: 110%;
-    color: #1B8036 !important;
+    color: #1b8036 !important;
   }
 
   .subtitle-top-header {
@@ -11146,7 +11140,7 @@ section {
   }
 
   .freedy-accordion-item {
-    border: 3px solid #1B8036 !important;
+    border: 3px solid #1b8036 !important;
     filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.25));
     border-radius: 10px;
   }
@@ -11154,7 +11148,6 @@ section {
   .freedy-accordion-button {
     border-radius: 10px !important;
   }
-
 
   .freedy-accordion-button:not(.collapsed) {
     background-color: transparent !important;
@@ -11170,7 +11163,7 @@ section {
     font-weight: 700;
     font-size: 33px;
     line-height: 110%;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .box-title-accordion .small {
@@ -11188,18 +11181,18 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1B8036;
+    border: 4px solid #1b8036;
     border-radius: 5px;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: 250px;
   }
 
   .freedy-card.piggy {
-    background: #DBFFE9;
+    background: #dbffe9;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 8px;
     border: none;
-    padding: .75rem;
+    padding: 0.75rem;
     min-height: 250px;
   }
 
@@ -11213,7 +11206,6 @@ section {
     line-height: 110%;
 
     color: #000000;
-
   }
 
   .freedy-card .card-text {
@@ -11281,13 +11273,12 @@ section {
     font-weight: 400;
     font-size: 35px;
     line-height: 52px;
-    color: #474C51;
+    color: #474c51;
   }
 
   .translate-link:hover {
-    color: #474C51;
+    color: #474c51;
   }
-
 
   .hori-timeline .events .event-list {
     display: inline-block;
@@ -11318,7 +11309,7 @@ section {
   .list-inline .list-inline-item:not(:last-child):after {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 50%;
     position: absolute;
     left: 50%;
@@ -11328,7 +11319,7 @@ section {
   .list-inline .list-inline-item:not(:first-child):before {
     content: "";
     display: block;
-    border-top: .25rem solid #1B8036;
+    border-top: 0.25rem solid #1b8036;
     width: 50%;
     position: absolute;
     right: 50%;
@@ -11336,7 +11327,7 @@ section {
   }
 
   .bg-line-circle {
-    background-color: #1B8036 !important;
+    background-color: #1b8036 !important;
     height: 25px !important;
     width: 25px !important;
     border-radius: 100% !important;
@@ -11346,7 +11337,7 @@ section {
     position: absolute;
     top: -50px;
     font-size: 24px;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .currency-img-list img {
@@ -11360,13 +11351,12 @@ section {
     color: #000000;
   }
 
-
   /* Link Landingpage */
 
   /* Member Receive Attention */
   .receive-attention,
   .receive-attention:hover {
-    border: 3px solid #1B8036;
+    border: 3px solid #1b8036;
     background-color: transparent;
   }
 
@@ -11389,12 +11379,12 @@ section {
     font-size: 18px;
     line-height: 22px;
     text-decoration-line: underline;
-    color: #1B8036;
+    color: #1b8036;
   }
 
   .attention-modal {
-    background: #FFFFFF;
-    border: 5px solid #1B8036;
+    background: #ffffff;
+    border: 5px solid #1b8036;
     box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
   }
@@ -11420,19 +11410,19 @@ section {
     font-weight: 400;
     font-size: 14px;
     line-height: 110%;
-    margin-bottom: .5rem;
+    margin-bottom: 0.5rem;
 
     color: #000000;
   }
 
   .attention-modal .modal-body ul li img {
     height: 150px;
-    margin: .5rem 0;
+    margin: 0.5rem 0;
   }
 
   /* PIGGY */
   .reward {
-    background: #1B8036;
+    background: #1b8036;
     border: 1px solid #000000;
     border-radius: 20px;
   }
@@ -11446,8 +11436,7 @@ section {
     font-size: 68px;
     line-height: 110%;
 
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward p,
@@ -11455,8 +11444,7 @@ section {
     font-weight: 500;
     font-size: 24px;
     line-height: 180%;
-    color: #FFFFFF;
-
+    color: #ffffff;
   }
 
   .reward a.readmore {
@@ -11464,15 +11452,14 @@ section {
     font-size: 17px;
     line-height: 20px;
 
-    color: #FFFFFF;
-    border: 4px solid #FFFFFF;
+    color: #ffffff;
+    border: 4px solid #ffffff;
     filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(27, 128, 54, 0.51));
     border-radius: 26.386px;
   }
 
-
   .list-different .items-different {
-    background: #FFFFFF;
+    background: #ffffff;
     box-shadow: 0px 12px 30px 17px rgba(0, 115, 25, 0.08);
     border-radius: 10px;
     min-height: 250px;
@@ -11487,7 +11474,7 @@ section {
     font-size: 24px;
     line-height: 30px;
 
-    color: #292D33;
+    color: #292d33;
   }
 
   .list-different .items-different a {
@@ -11496,11 +11483,16 @@ section {
     line-height: 24px;
     text-decoration-line: underline;
 
-    color: #1C6701;
+    color: #1c6701;
   }
 
   .box-contactus {
-    background: linear-gradient(100.66deg, #1B8036 23.13%, rgba(8, 63, 26, 0.92) 82.12%, rgba(8, 63, 26, 0.86) 97.79%);
+    background: linear-gradient(
+      100.66deg,
+      #1b8036 23.13%,
+      rgba(8, 63, 26, 0.92) 82.12%,
+      rgba(8, 63, 26, 0.86) 97.79%
+    );
     border-radius: 24.8718px;
   }
 
@@ -11509,7 +11501,7 @@ section {
   }
 
   .form-contactus {
-    background: #ECECEC;
+    background: #ececec;
     border-radius: 107.698px;
 
     display: flex;
@@ -11527,13 +11519,13 @@ section {
     font-weight: 400;
     font-size: 19.3856px;
     line-height: 23px;
-    color: #6C6B6B;
+    color: #6c6b6b;
   }
 
   .btn-contactus {
-    background: #1B8036;
+    background: #1b8036;
     border-radius: 30.1554px;
-    color: #FFFFFF;
+    color: #ffffff;
 
     display: flex;
     flex-direction: row;
@@ -11544,7 +11536,6 @@ section {
     font-size: 16px;
     line-height: 21px;
     text-align: center;
-
   }
 
   .btn-contactus img {
@@ -11559,11 +11550,10 @@ section {
     margin-bottom: 10rem !important;
   }
 
-
   .crypto-list-page {
     min-height: 450px;
-    background: #FFFFFF;
-    border: 3px solid #1B8036;
+    background: #ffffff;
+    border: 3px solid #1b8036;
     text-align: center;
   }
 
@@ -11577,7 +11567,7 @@ section {
     font-size: 28px;
     line-height: 42px;
 
-    background: linear-gradient(0deg, #1B8036, #1B8036);
+    background: linear-gradient(0deg, #1b8036, #1b8036);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -11598,7 +11588,8 @@ section {
   }
 }
 
-@media (min-width: 1600px) {}
+@media (min-width: 1600px) {
+}
 
 .list-group-item-grey-freedy {
   background-color: rgba(217, 217, 217, 0.25) !important;
@@ -11608,18 +11599,20 @@ section {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #1B8036;
+  background-color: #1b8036;
 }
 
 .btn-piggy:hover {
-  background-color: #1B8036;
+  background-color: #1b8036;
 }
 
 .input-piggy-style input,
 .input-piggy-style input:focus,
 .input-piggy-style input:hover {
-  background: #BEF1BD !important;
-  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5), inset 2px 2px 4px rgba(170, 170, 204, 0.25), inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #FFFFFF !important;
+  background: #bef1bd !important;
+  box-shadow: inset -2px -2px 4px rgba(255, 255, 255, 0.5),
+    inset 2px 2px 4px rgba(170, 170, 204, 0.25),
+    inset 5px 5px 10px rgba(170, 170, 204, 0.5), inset -5px -5px 10px #ffffff !important;
   border-radius: 40px !important;
   color: #000000 !important;
 }
@@ -11630,7 +11623,7 @@ section {
 
 .input-piggy-style label {
   font-weight: 700;
-  background: linear-gradient(180deg, #23832C 0%, #1C6701 100%);
+  background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -11642,7 +11635,7 @@ section {
 }
 
 .bg-layout-singup {
-  background: #EBFDF0;
+  background: #ebfdf0;
 }
 
 /* Landingpage PiggyBank */
@@ -11652,7 +11645,7 @@ section {
   padding: 0 0 0 2rem;
   list-style: none;
   display: inline-block;
-  margin: .5rem 2.5rem .5rem 0;
+  margin: 0.5rem 2.5rem 0.5rem 0;
 }
 
 .list-toright ul {
@@ -11678,7 +11671,7 @@ section {
   width: 25px;
   height: 25px;
   background: #fff;
-  color: #1B8036;
+  color: #1b8036;
   border-radius: 100%;
   display: grid;
   align-items: center;
@@ -11693,16 +11686,16 @@ section {
   border: 1px solid #000000;
 }
 
-.navbar-app>.box-navbar-freedy.top {
-  border-top: 1px solid #1B8036;
+.navbar-app > .box-navbar-freedy.top {
+  border-top: 1px solid #1b8036;
 }
 
-.navbar-app>.box-navbar-freedy.bottom {
-  border-bottom: 1px solid #1B8036;
+.navbar-app > .box-navbar-freedy.bottom {
+  border-bottom: 1px solid #1b8036;
 }
 
 .btn-head-crypto {
-  border: 1px solid #1B8036;
+  border: 1px solid #1b8036;
   border-radius: 8px;
 }
 
@@ -11714,13 +11707,13 @@ section {
   display: inline-block;
   background: transparent;
   border-radius: 8px;
-  color: #1B8036;
+  color: #1b8036;
 }
 
 .btn-head-crypto .crypto.active {
-  background: #1B8036;
+  background: #1b8036;
   border-radius: 8px;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .btn-head-crypto .crypto:hover,
@@ -11730,5 +11723,5 @@ section {
 
 .tbl-piggy-service tr td,
 .tbl-piggy-service tr th {
-  border: 2px solid #1B8036;
+  border: 2px solid #1b8036;
 }

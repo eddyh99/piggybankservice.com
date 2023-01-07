@@ -106,6 +106,7 @@
                                     <span>New Balance</span>
                                     <span><?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $data["deduct"], 2, ".", ",")  ?></span>
                                 </div>
+                                <img src="<?=base_url()?>assets/img/notif-sender-1.png" alt="" class="img-fluid mb-3">
 
                                 <div class="col-12 d-flex flex-row mt-5">
                                     <a href="<?= base_url() ?>bank"
