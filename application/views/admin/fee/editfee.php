@@ -27,7 +27,8 @@
                         <?php
                         if (
                             ($currency == "USD") ||
-                            ($currency == "EUR")
+                            ($currency == "EUR") ||
+                            ($currency == "GBP")
                         ) { ?>
                         <div class="mb-3" id="topup_circuit_fxd">
                             <label class="form-label">Topup Circuit (Fixed)</label>
@@ -118,7 +119,8 @@
 
                         <?php
                         if (($currency == "USD") ||
-                            ($currency == "EUR")
+                            ($currency == "EUR") ||
+                            ($currency == "GBP")
                         ) {
                         ?>
                         <div class="mb-3" id="walletbank_outside_fxd">
