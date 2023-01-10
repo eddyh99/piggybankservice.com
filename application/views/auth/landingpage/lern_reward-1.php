@@ -1,17 +1,77 @@
 <div class="row">
     <div class="col-12">
         <div class="row mb-5">
-            <div class="col-12 col-md-6 p-3">
-                <img src="<?= base_url() ?>assets/img/lern_reward-1.png" alt="" class="img-fluid">
+            <div class="col-12 col-md-12 col-lg-6 p-3">
+                <div class="box-service-list d-flex flex-row">
+                    <div class="text-content d-flex flex-column">
+                        <div class="top d-flex flex-row">
+                            <span class="number">01.</span>
+                            <span class="title">Open your account</span>
+                        </div>
+                        <div class="bot">
+                            <p>You can easly open your account in a minute</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-1.png" alt="icon">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 p-3">
-                <img src="<?= base_url() ?>assets/img/lern_reward-2.png" alt="" class="img-fluid">
+            <div class="col-12 col-md-12 col-lg-6 p-3">
+                <div class="box-service-list d-flex flex-row">
+                    <div class="text-content d-flex flex-column">
+                        <div class="top d-flex flex-row">
+                            <span class="number">02.</span>
+                            <span class="title">Get your personal
+                                link</span>
+                        </div>
+                        <div class="bot">
+                            <p>You will have your personal link after create an account</p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-2.png" alt="icon">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 p-3">
-                <img src="<?= base_url() ?>assets/img/lern_reward-3.png" alt="" class="img-fluid">
+            <div class="col-12 col-md-12 col-lg-6 p-3">
+                <div class="box-service-list d-flex flex-row">
+                    <div class="text-content d-flex flex-column">
+                        <div class="top d-flex flex-row">
+                            <span class="number">03.</span>
+                            <span class="title">Invite people</span>
+                        </div>
+                        <div class="bot">
+                            <p>
+                                Invite people/companies to register on <b translate="no">Piggybank</b>
+                                using your link
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-3.png" alt="icon">
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 p-3">
-                <img src="<?= base_url() ?>assets/img/lern_reward-4.png" alt="" class="img-fluid">
+            <div class="col-12 col-md-12 col-lg-6 p-3">
+                <div class="box-service-list d-flex flex-row">
+                    <div class="text-content d-flex flex-column">
+                        <div class="top d-flex flex-row">
+                            <span class="number">04.</span>
+                            <span class="title">Congratulation!</span>
+                        </div>
+                        <div class="bot">
+                            <p>
+                                Now you will receive a commission on every fiat transaction or on every buy or selling
+                                of crypto that the
+                                person/company makes.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="icon">
+                        <img src="<?=base_url()?>assets/img/icon-service-4.png" alt="icon">
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -44,9 +44,24 @@
                                 if ($_SESSION["currency"] == "EUR") {?>
                             <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">National SEPA
                                 Circuit</a>
+                            <?php } elseif ($_SESSION["currency"] == "USD") { ?>
+                            <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">USA bank circuit</a>
                             <?php }else{?>
                             <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">Local bank</a>
-                            <?php} } else { ?>
+                            <?php } 
+
+                                if (($_SESSION["currency"] == "USD") ||
+                                    ($_SESSION["currency"] == "EUR") ||
+                                    ($_SESSION["currency"] == "GBP")
+                                ) { 
+                                    if ($_SESSION["currency"] == "EUR") {?>
+                            <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">International
+                                BIC/Swift</a>
+                            <?php }else{?>
+                            <a href="<?= base_url() ?>receive/interbank" class="col-8 py-3 my-2">International Swift</a>
+                            <?php } 
+                                } 
+                            } else{ ?>
                             <div class="receive-note">
                                 <span class="fw-bold title">To top up this currency you have to covert from another
                                     currency
@@ -72,17 +87,6 @@
                             </div>
 
                             <?php } ?>
-                            <?php
-                            if (($_SESSION["currency"] == "USD") ||
-                                ($_SESSION["currency"] == "EUR") ||
-                                ($_SESSION["currency"] == "GBP")
-                            ) { 
-                                if ($_SESSION["currency"] == "EUR") {?>
-                            <a href="<?= base_url() ?>receive/localbank" class="col-8 py-3 my-2">International
-                                BIC/Swift</a>
-                            <?php }else{?>
-                            <a href="<?= base_url() ?>receive/interbank" class="col-8 py-3 my-2">International</a>
-                            <?php} } ?>
                         </div>
                     </div>
                 </div>

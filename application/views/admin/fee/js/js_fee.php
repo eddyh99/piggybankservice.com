@@ -60,7 +60,8 @@ function readfee() {
                 $("#topup_circuit_pct_div").show()
             }
             if ((readcurrency == "USD") ||
-                (readcurrency == "EUR")) {
+                (readcurrency == "EUR") ||
+                (readcurrency == "GBP")) {
                 $("#walletbank_outside_fxd_div").show()
                 $("#walletbank_outside_pct_div").show()
                 $("#topup_outside_fxd_div").show()
