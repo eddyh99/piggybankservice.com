@@ -3,7 +3,13 @@
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 infobank-list-app">
+                    <div class="col-12">
+                        <div class="text-start">
+                            <span class="me-auto f-monserat title-top-navbar"><?= $_SESSION["currency"] ?> - Add /
+                                Receive fund - Cash</span>
+                        </div>
+                    </div>
+                    <div class="col-12 infobank-list-app my-4">
                         <div class="py-4">
                             <p>
                                 Those who want to make a bank transfer without a current account can go to the bank and

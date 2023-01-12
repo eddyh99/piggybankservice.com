@@ -5,6 +5,12 @@
             <div class="app-container py-5">
                 <div class="row d-flex justify-content-center">
                     <?php if (file_exists(APPPATH . 'views/member/tobank/currency/' . $_SESSION['currency'] . '.php')) { ?>
+                    <div class="col-12">
+                        <div class="text-start">
+                            <span class="me-auto f-monserat title-top-navbar"><?= $_SESSION["currency"] ?> - Wallet to
+                                bank - International</span>
+                        </div>
+                    </div>
                     <div class="col-12 infobank-list-app my-4">
                         <div class="py-4">
                             <?php if (@isset($_SESSION["failed"])) { ?>

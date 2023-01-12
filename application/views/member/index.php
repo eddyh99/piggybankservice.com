@@ -64,14 +64,6 @@
                         </div>
                     </div>
 
-                    <div class="col-12 text-center my-3">
-                        <span class="text-green-alert">
-                            <strong>If your Topup hasn't arrived, contact the following
-                                email address:
-                                support-topup@tracklessmail.com</strong>
-                        </span>
-                    </div>
-
                     <div class="col-12 curencies-list-app">
                         <div class="col-12">
                             <?php foreach ($currency as $dt) {

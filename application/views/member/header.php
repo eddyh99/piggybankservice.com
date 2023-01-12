@@ -34,7 +34,7 @@
                     <div class="saldo-box d-flex flex-row align-items-center w-100">
                         <span class="saldo me-auto">
                             <?= $_SESSION["symbol"] ?>
-                            <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]), 2) ?>
+                            <?= substr(number_format(balance($_SESSION['user_id'], $_SESSION["currency"]),4),0,-2) ?>
                         </span>
                         <a href="<?= base_url() ?>homepage">
                             <svg width="" height="68" viewBox="0 0 138 68" fill="none"

@@ -5,7 +5,8 @@
                 <div class="row d-flex justify-content-center">
                     <div class="col-12">
                         <div class="text-start">
-                            <span class="me-auto f-monserat title-top-navbar">SEND WALLET TO WALLET</span>
+                            <span class="me-auto f-monserat title-top-navbar"><?= $_SESSION["currency"] ?> - Send Wallet
+                                to Wallet</span>
                         </div>
                     </div>
                     <div class="col-12 infobank-list-app my-4">
@@ -40,7 +41,9 @@
                                         value="<?= $ucode ?>" <?php echo (empty($ucode) ? "" : "readonly") ?>>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="ms-2 form-label">AMOUNT</label>
+                                    <label class="ms-2 form-label">AMOUNT ( max :
+                                        <?= max_sendtowallet(balance($_SESSION['user_id'], $_SESSION["currency"]),$_SESSION["currency"]); ?>
+                                        )</label>
                                     <input type="text" class="form-control" name="amount" id="amount"
                                         placeholder="Amount (ex. 0.01)"
                                         oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');input(this);"

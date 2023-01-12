@@ -3,7 +3,13 @@
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
                 <div class="row d-flex justify-content-center">
-                    <div class="col-12 infobank-list-app input-piggy-style">
+                    <div class="col-12">
+                        <div class="text-start">
+                            <span class="me-auto f-monserat title-top-navbar"><?= $_SESSION["currency"] ?> - Add /
+                                Receive fund - Local bank</span>
+                        </div>
+                    </div>
+                    <div class="col-12 infobank-list-app input-piggy-style my-4">
                         <div class="py-4">
                             <div class="tutorial-box p-3">
                                 <span class="title mb-3 d-inline-block">Top up procedure :</span>
