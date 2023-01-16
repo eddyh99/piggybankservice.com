@@ -91,6 +91,12 @@ class Auth extends CI_Controller
 					return;
 				}
 			}
+			
+			$session_referral = array(
+				'referral'   => $_GET['ref']
+			);
+			$this->session->set_userdata($session_referral);
+			
 		}
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
