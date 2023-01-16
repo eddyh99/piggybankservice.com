@@ -65,7 +65,7 @@ class Auth extends CI_Controller
 			}
 		}
 
-		if (@$_GET['ref'] == '') {
+		if (!isset($_GET['ref'])) {
 			if (!$this->session->userdata('referral')) {
 				$this->session->set_flashdata('failed', 'Must enter Referral Code');
 				redirect(base_url() . "auth/signup_referral");
