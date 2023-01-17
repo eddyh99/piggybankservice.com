@@ -11891,3 +11891,9 @@ section {
 .tbl-piggy-service tr th {
   border: 2px solid #1b8036;
 }
+
+.list.box-list-sosmed {
+  border: 3px solid #FFFFFF;
+  border-radius: 10px;
+  display: inline-flex;
+}

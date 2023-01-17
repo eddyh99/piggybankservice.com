@@ -168,7 +168,8 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
-                                <span class="title mt-2 mb-auto">Convert, custody, send worldwide in over 50 FIAT currencies</span>
+                                <span class="title mt-2 mb-auto">Convert, custody, send worldwide in over 50 FIAT
+                                    currencies</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -518,7 +519,7 @@
                 <div class="col-12">
                     <div class="d-flex flex-wrap">
                         <div class="powered-top mb-3 me-5">
-                            <span>Powered By</span>
+                            <span class="fw-bold">Empowered by</span>
                             <a href="https://tracklessproject.com/">
                                 <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                             </a>
@@ -535,49 +536,41 @@
     <div class="pt-5">
         <div class="container py-5">
             <div class="row gy-4">
-                <div class="col-lg col-12 pe-2 footer-links">
-                    <h4 class="f-lexend">Follow us</h4>
-                    <div class="list">
-                        <a href="#" class="d-flex align-items-center justify-content-start my-1">
-                            <!-- <i class="fa fa-envelope"></i> -->
-                            <!-- <span class="ms-1">eeinformationservice@gmail.com</span> -->
+                <div class="col-lg-3 col-12 pe-2 footer-links text-lg-center">
+                    <h4 class="f-lexend">Contact us</h4>
+                    <div class="row list box-list-sosmed p-3">
+                        <a href="#" class="col-auto col-lg-6 p-1 p-lg-3 ms-lg-auto">
+                            <span class="icon mx-lg-auto"><i class="fab fa-twitter"></i></span>
                         </a>
-                        <a href="#" class="d-flex align-items-center justify-content-start my-1">
-                            <span class="icon"><i class="fab fa-twitter"></i></span>
-                            <span class="ms-1"></span>
+                        <a href="#" class="col-auto col-lg-6 p-1 p-lg-3">
+                            <span class="icon mx-lg-auto"><i class="fab fa-facebook-f"></i></span>
                         </a>
-                        <a href="#" class="d-flex align-items-center justify-content-start my-1">
-                            <span class="icon"><i class="fab fa-facebook-f"></i></span>
-                            <span class="ms-1"></span>
+                        <a href="#" class="col-auto col-lg-6 p-1 p-lg-3">
+                            <span class="icon mx-lg-auto"><i class="fab fa-instagram"></i></span>
                         </a>
-                        <a href="#" class="d-flex align-items-center justify-content-start my-1">
-                            <span class="icon"><i class="fab fa-instagram"></i></span>
-                            <span class="ms-1"></span>
-                        </a>
-                        <a href="#" class="d-flex align-items-center justify-content-start my-1">
-                            <span class="icon"><i class="fab fa-linkedin"></i></span>
-                            <span class="ms-1"></span>
+                        <a href="#" class="col-auto col-lg-6 p-1 p-lg-3 me-lg-auto">
+                            <span class="icon mx-lg-auto"><i class="fab fa-linkedin"></i></span>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg col-12 pe-2 footer-links">
-                    <h4 class="f-lexend">&nbsp;
-<!--                        <a href="<?= base_url(); ?>link/faq" style="color:#fff;">FAQ</a>
--->                    </h4>
-                </div>
-                <div class="col-lg col-12 pe-2 footer-links">
+                <div class="col-lg-6 col-12 pe-2 footer-links text-lg-center">
                     <h4 class="f-lexend">
                         <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b
                                 translate="no">PiggyBank</b></a>
                     </h4>
                 </div>
+                <div class="col-lg-3 col-12 pe-2 footer-links text-lg-center">
+                    <a href="<?= base_url(); ?>" class="logo-footer">
+                        <img src="<?= base_url()?>assets/img/logo-bgcircle.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
         <div class="container pt-5 pb-4" style="z-index: 99; position: relative;">
             <div class="credits f-lexend">
-                PiggyBankService (USA) is a service  subject to partnership with licensee PBS Online LLC.
+                PiggyBank (USA) is a service subject to partnership with licenses PBS On line LLC
             </div>
-        </div>        
+        </div>
     </div>
 </footer><!-- End Footer -->
 
