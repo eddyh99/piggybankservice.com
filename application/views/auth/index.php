@@ -51,7 +51,7 @@
                 </div>
                 <div class="d-flex flex-wrap">
                     <div class="powered-top mb-3 me-5">
-                        <span>Powered By</span>
+                        <span>Empowered By</span>
                         <a href="https://tracklessproject.com/">
                             <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
                         </a>
