@@ -1,7 +1,7 @@
 <!-- ======= Header ======= -->
 <header id="header" class="header fixed-top">
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-        <a href="<?= base_url(); ?>auth" class="logo d-flex align-items-center">
+        <a class="logo d-flex align-items-center">
             <img src="<?= base_url() ?>assets/img/logo-login.png" alt="">
         </a>
 
@@ -31,7 +31,7 @@
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
-                    Anonymous and free multi currency non-custodial wallet with the
+                    Anonymous and free multi currency <b translate="no"> Non-custodial wallet</b> with the
                     main functions of a bank account and with a shared order book integrated where to buy and sell
                     crypto with FIAT
                 </p>
@@ -67,7 +67,7 @@
         <div class="row">
             <div class="col-12 text-center bg-layout-singup my-5 py-5">
                 <h2 class="f-lexend m-0">
-                    Get your <b translate="no">PiggyBank</b> account in a minute
+                    Get your <b translate="no"> PiggyBank </b> account in a minute
                 </h2>
                 <div class="text-center">
                     <a href="<?= base_url(); ?>auth/signup_referral"
@@ -93,7 +93,7 @@
                     <div class="content-freedy p-r">
                         <h2 class="f-lexend">Immediate Opening</h2>
                         <p class="f-lexend">
-                            <b translate="no">PiggyBank</b> is easy and immediately to open, you need to sign
+                            <b translate="no"> PiggyBank </b> is easy and immediately to open, you need to sign
                             up just using an email and password and your account will be immediately active and
                             ready to use without any restriction. <br>
                             (<a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
@@ -106,7 +106,7 @@
                             <div class="content-freedy">
                                 <h2 class="f-lexend">Free of Charge</h2>
                                 <ul class="p-0 f-lexend">
-                                    <li><b translate="no">PiggyBank</b> account opening is free of charge</li>
+                                    <li><b translate="no"> PiggyBank </b> account opening is free of charge</li>
                                     <li>No monthly or annual fees</li>
                                     <li>Integration to your bussiness without any extra cost</li>
                                     <li>Convert FIAT currencies with zero fees</li>
@@ -141,7 +141,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-8.png" alt="">
-                                <span class="title mt-2 mb-auto">Non-custodial wallet</span>
+                                <span class="title mt-2 mb-auto"><b translate="no"> Non-custodial wallet</b></span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('8') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -282,7 +282,7 @@
             <div class="row gx-0">
                 <div class="col-12 mb-5">
                     <div class="content-freedy p-r text-center">
-                        <h2 class="f-lexend m-plus-5 d-block"><b translate="no">PiggyBank</b> utilities</h2>
+                        <h2 class="f-lexend m-plus-5 d-block"><b translate="no"> PiggyBank </b> utilities</h2>
                     </div>
                     <div class="col-12 my-5">
                         <div class="row d-flex justify-content-center">
@@ -560,7 +560,7 @@
                     </h4>
                 </div>
                 <div class="col-lg-3 col-12 pe-2 footer-links text-lg-center">
-                    <a href="<?= base_url(); ?>" class="logo-footer">
+                    <a class="logo-footer">
                         <img src="<?= base_url()?>assets/img/logo-bgcircle.png" alt="">
                     </a>
                 </div>
