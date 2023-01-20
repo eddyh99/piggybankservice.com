@@ -500,7 +500,7 @@
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <img src="<?= base_url() ?>assets/img/sendmail.png" alt="" class="mx-auto d-none d-md-grid">
                             <div class="form-contactus py-2 mx-auto">
-                                <form id="form_submit" method="POST" action="<?= base_url(); ?>link/mailproses"
+                                <form id="form_submit" method="POST" action="<?= base_url(); ?>link/send_message"
                                     class="d-flex flex-row justify-content-center align-items-center"
                                     onsubmit="return validate()">
                                     <input type="hidden" id="token"
