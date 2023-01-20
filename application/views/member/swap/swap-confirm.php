@@ -18,10 +18,10 @@
                                 <input type="hidden" name="quoteid" value="<?= $data["quoteid"] ?>">
                                 <input type="hidden" name="toswap" value="<?= $data["target"] ?>">
                                 <input type="text" name="ucode" id="ucode" value="<?= $_SESSION['ucode'] ?>" hidden>
-                                <input type="text" name="amount" id="amount" value="<?= $data["amount"] ?>" hidden>
+                                <input type="text" name="amount" id="amount" value="<?= $data["amount"] ?>">
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>Convert amount</span>
-                                    <span><?= $data['amount'] ?></span>
+                                    <span><?= number_format($data['amount'],2) ?></span>
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>transaction fee</span>
