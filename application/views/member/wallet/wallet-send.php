@@ -31,7 +31,7 @@
                                     name="<?php echo $this->security->get_csrf_token_name(); ?>"
                                     value="<?php echo $this->security->get_csrf_hash(); ?>">
                                 <div class="mb-3">
-                                    <label class="ms-2 form-label">RECIPIENT’S UNIQE CODE</label>
+                                    <label class="ms-2 form-label">RECIPIENT’S UNIQUE CODE</label>
                                     <input type="text" class="form-control" name="ucode" id="ucode"
                                         value="<?= @$ucode ?>" <?php echo (empty($ucode) ? "" : "readonly") ?>>
                                 </div>
@@ -46,14 +46,14 @@
                                         )</label>
                                     <input type="text" class="form-control" name="amount" id="amount"
                                         placeholder="Amount (ex. 0.01)"
-                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');input(this);"
+                                        oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*)\./g, '$1');input(this);"
                                         value="<?= $amount ?>" <?php echo (empty($amount) ? "" : "readonly") ?>>
                                 </div>
                                 <div class="mb-3">
                                     <label class="ms-2 form-label">CONFIRM AMOUNT</label>
                                     <input type="text" class="form-control" name="confirm_amount" id="confirm_amount"
                                         placeholder="Confirm Amount (ex. 0.01)"
-                                        oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');input(this);"
+                                        oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*)\./g, '$1');input(this);"
                                         value="<?= $amount ?>" <?php echo (empty($amount) ? "" : "readonly") ?>>
                                 </div>
                                 <div class="row">

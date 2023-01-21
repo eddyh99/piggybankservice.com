@@ -21,19 +21,20 @@
                                 <input type="text" name="amount" id="amount" value="<?= $data["amount"] ?>" hidden>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>Convert amount</span>
-                                    <span><?= number_format($data['amount'],2) ?></span>
+                                    <span><?= $_SESSION['symbol'] ?> <?= number_format($data['amount'],2) ?></span>
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>transaction fee</span>
-                                    <span><?= number_format(0, 2) ?></span>
+                                    <span><?= $_SESSION['symbol'] ?> <?= number_format(0, 2) ?></span>
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>You receive</span>
-                                    <span><?= $data["amountget"] ?></span>
+                                    <span><?= $data['symbol'] ?> <?= $data["amountget"] ?></span>
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>New Balance</span>
-                                    <span><?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $data["amount"], 2) ?></span>
+                                    <span><?= $_SESSION['symbol'] ?>
+                                        <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $data["amount"], 2) ?></span>
                                 </div>
                                 <div class="col-12 d-flex flex-row mt-5">
                                     <a href="<?= base_url() ?>swap"
