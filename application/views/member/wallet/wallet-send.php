@@ -36,7 +36,7 @@
                                         value="<?= @$ucode ?>" <?php echo (empty($ucode) ? "" : "readonly") ?>>
                                 </div>
                                 <div class="mb-3">
-                                    <label class="ms-2 form-label">CONFIRM RECIPIENT’S UNIQE CODE</label>
+                                    <label class="ms-2 form-label">CONFIRM RECIPIENT’S UNIQUE CODE</label>
                                     <input type="text" class="form-control" name="confirm_ucode" id="confirm_ucode"
                                         value="<?= $ucode ?>" <?php echo (empty($ucode) ? "" : "readonly") ?>>
                                 </div>

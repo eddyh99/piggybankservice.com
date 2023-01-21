@@ -72,7 +72,7 @@ var tblhistory =
                 render: $.fn.dataTable.render.number(',', '.', 2, '<?= $_SESSION['symbol']?> ')
             },
             {
-                "data": "fee",
+                "data": "fee"
             },
             {
                 "data": "date_created"
