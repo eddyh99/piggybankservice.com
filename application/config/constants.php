@@ -107,3 +107,10 @@ local server
 define('LINKQRCODE', "/piggybank.com/wallet/send");
 
 define('NAMETITLE', "Piggybank");
+
+define('BANK_ID', "3");
+
+/*email config*/
+define('HOST_EMAIL', "mail.tracklessbank.com");
+define('USERNAME_EMAIL', "no-reply@tracklessbank.com");
+define('PASS_EMAIL', 'DLgV4o?L1B]m');
