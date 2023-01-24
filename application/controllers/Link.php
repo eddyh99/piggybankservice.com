@@ -190,55 +190,6 @@ class Link extends CI_Controller
 
         $this->load->view('tamplate/wrapper', $data);
     }
-
-    public function mailproses()
-    {
-        // $this->form_validation->set_rules('email', 'Email', 'trim|required');
-
-        // if ($this->form_validation->run() == FALSE) {
-        //     $this->session->set_flashdata('failed', validation_errors());
-        //     redirect(base_url('#contactus'));
-        //     return;
-        // }
-
-        // $input        = $this->input;
-        // $email   = $this->security->xss_clean($input->post("email"));
-
-        // $result = $this->send_email($email);
-        // if ($result) {
-        //     $this->session->set_flashdata("success", "Message successfully sent!");
-        //     redirect(base_url('#contactus'));
-        //     return;
-        // } else {
-        //     $this->session->set_flashdata("failed", 'Message failed to send!');
-        //     redirect(base_url('#contactus'));
-        //     return;
-        // }
-
-        $this->form_validation->set_rules('ucode', 'Ucode', 'trim|required');
-        $this->form_validation->set_rules('email', 'Email', 'trim|required');
-        $this->form_validation->set_rules('message', 'Message', 'trim|required');
-
-        if ($this->form_validation->run() == FALSE) {
-            $this->session->set_flashdata('failed', validation_errors());
-            redirect(base_url("#contactus"));
-            return;
-        }
-
-        $input        = $this->input;
-        $ucode   = $this->security->xss_clean($input->post("ucode"));
-        $email   = $this->security->xss_clean($input->post("email"));
-        $message   = $this->security->xss_clean($input->post("message"));
-
-        $result = send_email($email, $message, $this->phpmailer_lib->load());
-        if ($result) {
-            $this->session->set_flashdata("success", "Message successfully sent!");
-            redirect(base_url("#contactus"));
-        } else {
-            $this->session->set_flashdata("failed", 'Message failed to send!');
-            redirect(base_url("#contactus"));
-        }
-    }
     
     public function send_message()
     {
@@ -250,8 +201,17 @@ class Link extends CI_Controller
             return;
         }
         
-        $input        = $this->input;
+        $input   = $this->input;
         $email   = $this->security->xss_clean($input->post("email"));
+        
+        $url = URLAPI . "/v1/auth/getmember_byemail?email=" . $email;
+        $result   = apitrackless($url);
+
+        if (@$result->code != 200) {
+            $this->session->set_flashdata('failed', $result->message);
+            redirect(base_url('#contactus'));
+            return;
+        }
 
         $data = array(
             "title"     => NAMETITLE . " - Send Message",
@@ -263,26 +223,29 @@ class Link extends CI_Controller
         $this->load->view('tamplate/wrapper', $data);
     }
     
-    public function check_ucode()
+    public function mailproses()
     {
-        $ucode = $_GET['ucode'];
-        $url = URLAPI . "/v1/auth/getmember_byucode?ucode=" . $ucode;
-        $result   = apitrackless($url);
+        $this->form_validation->set_rules('email', 'Email', 'trim|required');
+        $this->form_validation->set_rules('message', 'Message', 'trim|required');
 
-        $mdata = array();
-        if (@$result->code == 200) {
-            $mdata = array(
-                "type" => 'show',
-                "url" => $url,
-            );
-        } else {
-            $mdata = array(
-                "type" => 'hide',
-                "url" => $url
-            );
+        if ($this->form_validation->run() == FALSE) {
+            $this->session->set_flashdata('failed', validation_errors());
+            redirect(base_url("#contactus"));
+            return;
         }
 
-        echo json_encode($mdata);
+        $input        = $this->input;
+        $email   = $this->security->xss_clean($input->post("email"));
+        $message   = $this->security->xss_clean($input->post("message"));
+
+        $result = send_email($email, $message, $this->phpmailer_lib->load());
+        if ($result) {
+            $this->session->set_flashdata("success", "Message successfully sent!");
+            redirect(base_url("#contactus"));
+        } else {
+            $this->session->set_flashdata("failed", 'Message failed to send!');
+            redirect(base_url("#contactus"));
+        }
     }
 
     public function about()

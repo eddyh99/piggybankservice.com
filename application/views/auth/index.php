@@ -553,20 +553,24 @@
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12 pe-2 footer-links text-lg-center">
+                <div class="col-lg-6 col-12 pe-2 footer-links text-lg-center d-flex flex-column">
                     <h4 class="f-lexend">
                         <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b
                                 translate="no">PiggyBank</b></a>
                     </h4>
+                    <div class="credits f-lexend d-none d-lg-grid my-auto">
+                        PiggyBank (USA) is a service subject to partnership with licenses PBS On line LLC
+                    </div>
                 </div>
-                <div class="col-lg-3 col-12 pe-2 footer-links text-lg-center">
+                <div
+                    class="col-lg-3 col-12 pe-2 footer-links text-lg-center d-lg-flex justify-content-center align-items-center">
                     <a class="logo-footer">
                         <img src="<?= base_url()?>assets/img/logo-bgcircle.png" alt="">
                     </a>
                 </div>
             </div>
         </div>
-        <div class="container pt-5 pb-4" style="z-index: 99; position: relative;">
+        <div class="container pt-5 pb-4 d-lg-none" style="z-index: 99; position: relative;">
             <div class="credits f-lexend">
                 PiggyBank (USA) is a service subject to partnership with licenses PBS On line LLC
             </div>

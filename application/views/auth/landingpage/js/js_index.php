@@ -60,34 +60,6 @@ $("#btnaccorionFour").on("click", function() {
     }
 });
 
-
-$("#ucode").on("change", function() {
-    var ucode = $("#ucode").val();
-    $.ajax({
-        url: "<?= base_url() ?>link/check_ucode?ucode=" + ucode,
-        success: function(response) {
-            console.log(response);
-            var data = JSON.parse(response);
-            if (data.type == 'show') {
-                $('#email_div').removeClass("bg-disable");
-                $('#question_div').removeClass("bg-disable");
-                // $("#email").removeAttr("disabled");
-                $("#question").removeAttr("disabled");
-            }
-            if (data.type == 'hide') {
-                $('#email_div').addClass("bg-disable");
-                $('#question_div').addClass("bg-disable");
-                $("#email").attr("disabled", "disabled");
-                $("#question").attr("disabled", "disabled");
-            }
-        },
-        error: function(response) {
-            alert(response);
-        }
-    })
-});
-
-
 $(document).ready(function() {
     window.setTimeout(function() {
         $("#success-alert").fadeTo(1000, 0).slideUp(1000, function() {

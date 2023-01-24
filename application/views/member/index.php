@@ -71,7 +71,8 @@
                                     if (($dt->currency == "USD") || ($dt->currency == "EUR")) {
                             ?>
                             <a href="<?= base_url() ?>homepage/wallet?cur=<?= $dt->currency ?>"
-                                class="d-block text-center curencies-list py-4 px-3 my-2">
+                                class="d-flex flex-row justify-content-center align-items-center curencies-list py-4 px-3 my-2">
+                                <span class="me-auto"><?= $dt->currency ?></span>
                                 <span><?= $dt->symbol; ?>
                                     <?= substr(number_format($dt->balance,4),0,-2) ?></span>
                             </a>
@@ -84,7 +85,8 @@
                                     if (($dt->currency != "USD") && ($dt->currency != "EUR")) {
                             ?>
                             <a href="<?= base_url() ?>homepage/wallet?cur=<?= $dt->currency ?>"
-                                class="d-block text-center curencies-list py-4 px-3 my-2">
+                                class="d-flex flex-row justify-content-center align-items-center curencies-list py-4 px-3 my-2">
+                                <span class="me-auto"><?= $dt->currency ?></span>
                                 <span><?= $dt->symbol; ?>
                                     <?= substr(number_format($dt->balance,4),0,-2) ?></span>
                             </a>
