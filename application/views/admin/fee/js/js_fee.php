@@ -31,14 +31,16 @@ function readfee() {
             $("#referral_bank_fxd").val(data.referral_bank_fxd)
             $("#referral_bank_pct").val(data.referral_bank_pct)
 
-            if ((readcurrency != "USD") ||
-                (readcurrency != "EUR") ||
-                (readcurrency != "AUD") ||
-                (readcurrency != "NZD") ||
-                (readcurrency != "CAD") ||
-                (readcurrency != "HUF") ||
-                (readcurrency != "SGD") ||
-                (readcurrency != "TRY")) {
+            if ((readcurrency != "USD") &&
+                (readcurrency != "EUR") &&
+                (readcurrency != "AUD") &&
+                (readcurrency != "NZD") &&
+                (readcurrency != "CAD") &&
+                (readcurrency != "HUF") &&
+                (readcurrency != "SGD") &&
+                (readcurrency != "TRY") &&
+                (readcurrency != "GBP") &&
+                (readcurrency != "RON")) {
                 $("#walletbank_outside_fxd_div").hide()
                 $("#walletbank_outside_pct_div").hide()
                 $("#topup_outside_fxd_div").hide()
@@ -46,12 +48,14 @@ function readfee() {
                 $("#topup_circuit_fxd_div").hide()
                 $("#topup_circuit_pct_div").hide()
             }
+
             if ((readcurrency == "AUD") ||
                 (readcurrency == "NZD") ||
                 (readcurrency == "CAD") ||
                 (readcurrency == "HUF") ||
                 (readcurrency == "SGD") ||
-                (readcurrency == "TRY")) {
+                (readcurrency == "TRY") ||
+                (readcurrency == "RON")) {
                 $("#walletbank_outside_fxd_div").hide()
                 $("#walletbank_outside_pct_div").hide()
                 $("#topup_outside_fxd_div").hide()
@@ -59,6 +63,7 @@ function readfee() {
                 $("#topup_circuit_fxd_div").show()
                 $("#topup_circuit_pct_div").show()
             }
+
             if ((readcurrency == "USD") ||
                 (readcurrency == "EUR") ||
                 (readcurrency == "GBP")) {

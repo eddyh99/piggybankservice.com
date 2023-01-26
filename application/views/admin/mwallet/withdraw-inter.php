@@ -39,7 +39,7 @@
                         </div>
 
                         <?php
-                        $data['type'] = "wdinter";
+                        $data['type'] = "inter";
                         $this->load->view('admin/mwallet/currency/' . @$_SESSION['currency'], $data);
                         ?>
 

@@ -102,7 +102,7 @@ class Wallet extends CI_Controller
         $a = $this->input->post("confirm_amount");
         $b = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $a);
         $_POST["confirm_amount"]=$b;
-
+        
         $this->form_validation->set_rules('ucode', 'Unique Code', 'trim|required');
         $this->form_validation->set_rules('confirm_ucode', 'Confirm Unique Code', 'trim|required|matches[ucode]');
         $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
@@ -139,7 +139,7 @@ class Wallet extends CI_Controller
             "currency"  => $_SESSION["currency"],
             "ucode"     => $ucode,
             "fee"     => $result->message->fee,
-            "deduct"     => $result->message->deduct,
+            "deduct"     => preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $result->message->deduct),
             "amount"    => $amount
         );
 

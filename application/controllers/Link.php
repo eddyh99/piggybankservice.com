@@ -225,6 +225,29 @@ class Link extends CI_Controller
     
     public function mailproses()
     {
+        // $this->form_validation->set_rules('email', 'Email', 'trim|required');
+
+        // if ($this->form_validation->run() == FALSE) {
+        //     $this->session->set_flashdata('failed', validation_errors());
+        //     redirect(base_url('#contactus'));
+        //     return;
+        // }
+
+        // $input        = $this->input;
+        // $email   = $this->security->xss_clean($input->post("email"));
+
+        // $result = $this->send_email($email);
+        // if ($result) {
+        //     $this->session->set_flashdata("success", "Message successfully sent!");
+        //     redirect(base_url('#contactus'));
+        //     return;
+        // } else {
+        //     $this->session->set_flashdata("failed", 'Message failed to send!');
+        //     redirect(base_url('#contactus'));
+        //     return;
+        // }
+
+        $this->form_validation->set_rules('ucode', 'Ucode', 'trim|required');
         $this->form_validation->set_rules('email', 'Email', 'trim|required');
         $this->form_validation->set_rules('message', 'Message', 'trim|required');
 
@@ -235,6 +258,7 @@ class Link extends CI_Controller
         }
 
         $input        = $this->input;
+        $ucode   = $this->security->xss_clean($input->post("ucode"));
         $email   = $this->security->xss_clean($input->post("email"));
         $message   = $this->security->xss_clean($input->post("message"));
 
@@ -246,6 +270,40 @@ class Link extends CI_Controller
             $this->session->set_flashdata("failed", 'Message failed to send!');
             redirect(base_url("#contactus"));
         }
+        
+        $input        = $this->input;
+        $email   = $this->security->xss_clean($input->post("email"));
+
+        $data = array(
+            "title"     => NAMETITLE . " - Send Message",
+            "content"   => "auth/landingpage/message",
+            "extra"     => "auth/landingpage/js/js_index",
+            "email"     => $email,
+        );
+
+        $this->load->view('tamplate/wrapper', $data);
+    }
+    
+    public function check_ucode()
+    {
+        $ucode = $_GET['ucode'];
+        $url = URLAPI . "/v1/auth/getmember_byucode?ucode=" . $ucode;
+        $result   = apitrackless($url);
+
+        $mdata = array();
+        if (@$result->code == 200) {
+            $mdata = array(
+                "type" => 'show',
+                "url" => $url,
+            );
+        } else {
+            $mdata = array(
+                "type" => 'hide',
+                "url" => $url
+            );
+        }
+
+        echo json_encode($mdata);
     }
 
     public function about()

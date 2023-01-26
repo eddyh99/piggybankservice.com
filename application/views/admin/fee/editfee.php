@@ -56,12 +56,14 @@
                         </div>
                         <?php
                         } ?>
+
                         <?php
                         if (($currency == "AUD") ||
                             ($currency == "NZD") ||
                             ($currency == "CAD") ||
                             ($currency == "HUF") ||
                             ($currency == "SGD") ||
+                            ($currency == "RON") ||
                             ($currency == "TRY")
                         ) {
                         ?>

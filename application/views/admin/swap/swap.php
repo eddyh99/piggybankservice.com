@@ -12,6 +12,18 @@
                         class="swap text-center" onsubmit="return validate()">
                         <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
                             value="<?php echo $this->security->get_csrf_hash(); ?>">
+
+                        <?php if (@isset($_SESSION["failed"])) { ?>
+                        <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
+                            <span class="notif-login f-poppins"><?= $_SESSION["failed"] ?></span>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                        </div>
+                        <?php } ?>
+                        <div id="notifcalculate" class="col-12 alert alert-warning alert-dismissible fade show"
+                            role="alert">
+                            <span class="notif-login f-poppins" id="txtnotif"></span>
+                        </div>
+
                         <input type="hidden" id="amountget" name="amountget">
                         <input type="hidden" id="quoteid" name="quoteid">
                         <div class="swap-form-icon d-flex flex-row align-items-center my-4">

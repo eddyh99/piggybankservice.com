@@ -15,6 +15,10 @@
                                         aria-label="Close"></button>
                                 </div>
                                 <?php } ?>
+                                <div id="notifcalculate" class="col-12 alert alert-warning alert-dismissible fade show"
+                                    role="alert">
+                                    <span class="notif-login f-poppins" id="txtnotif"></span>
+                                </div>
                                 <input type="hidden" id="token"
                                     name="<?php echo $this->security->get_csrf_token_name(); ?>"
                                     value="<?php echo $this->security->get_csrf_hash(); ?>">
