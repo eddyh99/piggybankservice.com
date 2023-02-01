@@ -11897,3 +11897,15 @@ section {
   border-radius: 10px;
   display: inline-flex;
 }
+
+.payment-bank {
+  border: 1px solid #1b8036;
+  /* background: #000; */
+  padding: 1rem 1rem;
+}
+
+.payment-bank img {
+  height: 100px;
+  width: 100px;
+  object-fit: contain;
+}
