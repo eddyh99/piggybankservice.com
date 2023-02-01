@@ -29,7 +29,7 @@
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>You receive</span>
-                                    <span><?= $data['symbol'] ?> <?= $data["amountget"] ?></span>
+                                    <span><?= $data['symbol'] ?> <?= number_format($data["amountget"],2) ?></span>
                                 </div>
                                 <div class="col-12 list-send-wallet d-flex flex-column mb-3">
                                     <span>New Balance</span>

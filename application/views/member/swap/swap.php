@@ -26,9 +26,8 @@
                                 <input type="hidden" id="quoteid" name="quoteid">
                                 <div class="swap-form-icon d-flex flex-row align-items-center my-4">
                                     <label for=""><?= $_SESSION["symbol"] ?></label>
-                                    <input type="text" class="form-control text-end" name="amount" id="amount"
-                                        placeholder="0.00"
-                                        oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*)\./g, '$1');input(this);">
+                                    <input type="text" class="form-control money-input text-end" name="amount"
+                                        id="amount" placeholder="0.00">
                                 </div>
 
                                 <div class="swap-selection">
@@ -58,10 +57,8 @@
 
                                 <div class="swap-form-icon d-flex flex-row align-items-center my-4">
                                     <label for=""><span id="tocurrency"></span></label>
-                                    <input type="text" class="form-control text-end" name="receive" id="receive"
-                                        placeholder="0.00"
-                                        oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*)\./g, '$1');"
-                                        readonly>
+                                    <input type="text" class="form-control money-input text-end" name="receive"
+                                        id="receive" placeholder="0.00" readonly>
                                 </div>
                                 <div class="row">
                                     <div class="d-flex flex-row mt-4">

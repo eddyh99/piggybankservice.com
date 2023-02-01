@@ -37,9 +37,12 @@
                                 <input type="hidden" name="url" value="inter">
                                 <div class="tab-pane box-tab-bank" id="us">
 
-                                    <div class="d-flex flex-row align-items-center my-3">
-                                        <input class="form-control me-2" type="text" name="amount" placeholder="Amount"
-                                            oninput="this.value = this.value.replace(/[^0-9.,]/g, '').replace(/(\..*)\./g, '$1');input(this);">
+                                    <div class="align-items-center my-3">
+                                        <small class="text-danger">MAX
+                                            : <?= $_SESSION["symbol"] ?>
+                                            <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $fee,2) ?></small>
+                                        <input class="form-control money-input me-2" type="text" name="amount"
+                                            placeholder="Amount">
                                     </div>
                                     <div class="d-flex flex-row align-items-center my-3">
                                         <input class="form-control me-2" type="text" name="accountHolderName"
@@ -48,6 +51,7 @@
 
                                     <?php 
                                         $data['type'] = "inter";
+                                        $data['countries_list'] = $countries_list;
                                         $this->load->view('member/tobank/currency/' . @$_SESSION['currency'], $data) ?>
 
                                     <div class="d-flex flex-row align-items-center my-3">
