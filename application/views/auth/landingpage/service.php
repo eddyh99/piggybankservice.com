@@ -178,9 +178,11 @@
         <div class="col-12 my-5 px-md-5">
             <div class="row">
                 <div class="col-12 col-md-8 text-start mx-auto">
-                    <h2 class="title-top-header mb-5 fw-bold">PiggyBank provides you<br>
-                        ''Non-Custodial Wallet''</h2>
-                    <p>With a non-custodial wallet, you have sole control of your private keys, which in turn control
+                    <h2 class="title-top-header mb-5 fw-bold"><b translate="no"> PiggyBank </b> provides you<br>
+                        <b translate="no"> ''Non-Custodial Wallet'' </b>
+                    </h2>
+                    <p>With a <b translate="no"> non-custodial wallet </b>, you have sole control of your private keys,
+                        which in turn control
                         your currencies and prove the funds are yours.</p>
                 </div>
                 <div class="col-12 col-md-4 d-none d-md-grid m-auto">

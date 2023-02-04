@@ -12,7 +12,7 @@
             <div class="col-12 my-5">
                 <div class="logo-text text-center">
                     <img src="<?= base_url() ?>assets/img/about-logo.png" alt="">
-                    <span class="f-lexend text-blue-freedy fw-bold">About Piggy</span>
+                    <span class="f-lexend text-blue-freedy fw-bold">About <b translate="no"> Piggy </b></span>
                 </div>
             </div>
             <div class="col-12 mb-5">

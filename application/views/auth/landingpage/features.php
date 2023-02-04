@@ -23,8 +23,8 @@
                         <img src="<?= base_url() ?>assets/img/img-17.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6 col-md-8 text-start">
-                        <h2 class="title-top-header fw-bold mb-3 f-lexend">Why you can trust <b
-                                translate="no">PiggyBank</b> ?</h2>
+                        <h2 class="title-top-header fw-bold mb-3 f-lexend">Why you can trust <b translate="no">
+                                PiggyBank </b> ?</h2>
                         <p>Your money is protected by global banks, our clients' funds are entirely deposited in
                             encrypted escrow accounts at the main credit institutions with which our payment gateway
                             works in the various countries.<br>
@@ -68,13 +68,15 @@
                             all incoming transfers.
                         </p>
                         <p>
-                            The <b translate="no">Piggy</b> Wallet, which uses the innovative tracklessbank technology,
+                            The <b translate="no"> Piggy </b> Wallet, which uses the innovative tracklessbank
+                            technology,
                             offers its customers
                             the possibility of regaining total control over their capital and managing it easily,
                             without limits and in total anonymity.
                         </p>
                         <p>
-                            The <b translate="no">Piggy</b> wallet is the only one in the world that offers you, through
+                            The <b translate="no"> Piggy </b> wallet is the only one in the world that offers you,
+                            through
                             the Bank to wallet -
                             Wallet to bank functions, the possibility of sending or receiving funds by bank transfer,
                             even from an IBAN not in your name, without limitations, without any documentation required

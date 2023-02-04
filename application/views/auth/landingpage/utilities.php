@@ -162,7 +162,7 @@
             <div class="col-12 mb-5">
                 <div class="row">
                     <div class="col-12 col-md-6">
-                        <h3 class="text-dark">With PiggyBank your money travels with you.</h3>
+                        <h3 class="text-dark">With <b translate="no"> PiggyBank </b> your money travels with you.</h3>
                         <p>
                             Thanks to the best exchange rates you can find on the market and the absence of fees you
                             can, from your multi-currency wallet, instantly convert your balance into the currency of
@@ -194,8 +194,8 @@
                         <p>
                             <b translate="no"> PiggyBank </b> allows you to increase the visibility of your business by
                             including it in the
-                            search section that will be in every single wallet of all the <b
-                                translate="no">PiggyBank</b> users.<br>
+                            search section that will be in every single wallet of all the <b translate="no"> PiggyBank
+                            </b> users.<br>
                             In this way your company will be easily accessible and traceable by all users who use
                             <b translate="no"> PiggyBank </b> for daily payments.
                         </p>
@@ -238,7 +238,7 @@
                     <div class="col-12 col-md-6 my-auto">
                         <p>
                             With this function in your wallet you will be able to see all the activities that accept <b
-                                translate="no">PiggyBank</b> as a collection and payment system.
+                                translate="no"> PiggyBank </b> as a collection and payment system.
                         </p>
                     </div>
                     <div class="col-4 d-none d-md-grid mx-auto">

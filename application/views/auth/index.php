@@ -31,8 +31,9 @@
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
-                    Anonymous and free multi currency <b translate="no"> Non-custodial wallet</b> with the
-                    main functions of a bank account and with a shared order book integrated where to buy and sell
+                    Anonymous and free multi currency <b translate="no"> Non-custodial wallet </b> with the
+                    main functions of a bank account and with a shared <b translate="no"> order book </b> integrated
+                    where to buy and sell
                     crypto with FIAT
                 </p>
                 <div class="d-flex flex-wrap mb-3">
@@ -141,7 +142,7 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-8.png" alt="">
-                                <span class="title mt-2 mb-auto"><b translate="no"> Non-custodial wallet</b></span>
+                                <span class="title mt-2 mb-auto"><b translate="no"> Non-custodial wallet </b></span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('8') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -229,10 +230,11 @@
                         <h2 class="f-lexend">Revolutionary bank with crypto trading service integrated</h2>
                         <div class="my-3">
                             <ul class="p-0 f-lexend">
-                                <li>Trade off platform</li>
-                                <li>Shared order book</li>
+                                <li><b translate="no"> Trade off </b> platform</li>
+                                <li>Shared <b translate="no"> order book </b></li>
                                 <li>Distributed and decentralized</li>
-                                <li>Buy crypto from your FIAT balance of your PiggyBank wallet</li>
+                                <li>Buy crypto from your FIAT balance of your <b translate="no"> PiggyBank </b> wallet
+                                </li>
                                 <li>Withdraw your earning by bank transfer in more than
                                     50 currencies to any bank account even not under your name</li>
                             </ul>
@@ -555,11 +557,12 @@
                 </div>
                 <div class="col-lg-6 col-12 pe-2 footer-links text-lg-center d-flex flex-column">
                     <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b
-                                translate="no">PiggyBank</b></a>
+                        <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b translate="no"> PiggyBank
+                            </b></a>
                     </h4>
                     <div class="credits f-lexend d-none d-lg-grid my-auto">
-                        PiggyBank (USA) is a service subject to partnership with licenses PBS On line LLC
+                        <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses PBS On
+                        line LLC
                     </div>
                 </div>
                 <div
@@ -572,7 +575,8 @@
         </div>
         <div class="container pt-5 pb-4 d-lg-none" style="z-index: 99; position: relative;">
             <div class="credits f-lexend">
-                PiggyBank (USA) is a service subject to partnership with licenses PBS On line LLC
+                <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses PBS On line
+                LLC
             </div>
         </div>
     </div>
