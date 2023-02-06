@@ -81,7 +81,20 @@
         <div class="col-12 text-start mx-auto table-responsive my-5">
             <table class="table tbl-piggy-service text-center">
                 <tr>
-                    <th>Select currency</th>
+                    <th>
+                        <select name="currency" id="currency" class="btn">
+                            <option>Select currency</option>
+                            <?php foreach ($currency as $dt) {
+                                if (($dt->currency == "USD") || ($dt->currency == "EUR")) {?>
+                            <option value="<?= $dt->currency ?>"><?= $dt->currency ?></option>
+                            <?php } }?>
+
+                            <?php foreach ($currency as $dt) {
+                                if (($dt->currency != "USD") && ($dt->currency != "EUR")) {?>
+                            <option value="<?= $dt->currency ?>"><?= $dt->currency ?></option>
+                            <?php } }?>
+                        </select>
+                    </th>
                     <th>Top up</th>
                     <th>Wallet to wallet receive</th>
                     <th>Wallet to wallet send</th>
@@ -91,12 +104,12 @@
                 </tr>
                 <tr>
                     <td>Referral earning</td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td id="tu"></td>
+                    <td id="wtwr"></td>
+                    <td id="wtws"></td>
+                    <td id="wtb"></td>
+                    <td>Soon!</td>
+                    <td>Soon!</td>
                 </tr>
             </table>
         </div>

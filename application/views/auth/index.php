@@ -221,6 +221,25 @@
     <!-- ======= Section ======= -->
     <section id="" class="about">
         <div class="container p-r">
+            <div class="row gx-0 d-flex justify-content-center">
+                <div class="col-lg-6 mb-5 ps-lg-5">
+                    <div class="content-freedy">
+                        <h2 class="f-lexend">Instant payments between all TracklessProject
+                            users of all over the world </h2>
+                        <div class="my-3">
+                            <p><b translate="no">PiggyBank</b>, being part of TracklessProject ecosystem, will be able
+                                to instantly send and receive FIAT currencies to all the wallets of the platforms of the
+                                ecosystem formed by TracklessBank, TracklessCrypto, TracklessMoney, TracklessChat,
+                                sharing  with them the single collection and payment gateway.</p>
+                            <p class="fw-semibold">Receive/send/request instant payments using the methode ‘’wallet
+                                to wallet’’ </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-lg-grid align-items-center text-center">
+                    <img src="<?= base_url(); ?>assets/img/img-28.png" alt="" class="img-fluid">
+                </div>
+            </div>
             <div class="row gx-0 d-flex justify-content-center mb-5">
                 <div class="col-6 d-none d-lg-grid align-items-center text-center">
                     <img src="<?= base_url(); ?>assets/img/img-26.png" alt="" class="img-fluid">
@@ -518,16 +537,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-12">
-                    <div class="d-flex flex-wrap">
-                        <div class="powered-top mb-3 me-5">
-                            <span class="fw-bold">Empowered by</span>
-                            <a href="https://tracklessproject.com/">
-                                <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
-                            </a>
-                        </div>
-                    </div>
-                </div>
             </div>
         </div>
     </section><!-- Section -->
@@ -560,9 +569,20 @@
                         <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b translate="no"> PiggyBank
                             </b></a>
                     </h4>
-                    <div class="credits f-lexend d-none d-lg-grid my-auto">
-                        <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses PBS On
-                        line LLC
+                    <div class="credits footer-info f-lexend d-none d-lg-grid my-auto">
+                        <div class="d-flex flex-row justify-content-center align-items-center">
+                            <span class="f-lexend me-2 text-white">Empowered by</span>
+                            <a href="https://tracklessproject.com/">
+                                <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt=""
+                                    class="tracklessbank">
+                            </a>
+                        </div>
+                        <p>
+                            <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses
+                            PBS
+                            On
+                            line LLC
+                        </p>
                     </div>
                 </div>
                 <div
@@ -574,9 +594,19 @@
             </div>
         </div>
         <div class="container pt-5 pb-4 d-lg-none" style="z-index: 99; position: relative;">
-            <div class="credits f-lexend">
-                <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses PBS On line
-                LLC
+            <div class="credits footer-info f-lexend">
+                <div class="d-flex flex-row justify-content-center align-items-center">
+                    <span class="f-lexend me-2 text-white">Empowered by</span>
+                    <a href="https://tracklessproject.com/">
+                        <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt="" class="tracklessbank">
+                    </a>
+                </div>
+                <p>
+                    <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses
+                    PBS
+                    On
+                    line LLC
+                </p>
             </div>
         </div>
     </div>
