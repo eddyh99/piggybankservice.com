@@ -30,7 +30,7 @@ if (isset($extra)) {
 }
 ?>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TFML05LDNP"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W48RL0G3NF"></script>
 
 <script>
 window.dataLayer = window.dataLayer || [];
@@ -40,7 +40,7 @@ function gtag() {
 }
 gtag('js', new Date());
 
-gtag('config', 'G-TFML05LDNP');
+gtag('config', 'G-W48RL0G3NF');
 
 
 $(".money-input").autoNumeric('init', {
