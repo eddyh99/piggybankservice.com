@@ -565,10 +565,19 @@
                     </div>
                 </div>
                 <div class="col-lg-6 col-12 pe-2 footer-links text-lg-center d-flex flex-column">
-                    <h4 class="f-lexend">
-                        <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b translate="no"> PiggyBank
-                            </b></a>
-                    </h4>
+                    <div class="row">
+                        <div class="col-12 col-lg my-3">
+                            <a href="<?= base_url(); ?>link/privacy_policy" style="color:#fff;">Privacy policy</a>
+                        </div>
+                        <div class="col-12 col-lg my-3">
+                            <a href="<?= base_url(); ?>link/lern_transparency" style="color:#fff;">Price lists</a>
+                        </div>
+                        <div class="col-12 col-lg my-3">
+                            <a href="<?= base_url(); ?>link/about" style="color:#fff;">About <b translate="no">
+                                    PiggyBank
+                                </b></a>
+                        </div>
+                    </div>
                     <div class="credits footer-info f-lexend d-none d-lg-grid my-auto">
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <span class="f-lexend me-2 text-white">Empowered by</span>
