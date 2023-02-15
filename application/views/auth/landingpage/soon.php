@@ -10,7 +10,7 @@
                 </div>
             </div>
             <div class="col-12 my-5">
-                    <h1>Coming soon!</h1>
+                <h1>Coming soon!</h1>
             </div>
             <div class="col-12">
                 <div class="row">

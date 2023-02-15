@@ -68,7 +68,7 @@
         <div class="row">
             <div class="col-12 text-center bg-layout-singup my-5 py-5">
                 <h2 class="f-lexend m-0">
-                    Get your <b translate="no"> PiggyBank </b> account in a minute
+                    Open your <b translate="no"> PiggyBank </b> account in a minute
                 </h2>
                 <div class="text-center">
                     <a href="<?= base_url(); ?>auth/signup_referral"
@@ -169,8 +169,8 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
-                                <span class="title mt-2 mb-auto">Convert, custody, send worldwide in over 50 FIAT
-                                    currencies</span>
+                                <span class="title mt-2 mb-auto">Convert, custody & send in over 50 FIAT currencies
+                                    worldwide</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -179,7 +179,9 @@
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
-                                <span class="title mt-2 mb-auto">Zero exchange fees & competitive exchange rates</span>
+                                <span class="title mt-2 mb-auto">Zero exchange fees &
+                                    competitive rates for
+                                    FIAT to FIAT</span>
                                 <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('4') ?>"
                                     class="title">Read more</a>
                             </div>
@@ -187,27 +189,26 @@
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
-                                <img src="<?= base_url() ?>assets/img/different-icon-5.png" alt="">
-                                <span class="title mt-2 mb-auto">Clear and transparent prices without hidden
-                                    costs</span>
-                                <a href="<?= base_url(); ?>link/lern_transparency" class="title">Read more</a>
-                            </div>
-                        </div>
-                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
-                                <img src="<?= base_url() ?>assets/img/different-icon-6.png" alt="">
-                                <span class="title mt-2 mb-auto">Integration to your bussiness API/Plugin</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('6') ?>"
-                                    class="title">Read more</a>
+                                <img src="<?= base_url() ?>assets/img/different-icon-6-1.png" alt="">
+                                <span class="title mt-2 mb-auto">Buy & Sell crypto using FIAT</span>
+                                <a href="<?= base_url(); ?>link/soon" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
                             <div
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-7.png" alt="">
-                                <span class="title mt-2 mb-auto">Fees for FIAT to crypto and crypto to FIAT </span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('7') ?>"
+                                <span class="title mt-2 mb-auto">Clear and transparent prices without hidden costs
+                                </span>
+                                <a href="<?= base_url(); ?>link/lern_transparency" class="title">Read more</a>
+                            </div>
+                        </div>
+                        <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
+                            <div
+                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                                <img src="<?= base_url() ?>assets/img/different-icon-8-1.png" alt="">
+                                <span class="title mt-2 mb-auto">API & Plugin</span>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('6') ?>"
                                     class="title">Read more</a>
                             </div>
                         </div>
@@ -259,7 +260,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?=base_url()?>link/soon"
+                            <a href="<?=base_url()?>link/crypto"
                                 class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Learn more</span>
                             </a>
@@ -587,7 +588,7 @@
                             </a>
                         </div>
                         <p>
-                            <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses
+                            <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licensee
                             PBS
                             On
                             line LLC

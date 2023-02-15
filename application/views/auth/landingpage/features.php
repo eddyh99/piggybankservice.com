@@ -61,35 +61,30 @@
                         <img src="<?= base_url() ?>assets/img/img-19.png" alt="" class="img-fluid">
                     </div>
                     <div class="col-12 col-md-6 text-start my-auto">
-                        <h2 class="title-top-header fw-bold mb-3 f-lexend">Send, Receive and Request</h2>
+                        <h2 class="title-top-header fw-bold mb-3 f-lexend"> Send, Receive and Request</h2>
                         <p>
-                            You can identify your wallet through the unique code that you find on the home screen of
-                            your account, this code is the only one that identifies your account and you must use it for
-                            all incoming transfers.
+                            The <b translate="no"> Piggy </b> Wallet, which uses the innovative Tracklessbank
+                            technology, offers its customers the possibility of regaining total control over their
+                            capital and managing it easily, without limits and in total anonymity.
                         </p>
                         <p>
-                            The <b translate="no"> Piggy </b> Wallet, which uses the innovative tracklessbank
-                            technology,
-                            offers its customers
-                            the possibility of regaining total control over their capital and managing it easily,
-                            without limits and in total anonymity.
+                            Your <b translate="no"> PiggyBank </b> wallet is identified through the ‘’unique code’’ you
+                            find it on the homepage of your account; the unique code has to be used for your incoming
+                            transfers and it gives you total anonymity.
                         </p>
                         <p>
                             The <b translate="no"> Piggy </b> wallet is the only one in the world that offers you,
-                            through
-                            the Bank to wallet -
-                            Wallet to bank functions, the possibility of sending or receiving funds by bank transfer,
-                            even from an IBAN not in your name, without limitations, without any documentation required
-                            and anonymously.
+                            through the Bank to wallet - Wallet to bank functions, the possibility of sending or
+                            receiving funds by bank transfer, even from a bank account not under your name, without
+                            limitations, without any documentation required and anonymously.
                         </p>
                     </div>
                     <div class="col-12 col-md-6 text-start my-auto">
                         <h2 class="fw-bold mb-3 f-lexend">From Bank to Wallet</h2>
                         <p>
-                            You can receive bank transfers into your wallet in 10 currencies (<a
+                            You can receive a bank transfer into your wallet in 10 currencies (<a
                                 href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>">find out which
-                                they are</a>) from any
-                            IBAN even if not under your name.
+                                they are</a>) from any bank account even if it is not under your name.
                         </p>
                     </div>
                     <div class="col-6 d-none d-md-grid my-auto">
@@ -101,21 +96,22 @@
                     <div class="col-12 col-md-6 text-start my-auto">
                         <h2 class="fw-bold mb-3 f-lexend">From Wallet to Wallet</h2>
                         <p>
-                            Now you can send money anywhere in the world in seconds. Wallet-to-Wallet transfers are
-                            instantaneous and also available between users of different banks, belonging to the
-                            trackless bank circuit.
+                            You can send money anywhere in the world in a few seconds. Wallet-to-Wallet transfers are
+                            instantaneous available between all PiggyBank wallets and between users of other banks,
+                            belonging to the trackless bank circuit.
                         </p>
                         <p>
-                            Use the Wallet to Wallet function to send and receive money without limits, without any
-                            documentation required and anywhere in the world, for a small fixed fee, regardless of the
-                            amount.
+                            Use the Wallet to Wallet function to send and receive money instantly without limits,
+                            without any documentation required and anywhere in the world, for a small fixed fee,
+                            regardless of the amount.
                         </p>
                     </div>
                     <div class="col-12 col-md-6 text-start my-auto">
                         <h2 class="fw-bold mb-3 f-lexend">From Wallet to Bank</h2>
                         <p>
-                            Send from your wallet by bank transfer to any IBAN, even if not in your name. By taking
-                            advantage of the Swap option you can reduce costs and speed up international transfers.
+                            Send your funds from your wallet by bank transfer to any bank account, even if it is not
+                            your name. By taking advantage of the Swap option you can reduce costs and speed up
+                            international transfers.
                         </p>
                     </div>
                     <div class="col-6 d-none d-md-grid my-auto">
@@ -133,10 +129,90 @@
                             <a href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Read here to
                                 discover how the
                                 capital exportation works</a>).<br>
-                            Using the SWAP, to convert into the currency you want to send, makes the money transfer a
-                            national transfer; FreedyBank is the only one in the world to offer you this service.
+                            Using the SWAP function, to convert into the currency you want to send, makes a money
+                            transfer as a national transfer; PiggyBank is the only one in the world to offer
+                            this service.
 
                         </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-5 text-center">
+                <h2 class="title-top-header fw-bold mb-3 f-lexend">WALLET GUIDE</h2>
+            </div>
+            <div class="col-12 my-5">
+                <div class="accordion" id="accordionFreedy">
+                    <div class="accordion-item freedy-accordion-item mb-5">
+                        <h2 class="accordion-header m-0" id="pageOne">
+                            <button id="btnaccorionOne" class="accordion-button freedy-accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                aria-expanded="false" aria-controls="collapseOne">
+                                <div class="box-title-accordion ms-auto text-center">
+                                    <span class="head">How to Topup your wallet and receive funds</span>
+                                    <span class="small" id="seemoreOne">See more</span>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="pageOne"
+                            data-bs-parent="#accordionFreedy">
+                            <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
+                                <?php $this->load->view('auth/landingpage/guide-1-1'); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item freedy-accordion-item mb-5">
+                        <h2 class="accordion-header m-0" id="pageTwo">
+                            <button id="btnaccorionTwo" class="accordion-button freedy-accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="box-title-accordion ms-auto text-center">
+                                    <span class="head">How to transfers funds between wallet to wallet</span>
+                                    <span class="small" id="seemoreTwo">See more</span>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="pageTwo"
+                            data-bs-parent="#accordionFreedy">
+                            <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
+                                <?php $this->load->view('auth/landingpage/guide-1-2'); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item freedy-accordion-item mb-5">
+                        <h2 class="accordion-header m-0" id="pageThree">
+                            <button id="btnaccorionThree" class="accordion-button freedy-accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                aria-expanded="false" aria-controls="collapseThree">
+                                <div class="box-title-accordion ms-auto text-center">
+                                    <span class="head">How to convert currencies </span>
+                                    <span class="small" id="seemoreThree">See more</span>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="pageThree"
+                            data-bs-parent="#accordionFreedy">
+                            <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
+                                <?php $this->load->view('auth/landingpage/guide-1-3'); ?>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item freedy-accordion-item mb-5">
+                        <h2 class="accordion-header m-0" id="pageFour">
+                            <button id="btnaccorionFour" class="accordion-button freedy-accordion-button collapsed"
+                                type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                aria-expanded="false" aria-controls="collapseFour">
+                                <div class="box-title-accordion ms-auto text-center">
+                                    <span class="head">How to withdraw funds and make bank transfers</span>
+                                    <span class="small" id="seemoreFour">See more</span>
+                                </div>
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="pageFour"
+                            data-bs-parent="#accordionFreedy">
+                            <div class="accordion-body freedy-accordion-body p-3 p-lg-5">
+                                <?php $this->load->view('auth/landingpage/guide-1-4'); ?>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -170,11 +246,12 @@
 
                         </p>
                     </div>
-                    <div class="col-6 d-none d-lg-grid">
+                    <div class="col-4 mx-auto d-none d-lg-grid">
                         <img src="<?= base_url() ?>assets/img/img-18.png" alt="" class="img-fluid">
                     </div>
-                    <div class="col-12 mt-5 text-start">
-                        <h2 class="f-lexend fw-bold">This new technology was born as an evolution of the blockchain and
+                    <div class="col-12 text-start">
+                        <h2 class="f-lexend fw-bold mb-3">This new technology was born as an evolution of the blockchain
+                            and
                             is the solution for:</h2>
                         <ol>
                             <li>The problem of scalability, the first major problem that afflicts the old blockchain
