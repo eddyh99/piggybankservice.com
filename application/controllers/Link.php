@@ -82,7 +82,7 @@ class Link extends CI_Controller
     public function translate()
     {
         $data = array(
-            "title"     => NAMETITLE . " - Work with us",
+            "title"     => NAMETITLE,
             "content"   => "auth/landingpage/translate",
             // "extra"     => "auth/landingpage/js/js_index",
         );
@@ -95,7 +95,7 @@ class Link extends CI_Controller
         $utilities = base64_decode($_GET['utilities']);
 
         $data = array(
-            "title"     => NAMETITLE . " - Work with us",
+            "title"     => NAMETITLE,
             "content"   => "auth/landingpage/utilities",
             "utilities"   => $utilities,
             // "extra"     => "auth/landingpage/js/js_index",
@@ -108,7 +108,7 @@ class Link extends CI_Controller
     {
         $service = base64_decode($_GET['service']);
         $data = array(
-            "title"     => NAMETITLE . " - Work with us",
+            "title"     => NAMETITLE,
             "content"   => "auth/landingpage/service",
             "service"   => $service,
             "extra"     => "auth/landingpage/js/js_index",

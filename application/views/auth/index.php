@@ -9,8 +9,7 @@
             <ul class="px-5">
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#features">Features</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#services">Services</a></li>
-                <li><a class="f-bevietnam nav-link navbar-freedy scrollto"
-                        href="<?= base_url(); ?>link/lern_transparency">Prices</a></li>
+                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#guide">Guide</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto"
                         href="<?= base_url(); ?>link/translate">Translate</a></li>
                 <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login"
@@ -191,7 +190,8 @@
                                 class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-6-1.png" alt="">
                                 <span class="title mt-2 mb-auto">Buy & Sell crypto using FIAT</span>
-                                <a href="<?= base_url(); ?>link/soon" class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('5') ?>"
+                                    class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
@@ -228,7 +228,8 @@
                         <h2 class="f-lexend">Instant payments between all TracklessProject
                             users of all over the world </h2>
                         <div class="my-3">
-                            <p><b translate="no">PiggyBank</b>, being part of TracklessProject ecosystem, will be able
+                            <p class="f-lexend"><b translate="no">PiggyBank</b>, being part of TracklessProject
+                                ecosystem, will be able
                                 to instantly send and receive FIAT currencies to all the wallets of the platforms of the
                                 ecosystem formed by TracklessBank, TracklessCrypto, TracklessMoney, TracklessChat,
                                 sharing  with them the single collection and payment gateway.</p>
@@ -299,12 +300,12 @@
     </section><!-- Section -->
 
     <!-- ======= Section ======= -->
-    <section id="" class="about">
+    <section id="guide" class="about">
         <div class="container p-r">
             <div class="row gx-0">
                 <div class="col-12 mb-5">
                     <div class="content-freedy p-r text-center">
-                        <h2 class="f-lexend m-plus-5 d-block"><b translate="no"> PiggyBank </b> utilities</h2>
+                        <h2 class="f-lexend m-plus-5 d-block"><b translate="no"> PiggyBank </b> user guide</h2>
                     </div>
                     <div class="col-12 my-5">
                         <div class="row d-flex justify-content-center">
@@ -314,16 +315,29 @@
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt=""
+                                                <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
                                                     class="my-auto">
-                                                <h4 class="f-lexend my-auto">Capital Exportation</h4>
+                                                <h4 class="f-lexend my-auto">Essential for your trips</h4>
                                                 <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-10 col-md-5 col-lg-3 p-0 m-min-5">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-8.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Wallet</h4>
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('8') ?>">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
@@ -336,19 +350,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-10 col-md-5 col-lg-3 p-0">
-                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt=""
-                                                    class="my-auto">
-                                                <h4 class="f-lexend my-auto">Daily use</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('2') ?>">Learn
-                                                    more</a>
-                                            </div>
-                                        </div>
-                                    </div>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6 col-lg-3 d-grid align-items-center">
@@ -357,11 +358,11 @@
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 me-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt=""
+                                                <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt=""
                                                     class="my-auto">
-                                                <h4 class="f-lexend my-auto">Collections and Payments</h4>
+                                                <h4 class="f-lexend my-auto">Capital Exportation</h4>
                                                 <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('3') ?>">Learn
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -369,7 +370,7 @@
                                 </div>
                             </div>
                             <div class="col-6 d-none text-center d-lg-grid align-items-center">
-                                <img src="<?= base_url() ?>assets/img/img-4-3.png" alt="" class="img-fluid">
+                                <img src="<?= base_url() ?>assets/img/img-4-4.png" alt="" class="img-fluid">
                             </div>
                             <div class="col-12 col-md-6 col-lg-3 d-grid align-items-center">
                                 <div class="row d-flex justify-content-around">
@@ -377,11 +378,11 @@
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap ">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 ms-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
+                                                <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt=""
                                                     class="my-auto">
-                                                <h4 class="f-lexend my-auto">Essential for your trips</h4>
+                                                <h4 class="f-lexend my-auto">Daily use</h4>
                                                 <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('2') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -403,7 +404,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-10 col-md-5 col-lg-3 p-0">
+
+                                    <div class="col-10 col-md-5 col-lg-3 p-0 mt-lg-5">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
                                             <div
                                                 class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
@@ -412,6 +414,20 @@
                                                 <h4 class="f-lexend my-auto">Search</h4>
                                                 <a class="f-lexend"
                                                     href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('6') ?>">Learn
+                                                    more</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-10 col-md-5 col-lg-3 p-0">
+                                        <div class="service-freedy text-center d-flex align-items-center flex-wrap">
+                                            <div
+                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt=""
+                                                    class="my-auto">
+                                                <h4 class="f-lexend my-auto">Collections and Payments</h4>
+                                                <a class="f-lexend"
+                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('3') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -472,16 +488,6 @@
                                         <h4 class="f-lexend mb-auto mt-3">100% Secure</h4>
                                         <a class="f-lexend"
                                             href="<?= base_url(); ?>link/features?features=<?= base64_encode('1') ?>">Learn
-                                            more</a>
-                                    </div>
-                                </div>
-                                <div class="col-10 col-sm-6 col-lg-3">
-                                    <div
-                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
-                                        <img src="<?= base_url(); ?>assets/img/features-2.png" alt="">
-                                        <h4 class="f-lexend mb-auto mt-3">Wallet</h4>
-                                        <a class="f-lexend"
-                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('2') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
