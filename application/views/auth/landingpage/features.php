@@ -62,7 +62,7 @@
             <div class="col-12 mb-5">
                 <div class="row">
                     <div class="col-12 col-lg-6 text-start my-auto">
-                        <p>is a Dapp running on NP
+                        <p>
                             <b translate="no"> PiggyBank </b> is a Dapp running on NP, considered the evolution of
                             the blockchain and it
                             uses SECC (SMART ELECTRONIC CREDIT CERTIFICATE), developed by MONEY INDUSTRIAL FACTORY on NP

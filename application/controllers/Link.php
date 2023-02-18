@@ -98,7 +98,7 @@ class Link extends CI_Controller
             "title"     => NAMETITLE,
             "content"   => "auth/landingpage/utilities",
             "utilities"   => $utilities,
-            // "extra"     => "auth/landingpage/js/js_index",
+            "extra"     => "auth/landingpage/js/js_index",
         );
 
         $this->load->view('tamplate/wrapper', $data);

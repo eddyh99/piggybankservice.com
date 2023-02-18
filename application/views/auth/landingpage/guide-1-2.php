@@ -15,7 +15,7 @@
             <div class="col-12 col-md-6 fw-bold">
                 <ol>
                     <li>Login into your wallet</li>
-                    <li>Click the button ‘’WALLET TO WALLET’’</li>
+                    <li>Click the button <b class="text-uppercase"> ‘’wallet to wallet’’ </b></li>
                     <li>Choose if u want to ‘’send’’ or ‘’receive’’ or
                         ‘’request’’ funds
                     </li>
