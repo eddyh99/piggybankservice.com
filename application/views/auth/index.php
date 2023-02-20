@@ -10,10 +10,8 @@
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#features">Features</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#services">Services</a></li>
                 <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="#guide">Guide</a></li>
-                <li><a class="f-bevietnam nav-link navbar-freedy scrollto"
-                        href="<?= base_url(); ?>link/translate">Translate</a></li>
-                <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login"
-                        href="<?= base_url(); ?>auth/login">Log
+                <li><a class="f-bevietnam nav-link navbar-freedy scrollto" href="<?= base_url(); ?>link/translate">Translate</a></li>
+                <li><a class="f-bevietnam nav-link mx-0 my-2 mx-lg-2 my-lg-auto text-center btn-login" href="<?= base_url(); ?>auth/login">Log
                         in</a>
                 </li>
             </ul>
@@ -30,10 +28,7 @@
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
-                    Anonymous and free multi currency <b translate="no"> Non-custodial wallet </b> with the
-                    main functions of a bank account and with a shared <b translate="no"> order book </b> integrated
-                    where to buy and sell
-                    crypto with FIAT
+                    <b translate="no"> PiggyBank </b> is a multi-currency platform that guarantees the maximum of privacy, and it offers a free <b translate="no"> "non-custodial wallet" </b> with the main functions of a bank account, with an integrated shared "order book" where you can buy and sell cryptocurrencies with FIAT.
                 </p>
                 <div class="d-flex flex-wrap mb-3">
                     <div class="list-toright">
@@ -45,7 +40,7 @@
                     <div class="list-toright">
                         <ul>
                             <li>Great for individuals</li>
-                            <li>Perfect for traders</li>
+                            <li>Perfect for crypto traders</li>
                         </ul>
                     </div>
                 </div>
@@ -67,11 +62,10 @@
         <div class="row">
             <div class="col-12 text-center bg-layout-singup my-5 py-5">
                 <h2 class="f-lexend m-0">
-                    Open your <b translate="no"> PiggyBank </b> account in a minute
+                    Wallet opening and activation immediate without any limitation
                 </h2>
                 <div class="text-center">
-                    <a href="<?= base_url(); ?>auth/signup_referral"
-                        class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <a href="<?= base_url(); ?>auth/signup_referral" class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                         <span>Sign up</span>
                     </a>
                 </div>
@@ -96,8 +90,7 @@
                             <b translate="no"> PiggyBank </b> is easy and immediately to open, you need to sign
                             up just using an email and password and your account will be immediately active and
                             ready to use without any restriction. <br>
-                            (<a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
-                                class="text-blue-freedy">No KYC & No
+                            (<a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>" class="text-blue-freedy">No KYC & No
                                 AML</a>)
                         </p>
                     </div>
@@ -112,8 +105,7 @@
                                     <li>Convert FIAT currencies with zero fees</li>
                                 </ul>
                                 <div class="text-start">
-                                    <a href="<?= base_url(); ?>auth/signup_referral"
-                                        class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <a href="<?= base_url(); ?>auth/signup_referral" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Sign up</span>
                                     </a>
                                 </div>
@@ -138,65 +130,52 @@
                 <div class="col-12">
                     <div class="row d-flex flax-wrap justify-content-center align-items-center">
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-8.png" alt="">
                                 <span class="title mt-2 mb-auto"><b translate="no"> Non-custodial wallet </b></span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('8') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('8') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-1.png" alt="">
                                 <span class="title mt-2 mb-auto">No KYC & No AML</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('1') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-2.png" alt="">
                                 <span class="title mt-2 mb-auto">Receive funds in 10 FIAT currencies</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('2') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-3.png" alt="">
                                 <span class="title mt-2 mb-auto">Convert, custody & send in over 50 FIAT currencies
                                     worldwide</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('3') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-4.png" alt="">
                                 <span class="title mt-2 mb-auto">Zero exchange fees &
                                     competitive rates for
                                     FIAT to FIAT</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('4') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('4') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-6-1.png" alt="">
                                 <span class="title mt-2 mb-auto">Buy & Sell crypto using FIAT</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('5') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('5') ?>" class="title">Read more</a>
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-7.png" alt="">
                                 <span class="title mt-2 mb-auto">Clear and transparent prices without hidden costs
                                 </span>
@@ -204,12 +183,10 @@
                             </div>
                         </div>
                         <div class="col-10 col-md-5 col-lg-3 px-2 mb-3 list-different">
-                            <div
-                                class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
+                            <div class="items-different p-4 d-flex flex-column justify-content-center align-items-center text-center">
                                 <img src="<?= base_url() ?>assets/img/different-icon-8-1.png" alt="">
                                 <span class="title mt-2 mb-auto">API & Plugin</span>
-                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('6') ?>"
-                                    class="title">Read more</a>
+                                <a href="<?= base_url(); ?>link/service?service=<?= base64_encode('6') ?>" class="title">Read more</a>
                             </div>
                         </div>
                     </div>
@@ -261,8 +238,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?=base_url()?>link/crypto"
-                                class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                            <a href="<?= base_url() ?>link/crypto" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Learn more</span>
                             </a>
                         </div>
@@ -284,8 +260,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?= base_url(); ?>auth/signup_referral"
-                                class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                            <a href="<?= base_url(); ?>auth/signup_referral" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Sign up</span>
                             </a>
                         </div>
@@ -313,39 +288,30 @@
                                 <div class="row d-flex justify-content-around">
                                     <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-5.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Essential for your trips</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('4') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-10 col-md-5 col-lg-3 p-0 m-min-5">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-8.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-8.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Wallet</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('8') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('8') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-10 col-md-5 col-lg-3 p-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-7.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-7.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Crypto trading</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('7') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('7') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -356,13 +322,10 @@
                                 <div class="row d-flex justify-content-around">
                                     <div class="col-10 col-lg-12 px-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 me-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 me-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-1.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Capital Exportation</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('1') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -376,13 +339,10 @@
                                 <div class="row d-flex justify-content-around">
                                     <div class="col-10 col-lg-12 px-0">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap ">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 ms-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 ms-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-4.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Daily use</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('2') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('2') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -391,15 +351,12 @@
                             </div>
                             <div class="col-12">
                                 <div class="row d-flex justify-content-around">
-                                    <div class="col-10 col-md-5 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0 m-min-5">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-3.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-3.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Find me</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('5') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('5') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -407,27 +364,21 @@
 
                                     <div class="col-10 col-md-5 col-lg-3 p-0 mt-lg-5">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-6.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-6.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Search</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('6') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('6') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="col-10 col-md-5 col-lg-3 p-0">
+                                    <div class="col-10 col-md-5 col-lg-3 p-0 m-min-5">
                                         <div class="service-freedy text-center d-flex align-items-center flex-wrap">
-                                            <div
-                                                class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
-                                                <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt=""
-                                                    class="my-auto">
+                                            <div class="col-12 d-flex flex-column align-items-center my-3 my-md-4 box-service px-5 py-4 m-auto">
+                                                <img src="<?= base_url(); ?>assets/img/untilities-2.png" alt="" class="my-auto">
                                                 <h4 class="f-lexend my-auto">Collections and Payments</h4>
-                                                <a class="f-lexend"
-                                                    href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('3') ?>">Learn
+                                                <a class="f-lexend" href="<?= base_url(); ?>link/utilities?utilities=<?= base64_encode('3') ?>">Learn
                                                     more</a>
                                             </div>
                                         </div>
@@ -479,35 +430,28 @@
                 <div class="col-12">
                     <div class="row d-flex justify-content-center">
                         <div class="col-12 features-freedy">
-                            <div
-                                class="features-freedy text-center d-flex align-items-center justify-content-center flex-wrap">
+                            <div class="features-freedy text-center d-flex align-items-center justify-content-center flex-wrap">
                                 <div class="col-10 col-sm-6 col-lg-3">
-                                    <div
-                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                    <div class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-1.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">100% Secure</h4>
-                                        <a class="f-lexend"
-                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('1') ?>">Learn
+                                        <a class="f-lexend" href="<?= base_url(); ?>link/features?features=<?= base64_encode('1') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-3">
-                                    <div
-                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                    <div class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-3.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">Technology</h4>
-                                        <a class="f-lexend"
-                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('3') ?>">Learn
+                                        <a class="f-lexend" href="<?= base_url(); ?>link/features?features=<?= base64_encode('3') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
                                 <div class="col-10 col-sm-6 col-lg-3">
-                                    <div
-                                        class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
+                                    <div class=" d-flex flex-column align-items-center my-4 box-features px-2 pt-5 pb-4 m-auto">
                                         <img src="<?= base_url(); ?>assets/img/features-4.png" alt="">
                                         <h4 class="f-lexend mb-auto mt-3">Mission</h4>
-                                        <a class="f-lexend"
-                                            href="<?= base_url(); ?>link/features?features=<?= base64_encode('4') ?>">Learn
+                                        <a class="f-lexend" href="<?= base_url(); ?>link/features?features=<?= base64_encode('4') ?>">Learn
                                             more</a>
                                     </div>
                                 </div>
@@ -528,12 +472,8 @@
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <img src="<?= base_url() ?>assets/img/sendmail.png" alt="" class="mx-auto d-none d-md-grid">
                             <div class="form-contactus py-2 mx-auto">
-                                <form id="form_submit" method="POST" action="<?= base_url(); ?>link/send_message"
-                                    class="d-flex flex-row justify-content-center align-items-center"
-                                    onsubmit="return validate()">
-                                    <input type="hidden" id="token"
-                                        name="<?php echo $this->security->get_csrf_token_name(); ?>"
-                                        value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                <form id="form_submit" method="POST" action="<?= base_url(); ?>link/send_message" class="d-flex flex-row justify-content-center align-items-center" onsubmit="return validate()">
+                                    <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                                     <input name="email" type="text" placeholder="Enter your email address" class="ms-4">
                                     <button class="mx-3 py-2 btn-contactus" type="submit" id="btnconfirm">
                                         <span class="mx-3 d-none d-sm-grid">Contact us</span>
@@ -589,8 +529,7 @@
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <span class="f-lexend me-2 text-white">Empowered by</span>
                             <a href="https://tracklessproject.com/">
-                                <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt=""
-                                    class="tracklessbank">
+                                <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt="" class="tracklessbank">
                             </a>
                         </div>
                         <p>
@@ -601,10 +540,9 @@
                         </p>
                     </div>
                 </div>
-                <div
-                    class="col-lg-3 col-12 pe-2 footer-links text-lg-center d-lg-flex justify-content-center align-items-center">
+                <div class="col-lg-3 col-12 pe-2 footer-links text-lg-center d-lg-flex justify-content-center align-items-center">
                     <a class="logo-footer">
-                        <img src="<?= base_url()?>assets/img/logo-bgcircle.png" alt="">
+                        <img src="<?= base_url() ?>assets/img/logo-bgcircle.png" alt="">
                     </a>
                 </div>
             </div>
@@ -628,25 +566,24 @@
     </div>
 </footer><!-- End Footer -->
 
-<a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+<a href="#top" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
 <?php if (@isset($_SESSION["success"])) { ?>
-<div class="alert alert-success alert-dismissible" id="success-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
+    <div class="alert alert-success alert-dismissible" id="success-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
 left: 0;
 right: 0;
 max-width: 300px;
 margin: 0 auto;">
-    <?= $_SESSION["success"]; ?>
-</div>
+        <?= $_SESSION["success"]; ?>
+    </div>
 <?php } ?>
 
 <?php if (@isset($_SESSION["failed"])) { ?>
-<div class="alert alert-danger alert-dismissible" id="danger-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
+    <div class="alert alert-danger alert-dismissible" id="danger-alert" style="display: grid; position: fixed; top: 10px; z-index: 99999; padding: 1rem;
 left: 0;
 right: 0;
 max-width: 300px;
 margin: 0 auto;">
-    <?= $_SESSION["failed"]; ?>
-</div>
+        <?= $_SESSION["failed"]; ?>
+    </div>
 <?php } ?>
