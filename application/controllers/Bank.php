@@ -54,17 +54,17 @@ class Bank extends CI_Controller
             $url = URLAPI . "/v1/member/wallet/getBankCode?country=" . $currencyCode[$_SESSION['currency']];
             $data["codecur"]   = apitrackless($url)->message->values;
         }
-        
+
         $bankcost = apitrackless(URLAPI . "/v1/admin/cost/getCost?currency=" . $_SESSION['currency']);
         $bankfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=" . $_SESSION['currency']);
 
         $fee = (balance($_SESSION['user_id'], $_SESSION["currency"]) * $bankcost->message->walletbank_circuit_pct) + (balance($_SESSION['user_id'], $_SESSION["currency"]) * $bankfee->message->walletbank_circuit_pct) + $bankcost->message->walletbank_circuit_fxd + $bankfee->message->walletbank_circuit_fxd;
 
-        if ((balance($_SESSION['user_id'], $_SESSION["currency"])*100) <= 0) {
+        if ((balance($_SESSION['user_id'], $_SESSION["currency"]) * 100) <= 0) {
             $fee = 0;
         }
-        
-        if ((balance($_SESSION['user_id'], $_SESSION["currency"])*100) < ($fee*100)) {
+
+        if ((balance($_SESSION['user_id'], $_SESSION["currency"]) * 100) < ($fee * 100)) {
             $fee = balance($_SESSION['user_id'], $_SESSION["currency"]);
         }
 
@@ -111,23 +111,23 @@ class Bank extends CI_Controller
             $url = URLAPI . "/v1/member/wallet/getBankCode?country=" . $currencyCode[$_SESSION['currency']];
             $data["codecur"]   = apitrackless($url)->message->values;
         }
-        
+
         $bankcost = apitrackless(URLAPI . "/v1/admin/cost/getCost?currency=" . $_SESSION['currency']);
         $bankfee = apitrackless(URLAPI . "/v1/admin/fee/getFee?currency=" . $_SESSION['currency']);
 
         $fee = (balance($_SESSION['user_id'], $_SESSION["currency"]) * $bankcost->message->walletbank_outside_pct) + (balance($_SESSION['user_id'], $_SESSION["currency"]) * $bankfee->message->walletbank_outside_pct) + $bankcost->message->walletbank_outside_fxd + $bankfee->message->walletbank_outside_fxd;
 
-        if ((balance($_SESSION['user_id'], $_SESSION["currency"])*100) <= 0) {
+        if ((balance($_SESSION['user_id'], $_SESSION["currency"]) * 100) <= 0) {
             $fee = 0;
         }
-        
-        if ((balance($_SESSION['user_id'], $_SESSION["currency"])*100) < ($fee*100)) {
+
+        if ((balance($_SESSION['user_id'], $_SESSION["currency"]) * 100) < ($fee * 100)) {
             $fee = balance($_SESSION['user_id'], $_SESSION["currency"]);
         }
-        
+
         $data['title'] = NAMETITLE . " - Wallet to Bank";
         $footer['extra'] = "admin/js/js_btn_disabled";
-        
+
         $data['currencycode'] = @$currencyCode[$_SESSION['currency']];
         $data['fee'] = @$fee;
 
@@ -168,10 +168,12 @@ class Bank extends CI_Controller
 
     public function bankconfirm()
     {
-        $amount = $this->input->post("amount");
-        $new_amount = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $amount);
-        $_POST["amount"]=$new_amount;
-        
+        $amount = $this->security->xss_clean($this->input->post("amount"));
+
+        $a = $this->input->post("amount");
+        $b = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $a);
+        $_POST["amount"] = $b;
+
         $input    = $this->input;
         $this->form_validation->set_rules('amount', 'Amount', 'trim|required|greater_than[0]');
         $this->form_validation->set_rules('causal', 'Causal', 'trim|required');
@@ -217,7 +219,7 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
-        if ($_SESSION["currency"] == "AED") {
+        if ($_SESSION["currency"] == "ARS") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('taxId', 'TAX ID', 'trim');
         }
@@ -230,6 +232,8 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('countryCode', 'Country initial', 'trim');
             $this->form_validation->set_rules('state', 'State initial', 'trim');
             $this->form_validation->set_rules('bsbCode', 'BSB Code', 'trim');
+            $this->form_validation->set_rules('billerCode', 'BPAY biller code', 'trim');
+            $this->form_validation->set_rules('customerReferenceNumber', 'Customer Reference Number (CRN)', 'trim');
         }
 
         if ($_SESSION["currency"] == "BDT") {
@@ -243,6 +247,7 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountType', 'Account Type', 'trim');
             $this->form_validation->set_rules('institutionNumber', 'Institution Number', 'trim');
             $this->form_validation->set_rules('transitNumber', 'Transit Number', 'trim');
+            $this->form_validation->set_rules('interacAccount', 'Interac registered email', 'trim');
         }
 
         if ($_SESSION["currency"] == "CLP") {
@@ -255,18 +260,12 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "CNY") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
-            $this->form_validation->set_rules('swiftCode', 'Swift Code', 'trim');
-            $this->form_validation->set_rules('city', 'City', 'trim');
-            $this->form_validation->set_rules('country', 'Country', 'trim');
-            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
-            $this->form_validation->set_rules('postCode', 'Post Code', 'trim');
-            $this->form_validation->set_rules('legalType', 'Legal Type', 'trim');
-            $this->form_validation->set_rules('type', 'Type', 'trim');
         }
 
         if ($_SESSION["currency"] == "CZK") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'bank Code', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
         if ($_SESSION["currency"] == "DKK") {
@@ -281,7 +280,6 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
             $this->form_validation->set_rules('sortCode', 'Sort Code', 'trim');
-            $this->form_validation->set_rules('bsbCode', 'BSB Code', 'trim');
         }
 
         if ($_SESSION["currency"] == "GEL") {
@@ -297,11 +295,6 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "HKD") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'Bank Code', 'trim');
-            $this->form_validation->set_rules('branchCode', 'Branch Code', 'trim');
-            $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
-            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
-            $this->form_validation->set_rules('city', 'City', 'trim');
-            $this->form_validation->set_rules('state', 'State', 'trim');
         }
 
         if ($_SESSION["currency"] == "HRK") {
@@ -310,6 +303,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "HUF") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
         if ($_SESSION["currency"] == "IDR") {
@@ -328,6 +322,10 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "INR") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('ifscCode', 'ifsc Code', 'trim');
+            $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
+            $this->form_validation->set_rules('city', 'City', 'trim');
+            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
+            $this->form_validation->set_rules('postCode', 'Post Code', 'trim');
         }
 
         if ($_SESSION["currency"] == "JPY") {
@@ -346,7 +344,6 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'Bank Code', 'trim');
             $this->form_validation->set_rules('dateOfBirth', 'Date of Birth', 'trim');
-            $this->form_validation->set_rules('email', 'Email', 'trim');
         }
 
         if ($_SESSION["currency"] == "LKR") {
@@ -371,6 +368,7 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "MYR") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('swiftCode', 'Swift Code', 'trim');
+            $this->form_validation->set_rules('accountType', 'Account Type', 'trim');
         }
 
         if ($_SESSION["currency"] == "NGN") {
@@ -405,6 +403,7 @@ class Bank extends CI_Controller
         }
 
         if ($_SESSION["currency"] == "PLN") {
+            $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
@@ -436,6 +435,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "UAH") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
             $this->form_validation->set_rules('phoneNumber', 'Phone Number', 'trim');
             $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
             $this->form_validation->set_rules('city', 'City', 'trim');
@@ -515,6 +515,8 @@ class Bank extends CI_Controller
             $temp["countryCode"] = $this->security->xss_clean($input->post("countryCode"));
             $temp["state"] = $this->security->xss_clean($input->post("state"));
             $temp["bsbCode"] = $this->security->xss_clean($input->post("bsbCode"));
+            $temp["billerCode"] = $this->security->xss_clean($input->post("billerCode"));
+            $temp["customerReferenceNumber"] = $this->security->xss_clean($input->post("customerReferenceNumber"));
         }
 
         if ($_SESSION["currency"] == "BDT") {
@@ -528,6 +530,7 @@ class Bank extends CI_Controller
             $temp["accountType"] = $this->security->xss_clean($input->post("accountType"));
             $temp["institutionNumber"] = $this->security->xss_clean($input->post("institutionNumber"));
             $temp["transitNumber"] = $this->security->xss_clean($input->post("transitNumber"));
+            $temp["interacAccount"] = $this->security->xss_clean($input->post("interacAccount"));
         }
 
         if ($_SESSION["currency"] == "CLP") {
@@ -540,18 +543,12 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "CNY") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
-            $temp["swiftCode"] = $this->security->xss_clean($input->post("swiftCode"));
-            $temp["city"] = $this->security->xss_clean($input->post("city"));
-            $temp["country"] = $this->security->xss_clean($input->post("country"));
-            $temp["firstLine"] = $this->security->xss_clean($input->post("firstLine"));
-            $temp["postCode"] = $this->security->xss_clean($input->post("postCode"));
-            $temp["legalType"] = $this->security->xss_clean($input->post("legalType"));
-            $temp["type"] = $this->security->xss_clean($input->post("type"));
         }
 
         if ($_SESSION["currency"] == "CZK") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["bankCode"] = $this->security->xss_clean($input->post("bankCode"));
+            $temp["IBAN"] = $this->security->xss_clean($input->post("IBAN"));
         }
 
         if ($_SESSION["currency"] == "DKK") {
@@ -566,7 +563,6 @@ class Bank extends CI_Controller
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["IBAN"] = $this->security->xss_clean($input->post("IBAN"));
             $temp["sortCode"] = $this->security->xss_clean($input->post("sortCode"));
-            $temp["bsbCode"] = $this->security->xss_clean($input->post("bsbCode"));
         }
 
         if ($_SESSION["currency"] == "GEL") {
@@ -582,11 +578,6 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "HKD") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["bankCode"] = $this->security->xss_clean($input->post("bankCode"));
-            $temp["branchCode"] = $this->security->xss_clean($input->post("branchCode"));
-            $temp["countryCode"] = $this->security->xss_clean($input->post("countryCode"));
-            $temp["firstLine"] = $this->security->xss_clean($input->post("firstLine"));
-            $temp["city"] = $this->security->xss_clean($input->post("city"));
-            $temp["state"] = $this->security->xss_clean($input->post("state"));
         }
 
         if ($_SESSION["currency"] == "HRK") {
@@ -595,6 +586,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "HUF") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
+            $temp["IBAN"] = $this->security->xss_clean($input->post("IBAN"));
         }
 
         if ($_SESSION["currency"] == "IDR") {
@@ -613,6 +605,10 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "INR") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["ifscCode"] = $this->security->xss_clean($input->post("ifscCode"));
+            $temp["countryCode"] = $this->security->xss_clean($input->post("countryCode"));
+            $temp["city"] = $this->security->xss_clean($input->post("city"));
+            $temp["firstLine"] = $this->security->xss_clean($input->post("firstLine"));
+            $temp["postCode"] = $this->security->xss_clean($input->post("postCode"));
         }
 
         if ($_SESSION["currency"] == "JPY") {
@@ -631,7 +627,6 @@ class Bank extends CI_Controller
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["bankCode"] = $this->security->xss_clean($input->post("bankCode"));
             $temp["dateOfBirth"] = $this->security->xss_clean($input->post("dateOfBirth"));
-            $temp["email"] = $this->security->xss_clean($input->post("email"));
         }
 
         if ($_SESSION["currency"] == "LKR") {
@@ -656,6 +651,7 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "MYR") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["swiftCode"] = $this->security->xss_clean($input->post("swiftCode"));
+            $temp["accountType"] = $this->security->xss_clean($input->post("accountType"));
         }
 
         if ($_SESSION["currency"] == "NGN") {
@@ -690,6 +686,7 @@ class Bank extends CI_Controller
         }
 
         if ($_SESSION["currency"] == "PLN") {
+            $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
             $temp["IBAN"] = $this->security->xss_clean($input->post("IBAN"));
         }
 
@@ -721,6 +718,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "UAH") {
             $temp["accountNumber"] = $this->security->xss_clean($input->post("accountNumber"));
+            $temp["IBAN"] = $this->security->xss_clean($input->post("IBAN"));
             $temp["phoneNumber"] = $this->security->xss_clean($input->post("phoneNumber"));
             $temp["countryCode"] = $this->security->xss_clean($input->post("countryCode"));
             $temp["city"] = $this->security->xss_clean($input->post("city"));
@@ -805,6 +803,8 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('countryCode', 'Country initial', 'trim');
             $this->form_validation->set_rules('state', 'State initial', 'trim');
             $this->form_validation->set_rules('bsbCode', 'BSB Code', 'trim');
+            $this->form_validation->set_rules('billerCode', 'BPAY biller code', 'trim');
+            $this->form_validation->set_rules('customerReferenceNumber', 'Customer Reference Number (CRN)', 'trim');
         }
 
         if ($_SESSION["currency"] == "BDT") {
@@ -818,6 +818,7 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountType', 'Account Type', 'trim');
             $this->form_validation->set_rules('institutionNumber', 'Institution Number', 'trim');
             $this->form_validation->set_rules('transitNumber', 'Transit Number', 'trim');
+            $this->form_validation->set_rules('interacAccount', 'Interac registered email', 'trim');
         }
 
         if ($_SESSION["currency"] == "CLP") {
@@ -830,18 +831,12 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "CNY") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
-            $this->form_validation->set_rules('swiftCode', 'Swift Code', 'trim');
-            $this->form_validation->set_rules('city', 'City', 'trim');
-            $this->form_validation->set_rules('country', 'Country', 'trim');
-            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
-            $this->form_validation->set_rules('postCode', 'Post Code', 'trim');
-            $this->form_validation->set_rules('legalType', 'Legal Type', 'trim');
-            $this->form_validation->set_rules('type', 'Type', 'trim');
         }
 
         if ($_SESSION["currency"] == "CZK") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'bank Code', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
         if ($_SESSION["currency"] == "DKK") {
@@ -856,7 +851,6 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
             $this->form_validation->set_rules('sortCode', 'Sort Code', 'trim');
-            $this->form_validation->set_rules('bsbCode', 'BSB Code', 'trim');
         }
 
         if ($_SESSION["currency"] == "GEL") {
@@ -872,19 +866,15 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "HKD") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'Bank Code', 'trim');
-            $this->form_validation->set_rules('branchCode', 'Branch Code', 'trim');
-            $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
-            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
-            $this->form_validation->set_rules('city', 'City', 'trim');
-            $this->form_validation->set_rules('state', 'State', 'trim');
         }
 
         if ($_SESSION["currency"] == "HRK") {
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
-        if ($_SESSION["currency"] == "HRK") {
+        if ($_SESSION["currency"] == "HUF") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
         if ($_SESSION["currency"] == "IDR") {
@@ -903,6 +893,10 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "INR") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('ifscCode', 'ifsc Code', 'trim');
+            $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
+            $this->form_validation->set_rules('city', 'City', 'trim');
+            $this->form_validation->set_rules('firstLine', 'FirstLine', 'trim');
+            $this->form_validation->set_rules('postCode', 'Post Code', 'trim');
         }
 
         if ($_SESSION["currency"] == "JPY") {
@@ -921,7 +915,6 @@ class Bank extends CI_Controller
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('bankCode', 'Bank Code', 'trim');
             $this->form_validation->set_rules('dateOfBirth', 'Date of Birth', 'trim');
-            $this->form_validation->set_rules('email', 'Email', 'trim');
         }
 
         if ($_SESSION["currency"] == "LKR") {
@@ -946,6 +939,7 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "MYR") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('swiftCode', 'Swift Code', 'trim');
+            $this->form_validation->set_rules('accountType', 'Account Type', 'trim');
         }
 
         if ($_SESSION["currency"] == "NGN") {
@@ -980,6 +974,7 @@ class Bank extends CI_Controller
         }
 
         if ($_SESSION["currency"] == "PLN") {
+            $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
             $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
         }
 
@@ -1011,6 +1006,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "UAH") {
             $this->form_validation->set_rules('accountNumber', 'Account Number', 'trim');
+            $this->form_validation->set_rules('IBAN', 'IBAN', 'trim');
             $this->form_validation->set_rules('phoneNumber', 'Phone Number', 'trim');
             $this->form_validation->set_rules('countryCode', 'Country Code', 'trim');
             $this->form_validation->set_rules('city', 'City', 'trim');
@@ -1134,6 +1130,8 @@ class Bank extends CI_Controller
             $countryCode = $this->security->xss_clean($input->post("countryCode"));
             $state = $this->security->xss_clean($input->post("state"));
             $bsbCode = $this->security->xss_clean($input->post("bsbCode"));
+            $billerCode = $this->security->xss_clean($input->post("billerCode"));
+            $customerReferenceNumber = $this->security->xss_clean($input->post("customerReferenceNumber"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1149,6 +1147,8 @@ class Bank extends CI_Controller
                     "countryCode"       => $countryCode,
                     "state"             => $state,
                     "bsbCode"           => $bsbCode,
+                    "billerCode"        => $billerCode,
+                    "customerReferenceNumber" => $customerReferenceNumber,
                     "causal"            => @$causal,
                 )
             );
@@ -1179,6 +1179,7 @@ class Bank extends CI_Controller
             $accountType = $this->security->xss_clean($input->post("accountType"));
             $institutionNumber = $this->security->xss_clean($input->post("institutionNumber"));
             $transitNumber = $this->security->xss_clean($input->post("transitNumber"));
+            $interacAccount = $this->security->xss_clean($input->post("interacAccount"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1191,6 +1192,7 @@ class Bank extends CI_Controller
                     "accountType"       => $accountType,
                     "institutionNumber" => $institutionNumber,
                     "transitNumber"     => $transitNumber,
+                    "interacAccount"     => $interacAccount,
                     "causal"            => @$causal,
                 )
             );
@@ -1222,13 +1224,6 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "CNY") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
-            $swiftCode = $this->security->xss_clean($input->post("swiftCode"));
-            $city = $this->security->xss_clean($input->post("city"));
-            $country = $this->security->xss_clean($input->post("country"));
-            $firstLine = $this->security->xss_clean($input->post("firstLine"));
-            $postCode = $this->security->xss_clean($input->post("postCode"));
-            $legalType = $this->security->xss_clean($input->post("legalType"));
-            $type = $this->security->xss_clean($input->post("type"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1238,13 +1233,6 @@ class Bank extends CI_Controller
                 "bank_detail"   => array(
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
-                    "swiftCode"         => $swiftCode,
-                    "city"              => $city,
-                    "country"           => $country,
-                    "firstLine"         => $firstLine,
-                    "postCode"          => $postCode,
-                    "legalType"         => $legalType,
-                    "type"              => $type,
                     "causal"            => @$causal,
                 )
             );
@@ -1253,6 +1241,7 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "CZK") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $bankCode = $this->security->xss_clean($input->post("bankCode"));
+            $IBAN = $this->security->xss_clean($input->post("IBAN"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1263,6 +1252,7 @@ class Bank extends CI_Controller
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
                     "bankCode"          => $bankCode,
+                    "IBAN"              => $IBAN,
                     "causal"            => @$causal,
                 )
             );
@@ -1304,7 +1294,6 @@ class Bank extends CI_Controller
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $IBAN = $this->security->xss_clean($input->post("IBAN"));
             $sortCode = $this->security->xss_clean($input->post("sortCode"));
-            $bsbCode = $this->security->xss_clean($input->post("bsbCode"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1316,7 +1305,6 @@ class Bank extends CI_Controller
                     "accountNumber"     => $accountNumber,
                     "IBAN"              => $IBAN,
                     "sortCode"          => $sortCode,
-                    "bsbCode"           => $bsbCode,
                     "causal"            => @$causal,
                 )
             );
@@ -1361,11 +1349,6 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "HKD") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $bankCode = $this->security->xss_clean($input->post("bankCode"));
-            $branchCode  = $this->security->xss_clean($input->post("branchCode"));
-            $countryCode = $this->security->xss_clean($input->post("countryCode"));
-            $firstLine = $this->security->xss_clean($input->post("firstLine"));
-            $city = $this->security->xss_clean($input->post("city"));
-            $state = $this->security->xss_clean($input->post("state"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1376,11 +1359,6 @@ class Bank extends CI_Controller
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
                     "bankCode"          => $bankCode,
-                    "branchCode"        => $branchCode,
-                    "countryCode"       => $countryCode,
-                    "firstLine"         => $firstLine,
-                    "city"              => $city,
-                    "state"             => $state,
                     "causal"            => @$causal,
                 )
             );
@@ -1404,7 +1382,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "HUF") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
-            $bankCode = $this->security->xss_clean($input->post("bankCode"));
+            $IBAN = $this->security->xss_clean($input->post("IBAN"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1414,6 +1392,7 @@ class Bank extends CI_Controller
                 "bank_detail"   => array(
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
+                    "IBAN"              => $IBAN,
                     "causal"            => @$causal,
                 )
             );
@@ -1464,6 +1443,10 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "INR") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $ifscCode = $this->security->xss_clean($input->post("ifscCode"));
+            $countryCode = $this->security->xss_clean($input->post("countryCode"));
+            $city = $this->security->xss_clean($input->post("city"));
+            $firstLine = $this->security->xss_clean($input->post("firstLine"));
+            $postCode = $this->security->xss_clean($input->post("postCode"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1474,6 +1457,10 @@ class Bank extends CI_Controller
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
                     "ifscCode"          => $ifscCode,
+                    "countryCode"       => $countryCode,
+                    "city"              => $city,
+                    "firstLine"         => $firstLine,
+                    "postCode"          => $postCode,
                     "causal"            => @$causal,
                 )
             );
@@ -1523,7 +1510,6 @@ class Bank extends CI_Controller
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $bankCode = $this->security->xss_clean($input->post("bankCode"));
             $dateOfBirth = $this->security->xss_clean($input->post("dateOfBirth"));
-            $email = $this->security->xss_clean($input->post("email"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1535,7 +1521,6 @@ class Bank extends CI_Controller
                     "accountNumber"     => $accountNumber,
                     "bankCode"          => $bankCode,
                     "dateOfBirth"       => $dateOfBirth,
-                    "email"             => $email,
                     "causal"            => @$causal,
                 )
             );
@@ -1606,6 +1591,7 @@ class Bank extends CI_Controller
         if ($_SESSION["currency"] == "MYR") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $swiftCode = $this->security->xss_clean($input->post("swiftCode"));
+            $accountType = $this->security->xss_clean($input->post("accountType"));
 
             $mdata = array(
                 "userid"            => $_SESSION["user_id"],
@@ -1615,7 +1601,8 @@ class Bank extends CI_Controller
                 "bank_detail"   => array(
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
-                    "swiftCode"          => $swiftCode,
+                    "accountType"       => $accountType,
+                    "swiftCode"         => $swiftCode,
                     "causal"            => @$causal,
                 )
             );
@@ -1733,6 +1720,7 @@ class Bank extends CI_Controller
         }
 
         if ($_SESSION["currency"] == "PLN") {
+            $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
             $IBAN = $this->security->xss_clean($input->post("IBAN"));
 
             $mdata = array(
@@ -1742,6 +1730,7 @@ class Bank extends CI_Controller
                 "transfer_type"     => $transfer_type,
                 "bank_detail"   => array(
                     "accountHolderName" => $accountHolderName,
+                    "accountNumber"     => $accountNumber,
                     "IBAN"              => $IBAN,
                     "causal"            => @$causal,
                 )
@@ -1843,6 +1832,7 @@ class Bank extends CI_Controller
 
         if ($_SESSION["currency"] == "UAH") {
             $accountNumber = $this->security->xss_clean($input->post("accountNumber"));
+            $IBAN = $this->security->xss_clean($input->post("IBAN"));
             $phoneNumber = $this->security->xss_clean($input->post("phoneNumber"));
             $countryCode = $this->security->xss_clean($input->post("countryCode"));
             $city = $this->security->xss_clean($input->post("city"));
@@ -1857,6 +1847,7 @@ class Bank extends CI_Controller
                 "bank_detail"   => array(
                     "accountHolderName" => $accountHolderName,
                     "accountNumber"     => $accountNumber,
+                    "IBAN"              => $IBAN,
                     "phoneNumber"          => $phoneNumber,
                     "countryCode"       => $countryCode,
                     "city"              => $city,
@@ -1907,7 +1898,7 @@ class Bank extends CI_Controller
 
         if (@$result->code != 200) {
             if (@$result->code == 5055) {
-                $this->session->set_flashdata("failed", "Something wrong, please try again later!");
+                $this->session->set_flashdata("failed", $result->message);
                 redirect(base_url() . "bank");
             }
             $this->session->set_flashdata("failed", $result->message);

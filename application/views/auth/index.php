@@ -48,7 +48,7 @@
                     <div class="powered-top mb-3 me-5">
                         <span>Empowered By</span>
                         <a href="https://tracklessproject.com/">
-                            <img src="<?= base_url() ?>assets/img/tracklessproject.png" alt="">
+                            <img src="<?= base_url() ?>assets/img/tracklessprojects-b.png" alt="">
                         </a>
                     </div>
                 </div>
