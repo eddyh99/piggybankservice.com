@@ -102,12 +102,11 @@ class Auth extends CI_Controller
 					return;
 				}
 			}
-			
+
 			$session_referral = array(
 				'referral'   => $_GET['ref']
 			);
 			$this->session->set_userdata($session_referral);
-			
 		}
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
@@ -341,10 +340,18 @@ class Auth extends CI_Controller
 			$this->session->set_userdata($member_session);
 
 			$src = base_url() . 'qr/user/' . $result->message->ucode . '.png';
+			$srcref = base_url() . 'qr/ref/' . $result->message->ucode . '.png';
+
 			// $srcr = base_url() . 'qr/receive/' . $result->message->ucode . '.png';
 			if (@getimagesize($src) == FALSE) {
 				$this->qrcodeuser($result->message->ucode);
 			}
+
+			$refurl = base_url() . "auth/signup?ref=" . $result->message->refcode;
+			if (@getimagesize($srcref) == FALSE) {
+				$this->qrcoderef($refurl, $result->message->ucode);
+			}
+
 			// if (@getimagesize($srcr) == FALSE) {
 			// 	$urlqr = base_url() . 'auth/requestbank/' . base64_encode($_SESSION["ucode"]);
 			// 	$this->qrcodereceive($urlqr, $result->message->ucode);
@@ -531,7 +538,7 @@ class Auth extends CI_Controller
 			return  $this->ciqrcode->generate($params); // fungsi untuk generate QR CODE
 		}
 	}
-	
+
 	public function qrcodeuser($kodeqr)
 	{
 		if ($kodeqr) {
@@ -555,17 +562,40 @@ class Auth extends CI_Controller
 		}
 	}
 
-	public function requestbank($curr = '', $ucode = '', $amount=NULL)
+	public function qrcoderef($kodeqr, $name)
+	{
+		if ($kodeqr) {
+			$config['cacheable']    = true; //boolean, the default is true
+			$config['cachedir']     = './qr/'; //string, the default is application/cache/
+			$config['errorlog']     = './qr/'; //string, the default is application/logs/
+			$config['imagedir']     = './qr/ref/'; //direktori penyimpanan qr code
+			$config['quality']      = true; //boolean, the default is true
+			$config['size']         = '1024'; //interger, the default is 1024
+			$config['black']        = array(224, 255, 255); // array, default is array(255,255,255)
+			$config['white']        = array(70, 130, 180); // array, default is array(0,0,0)
+			$this->ciqrcode->initialize($config);
+
+			$image_name = $name . '.png'; //buat name dari qr code sesuai dengan nim
+
+			$params['data'] = $kodeqr; //data yang akan di jadikan QR CODE
+			$params['level'] = 'H'; //H=High
+			$params['size'] = 10;
+			$params['savename'] = FCPATH . $config['imagedir'] . $image_name; //simpan image QR CODE ke folder assets/images/
+			return  $this->ciqrcode->generate($params); // fungsi untuk generate QR CODE
+		}
+	}
+
+	public function requestbank($curr = '', $ucode = '', $amount = NULL)
 	{
 		if ((empty($curr)) || (empty($ucode))) {
 			redirect(base_url());
 		}
 
 		$banks = URLAPI . "/v1/member/wallet/getAllbank";
-		$symbol = URLAPI . "/v1/trackless/currency/getsymbol?currency=".base64_decode($curr);
+		$symbol = URLAPI . "/v1/trackless/currency/getsymbol?currency=" . base64_decode($curr);
 
 		if ($amount) {
-			$data['urlamount'] = "&amount=".base64_decode($amount);
+			$data['urlamount'] = "&amount=" . base64_decode($amount);
 		}
 		$data['banks'] = apitrackless($banks)->message;
 		$data['symbol'] = apitrackless($symbol)->message;
