@@ -77,18 +77,20 @@ class Auth extends CI_Controller
 		}
 
 		if (!isset($_GET['ref'])) {
-			if (!$this->session->userdata('referral')) {
+			if (!$_COOKIE['ref']) {
 				$this->session->set_flashdata('failed', 'Must enter Referral Code');
 				redirect(base_url() . "auth/signup_referral");
 				return;
 			} else {
-				$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_SESSION['referral']);
-				if ($cek->code == '5051') {
-					if ($_SESSION['referral'] != "p1ggy34") {
-						$this->session->set_flashdata('failed', $cek->message);
-						$this->session->set_flashdata('referral', set_value('referral'));
-						redirect(base_url() . "auth/signup_referral");
-						return;
+				if ($_COOKIE['ref'] != "p1ggy34") {
+					$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_COOKIE['ref']);
+					if ($cek->code == '5051') {
+						if ($_SESSION['referral'] != "p1ggy34") {
+							$this->session->set_flashdata('failed', $cek->message);
+							$this->session->set_flashdata('referral', set_value('referral'));
+							redirect(base_url() . "auth/signup_referral");
+							return;
+						}
 					}
 				}
 			}
@@ -103,11 +105,10 @@ class Auth extends CI_Controller
 				}
 			}
 
-			$session_referral = array(
-				'referral'   => $_GET['ref']
-			);
-			$this->session->set_userdata($session_referral);
+			$ref = $_GET['ref'];
+			$this->input->set_cookie("ref", @$ref, 60 * 60 * 24);
 		}
+
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
 		$this->load->view('tamplate/footer');
@@ -138,22 +139,20 @@ class Auth extends CI_Controller
 		$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $referral);
 
 		if ($cek->code != '5051') {
-			$session_referral = array(
-				'referral'   => $referral
-			);
-			$this->session->set_userdata($session_referral);
+			$ref = $referral;
+			$this->input->set_cookie("ref", @$ref, 60 * 60 * 24);
+
 			redirect(base_url() . "auth/signup");
 			return;
 		} else {
 			if ($referral == "p1ggy34") {
-				$session_referral = array(
-					'referral'   => $referral
-				);
-				$this->session->set_userdata($session_referral);
+				$ref = $referral;
+				$this->input->set_cookie("ref", @$ref, 60 * 60 * 24);
+
 				redirect(base_url() . "auth/signup");
 				return;
 			} else {
-				$this->session->set_flashdata('failed', $cek->message);
+				$this->session->set_flashdata('failed', $cek->message . ' ' . $referral);
 				$this->session->set_flashdata('referral', set_value('referral'));
 				redirect(base_url() . "auth/signup_referral");
 				return;
@@ -340,13 +339,13 @@ class Auth extends CI_Controller
 			$this->session->set_userdata($member_session);
 
 			$src = base_url() . 'qr/user/' . $result->message->ucode . '.png';
-			$srcref = base_url() . 'qr/ref/' . $result->message->ucode . '.png';
 
 			// $srcr = base_url() . 'qr/receive/' . $result->message->ucode . '.png';
 			if (@getimagesize($src) == FALSE) {
 				$this->qrcodeuser($result->message->ucode);
 			}
 
+			$srcref = base_url() . 'qr/ref/' . $result->message->ucode . '.png';
 			$refurl = base_url() . "auth/signup?ref=" . $result->message->refcode;
 			if (@getimagesize($srcref) == FALSE) {
 				$this->qrcoderef($refurl, $result->message->ucode);
