@@ -11,7 +11,7 @@
             </div>
             <div class="col-10 my-5 text-start mx-auto">
                 <h5 class="fw-bold mt-3 mb-0">Privacy Policy</h5>
-                <p>At <span translate="no"> MoneyPort </span>, accessible from PiggyBankService.com, one of our main
+                <p>At <span translate="no"> PiggyBank </span>, accessible from PiggyBankService.com, one of our main
                     priorities
                     is
                     the privacy of our
