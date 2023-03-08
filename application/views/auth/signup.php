@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row d-flex d-lg-inline-grid justify-content-center">
             <div class="col-10 col-sm-9 col-md-7 col-lg-5 box-form">
-                <a href="<?= base_url(); ?>auth/signup_referral" class="link-back">
+                <a href="<?= base_url(); ?>auth/login" class="link-back">
                     <img src="<?= base_url() ?>assets/img/back.png" alt="">
                 </a>
                 <form class="form-login-freedy d-flex align-items-start flex-column" style="height: 100%;" method="POST"
@@ -22,7 +22,6 @@
                     <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>"
                         value="<?php echo $this->security->get_csrf_hash(); ?>">
                     <input type="hidden" name="time_location" id="time_location">
-                    <input type="hidden" name="referral" value="<?= @$_SESSION["referral"] ?>">
                     <div class="col-12 mb-5 text-center">
                         <a href="<?= base_url() ?>">
                             <img src="<?= base_url(); ?>assets/img/logo-login.png" alt="">
@@ -33,8 +32,8 @@
                         <div class="input-group">
                             <input type="email" class="form-control f-publicsans" id="email" name="email"
                                 value="<?php if (@isset($_SESSION['email'])) {
-                                                                                                                        echo $_SESSION['email'];
-                                                                                                                    } ?>" required>
+                                                echo $_SESSION['email'];
+                                        } ?>" required>
                             <div class="input-group-text">
                                 <span>
                                     <i class="fa fa-user"></i>
@@ -47,8 +46,8 @@
                         <div class="input-group">
                             <input type="email" class="form-control f-publicsans" id="email" name="confirmemail"
                                 value="<?php if (@isset($_SESSION['confirmemail'])) {
-                                                                                                                            echo $_SESSION['confirmemail'];
-                                                                                                                        } ?>" required>
+                                                   echo $_SESSION['confirmemail'];
+                                            } ?>" required>
                             <div class="input-group-text">
                                 <span>
                                     <i class="fa fa-user"></i>
@@ -80,6 +79,14 @@
                                         toggle="#password2"></i>
                                 </span>
                             </div>
+                        </div>
+                    </div>
+                    <div class="col-12 mb-5">
+                        <label for="email" class="form-label f-publicsans">Refferal code <span class="text-mute">(
+                                optional )</span>
+                        </label>
+                        <div class="input-group">
+                            <input type="text" class="form-control f-publicsans py-2" id="referral" name="referral" value="<?= @$_COOKIE['ref'] ?>">
                         </div>
                     </div>
                     <div class="g-recaptcha" data-sitekey="<?php echo $this->config->item('google_key') ?>"></div>

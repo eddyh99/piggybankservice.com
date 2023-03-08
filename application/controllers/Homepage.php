@@ -13,6 +13,12 @@ class Homepage extends CI_Controller
 
     public function index()
     {
+        if (!isset($_SESSION["referral"])){
+            $url = URLAPI . "/v1/auth/getmember_byucode?ucode=".$_SESSION["ucode"];
+            $member   = apitrackless($url, json_encode($mdata))->message;
+            $_SESSION["referral"]=$member->refcode;
+        }
+        
         $mdata = array(
             "userid" => $_SESSION["user_id"]
         );
