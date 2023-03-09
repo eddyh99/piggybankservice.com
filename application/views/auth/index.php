@@ -264,13 +264,40 @@
                                 <span class="f-lexend">Sign up</span>
                             </a>
                         </div>
+                        <div class="col-4 d-none d-lg-grid align-items-center text-center">
+                        <img src="<?= base_url(); ?>assets/img/img-3.png" alt="" class="img-fluid">
+                        </div>
                     </div>
                 </div>
-                <div class="col-4 d-none d-lg-grid align-items-center text-center">
-                    <img src="<?= base_url(); ?>assets/img/img-3.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-8 line-green"></div>
             </div>
+            <div class="content-freedy p-r text-center">
+                <div class="my-3">
+                    <h2 class="f-lexend d-block">BECOME OUR PARTNER</h2>
+                    <div class="col-4 d-none d-lg-grid align-items-center text-center">
+                        <img src="<?= base_url(); ?>assets/img/bg.png" alt="" class="img-fluid">
+                        <p class="col-lg-12 text-center content-freedy f-lexend"> Become an affiliate partner of ours and create your point or open a Tracklessproject corner at your shop to make top-ups and withdrawals to all TracklessBank TracklessCrypto and TracklessMoney users, from all over the world.</p>
+                        <p class="bp mb-3 content-freedy f-lexend"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 my-5">
+                    <div class="d-flex flex-row justify-content-center align-items-center">
+                        <div class="form-contactus py-2 w-50">
+                            <form id="form_submit" method="POST" action="http://localhost/piggybankservice.com/link/send_message" class="w-100 d-flex flex-row justify-content-center align-items-center" onsubmit="return validate()">
+                                <input type="hidden" id="token" name="csrf_freedy" value="cc35aaaddbc9b79f2144086c6d7e2992">
+                                <input name="email" type="text" placeholder="Enter your email address" class="col f-roboto">
+                                    <button class="mx-3 py-2 btn-contactus border-0" type="submit" id="btnconfirm">
+                                        <span class="mx-3 d-none d-sm-grid">Contact us</span>
+                                        <img src="http://localhost/piggybankservice.com/assets/img/arrow-contactus.png" alt="" class="mx-1">
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
         </div>
     </section><!-- Section -->
 
