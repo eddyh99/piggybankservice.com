@@ -28,7 +28,7 @@
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center slider-freedy text-start">
                 <h1 class="f-lexend fw-bold">ALTERNATIVE TO THE BANKING SYSTEM</h1>
                 <p class="f-lexend my-3">
-                    <b translate="no"> PiggyBank </b> is a multi-currency platform that guarantees the maximum of privacy, and it offers a free <b translate="no"> "non-custodial wallet" </b> with the main functions of a bank account, with an integrated shared "order book" where you can buy and sell cryptocurrencies with FIAT.
+                    <b translate="no"> PiggyBank </b> is a multi-currency platform that guarantees the maximum of privacy, and it offers a free <b class="notranslate"> non-custodial wallet </b> with the main functions of a bank account, with an integrated shared <b class="notranslate">order book</b> where you can buy and sell cryptocurrencies with FIAT.
                 </p>
                 <div class="d-flex flex-wrap mb-3">
                     <div class="list-toright">
@@ -274,9 +274,11 @@
                 <div class="my-3">
                     <h2 class="f-lexend d-block">BECOME OUR PARTNER</h2>
                     <div class="col-4 d-none d-lg-grid align-items-center text-center">
-                        <img src="<?= base_url(); ?>assets/img/bg.png" alt="" class="img-fluid">
-                        <p class="col-lg-12 text-center content-freedy f-lexend"> Become an affiliate partner of ours and create your point or open a Tracklessproject corner at your shop to make top-ups and withdrawals to all TracklessBank TracklessCrypto and TracklessMoney users, from all over the world.</p>
-                        <p class="bp mb-3 content-freedy f-lexend"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
+                        <img src="<?= base_url(); ?>assets/img/bg.png" alt="" class="card-img">
+                        <div class="card-img-overlay">
+                        <p class="col-lg-12 text-center content-freedy f-lexend card-text"> Become an affiliate partner of ours and create your point or open a Tracklessproject corner at your shop to make top-ups and withdrawals to all TracklessBank TracklessCrypto and TracklessMoney users, from all over the world.</p>
+                        <p class="bp mb-3 content-freedy f-lexend card-text"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -288,7 +290,7 @@
                                 <input name="email" type="text" placeholder="Enter your email address" class="col f-roboto">
                                     <button class="mx-3 py-2 btn-contactus border-0" type="submit" id="btnconfirm">
                                         <span class="mx-3 d-none d-sm-grid">Contact us</span>
-                                        <img src="http://localhost/piggybankservice.com/assets/img/arrow-contactus.png" alt="" class="mx-1">
+                                        <img src="<?= base_url(); ?>assets/img/arrow-contactus.png" alt="" class="mx-1">
                                     </button>
                                 </form>
                             </div>
