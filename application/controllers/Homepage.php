@@ -13,6 +13,11 @@ class Homepage extends CI_Controller
 
     public function index()
     {
+        $srcref = base_url() . 'qr/ref/' . $_SESSION["ucode"] . 'Thumbnail.png';
+        if (@getimagesize($srcref) == FALSE) {
+            $this->ciqrcode->createThumbnail($_SESSION["ucode"], 'qr/ref/');
+        }
+
         if (!isset($_SESSION["referral"])){
             $url = URLAPI . "/v1/auth/getmember_byucode?ucode=".$_SESSION["ucode"];
             $member   = apitrackless($url, json_encode($mdata))->message;
