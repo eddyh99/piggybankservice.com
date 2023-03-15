@@ -157,20 +157,76 @@
                     <div class="logo-text text-center">
                         <img src="<?= base_url() ?>assets/img/u-img-4.png" alt="">
                         <span class="f-lexend text-blue-freedy">Essential for your trips</span>
+                        <h3 class="text-dark my-3 fw-bold">With <b translate="no"> PiggyBank </b> your money travels with you.</h3>
+                            <p>
+                                Thanks to the best exchange rates you can find on the market and the absence of fees you
+                                can, 
+                            </p>
+                            <p>
+                                from your multi-currency wallet, instantly convert your balance into the currency of
+                                the country 
+                            </p>
+                            <p>
+                                you are in and carry out comfortably all the payments you want, quickly and
+                                easily.
+                            </p>
+
+
+
+                            <p>Follow few easy steps to instant convert FIAT currencies and make easy payments from wherever you want</p>
                     </div>
                 </div>
                 <div class="col-12 mb-5">
+                    <div class="d-flex flex-column flex-md-row flex-wrap justify-content-center">
+                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                            <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 1</h5>
+                            <div class="card freedy-card text-center">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Top up your wallet by bank transfers</b><br>
+                                        in one of the 10 currencies that allows you to receive bank transfers <a class="text-decoration-underline"> (see the list)</a>.
+                                        You just need to follow the easy procedure that you can find in the
+                                        ‘’Deposit/Receive’’ section of your wallet
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                            <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 2</h5>
+                            <div class="card freedy-card text-center">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Select one of the currency</b><br>
+                                        in where you have the funds and
+                                        <b>Click the button</b><br> <b translate="no"> ‘’Swap’’ </b></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                            <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 3</h5>
+                            <div class="card freedy-card text-center">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Enter the amount and choose</b><br>
+                                        one of the 50 currencies that allows you to convert and send <a class="text-decoration-underline"> (see the list)</a> and
+                                        <b>click</b><br> <b translate="no"> ‘’Confirm’’ </b>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-3 text-center px-2 py-2">
+                            <h5 class="card-title my-3 text-blue-freedy fw-bold">Step 4</h5>
+                            <div class="card freedy-card text-center">
+                                <div class="card-body">
+                                    <p class="card-text"><b>Congratulations!</b><br>
+                                        Now you can make easy and fast payments in the currency of the country you are in
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                <div class="col-12 mb-5">
                     <div class="row">
                         <div class="col-12 col-md-6">
-                            <h3 class="text-dark">With <b translate="no"> PiggyBank </b> your money travels with you.</h3>
-                            <p>
-                                Thanks to the best exchange rates you can find on the market and the absence of fees you
-                                can, from your multi-currency wallet, instantly convert your balance into the currency of
-                                the country you are in and carry out comfortably all the payments you want, quickly and
-                                easily.
-                            </p>
+                            
                         </div>
-                        <div class="col-6 d-none d-md-grid">
+                        <div class="col-12 col-md-8 mx-auto my-4">
                             <img src="<?= base_url() ?>assets/img/img-13.png" alt="" class="img-fluid">
                         </div>
                     </div>

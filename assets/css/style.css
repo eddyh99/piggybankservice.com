@@ -4398,7 +4398,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -6647,7 +6647,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -8842,7 +8842,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -11351,7 +11351,7 @@ section {
     border: 4px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
-    min-height: 250px;
+    min-height: auto;
   }
 
   .freedy-card.piggy {
