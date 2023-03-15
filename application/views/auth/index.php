@@ -277,7 +277,7 @@
                         <img src="<?= base_url(); ?>assets/img/bg.png" alt="" class="card-img">
                         <div class="card-img-overlay">
                         <p class="col-lg-12 text-center content-freedy f-lexend card-text"> Become an affiliate partner of ours and create your point or open a Tracklessproject corner at your shop to make top-ups and withdrawals to all TracklessBank TracklessCrypto and TracklessMoney users, from all over the world.</p>
-                        <p class="bp mb-3 content-freedy f-lexend card-text"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
+                        <p class="content-freedy f-lexend card-text"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
                         </div>
                     </div>
                 </div>
