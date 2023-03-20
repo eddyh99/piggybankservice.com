@@ -74,6 +74,54 @@ section {
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# Become Our PArtner
+--------------------------------------------------------------*/
+
+  .become {
+    background: url(../img/bg-green.png) no-repeat !important;
+    background-size: cover;
+    border-radius: 50px;
+    font-size: 100px !important;
+  }
+
+  .become img {
+    border-radius: 25px;
+  }
+
+  .become h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+
+    color: #000000;
+    background: none;
+    -webkit-text-fill-color: unset;
+  }
+
+  .become p,
+  .become span.shareit {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  .become a.readmore {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(128, 82, 27, 0.51));
+    border-radius: 26.386px;
+  }
+
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -2577,6 +2625,47 @@ section {
 }
 
 @media (max-width: 575px) {
+
+  .become {
+    background: url(../img/bg-green.png) no-repeat;
+    background-size: cover;
+    border-radius: 50px;
+  }
+
+  .become img {
+    border-radius: 25px;
+  }
+
+  .become h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 110%;
+
+    color: #000000;
+    background: none;
+    -webkit-text-fill-color: unset;
+  }
+
+  .become p,
+  .become span.shareit {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    color: #000000;
+  }
+
+  .become a.readmore {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #ffffff;
+    border: 4px solid #ffffff;
+    filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(128, 82, 27, 0.51));
+    border-radius: 26.386px;
+  }
+
+
   .box-service-list .icon img {
     display: none;
   }

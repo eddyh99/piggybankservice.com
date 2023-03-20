@@ -199,6 +199,8 @@
     <!-- ======= Section ======= -->
     <section id="" class="about">
         <div class="container p-r">
+
+            <!-- Start Instan Payment Between -->
             <div class="row gx-0 d-flex justify-content-center">
                 <div class="col-lg-6 mb-5 ps-lg-5">
                     <div class="content-freedy">
@@ -219,6 +221,9 @@
                     <img src="<?= base_url(); ?>assets/img/img-28.png" alt="" class="img-fluid">
                 </div>
             </div>
+            <!-- End Instan Payment Between -->
+
+            <!-- Start Revolutionary bank -->
             <div class="row gx-0 d-flex justify-content-center mb-5">
                 <div class="col-6 d-none d-lg-grid align-items-center text-center">
                     <img src="<?= base_url(); ?>assets/img/img-26.png" alt="" class="img-fluid">
@@ -245,8 +250,11 @@
                     </div>
                 </div>
             </div>
+            <!-- End Revolutionary Bank -->
+            
+            <!-- Start The First Debbit Card -->
             <div class="row gx-0 d-flex justify-content-center">
-                <div class="col-lg-8 mb-5 ps-lg-5">
+                <div class="col-lg-7 mb-5 ps-lg-5">
                     <div class="content-freedy">
                         <h2 class="f-lexend">The first debit card completely anonymous</h2>
                         <div class="my-3">
@@ -264,44 +272,50 @@
                                 <span class="f-lexend">Sign up</span>
                             </a>
                         </div>
-                        <div class="col-4 d-none d-lg-grid align-items-center text-center">
-                        <img src="<?= base_url(); ?>assets/img/img-3.png" alt="" class="img-fluid">
-                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-freedy p-r text-center">
-                <div class="my-3">
-                    <h2 class="f-lexend d-block">BECOME OUR PARTNER</h2>
-                    <div class="col-4 d-none d-lg-grid align-items-center text-center">
-                        <img src="<?= base_url(); ?>assets/img/bg.png" alt="" class="card-img">
-                        <div class="card-img-overlay">
-                        <p class="col-lg-12 text-center content-freedy f-lexend card-text"> Become an affiliate partner of ours and create your point or open a Tracklessproject corner at your shop to make top-ups and withdrawals to all TracklessBank TracklessCrypto and TracklessMoney users, from all over the world.</p>
-                        <p class="content-freedy f-lexend card-text"> It doesn't matter the country you are in, the users of the system are all over the world!</p>
-                        </div>
-                    </div>
+                <div class="col-5 d-none d-lg-grid ">
+                    <img src="<?= base_url(); ?>assets/img/img-3.png" alt="" class="img-fluid">
                 </div>
             </div>
-            <div class="col-12 my-5">
-                    <div class="d-flex flex-row justify-content-center align-items-center">
-                        <div class="form-contactus py-2 w-50">
-                            <form id="form_submit" method="POST" action="http://localhost/piggybankservice.com/link/send_message" class="w-100 d-flex flex-row justify-content-center align-items-center" onsubmit="return validate()">
-                                <input type="hidden" id="token" name="csrf_freedy" value="cc35aaaddbc9b79f2144086c6d7e2992">
-                                <input name="email" type="text" placeholder="Enter your email address" class="col f-roboto">
-                                    <button class="mx-3 py-2 btn-contactus border-0" type="submit" id="btnconfirm">
-                                        <span class="mx-3 d-none d-sm-grid">Contact us</span>
-                                        <img src="<?= base_url(); ?>assets/img/arrow-contactus.png" alt="" class="mx-1">
+            <!-- End The First Debbit Card -->
+
+        </div>
+    </section><!-- Section -->
+
+    <!-- Start Become Our Partner -->
+    <section id="" class="about">
+        <div class="container p-r">
+            <div class="row gx-0 d-flex justify-content-center ">
+                <div class="col-12 my-5 d-flex justify-content-center">
+                    <div class="become p-3 p-md-5">
+                        <div class="col-12 p-3 text-center">
+                            <h2 class="f-lexend text-become fs-1">Become Our Partner</h2>
+                            <p class="col-lg-8 mx-auto f-lexend">
+                                Become an affiliate partner of ours and create your point or open a corner in your shop to make top-ups and withdrawals to all <span translate="no">TracklessBank </span> <span translate="no"> TracklessCrypto </span> and <span translate="no"> TracklessMoney </span> users, from all over the world.
+                            </p>
+                            <span class="shareit d-block mb-4 f-lexend col-lg-8 mx-auto">
+                                It doesn't matter the country where you are, the users of the system are all over the world!
+                            </span>
+                            <div class="d-flex justify-content-center mt-md-5">
+                                <a class="" href="">
+                                    <button type="submit" class="btn btn-contactus text-capitalize f-roboto shadow-sm">
+                                        <span class="ms-2 ms-md-3 ctu">
+                                            Contact us
+                                        </span>
+                                        <span class="circle-btn-email ms-3">
+                                            <img src="<?= base_url();?>assets/img/email.png" alt="email">
+                                        </span>
                                     </button>
-                                </form>
+                                </a>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-        </div>
-    </section><!-- Section -->
+    </section>
+    <!-- End Become Our Partner -->
 
     <!-- ======= Section ======= -->
     <section id="guide" class="about">
