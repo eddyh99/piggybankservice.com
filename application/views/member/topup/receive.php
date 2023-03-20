@@ -21,11 +21,13 @@
                             ) { ?>
                             <div class="receive-attention d-flex flex-column text-center col-12 p-3"
                                 data-bs-toggle="modal" data-bs-target="#attention">
-                                <span class="w-100 mb-2 fw-bold title">IMPORTANT</span>
-                                <p class="fw-bold">To maximize the privacy level, all incoming and outgoing transfers</p>
-                                    <span class="fw-bold">will be managed by a payment and collection gateway.</span>
-                                <p class="fw-bold">The bank details, of each currency, will be the same for all users;</p>
-                                    <b>excluding the ‘’causal’’ which identify the receiving wallet.</b>
+                                <p class="desc">
+                                    To maximize the level of privacy, 
+                                    <span>
+                                        all incoming and outgoing transfers will be managed by a payment and collection gateway which will not custody the funds but will just transfer them.
+                                    </span> 
+                                    The bank details, of each currency, will be the same for all users;  excluding the ‘’causal’’ which identify the receiving wallet.
+                                </p>
                             </div>
                             <?php } ?>
                         </div>

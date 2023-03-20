@@ -287,27 +287,29 @@
     <section id="" class="about">
         <div class="container p-r">
             <div class="row gx-0 d-flex justify-content-center ">
-                <div class="col-12 my-5 d-flex justify-content-center">
+                <div class="col-12 mb-5 mt-3 d-flex flex-column align-items-center justify-content-center ">
+                    <h2 class="f-poppins text-become mb-5 text-center">Become Our Partner</h2>
                     <div class="become p-3 p-md-5">
                         <div class="col-12 p-3 text-center">
-                            <h2 class="f-lexend text-become fs-1">Become Our Partner</h2>
-                            <p class="col-lg-8 mx-auto f-lexend">
+                            <p class="col-12 col-xl-8 mx-auto f-poppins fw-normal ">
                                 Become an affiliate partner of ours and create your point or open a corner in your shop to make top-ups and withdrawals to all <span translate="no">TracklessBank </span> <span translate="no"> TracklessCrypto </span> and <span translate="no"> TracklessMoney </span> users, from all over the world.
                             </p>
-                            <span class="shareit d-block mb-4 f-lexend col-lg-8 mx-auto">
+                            <span class="col-12 shareit d-block mb-4 f-poppins col-xl-8 mx-auto">
                                 It doesn't matter the country where you are, the users of the system are all over the world!
                             </span>
-                            <div class="d-flex justify-content-center mt-md-5">
-                                <a class="" href="">
-                                    <button type="submit" class="btn btn-contactus text-capitalize f-roboto shadow-sm">
-                                        <span class="ms-2 ms-md-3 ctu">
-                                            Contact us
-                                        </span>
-                                        <span class="circle-btn-email ms-3">
-                                            <img src="<?= base_url();?>assets/img/email.png" alt="email">
-                                        </span>
-                                    </button>
-                                </a>
+                            <div class="px-3 pt-5 pb-0">
+                                <div class="d-flex flex-row justify-content-center align-items-center">
+                                    <div class="form-contactus py-2 mx-auto">
+                                        <form id="form_submit" method="POST" action="<?= base_url(); ?>link/send_message" class="d-flex flex-row justify-content-center align-items-center" onsubmit="return validate()">
+                                            <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                            <input name="email" type="text" placeholder="Enter your email address" class="ms-4">
+                                            <button class="mx-3 py-2 btn-contactus" type="submit" id="btnconfirm">
+                                                <span class="mx-3 d-none d-sm-grid">Contact us</span>
+                                                <img src="<?= base_url() ?>assets/img/arrow-contactus.png" alt="" class="mx-1">
+                                            </button>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -576,10 +578,7 @@
                             </a>
                         </div>
                         <p>
-                            <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licensee
-                            PBS
-                            On
-                            line LLC
+                            <b translate="no"> PiggyBank </b> (USA)
                         </p>
                     </div>
                 </div>
@@ -599,10 +598,7 @@
                     </a>
                 </div>
                 <p>
-                    <b translate="no"> PiggyBank </b> (USA) is a service subject to partnership with licenses
-                    PBS
-                    On
-                    line LLC
+                    <b translate="no"> PiggyBank </b> (USA)
                 </p>
             </div>
         </div>
