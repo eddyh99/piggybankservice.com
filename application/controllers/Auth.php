@@ -66,6 +66,11 @@ class Auth extends CI_Controller
 
 	public function signup()
 	{
+		if (@$_GET['ref']) {
+			$ref = @$_GET['ref'];
+			$this->input->set_cookie("ref", @$ref, time()+60 * 60 * 24);
+			redirect('auth/signup');
+		}
 		$data['title'] = NAMETITLE . " - Signup";
 
 		if ($this->session->userdata('user_id')) {
@@ -75,40 +80,7 @@ class Auth extends CI_Controller
 				redirect("/admin/dashboard");
 			}
 		}
-
-		if (!isset($_GET['ref'])) {
-			if (!$_COOKIE['ref']) {
-				$this->session->set_flashdata('failed', 'Must enter Referral Code');
-				redirect(base_url() . "auth/signup_referral");
-				return;
-			} else {
-				if ($_COOKIE['ref'] != "p1ggy34") {
-					$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_COOKIE['ref']);
-					if ($cek->code == '5051') {
-						if ($_SESSION['referral'] != "p1ggy34") {
-							$this->session->set_flashdata('failed', $cek->message);
-							$this->session->set_flashdata('referral', set_value('referral'));
-							redirect(base_url() . "auth/signup_referral");
-							return;
-						}
-					}
-				}
-			}
-		} else {
-			$cek = apitrackless(URLAPI . "/v1/auth/getmember_byrefcode?referral=" . $_GET['ref']);
-			if ($cek->code == '5051') {
-				if ($_GET['ref'] != "p1ggy34") {
-					$this->session->set_flashdata('failed', $cek->message);
-					$this->session->set_flashdata('referral', set_value('referral'));
-					redirect(base_url() . "auth/signup_referral");
-					return;
-				}
-			}
-
-			$ref = $_GET['ref'];
-			$this->input->set_cookie("ref", @$ref, 60 * 60 * 24);
-		}
-
+		
 		$this->load->view('tamplate/header', $data);
 		$this->load->view('auth/signup');
 		$this->load->view('tamplate/footer');
@@ -192,7 +164,7 @@ class Auth extends CI_Controller
 		$this->form_validation->set_rules('confirmemail', 'Confirm Email', 'trim|required|valid_email|matches[email]');
 		$this->form_validation->set_rules('pass', 'Password', 'trim|required|min_length[9]|max_length[15]');
 		$this->form_validation->set_rules('confirmpass', 'Confirm Password', 'trim|required|matches[pass]');
-		$this->form_validation->set_rules('referral', 'Referral', 'trim|required');
+		$this->form_validation->set_rules('referral', 'Referral', 'trim');
 
 		if ($this->form_validation->run() == FALSE) {
 			$this->session->set_flashdata('failed', "<p style='color:black'>" . validation_errors() . "</p>");
