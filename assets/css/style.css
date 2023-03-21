@@ -74,6 +74,466 @@ section {
   }
 }
 
+
+
+/*--------------------------------------------------------------
+# member card
+--------------------------------------------------------------*/
+
+.wrap-border-topup {
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #1B8036, #1B8036, #1B8036) border-box;
+  border-radius: 10px;
+  border: 3px solid transparent;
+
+}
+
+
+.form-topup-card {
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #1B8036, #27ad4b, #116928) border-box;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  
+}
+
+.form-topup-card label,
+.form-topup-card input {
+  border: 0;
+  box-shadow: 0;
+  padding: 0.5rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.form-topup-card label,
+.form-topup-card input::placeholder, 
+.form-topup-card input[type="text"] {
+  font-size: 24px;
+}
+
+.form-topup-card input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+
+.card-balance div:nth-child(1) {
+  font-size: 12px;
+}
+
+.card-balance div:nth-child(2) {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+
+.card-number div:nth-child(1) {
+  font-size: 12px;
+}
+
+.card-number div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-expire-date div:nth-child(1) {
+  font-size: 12px;
+}
+
+.card-expire-date div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.card-cvv div:nth-child(1) {
+  font-size: 12px;
+}
+
+.card-cvv div:nth-child(2) {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+
+.btn-card-confirm-nocard{
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(89.72deg, #1B8036 0%, #1ab945 30.98%, #0e6d27 70.75%);
+  border-radius: 26.386px;
+}
+
+.btn-card-confirm-nocard:hover{
+  color: #fff;
+  
+}
+
+
+.wrap-border-topup {
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #1f923e, #00990f, #007a0c) border-box;
+  border-radius: 10px;
+  border: 3px solid transparent;
+
+}
+
+
+.nohp-select {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  font-weight: 600;
+  color: #121212 !important;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.nohp-select.inputPass{
+  color: #949494;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+}
+
+
+.nohp-select.input-nohp{
+  color: #949494;
+  font-weight: 400 !important;
+  width: 100%;
+}
+
+
+.nohp-select.input-nohp:focus{
+  padding-left: 50px !important;
+}
+
+
+.nohp-select:focus {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  outline: 2px #bcbcbc solid;
+}
+
+.card-req-activation input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.card-req-activation h3, 
+.card-req-activation h4 {
+  font-size: 16px !important;
+}
+
+
+.card-topup {
+  height: 80px;
+  background: linear-gradient(#E9FFD3, #E9FFD3) padding-box,
+  linear-gradient(to right, #1f923e, #00990f, #007a0c) border-box;
+  border-radius: 12px;
+  border: 3px solid transparent;
+}
+
+.card-topup:hover{
+  color: #007a0c;
+}
+
+
+.qrcode-download {
+  display: none !important;
+}
+
+.btn-card-confirm{
+  padding: 1rem 3rem;
+  transition: 0.5s;
+  color: #fff;
+  background: linear-gradient(90deg, #1f923e 0%, #007a0c 121.48%);
+  border-radius: 26.386px;
+}
+
+.btn-card-confirm:hover{
+  color: #fff;
+  
+}
+
+.form-req-card {
+  background: linear-gradient(#fff, #fff) padding-box,
+  linear-gradient(to right, #1f923e, #00990f, #007a0c) border-box;
+  border-radius: 6px;
+  border: 3px solid transparent;
+  
+}
+
+.form-req-card input {
+  border: 0;
+  box-shadow: 0;
+  padding: 0.5rem 2rem;
+  background: #ffffff;
+  border-radius: 20px;
+  margin-bottom: 0;
+}
+
+.form-req-card input::placeholder, 
+.form-req-card input[type="text"] {
+  font-size: 20px;
+  color: black;
+}
+
+.form-req-card input:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.card-req-card {
+  background-color: #FAFAFA;
+  /* padding: 20px; */
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.text-req-card{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.copy-share-referral {
+  font-size: 12px !important;
+}
+
+
+.text-topup-card h1 {
+  font-size: 32px;
+}
+
+.text-topup-card ul {
+    font-size: 16px;
+}
+
+/*--------------------------------------------------------------
+# Find Me
+--------------------------------------------------------------*/
+
+.thank-findme h1 {
+  font-size: 28px !important;
+  color: #1B8036;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.thank-findme p {
+  font-size: 16px !important;
+  color: black;
+}
+
+
+.btn-thank {
+  width: 200px;
+  height: 72px;
+  background-color: #1B8036;
+  font-size: 16px;
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+  color: white;
+  border-radius: 15px;
+}
+
+.btn-thank:hover {
+  background-color: #035c1b !important;
+  color: white;
+}
+
+
+.bg-thank {
+  height: 100vh;
+  overflow-y: scroll !important;
+  background-color: #BDFFCF;
+}
+
+.drop-container {
+  width: 100%;
+  position: relative;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 20px;
+  border-radius: 10px;
+  /* border: 2px dashed #555; */
+  background-color: #d9d9d9;
+  color: #444;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
+}
+
+.circle-upload-img {
+  background-color: #a0a0a0;
+  width: 100px;
+  height: 100px;
+  border-radius: 99999px;
+}
+
+.circle-upload-img i {
+  font-size: 50px !important;
+}
+
+.country-select {
+  background-color: #d9d9d9 !important;
+  width: 100%;
+  height: 60px;
+  font-weight: bold;
+  color: #5F5F5F !important;
+  border: 0 none !important;
+  border-radius: 10px !important;
+  padding: 6px 20px !important;
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+}
+
+.country-select:focus {
+  box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+  outline: 2px #acacac solid;
+}
+
+.text-findme {
+  font-size: 14px !important;
+}
+
+.btn-unique-code {
+  width: 120px;
+  height: 50px;
+  background-color: #1B8036;
+  border-radius: 99999px;
+  margin: auto;
+}
+
+.btn-unique-code:hover {
+  background-color: #0c5f22;
+}
+
+
+.ri-arrow-right-line {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #1B8036;
+}
+
+.text-next {
+  font-size: 14px !important;
+}
+.text-next:hover {
+  color: #0e5f24 !important;
+}
+
+.circle-btn-unique-code {
+  width: 50%;
+  height: 100%;
+  margin: auto;
+  background-color: white;
+  border-radius: 9999px;
+}
+
+
+.input-unique-code {
+  display: block;
+  width: 100%;
+  height: 60px;
+  border: 0px none;
+  border-radius: 50px;
+  background-color: #ececec;
+  border: 2px transparent solid;
+  padding-right: 10px;
+  font-size: 16px;
+  text-align: center;
+}
+
+.input-unique-code::placeholder {
+  color: gray;
+  /* padding-left: 20px; */
+  transition: all 0.5s;
+  font-size: 12px;
+  text-align: center;
+}
+
+.input-unique-code:focus {
+  /* padding-left: 25px; */
+  outline: 2px #1B8036 solid;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.295);
+  transition: all 0.3s;
+  text-align: center;
+}
+
+
+.text-blue-findme {
+  color: #1B8036 !important;
+}
+
+.text-enjoy {
+  font-size: 24px !important;
+}
+
+.text-enjoy-desc {
+  font-size: 12px !important;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Become Our PArtner
+--------------------------------------------------------------*/
+
+.become {
+  background: url(../img/bg-green.svg) no-repeat ;
+  background-size: cover;
+  border-radius: 50px;
+}
+
+.become img {
+  border-radius: 25px;
+}
+
+.become h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 110%;
+
+  color: #000000;
+  background: none;
+  -webkit-text-fill-color: unset;
+}
+
+.become p,
+.become span.shareit {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 120%;
+  color: #ffffff;
+}
+
+.become a.readmore {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+
+  color: #ffffff;
+  border: 4px solid #ffffff;
+  filter: drop-shadow(3.23094px 10.7698px 21.5396px rgba(128, 82, 27, 0.51));
+  border-radius: 26.386px;
+}
+
+.text-become {
+  font-weight: bold;
+  font-size: 36px !important;
+  text-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+  text-transform: uppercase;
+}
+
+
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -500,6 +960,55 @@ section {
 }
 
 @media (min-width: 1024px) {
+
+  
+  .card-balance div:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .card-balance div:nth-child(2) {
+    font-size: 28px;
+    font-weight: bolder;
+  }
+
+
+  .card-number div:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .card-number div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .card-expire-date div:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .card-expire-date div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .card-cvv div:nth-child(1) {
+    font-size: 18px;
+  }
+
+  .card-cvv div:nth-child(2) {
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+
+  .text-topup-card h1 {
+    font-size: 35px;
+  }
+
+  .text-topup-card ul {
+    font-size: 20px;
+  }
+
+
   .hero {
     background-attachment: fixed;
   }
@@ -567,6 +1076,8 @@ section {
 .about p {
   margin: 15px 0 30px 0;
   line-height: 24px;
+  background-image: url(../assets/img/bng.png);
+  background-size: cover;
 }
 
 .about .btn-read-more {
@@ -2427,8 +2938,17 @@ section {
   position: relative;
 }
 
+.f-ubuntu {
+  font-family: "Ubuntu", sans-serif !important;
+}
+
+
 .f-lexend {
   font-family: "Lexend", sans-serif !important;
+}
+
+.f-alegreya {
+  font-family: "Alegreya SC", sans-serif !important;
 }
 
 .f-bevietnam {
@@ -2575,6 +3095,12 @@ section {
 }
 
 @media (max-width: 575px) {
+
+  .receive-attention p.desc {
+    color: #000000 !important;
+    font-size: 14px;
+  }
+
   .box-service-list .icon img {
     display: none;
   }
@@ -4198,26 +4724,16 @@ section {
 
   .receive-note span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     text-align: center;
-
-    color: #000000;
+    color: #1b8036;
   }
 
   .receive-note ul li {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-
-    color: #000000;
-  }
-
-  .receive-note span.title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 15px;
-    text-align: center;
 
     color: #000000;
   }
@@ -4397,7 +4913,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -4588,7 +5104,7 @@ section {
 
   .receive-attention span.title {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 22px;
     color: #000000;
   }
@@ -4801,6 +5317,18 @@ section {
 }
 
 @media (min-width: 375px) {
+
+  .qrcode-download {
+    display: flex !important;
+  } 
+
+  .btn-thank {
+    font-size: 20px;
+    box-shadow: inset 6px 6px 12px rgba(0, 0, 0, 0.25);
+    color: white;
+    border-radius: 15px;
+  }
+
   .navbar-app>.box-navbar-freedy {
     background: #ffffff;
 
@@ -6448,11 +6976,10 @@ section {
 
   .receive-note span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 14px;
     line-height: 15px;
     text-align: center;
-
-    color: #000000;
+    color: #1b8036;
   }
 
   .receive-note ul li {
@@ -6463,14 +6990,6 @@ section {
     color: #000000;
   }
 
-  .receive-note span.title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 15px;
-    text-align: center;
-
-    color: #000000;
-  }
 
   .recive-bank a {
     background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
@@ -6647,7 +7166,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -7049,6 +7568,20 @@ section {
 }
 
 @media (min-width: 768px) {
+
+  .thank-findme h1 {
+    font-size: 55px !important;
+    margin-top: 100px !important;
+  }
+
+  .thank-findme p {
+    font-size: 25px !important;
+  }
+  .text-become {
+    font-size: 49px !important;
+  }
+
+
   .box-service-list .icon img {
     height: 65px;
   }
@@ -7759,9 +8292,10 @@ section {
 
   .box-code-freedy span {
     font-weight: 600;
-    font-size: 10px;
+    font-size: 14px;
     line-height: 17px;
     color: #1b8036;
+    margin: 10px 0px !important;
   }
 
   .text-green-alert {
@@ -8644,11 +9178,10 @@ section {
 
   .receive-note span {
     font-weight: 400;
-    font-size: 12px;
+    font-size: 16px;
     line-height: 15px;
     text-align: center;
-
-    color: #000000;
+    color: #1b8036;
   }
 
   .receive-note ul li {
@@ -8659,14 +9192,6 @@ section {
     color: #000000;
   }
 
-  .receive-note span.title {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 15px;
-    text-align: center;
-
-    color: #000000;
-  }
 
   .recive-bank a {
     background: linear-gradient(180deg, #23832c 0%, #1c6701 100%);
@@ -8843,7 +9368,7 @@ section {
   }
 
   .freedy-card {
-    border: 4px solid #1b8036;
+    border: 2px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
     min-height: auto;
@@ -9255,6 +9780,20 @@ section {
 }
 
 @media (min-width: 992px) {
+
+  .text-enjoy {
+    font-size: 32px !important;
+  }
+
+  .text-enjoy-desc {
+    font-size: 18px !important;
+  }
+
+  .become p,
+  .become span.shareit {
+    font-size: 20px;
+  }
+
   .box-service-list .icon img {
     height: 65px;
   }
@@ -9517,6 +10056,16 @@ section {
 }
 
 @media (min-width: 1200px) {
+
+  .receive-note p, 
+  .receive-note span {
+    font-size: 20px !important;
+  }
+
+  .text-become {
+    font-size: 62px !important;
+  }
+
   .box-service-list .icon img {
     height: 75px;
   }
@@ -11154,23 +11703,13 @@ section {
     font-size: 14px;
     line-height: 15px;
     text-align: center;
-
-    color: #000000;
+    color: #1b8036;
   }
 
   .receive-note ul li {
     font-weight: 400;
     font-size: 14px;
     line-height: 15px;
-
-    color: #000000;
-  }
-
-  .receive-note span.title {
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 15px;
-    text-align: center;
 
     color: #000000;
   }
@@ -11353,7 +11892,7 @@ section {
     border: 4px solid #1b8036;
     border-radius: 5px;
     padding: 0.75rem;
-    min-height: 250px;
+    min-height: auto;
   }
 
   .freedy-card.piggy {
