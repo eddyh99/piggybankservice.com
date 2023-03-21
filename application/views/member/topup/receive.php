@@ -19,7 +19,7 @@
                                 ($_SESSION["currency"] == "GBP") ||
                                 ($_SESSION["currency"] == "RON")
                             ) { ?>
-                            <div class="receive-attention d-flex flex-column text-center col-12 p-3"
+                            <div class="receive-attention d-flex flex-column text-center col-12 p-3 pe-auto"
                                 data-bs-toggle="modal" data-bs-target="#attention">
                                 <p class="desc">
                                     To maximize the level of privacy, 
