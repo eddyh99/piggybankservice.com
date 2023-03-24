@@ -2,8 +2,8 @@
     <div class="col-12 col-lg-8 col-xl-6">
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
-                <?php $this->load->view("member/header"); ?>
-                <div class="row d-flex justify-content-center">
+                <?php $this->load->view("tamplate/banner-nofiat"); ?>
+                <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 menus-list-app mb-4">
                         <div class="col-12 text-center">
                             <a href="<?= base_url() ?>swap" class="d-inline-block border-0 py-2 my-2">
