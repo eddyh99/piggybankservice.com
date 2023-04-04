@@ -47,7 +47,7 @@
                 <div class="d-flex flex-wrap">
                     <div class="powered-top mb-3 me-5">
                         <span>Empowered By</span>
-                        <a href="https://tracklessproject.com/">
+                        <a href="https://tracklessbank.com/" target="_blank">
                             <img src="<?= base_url() ?>assets/img/tracklessprojects-b.png" alt="">
                         </a>
                     </div>
@@ -573,7 +573,7 @@
                     <div class="credits footer-info f-lexend d-none d-lg-grid my-auto">
                         <div class="d-flex flex-row justify-content-center align-items-center">
                             <span class="f-lexend me-2 text-white">Empowered by</span>
-                            <a href="https://tracklessproject.com/">
+                            <a href="https://tracklessbank.com/" target="_blank">
                                 <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt="" class="tracklessbank">
                             </a>
                         </div>
@@ -593,7 +593,7 @@
             <div class="credits footer-info f-lexend">
                 <div class="d-flex flex-row justify-content-center align-items-center">
                     <span class="f-lexend me-2 text-white">Empowered by</span>
-                    <a href="https://tracklessproject.com/">
+                    <a href="https://tracklessbank.com/" target="_blank">
                         <img src="<?= base_url() ?>assets/img/tracklessprojects.png" alt="" class="tracklessbank">
                     </a>
                 </div>

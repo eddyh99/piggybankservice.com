@@ -2,10 +2,10 @@
     <div class="col-12 col-lg-8 col-xl-6">
         <div class="container" style="margin-bottom: 8rem;">
             <div class="app-container py-5">
+                
                 <div class="row" style="margin-top: 5rem;">
                     <div class="col-12 d-flex justify-content-center">
                         <div class="col-12 box-code-freedy px-4 py-3">
-
                             <div class="d-flex  flex-row">
                                 <div class="d-flex flex-column">
                                     <div class="copy-uqcode mt-3 mb-2 me-4 d-flex flex-row align-items-center">
@@ -18,7 +18,7 @@
                                         </a>
                                     </div>
                                     <div class="d-flex flex-column">
-                                        <span class="copy-share-referral">Copy & share your referral link to earn money</span>
+                                        <span class="fs-6 my-2">Copy & share your referral link to earn money</span>
                                         <div class="copy-refcode d-flex flex-row justify-content-start mb-4">
                                             <input class="me-2" type="text" name="" id="refcode" value="<?= base_url() ?>auth/signup?ref=<?= $_SESSION["referral"] ?>" readonly style="min-width: 28ch;">
                                             <a class="btn btn-copy me-2" id="btnref">
@@ -30,13 +30,16 @@
                                     </div>
                                 </div>
                                 <a href="<?= base_url() ?>qr/ref/<?= $_SESSION["ucode"] ?>Thumbnail.png" download class="qrcode-download ms-auto mt-3 d-flex flex-column align-items-center">
-                                    <img class="img-fluid" src="<?= base_url() ?>qr/ref/<?= $_SESSION["ucode"] ?>.png" alt="QR" width="50" height="50">
-                                    <div class="">
-                                        <i class="ri-download-line"></i>
+                                    <img class="img-fluid" src="<?= base_url() ?>qr/ref/<?= $_SESSION["ucode"] ?>.png" alt="QR" width="90" height="90">
+                                    <div>
+                                        <img class="img-fluid d-block d-sm-none" src="<?=base_url()?>assets/img/btn-qrdw-mobile.png" alt="dw-qr" width="15" height="auto">
+                                    </div>
+                                    <div>
+                                        <img class="img-fluid d-none d-sm-block" src="<?=base_url()?>assets/img/btn-qrdw.png" alt="dw-qr" width="90" height="auto">
                                     </div>
                                 </a>
                             </div>
-                            <div class="w-100 text-center">
+                            <div class="w-100 text-center mt-4">
                                 <div class="d-inline-block btn-head-crypto">
                                     <a class="crypto px-4 py-2 active" href="<?= base_url() ?>homepage/">FIAT</a>
                                     <a class="crypto px-4 py-2" href="<?= base_url() ?>homepage/crypto">CRYPTO</a>
@@ -69,7 +72,7 @@
                                 </a>
                             </div>
                             <div class="col-12 col-md-6 text-center mx-auto">
-                                <a href="<?= base_url() ?>soon" class="d-flex align-items-center justify-content-center p-2 my-2 ">
+                                <a href="<?= base_url() ?>homepage/card" class="d-flex align-items-center justify-content-center p-2 my-2 ">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
                                         <path d="M7.75 19.5C7.75 17.6144 7.75 16.6716 8.33579 16.0858C8.92157 15.5 9.86438 15.5 11.75 15.5H50.25C52.1356 15.5 53.0784 15.5 53.6642 16.0858C54.25 16.6716 54.25 17.6144 54.25 19.5V42.5C54.25 44.3856 54.25 45.3284 53.6642 45.9142C53.0784 46.5 52.1356 46.5 50.25 46.5H11.75C9.86438 46.5 8.92157 46.5 8.33579 45.9142C7.75 45.3284 7.75 44.3856 7.75 42.5V19.5Z" fill="url(#paint0_linear_1010_4571)"/>
                                         <ellipse cx="15.5001" cy="38.75" rx="2.58333" ry="2.58333" fill="#B6FFBD"/>
