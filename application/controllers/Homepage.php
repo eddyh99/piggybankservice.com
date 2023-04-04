@@ -274,22 +274,24 @@ class Homepage extends CI_Controller
             "phone"     => $telp,
             "3dpass"    => $passwd
         );
+
+        // Active this comment For Checking Get Information
+        // $card_id='be3838a4-72ff-49a7-8f03-82f84a54d73d';
+        // $exp_date="2026-03-31T23:59:59Z";
+        // $exp    = explode("T",$result->exp_date)[0];
+        // $exp    = date("d M Y",strtotime($result->exp_date));
+        // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
         
+        // Comment this for Debugging Request Card
         $result = apitrackless(URLAPI . "/v1/member/card/activate_card", json_encode($mdata));
         if (@$result->code != "200") {
             $this->session->set_flashdata('failed', $result->message);
             redirect ("homepage/card?requestcard=YWN0aXZlbm93");
             return;
         }
-        
-        // $card_id='be3838a4-72ff-49a7-8f03-82f84a54d73d';
-        // $exp_date="2026-03-31T23:59:59Z";
-        
+
         $exp    = explode("T",$result->message->exp_date)[0];
         $exp    = date("d M Y",strtotime($result->message->exp_date));
-        // $exp    = explode("T",$result->exp_date)[0];
-        // $exp    = date("d M Y",strtotime($result->exp_date));
-        // $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $card_id);
         $card   = apitrackless(URLAPI . "/v1/member/card/decodeCard?card_id=" . $result->message->card_id);
 
         $data=array(
