@@ -8,7 +8,6 @@ function readfee() {
     $.ajax({
         url: "<?= base_url() ?>admin/fee/getfee?currency=" + readcurrency,
         success: function(response) {
-            console.log(response);
             var data = JSON.parse(response);
             $("#topup_circuit_fxd").val(data.topup_circuit_fxd)
             $("#topup_circuit_pct").val(data.topup_circuit_pct)
@@ -30,6 +29,7 @@ function readfee() {
             $("#referral_topup_pct").val(data.referral_topup_pct)
             $("#referral_bank_fxd").val(data.referral_bank_fxd)
             $("#referral_bank_pct").val(data.referral_bank_pct)
+            $("#card_fxd").val(data.card_fxd)
 
             if ((readcurrency != "USD") &&
                 (readcurrency != "EUR") &&
@@ -73,6 +73,13 @@ function readfee() {
                 $("#topup_outside_pct_div").show()
                 $("#topup_circuit_fxd_div").show()
                 $("#topup_circuit_pct_div").show()
+            }
+
+            if (readcurrency == "EUR") {
+                $("#card_fxd_div").show()
+            }else{
+                $("#card_fxd_div").hide()
+
             }
         },
         error: function(response) {

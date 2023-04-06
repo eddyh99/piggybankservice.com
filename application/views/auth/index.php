@@ -65,7 +65,7 @@
                     Wallet opening and activation immediate without any limitation
                 </h2>
                 <div class="text-center">
-                    <a href="<?= base_url(); ?>auth/signup_referral" class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+                    <a href="<?= base_url(); ?>auth/register" class="btn-slider-signin mt-5 scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                         <span>Sign up</span>
                     </a>
                 </div>
@@ -105,7 +105,7 @@
                                     <li>Convert FIAT currencies with zero fees</li>
                                 </ul>
                                 <div class="text-start">
-                                    <a href="<?= base_url(); ?>auth/signup_referral" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <a href="<?= base_url(); ?>auth/register" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                         <span class="f-lexend">Sign up</span>
                                     </a>
                                 </div>
@@ -268,7 +268,7 @@
                             </ul>
                         </div>
                         <div class="text-start">
-                            <a href="<?= base_url(); ?>auth/signup_referral" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
+                            <a href="<?= base_url(); ?>auth/register" class="btn-content-freedy d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Sign up</span>
                             </a>
                         </div>
