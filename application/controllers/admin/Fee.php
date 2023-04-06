@@ -53,6 +53,7 @@ class Fee extends CI_Controller
 				"referral_topup_pct" => number_format($mfee->message->referral_topup_pct * 100, 2, ".", ","),
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
+				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -76,6 +77,7 @@ class Fee extends CI_Controller
 				"referral_topup_pct" => number_format(0 * 100, 2, ".", ","),
 				"referral_bank_fxd" => number_format(0, 2, ".", ","),
 				"referral_bank_pct" => number_format(0 * 100, 2, ".", ","),
+				"card_fxd" => number_format(0, 2, ".", ","),
 			);
 		}
 		echo json_encode($mdata);
@@ -108,6 +110,7 @@ class Fee extends CI_Controller
 				"referral_topup_pct" => number_format($mfee->message->referral_topup_pct * 100, 2, ".", ","),
 				"referral_bank_fxd" => number_format($mfee->message->referral_bank_fxd, 2, ".", ","),
 				"referral_bank_pct" => number_format($mfee->message->referral_bank_pct * 100, 2, ".", ","),
+				"card_fxd" => number_format($mfee->message->card_fxd, 2, ".", ","),
 			);
 		} else {
 			$mdata = array(
@@ -131,6 +134,7 @@ class Fee extends CI_Controller
 				"referral_topup_pct" => number_format(0, 2, ".", ","),
 				"referral_bank_fxd" => number_format(0, 2, ".", ","),
 				"referral_bank_pct" => number_format(0, 2, ".", ","),
+				"card_fxd" => number_format(0, 2, ".", ","),
 			);
 		}
 
@@ -191,6 +195,8 @@ class Fee extends CI_Controller
         $_POST["referral_bank_fxd"]=$new_referral_bank_fxd;
 		$new_referral_bank_pct = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $this->input->post("referral_bank_pct"));
         $_POST["referral_bank_pct"]=$new_referral_bank_pct;
+		$new_card_fxd = preg_replace('/,(?=[\d,]*\.\d{2}\b)/', '', $this->input->post("card_fxd"));
+        $_POST["card_fxd"]=$new_card_fxd;
 
 		if (($currency == "USD") ||
 			($currency == "EUR") ||
@@ -215,6 +221,9 @@ class Fee extends CI_Controller
 			$this->form_validation->set_rules('topup_circuit_fxd', 'Topup Circuit (Fixed)', 'trim|required|greater_than_equal_to[0]');
 			$this->form_validation->set_rules('topup_circuit_pct', 'Topup Circuit (%)', 'trim|required|greater_than_equal_to[0]');
 		}
+		if ($currency=="EUR"){
+			$this->form_validation->set_rules('card_fxd', 'Card (Fixed)', 'trim|required|greater_than_equal_to[0]');
+        }
 
 		$this->form_validation->set_rules('wallet_sender_fxd', 'Wallet Sender (Fixed)', 'trim|required|greater_than_equal_to[0]');
 		$this->form_validation->set_rules('wallet_sender_pct', 'Wallet Sender (%)', 'trim|required|greater_than_equal_to[0]');
@@ -259,6 +268,7 @@ class Fee extends CI_Controller
 		$referral_topup_pct = $this->security->xss_clean($input->post("referral_topup_pct"));
 		$referral_bank_fxd = $this->security->xss_clean($input->post("referral_bank_fxd"));
 		$referral_bank_pct = $this->security->xss_clean($input->post("referral_bank_pct"));
+		$card_fxd = $this->security->xss_clean($input->post("card_fxd"));
 
 		if ($topup_circuit_fxd == '') {
 			$topup_circuit_fxd = 0;
@@ -321,6 +331,10 @@ class Fee extends CI_Controller
 			$referral_bank_pct = 0;
 		}
 
+		if ($card_fxd == '') {
+			$card_fxd = 0;
+		}
+
 		$mdata = array(
 			"currency"          => $currency,
 			"topup_circuit_fxd" => $topup_circuit_fxd,
@@ -343,6 +357,7 @@ class Fee extends CI_Controller
 			"referral_topup_pct" => $referral_topup_pct / 100,
 			"referral_bank_fxd" => $referral_bank_fxd,
 			"referral_bank_pct" => $referral_bank_pct / 100,
+			"card_fxd"          => $card_fxd,
 		);
 		$result = apitrackless(URLAPI . "/v1/admin/fee/setFee", json_encode($mdata));
 
