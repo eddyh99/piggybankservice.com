@@ -80,7 +80,7 @@ section {
 # member card
 --------------------------------------------------------------*/
 
-label {
+.label-dhl {
   width: 100%;
   font-size: 12px;
   border-radius: 16px;
@@ -302,7 +302,8 @@ label {
 
 .card-req-activation h3, 
 .card-req-activation h4 {
-  font-size: 16px !important;
+  line-height: 140%;
+  font-size: 14px !important;
 }
 
 
@@ -7710,6 +7711,12 @@ label {
 }
 
 @media (min-width: 768px) {
+
+  .card-req-activation h3, 
+  .card-req-activation h4 {
+    font-size: 16px !important;
+  }
+
 
   .card-input-dlh+.card .m-dlh {
     margin-left: 30px;

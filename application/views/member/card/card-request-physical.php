@@ -222,7 +222,7 @@
                                     
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <label>
+                                            <label class="label-dhl">
                                                 <input type="radio" name="dhl" class="card-input-dlh d-none">
                                                 <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
                                                     <div class="d-flex justify-content-start align-items-center">
@@ -245,7 +245,7 @@
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <label>
+                                            <label class="label-dhl">
                                                 <input type="radio" name="dhl" class="card-input-dlh d-none">
                                                 <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
                                                     <div class="d-flex justify-content-start align-items-center">
