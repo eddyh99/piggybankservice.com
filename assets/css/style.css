@@ -80,6 +80,58 @@ section {
 # member card
 --------------------------------------------------------------*/
 
+.label-dhl {
+  width: 100%;
+  font-size: 12px;
+  border-radius: 16px;
+  background-color: white !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card-input-dlh {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+}
+
+
+.card-input-dlh+.card {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  height: calc(50px + 2*1rem);
+  color: rgb(0, 0, 0);
+  border: 2px solid transparent;
+  border-radius: 16px;
+}
+
+.card-input-dlh+.card:hover {
+  cursor: pointer;
+}
+
+.card-input-dlh:checked+.card {
+  border: 2px solid green;
+  -webkit-transition: border .3s;
+  -o-transition: border .3s;
+  transition: border .3s;
+  
+}
+
+.card-input-dlh+.card .c-dlh {
+  border: 1px solid black;
+  width: 20px; 
+  height: 20px;
+  border-radius: 999999px;
+  margin-left: 10px;
+}
+
+.card-input-dlh:checked+.card .c-dlh {
+  background-color: green;
+  border: 1px solid green;
+}
+
+.card-input-dlh+.card .m-dlh {
+  margin-left: 10px;
+}
+
+
+
 .wrap-border-topup {
   background: linear-gradient(#fff, #fff) padding-box,
   linear-gradient(to right, #1B8036, #1B8036, #1B8036) border-box;
@@ -250,7 +302,8 @@ section {
 
 .card-req-activation h3, 
 .card-req-activation h4 {
-  font-size: 16px !important;
+  line-height: 140%;
+  font-size: 14px !important;
 }
 
 
@@ -344,6 +397,12 @@ section {
 .text-topup-card ul {
     font-size: 16px;
 }
+
+.card-req-physical {
+  overflow-x:auto;
+}
+
+
 
 /*--------------------------------------------------------------
 # Find Me
@@ -449,6 +508,25 @@ section {
   outline: 2px #acacac solid;
   background-color: #d9d9d9 !important;
 }
+
+.country-select-card {
+  background-color: white !important;
+  width: 100%;
+  height: 60px;
+  border: 0 none !important;
+  border-radius: 16px !important;
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  color: #949494;
+  font-weight: 400 !important;
+  padding: 6px 20px !important;
+}
+
+.country-select-card:focus {
+  box-shadow: inset -2px -2px 4px rgba(0, 0, 0, 0.25), inset 2px 2px 4px rgba(0, 0, 0, 0.25);
+  outline: 2px #acacac solid;
+  background-color: white !important;
+}
+
 
 .text-findme {
   font-size: 14px !important;
@@ -5374,6 +5452,15 @@ section {
 
 @media (min-width: 375px) {
 
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 15px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 10px;
+  }
+  
+
   .qrcode-download {
     display: flex !important;
   } 
@@ -7624,6 +7711,23 @@ section {
 }
 
 @media (min-width: 768px) {
+
+  .card-req-activation h3, 
+  .card-req-activation h4 {
+    font-size: 16px !important;
+  }
+
+
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 15px;
+    font-size: 14px;
+  }
+  
 
   .thank-findme h1 {
     font-size: 55px !important;
