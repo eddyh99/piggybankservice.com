@@ -19,7 +19,7 @@ class History extends CI_Controller
         $this->load->view('tamplate/header', $data);
         $this->load->view('tamplate/navbar-top', $data);
         $this->load->view('tamplate/navbar-bottom', $data);
-        $this->load->view('member/search');
+        $this->load->view('member/wallet-history');
         $this->load->view('tamplate/footer', $footer);
     }
 
