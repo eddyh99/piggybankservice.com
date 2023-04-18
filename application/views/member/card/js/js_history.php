@@ -1,8 +1,5 @@
 <script>
-    $('#activecurrency').on("change", function() {
-        window.location.replace('homepage?cur=' + $(this).val())
-    })
-    $(function() {
+     $(function() {
         var months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
             "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"
         ];
@@ -34,7 +31,7 @@
     $('#tgl').on("change", function(e) {
         e.preventDefault();
         $.ajax({
-            url: "<?= base_url() ?>search/gethistory",
+            url: "<?= base_url() ?>card/gethistory",
             method: "post",
             data: $("#frmhistory").serialize(),
             success: function(response) {

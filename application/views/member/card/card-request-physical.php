@@ -1,3 +1,5 @@
+<?php
+require_once('countries-list.php'); ?>
 <?php if( $requestcard_physical == 'success' ) {?>
     <div class="d-flex justify-content-center align-items-center card-topup-success">
         <div class="col-12 col-lg-8 col-xl-6 mt-5">
@@ -9,7 +11,7 @@
                     <h1 class="text-center f-poppins text-blue-freedy mt-2 mb-5">Payment Succeeded</h1>
                     <p class="f-poppins fw-semibold text-center">The  physical card will be sent to you as soon as possible</p>
                     <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                        <a href="<?= base_url(); ?>homepage/card"
+                        <a href="<?= base_url(); ?>card"
                             class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
                             <span class="f-lexend">Done</span>
                         </a>
@@ -27,25 +29,36 @@
                     <div class="mt-5 wrap-border-topup p-3 p-md-4 col-12 col-md-10 mx-auto">
                         <div class="d-flex justify-content-between px-0 px-md-5 py-4 text-blue-freedy fw-bold">
                             <span>Card price</span>
-                            <span>10</span>
+                            <span><?=$price." ".$_SESSION["currency"]?></span>
                         </div>
                         <div class="d-flex justify-content-between px-0 px-md-5 py-4 text-blue-freedy fw-bold">
                             <span>Ship price</span>
-                            <span>20</span>
-                        </div>
-                        <div class="d-flex justify-content-between px-0 px-md-5 py-4 text-blue-freedy fw-bold">
-                            <span>Fee</span>
-                            <span>2</span>
+                            <span><?php
+                                if ($carddetail["delivery_address"]["dispatch_method"]=="DHLGlobalMail"){
+                                    echo number_format($ship->card_ship_reg,2)." ".$_SESSION["currency"];
+                                }elseif ($carddetail["delivery_address"]["dispatch_method"]=="DHLExpress"){
+                                    echo number_format($ship->card_ship_fast,2)." ".$_SESSION["currency"];
+                                }
+                            ?></span>
                         </div>
                         <div class="d-flex justify-content-between px-0 px-md-5 py-4 text-blue-freedy fw-bold">
                             <span>Total</span>
-                            <span>32</span>
+                            <span><?php
+                                if ($carddetail["delivery_address"]["dispatch_method"]=="DHLGlobalMail"){
+                                    echo number_format($price+$ship->card_ship_reg,2)." ".$_SESSION["currency"];
+                                }elseif ($carddetail["delivery_address"]["dispatch_method"]=="DHLExpress"){
+                                    echo number_format($price+$ship->card_ship_fast,2)." ".$_SESSION["currency"];
+                                }
+                            ?></span>
                         </div>
                         <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                            <a href="<?= base_url(); ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('success')?>"
-                                class="btn-card-confirm-nocard  d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span class="f-lexend">Confirm</span>
-                            </a>
+                            <form action="<?=base_url()?>card/activephysiccard" method="post">
+                                <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                <button type="submit"
+                                    class="btn-card-confirm-nocard  d-inline-flex align-items-center justify-content-center align-self-center">
+                                    <span class="f-lexend">Confirm</span>
+                                </button>
+                            </form>
                         </div>
                     </div>            
                 </div>
@@ -76,74 +89,130 @@
                                     </ul>
                                 </div>
                                 <div class="card-req-physical col-12 mx-auto mt-4 "  style="">
-                                    <table class="table tbl-piggy-service w-100 fw-bold text-center">
-                                        <tr>
-                                            <th rowspan="3" class="" style="width: 20%; text-align: center; vertical-align: middle;">
-                                                PHYSICAL <br> CARD PRICES & COSTS
-                                            </th>
-                                            <th class="text-blue-freedy" translate="no">Request</th>
-                                            <th class="text-blue-freedy" translate="no">Topup</th>
-                                            <th class="text-blue-freedy" translate="no">Withdrawal</th>
-                                        </tr>
-                                        <tr>
-                                            <td rowspan="2" style="text-align: center; vertical-align: middle;">0.01%</td>
-                                            <td rowspan="2" style="text-align: center; vertical-align: middle;">0.01%</td>
-                                            <td rowspan="2" style="text-align: center; vertical-align: middle;">0.01%</td>
-                                        </tr>
-                                    </table>
+                                    <div class="mt-4">
+                                        <span class="text-req-card">Unique code</span>
+                                        <div class="row d-flex align-items-center w-100">
+                                            <div class="form-req-card d-flex flex-row align-items-center my-2 col-12 ms-2" style="height: 70px;">
+                                                <!-- <label for="amount"><?= $_SESSION["symbol"] ?></label> -->
+                                                <input type="text" class="form-control text-start fw-semibold" readonly value="<?=$_SESSION["ucode"]?>">
+                                            </div>
+                                        </div>
+                                    </div>
         
+                                    <div class="mt-4">
+                                        <span class="text-req-card">Price</span>
+                                        <div class="row d-flex align-items-center w-100">
+                                            <div class="form-req-card d-flex align-items-center my-2 col-10 col-md-6 ms-2" style="height: 70px;">
+                                                <!-- <label for="confirmamount"><?= $_SESSION["symbol"] ?></label> -->
+                                                <input type="text" class="form-control money-input text-start fw-bold" autocomplete="off" readonly value="<?=$price?>">&euro;
+                                            </div>
+                                            <div class="col-2 col-md-2">
+                                                <span class="col-md-4 mx-0 mt-3 mt-md-0 mx-md-5 text-req-card">Annual cost</span>
+                                            </div>
+                                        </div>
+                                    </div>        
                                 </div>
-                                <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                                    <a href="<?= base_url(); ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('3dpassword')?>"
-                                        class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
-                                        <span class="f-lexend">Request</span>
-                                    </a>
-                                </div>
+                                <form action="<?=base_url()?>card/shipping" method="post">
+                                    <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                    <span class="col-md-4 mx-0 mt-3 mt-md-0 mx-md-5 text-req-card">Shipping Cost</span>
+                                    <div class="row my-4 mx-auto d-flex justify-content-center">
+                                            <div class="col-6 col-md-5 mx-auto">
+                                                <label class="label-dhl">
+                                                    <input type="radio" name="dhl" class="card-input-dlh d-none" value="fast" required>
+                                                    <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="c-dlh"></div>
+                                                            <span class="m-dlh fw-bold">
+                                                                DHL Express
+                                                                <br>
+                                                                <span class="fw-normal">
+                                                                    2-5 working days
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <span class="m-eur fw-bold"><?=number_format($ship->card_ship_fast,2)?> <?=$_SESSION["currency"]?></span>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>
+                                            <div class="col-6 col-md-5 mx-auto">
+                                                <label class="label-dhl">
+                                                    <input type="radio" name="dhl" class="card-input-dlh d-none" value="reg" required>
+                                                    <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
+                                                        <div class="d-flex justify-content-start align-items-center">
+                                                            <div class="c-dlh"></div>
+                                                            <span class="m-dlh fw-bold">
+                                                                    DHL Global Mail     
+                                                                <br>
+                                                                <span class="fw-normal">
+                                                                    6-10 working days
+                                                                </span>
+                                                            </span>
+                                                        </div>
+                                                        <div class="d-flex justify-content-end align-items-center">
+                                                            <span class="m-eur fw-bold"><?=number_format($ship->card_ship_reg,2)?> <?=$_SESSION["currency"]?></span>
+                                                        </div>
+                                                    </div>
+                                                </label>
+                                            </div>                                        
+                                    </div>
+                                    <div class="text-start d-flex justify-content-center mt-5 mb-4">
+                                        <button type="submit"
+                                            class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
+                                            <span class="f-lexend">Next</span>
+                                        </button>
+                                    </div>
+                                </form>
                             </div>
                         <?php } elseif($requestcard_physical == '3dpassword') {?>
-                            <div class="row my-4 card-req-activation">
-                                <div class="row my-4 mx-auto d-flex justify-content-center">
-                                    <div class="col-12 col-md-10 mx-auto">
-                                        <input name="inuid" id="inuid" autocomplate="false" placeholder="*Unique code" class="nohp-select inputPass" type="text" required>
+                            <form action="<?=base_url()?>card/cardsummary" method="post">
+                                <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
+                                <div class="row my-4 card-req-activation">
+                                    <div class="row mb-4 mx-auto d-flex justify-content-center">
+                                        <div class="col-12 col-md-10 mx-auto">
+                                            <input name="printedname" id="printedname" autocomplate="false" placeholder="Name and last name to print on the card (optional)" class="nohp-select inputPass" type="text">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex  mx-0 mx-md-2">
+                                        <h4 class="text-start col-12 col-md-10 mx-auto f-ubuntu">
+                                            (Entering the name and surname to be printed on the card does not mean that the card will be under your name. <br>
+                                            The name and surname printed on the card will useful because in some countries and in some structures  you could be asked  for a document showing the usual details printed on the card in order to accept it)
+                                        </h4>  
+                                    </div>
+                                    <div class="row my-4 mx-auto d-flex justify-content-center">
+                                            <div class="col-12 col-md-10 mx-auto">
+                                                <input name="telp" id="telephone" autocomplate="false" class="nohp-select input-nohp" type="tel" required>
+                                            </div>
+                                        </div>
+                                    <div class="row my-5 mx-auto d-flex justify-content-center">
+                                        <div class="col-md-10 my-2">
+                                            <input class="nohp-select inputPass" type="password" name="passwd" placeholder="*Create a password 3D Secure" required minlength="8" maxlength="36">
+                                        </div>
+                                        <div class="col-md-10 my-2 mt-4">
+                                            <input class="nohp-select inputPass" type="password" name="confpasswd" placeholder="*Confirm 3D Secure password " required minlength="8" maxlength="36">
+                                        </div>
+                                    </div>
+                                    <div class="row d-flex  mx-0 mx-md-2">
+                                        <h4 class="text-start col-12 col-md-10 mx-auto f-ubuntu">
+                                            <ul>
+                                                <li>3d secure password, Required for card activation and enabling of internet purchases in case product has 3D Secure enabled</li>
+                                                <li>We will send your PIN same as your card will arrive and you can easily request trough online</li>
+                                            </ul>
+                                        </h4>  
+                                    </div> 
+                                    <div class="text-start d-flex justify-content-center mt-5 mb-4">
+                                        <button type="submit"
+                                            class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
+                                            <span class="f-lexend">Next</span>
+                                        </button>
                                     </div>
                                 </div>
-                                <div class="row mb-4 mx-auto d-flex justify-content-center">
-                                    <div class="col-12 col-md-10 mx-auto">
-                                        <input name="namenlast" id="namenlast" autocomplate="false" placeholder="Name and last name to print on the card (optional)" class="nohp-select inputPass" type="text">
-                                    </div>
-                                </div>
-                                <div class="row d-flex  mx-0 mx-md-2">
-                                    <h4 class="text-start col-12 col-md-10 mx-auto f-ubuntu">
-                                        (Entering the name and surname to be printed on the card does not mean that the card will be under your name. <br>
-                                        The name and surname printed on the card will  useful because in some countries and in some structures  you could be asked  for a document showing the usual details printed on the card in order to accept it)
-                                    </h4>  
-                                </div> 
-                                <div class="row my-5 mx-auto d-flex justify-content-center">
-                                    <div class="col-md-10 my-2">
-                                        <input class="nohp-select inputPass" type="password" name="passwd" placeholder="*Create a password 3D Secure" required>
-                                    </div>
-                                    <div class="col-md-10 my-2 mt-4">
-                                        <input class="nohp-select inputPass" type="password" name="confpasswd" placeholder="*Confirm 3D Secure password " required>
-                                    </div>
-                                </div>
-                                <div class="row d-flex  mx-0 mx-md-2">
-                                    <h4 class="text-start col-12 col-md-10 mx-auto f-ubuntu">
-                                        <ul>
-                                            <li>This 3d secure password, you will use for online transaction</li>
-                                            <li>We will send your PIN same as your card will arrive and you can easily request trough online</li>
-                                        </ul>
-                                    </h4>  
-                                </div> 
-                                <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                                    <a href="<?= base_url(); ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('shippingdetails')?>"
-                                        class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
-                                        <span class="f-lexend">Next</span>
-                                    </a>
-                                </div>
-                            </div>
+                            </form>
                         <?php } elseif($requestcard_physical == 'shippingdetails') {?>
                             <div class="row my-4 card-req-activation">
-                                <form action="<?=base_url()?>homepage/activecard" method="POST">
+                                <form action="<?=base_url()?>card/cardsecurity" method="POST">
+                                    <input type="hidden" name="shiptype" value="<?=$shiptype?>">
                                     <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                                     <?php if (@isset($_SESSION["failed"])) { ?>
                                         <div class="col-12 alert alert-danger alert-dismissible fade show" role="alert">
@@ -159,13 +228,13 @@
                                     </div>
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="fisrtname" id="fisrtname" autocomplate="false" placeholder="*Name" class="nohp-select inputPass" type="text" required>
+                                            <input name="firstname" id="firstname" autocomplate="false" placeholder="*First Name" class="nohp-select inputPass" type="text" required maxlength="50">
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="lastname" id="lastname" autocomplate="false" placeholder="*last name" class="nohp-select inputPass" type="text" required>
+                                            <input name="lastname" id="lastname" autocomplate="false" placeholder="Last Name" class="nohp-select inputPass" type="text" maxlength="50">
                                         </div>
                                     </div>
 
@@ -177,108 +246,49 @@
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="companyname" id="companyname" autocomplate="false" placeholder="Company name (optional)" class="nohp-select inputPass" type="text" >
+                                            <input name="companyname" id="companyname" autocomplate="false" placeholder="Company name (optional)" class="nohp-select inputPass" type="text" minlength="2" maxlength="45">
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                           <select id="country" name="country" class="custom-select country-select-card"  required>
-                                                <option value="" selected>*Country</option> 
-                                                <?php foreach($country as $dt){ ?>
-                                                    <?php if($dt->name) {?>
-                                                        <option value="<?=$dt->code?>"><?=$dt->name?></option>
-                                                    <?php }?>
-                                                <?php }?>
-                                            </select>
+                                        <select name="country" class="form-select me-2" id="countryCode">
+                                            <option value="">--Country--</option>
+                                            <?php foreach ($countries_list as $cur) { ?>
+                                            <option value="<?= $cur['code'] ?>"><?= $cur['code'] . ' - ' . $cur['name'] ?></option>
+                                            <?php } ?>
+                                        </select>
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <select id="city" name="city" class="custom-select country-select-card" required>
-                                                <option value="" selected >*City</option>
-                                            </select>
+                                            <input type="text" name="city" autocomplate="false" placeholder="*city" class="nohp-select inputPass" required maxlength="35">
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="zipcode" id="zipcode" autocomplate="false" placeholder="*Zip/ Postal code" class="nohp-select inputPass" type="text" required>
+                                            <input name="zipcode" id="zipcode" autocomplate="false" placeholder="*Zip/ Postal code" class="nohp-select inputPass" type="text" required maxlength="10">
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="addressone" id="addressone" autocomplate="false" placeholder="*Address 1" class="nohp-select inputPass" type="text" required>
+                                            <input name="addressone" id="addressone" autocomplate="false" placeholder="*Address 1" class="nohp-select inputPass" type="text" required maxlength="45">
                                         </div>
                                     </div>
 
                                     <div class="row my-4 mx-auto d-flex justify-content-center">
                                         <div class="col-12 col-md-10 mx-auto">
-                                            <input name="addresstwo" id="addresstwo" autocomplate="false" placeholder="Address 2" class="nohp-select inputPass" type="text" >
+                                            <input name="addresstwo" id="addresstwo" autocomplate="false" placeholder="Address 2" class="nohp-select inputPass" type="text" maxlength="45">
                                         </div>
-                                    </div>
-                                    
-                                    <div class="row my-4 mx-auto d-flex justify-content-center">
-                                        <div class="col-12 col-md-10 mx-auto">
-                                            <label class="label-dhl">
-                                                <input type="radio" name="dhl" class="card-input-dlh d-none">
-                                                <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <div class="c-dlh"></div>
-                                                        <span class="m-dlh fw-bold">
-                                                            DHL Express
-                                                            <br>
-                                                            <span class="fw-normal">
-                                                                2-5 working days
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end align-items-center">
-                                                        <span class="m-eur fw-bold">EURO 20</span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row my-4 mx-auto d-flex justify-content-center">
-                                        <div class="col-12 col-md-10 mx-auto">
-                                            <label class="label-dhl">
-                                                <input type="radio" name="dhl" class="card-input-dlh d-none">
-                                                <div class="card card-body bg-light d-flex flex-row justify-content-between align-items-center">
-                                                    <div class="d-flex justify-content-start align-items-center">
-                                                        <div class="c-dlh"></div>
-                                                        <span class="m-dlh fw-bold">
-                                                                DHL Global Mail     
-                                                            <br>
-                                                            <span class="fw-normal">
-                                                                6-10 working days
-                                                            </span>
-                                                        </span>
-                                                    </div>
-                                                    <div class="d-flex justify-content-end align-items-center">
-                                                        <span class="m-eur fw-bold">EURO 5</span>
-                                                    </div>
-                                                </div>
-                                            </label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row d-flex  mx-0 mx-md-2">
-                                        <h4 class="text-start col-12 col-md-10 mx-auto f-ubuntu">
-                                            <ul>
-                                                <li>This 3d secure password, you will use for online transaction</li>
-                                                <li>We will send your PIN same as your card will arrive and you can easily request trough online</li>
-                                            </ul>
-                                        </h4>  
-                                    </div> 
+                                    </div>                                    
                                     <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                                        <a href="<?= base_url(); ?>homepage/requestcard_physical?requestcard_physical=<?= base64_encode('summary')?>"
+                                        <button type="submit"
                                             class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
-                                            <span class="f-lexend">Confirm</span>
-                                        </a>
+                                            <span class="f-lexend">Next</span>
+                                            </button>
                                     </div>
                                 </form>
                             </div>

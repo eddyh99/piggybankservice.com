@@ -1,7 +1,7 @@
 <?php if($card == 'confirm') {?>
     <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 col-xl-6">
-            <form method="POST" action="<?=base_url()?>homepage/topupproses">
+            <form method="POST" action="<?=base_url()?>card/topupproses">
                 <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                 <input type="hidden" name="amount" value="<?=$detail["amount"]?>">
                 <div class="container" style="margin-bottom: 8rem;">
@@ -45,7 +45,7 @@
                     <img src="<?= base_url()?>assets/img/check-success.png" alt="success">
                     <h1 class="text-center f-poppins text-blue-freedy my-5">YOUR CARD BALANCE WILL BE UPDATE WITHIN 2 WORKING DAYS</h1>
                     <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                        <a href="<?= base_url(); ?>homepage/card"
+                        <a href="<?= base_url(); ?>card"
                             class="btn-card-confirm d-inline-flex align-items-center justify-content-center align-self-center">
                             <span class="f-lexend">Done</span>
                         </a>
@@ -54,6 +54,17 @@
             </div>
         </div>
     </div>
+<?php } elseif($card == 'awaiting'){?>
+    <div class="d-flex justify-content-center align-items-center card-topup-success">
+        <div class="col-12 col-lg-8 col-xl-6">
+            <div class="container" style="margin-bottom: 8rem;">
+                <div class="app-container py-5 d-flex flex-column justify-content-center align-items-center ">
+                    <h1 class="text-center f-poppins text-blue-freedy my-5">YOUR CARD IS BEING SHIPPED</h1>
+                    <h1 class="text-center f-poppins text-blue-freedy my-5">After arrival, please activate your card and contact us for linking to wallet</h1>
+                </div>
+            </div>
+        </div>
+    </div>    
 <?php } else {?>
     <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 col-xl-6">
@@ -111,12 +122,12 @@
                             <div style="height: 1px; width: 100%; background-color: #0F4E97" class="mt-4"></div>
                         </div>
                         <div class="row my-4">
-                            <a href="<?= base_url(); ?>homepage/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
+                            <a href="<?= base_url(); ?>card/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
                                 <span class="text-blue-freed fw-bold">
                                     Top Up Your Card
                                 </span>
                             </a>
-                            <a href="<?= base_url(); ?>soon" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
+                            <a href="<?= base_url(); ?>card/historycard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
                                 <span class="text-blue-freed fw-bold">
                                     History
                                 </span>
@@ -146,7 +157,7 @@
                             <div class="mt-5 wrap-border-topup p-3 p-md-4 col-10 mx-auto">
                                 <span class="fw-semibold">Max amount : <?= $_SESSION["symbol"] ?>
                                                 <?= number_format(balance($_SESSION['user_id'], $_SESSION["currency"]) - $fee, 2) ?></span>
-                                <form method="POST" action="<?=base_url()?>homepage/topupconfirm">
+                                <form method="POST" action="<?=base_url()?>card/topupconfirm">
                                     <input type="hidden" id="token" name="<?php echo $this->security->get_csrf_token_name(); ?>" value="<?php echo $this->security->get_csrf_hash(); ?>">
                                     <div class="mt-4">
                                         <span>Amount</span>
