@@ -119,7 +119,7 @@
 
                             </div>
                             <div class="d-flex flex-column mx-auto justify-content-center w-100">
-                                <div style="height: 1px; width: 100%; background-color: #0F4E97" class="mt-4"></div>
+                                <div style="height: 1px; width: 100%; background-color: #207c39" class="mt-4"></div>
                             </div>
                             <div class="row my-4">
                                 <a href="<?= base_url(); ?>card/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
