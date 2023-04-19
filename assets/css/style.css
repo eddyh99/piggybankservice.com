@@ -10256,6 +10256,17 @@ section {
 
 @media (min-width: 1200px) {
 
+  .card-input-dlh+.card .m-dlh {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+
+  .card-input-dlh+.card .m-eur {
+    margin-right: 5px;
+    font-size: 14px;
+  }
+  
+
   .receive-note p, 
   .receive-note span {
     font-size: 20px !important;

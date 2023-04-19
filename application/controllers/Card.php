@@ -16,7 +16,7 @@ class Card extends CI_Controller
         $_SESSION["currency"]   = 'EUR';
         $_SESSION["symbol"]     = '&euro;';
         $result = apitrackless(URLAPI . "/v1/member/card/check_card?userid=" . $_SESSION["user_id"]);
-        if ($result->message->status == "unavailable"){
+        if (@$result->message->card == "unavailable"){
             // tampilkan untuk pendaftaran card baru            
             $_SESSION["currency"]="EUR";
             $data=array(
@@ -460,15 +460,16 @@ class Card extends CI_Controller
         }
 
         $data=array(
-            "title"         => NAMETITLE . " - Card Success",
-            "basecard"      => 'homepage/requestcard',
-            "requestcard"   => 'success',
-            "extra"         => "member/card/js/js_index"
+            "title"                 => NAMETITLE . " - Card Success",
+            "basecard"              => 'homepage/requestcard',
+            "requestcard_physical"  => 'success',
+            "requestcard"           => base64_decode(@$_GET['requestcard']), 
+            "card"                  => @$_GET['card'],
+            "extra"                 => "member/card/js/js_index"
         );
 
         $this->load->view('tamplate/header', $data);
-        $this->load->view('member/card/card-request', $data);
-        $this->load->view('tamplate/navbar-bottom-back', $data);
+        $this->load->view('member/card/card-request-physical', $data);
         $this->load->view('tamplate/footer', $data);   
     }
 
