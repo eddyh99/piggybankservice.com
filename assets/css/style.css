@@ -5546,6 +5546,11 @@ section {
 }
 
 @media (min-width: 576px) {
+  .card-number div:nth-child(2) input,
+  .card-number div:nth-child(2) input:focus {
+    font-size: 18px;
+  }
+
   .box-service-list .icon img {
     height: 65px;
   }
