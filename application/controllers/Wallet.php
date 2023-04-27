@@ -47,10 +47,13 @@ class Wallet extends CI_Controller
         $linkurl = $_SERVER['REQUEST_URI'];
         $ucode = "";
         $amount = "";
+        $causal = "";
+
         if (strpos($linkurl, "send?")) {
             $get_url = str_replace(LINKQRCODE . "?", "", $linkurl);
             $decode_url = base64_decode($get_url);
-
+            print_r($decode_url);
+            die;
             // Get currency
             $get_datacurr = str_replace("cur=", "", $decode_url);
             $curr = strstr($get_datacurr, '&', true);
@@ -72,6 +75,12 @@ class Wallet extends CI_Controller
 
             // Get Amount
             $amount = str_replace("cur=" . $_SESSION["currency"] . "&ucode=" . $ucode . "&amount=", "", $decode_url);
+
+            // GET Causal
+            $get_datacausal = str_replace("cur=" . $_SESSION["currency"] . "&ucode=" . $ucode . "&amount=" . $amount . "&causal=", "", $decode_url);
+            $only_causal = strstr($get_datacausal, '&causal=', false);
+            $causal = substr($only_causal, 8);
+            
             if (empty($ucode)) {
                 $ucode = $get_dataucode;
                 $amount = '';
@@ -81,9 +90,10 @@ class Wallet extends CI_Controller
         $footer['extra'] = "admin/js/js_btn_disabled";
 
         $data = array(
-            'title' => NAMETITLE . ' - Wallet to Wallet',
-            'ucode' => @$ucode,
-            'amount' => @$amount
+            'title'     => NAMETITLE . ' - Wallet to Wallet',
+            'ucode'     => @$ucode,
+            'amount'    => @$amount,
+            'causal'    => @$causal,
         );
 
         $this->load->view('tamplate/header', $data);
@@ -240,6 +250,7 @@ class Wallet extends CI_Controller
 
         $input        = $this->input;
         $amount        = $this->security->xss_clean($input->post("amount"));
+        $causal        = $this->security->xss_clean($input->post("causal"));
 
         if (($amount * 100) < 2) {
             $this->session->set_flashdata('failed', 'Minimum amount is 0.02');
@@ -247,7 +258,7 @@ class Wallet extends CI_Controller
             return;
         }
 
-        $linkqr = base_url() . 'auth/requestbank/' . base64_encode($_SESSION["currency"]) . '/' . base64_encode($_SESSION["ucode"]) . '/' . base64_encode($amount);
+        $linkqr = base_url() . 'auth/requestbank/' . base64_encode($_SESSION["currency"]) . '/' . base64_encode($_SESSION["ucode"]) . '/' . base64_encode($amount) . '/' . base64_encode($causal);
         $codename = substr(sha1(time()), 0, 8);
         $nameqr = $_SESSION["ucode"] . '-' . $codename;
         $src = base_url() . 'qr/request/' . $nameqr . '.png';

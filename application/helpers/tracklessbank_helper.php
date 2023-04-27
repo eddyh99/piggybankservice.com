@@ -69,9 +69,18 @@ function send_email($email,$message, $phpmailer)
     $mail->SMTPAuth     = true;
     $mail->Username     = USERNAME_EMAIL;
     $mail->Password     = PASS_EMAIL;
-    $mail->SMTPAutoTLS  = false;
-    $mail->SMTPSecure   = false;
+    $mail->SMTPAutoTLS  = true;
+    $mail->SMTPSecure   = "tls";
     $mail->Port         = 587;
+    // $mail->SMTPDebug    = 2;
+    $mail->SMTPOptions = array(
+        'ssl'   => array(
+            'verify_peer'           => false,
+            'verify_peer_name'      => false,
+            'allow_self_signed'     => false,
+
+        )
+    );
 
     $mail->setFrom(USERNAME_EMAIL, 'PiggyBank Bank Notification');
     $mail->addReplyTo($email);
