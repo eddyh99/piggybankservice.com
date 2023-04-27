@@ -116,7 +116,7 @@
                                     <p>It is possible that additional costs, unknown to us, are applied by the reference bank</p>
                                     <p>If you are sure to make this transaction click confirm</p>
                                 </div>
-                                <p class="text-center text-success pt-3">
+                                <p class="text-center text-danger pt-3">
                                     By clicking confirm, you authorize wise to withdraw the funds from your account and transfer them to the data you entered, relieving us of any responsibility as the successful completion of the operation will be at the sole discretion of wise
                                 </p>
                                 <div class="col-12 d-flex flex-row mt-5">
