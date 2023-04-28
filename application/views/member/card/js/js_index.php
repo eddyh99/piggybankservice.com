@@ -48,7 +48,6 @@
     // Start Open Eye in Member Card Already
     const toogleEye = document.getElementById('eye-toggle');
     const textSecret = document.getElementById('text-secret');
-    console.log(toogleEye);
 
     toogleEye.addEventListener('click', function(e) {
         const type = textSecret.getAttribute('type') === 'password' ? 'text' : 'password';

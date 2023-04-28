@@ -18,7 +18,7 @@
                             <span><?=$exp?></span>
                         </div>
                         <div class="text-start d-flex justify-content-center mt-5 mb-4">
-                            <a href="<?= base_url(); ?>homepage/card"
+                            <a href="<?= base_url(); ?>card"
                                 class="btn-card-confirm-nocard  d-inline-flex align-items-center justify-content-center align-self-center">
                                 <span class="f-lexend">Confirm</span>
                             </a>
@@ -139,6 +139,7 @@
                                                 </i>
                                             </span>
                                         </div>
+                                        <span class="d-flex ps-3 mt-2" style="font-size: 12px; color: gray;">Password must at least 8 - 35 Character</span>
                                     </div>
                                     <div class="col-md-10 my-2 mt-4">
                                         <div class="d-flex justify-content-evenly align-items-center wrap-3dsecure">

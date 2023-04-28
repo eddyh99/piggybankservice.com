@@ -16,7 +16,7 @@
                         if ($data->is_comingsoon == 'no') {
                     ?>
                         <div class="col-auto m-auto">
-                            <a href="<?= $data->site ?>/wallet/send?<?= base64_encode('cur=' . $curr . '&ucode=' . $ucode . @$urlamount) ?>" class="payment-bank my-3 d-flex flex-column rounded text-center">
+                            <a href="<?= $data->site ?>/wallet/send?<?= base64_encode('cur=' . $curr . '&ucode=' . $ucode . @$urlamount . '&causal=' . @$causal ) ?>" class="payment-bank my-3 d-flex flex-column rounded text-center">
                                 <img src="data:image/png;base64;<?= $data->logo ?>" alt="<?= $data->bank_name ?>" class="m-auto">
                             </a>
                         </div>

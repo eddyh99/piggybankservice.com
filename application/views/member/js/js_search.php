@@ -4,7 +4,6 @@ $("#country").on("change", function() {
     $.ajax({
         url: "<?= base_url() ?>link/getstate?country=" + country,
         success: function(response) {
-            console.log(response);
             var data = JSON.parse(response);
             var select = document.getElementById("state");
             for(i = select.options.length - 1; i > 0; i--) {
@@ -31,7 +30,6 @@ $("#state").on("change", function() {
     $.ajax({
         url: "<?= base_url() ?>link/getcity?country=" + country+"&state="+state,
         success: function(response) {
-            console.log(response);
             var data = JSON.parse(response);
             var select = document.getElementById("city");
             for(i = select.options.length - 1; i > 0; i--) {
@@ -66,7 +64,6 @@ var searchme =
             },
             "dataSrc": function(data) {
                 $("#token").val(data["token"]);
-                console.log(data["history"]);
                 return data["history"];
             },
         },
