@@ -543,6 +543,13 @@ class Link extends CI_Controller
                 );
             $url = URLAPI . "/v1/member/findme/set_business";
             $result   = apitrackless($url, json_encode($mdata));
+            
+            if (@$result->code == 5055) {
+                $this->session->set_flashdata('failed', $result->message);
+                redirect(base_url('link/findme?findme=MQ=='));
+                return;
+            }
+
             if (@$result->code != 200) {
                 $this->session->set_flashdata('failed', "Failed to submit data, please contact administrator");
                 redirect(base_url('link/findme?findme=MQ=='));
@@ -558,19 +565,5 @@ class Link extends CI_Controller
         }
     }
     
-
-    // public function findme()
-    // {
-    //     $findme = base64_decode($_GET['findme']);
-
-    //     $data = array(
-    //         "title"     => NAMETITLE,
-    //         "content"   => "auth/landingpage/findme",
-    //         "findme"   => $findme,
-    //         "extra"     => "auth/landingpage/js/js_index",
-    //     );
-
-    //     $this->load->view('tamplate/wrapper', $data);
-    // }
 
 }
