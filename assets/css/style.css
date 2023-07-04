@@ -1,12 +1,32 @@
+/*----------------------------------------------------------
+    File Name  : style.css
+    Desc       : File ini merupakan styling untuk Landing dan Member
+
+------------------------------------------------------------*/ 
+
 /**
-* Template Name: FlexStart - v1.11.1
-* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+ * TABLE OF CONTENTS
+ *
+ * 0. General 
+ * 1. Section
+ * 2. Login & Registrasi
+ * 3. Member Card
+ * 4. Find Me
+ * 5. Become Our Partner
+ * 6. Breadcrumbs
+ * 7. Navbar
+ * ======== NEW MANAGE CSS ========
+ * 8. Crypto
+ * 9. Responsive New
+ *
+ */
+
+
+
+
 
 /*--------------------------------------------------------------
-# General
+0. General Start
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
@@ -37,7 +57,11 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-# Sections
+0. General End
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+1. Sections Start
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
@@ -75,9 +99,14 @@ section {
 }
 
 
+/*--------------------------------------------------------------
+1. Sections End
+--------------------------------------------------------------*/
+
+
 
 /*--------------------------------------------------------------
-# Login & Registrasi
+2. Login & Registrasi Start
 --------------------------------------------------------------*/
 .password_info {
   background-color: #e3f6ff;
@@ -125,7 +154,11 @@ section {
 }
 
 /*--------------------------------------------------------------
-# member card
+2. Login & Registrasi End
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+3. Member Card Start
 --------------------------------------------------------------*/
 
 .label-dhl {
@@ -487,10 +520,15 @@ section {
   overflow-x:auto;
 }
 
+/*--------------------------------------------------------------
+3. Member Card End
+--------------------------------------------------------------*/
+
+
 
 
 /*--------------------------------------------------------------
-# Find Me
+4 Find Me Start
 --------------------------------------------------------------*/
 
 .gmaps-search-val {
@@ -702,11 +740,15 @@ section {
   font-size: 12px !important;
 }
 
+/*--------------------------------------------------------------
+4. Find Me End
+--------------------------------------------------------------*/
+
 
 
 
 /*--------------------------------------------------------------
-# Become Our PArtner
+5. Become Our Partner Start
 --------------------------------------------------------------*/
 
 .become {
@@ -755,10 +797,14 @@ section {
   text-transform: uppercase;
 }
 
+/*--------------------------------------------------------------
+5. Become Our Partner End
+-----------------------
+
 
 
 /*--------------------------------------------------------------
-# Breadcrumbs
+6. Breadcrumbs Start
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
@@ -807,6 +853,9 @@ section {
   color: #8894f6;
   content: "/";
 }
+/*--------------------------------------------------------------
+6. Breadcrumbs End
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -887,7 +936,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Navigation Menu
+7. Navbar Start
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
@@ -1125,6 +1174,9 @@ section {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
+/*--------------------------------------------------------------
+7. Navbar End
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -4561,7 +4613,6 @@ section {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
-
     color: #1b8036;
   }
 
@@ -12671,6 +12722,24 @@ section {
   border-bottom: 1px solid #1b8036;
 }
 
+
+
+
+
+/*--------------------------------------------------------------
+8. Crypto Start 
+--------------------------------------------------------------*/
+.wrapper-bg-crypto {
+  min-height: 100vh;
+  background-color: #121212;
+}
+
+.container-body-crypto  {
+  height: 100%;
+  background-color: #121212;
+  padding-bottom: 200px;
+}
+
 .btn-head-crypto {
   border: 1px solid #1b8036;
   border-radius: 8px;
@@ -12773,3 +12842,136 @@ section {
   margin: 0;
   font-weight: 700;
 }
+
+.text-balance-crypto {
+  color: #ffffff;
+}
+
+.btn-crypto-homepage {
+  width: 300px;
+  height: 45px;
+  background-color: rgba(255, 255, 255, 0.20);
+  border-radius: 10px;
+  border: 2px solid #1C6701;
+}
+
+.btn-toggle-crypto-currency {
+  width: 270px;
+  height: 60px;
+  background-color: #1B8036;
+  border-radius: 14px;
+}
+
+.text-toggle-crypto-currency {
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.is-active-crypto-curr {
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #007a0c;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+
+.text-small-settings-curr {
+  font-size: 12px;
+}
+
+.crypto-toggle-curr .form-check-input.pill-currency {
+  display: block;
+  position: relative !important;
+  width: 3.5em;
+  height: 1.5em;
+  background-color: #efefef !important;
+  background: url(../img/checkbox-ball.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: left center;
+  box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 9999px;
+} 
+
+.crypto-toggle-curr .form-check-input.pill-currency:checked {
+  display: block;
+  position: relative !important;
+  width: 3.5em;
+  height: 1.5em;
+  background-color: #2aff63 !important;
+  background: url(../img/checkbox-ball-chacked.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: right center;
+}
+
+.text-crypto-topup-medium {
+  font-size: 24px;
+}
+
+.topup-input-card {
+  height: 100px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #007a0c;
+  /* padding: 15px 10px; */
+  border-radius: 10px;
+}
+
+.topup-input-card input {
+  height: 90px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.topup-input-card input:focus {
+  background-color: transparent;
+  outline: none;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.topup-input-card.one {
+  border-radius: 14px 14px 0px 0px;
+}
+
+.topup-input-card.two,
+.topup-input-card.three  {
+  border-radius: 0px;
+}
+
+.topup-input-card.four {
+  border-radius: 0px 0px 14px 14px ;
+}
+
+/*--------------------------------------------------------------
+8. Crypto End 
+--------------------------------------------------------------*/
+
+
+
+/*--------------------------------------------------------------
+9. Responsive New Start
+--------------------------------------------------------------*/
+@media (min-width: 425px) {}
+@media (min-width: 576px) {}
+@media (min-width: 768px) {
+  .btn-crypto-homepage {
+    width: 161px;
+    height: 45px;
+  }
+
+  .btn-toggle-crypto-currency {
+    width: 450px;
+  }
+
+  .text-toggle-crypto-currency {
+    font-size: 18px;
+  }
+}
+/*--------------------------------------------------------------
+9. Responsive New End 
+--------------------------------------------------------------*/

@@ -9,7 +9,7 @@
                             <div class="d-flex  flex-row">
                                 <div class="d-flex flex-column">
                                     <div class="copy-uqcode mt-3 mb-2 me-4 d-flex flex-row align-items-center">
-                                        <span class="me-2">UNIQUE CODE : </span>
+                                        <span class="me-2">Short Code : </span>
                                         <input class="me-2" type="text" name="" id="uqcode" value="<?= $_SESSION["ucode"] ?>" readonly>
                                         <a class="btn btn-copy me-2" id="btnuq">
                                             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +42,7 @@
                             <div class="w-100 text-center mt-4">
                                 <div class="d-inline-block btn-head-crypto">
                                     <a class="crypto px-4 py-2 active" href="<?= base_url() ?>homepage/">FIAT</a>
-                                    <a class="crypto px-4 py-2" href="<?= base_url() ?>homepage/crypto">CRYPTO</a>
+                                    <a class="crypto px-4 py-2" href="<?= base_url() ?>crypto">CRYPTO</a>
                                 </div>
                             </div>
                         </div>
@@ -71,22 +71,6 @@
                                     <span class="ms-2">Select Currencies</span>
                                 </a>
                             </div>
-                            <!-- <div class="col-12 col-md-6 text-center mx-auto">
-                                <a href="<?= base_url() ?>card" class="d-flex align-items-center justify-content-center p-2 my-2 ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 62 62" fill="none">
-                                        <path d="M7.75 19.5C7.75 17.6144 7.75 16.6716 8.33579 16.0858C8.92157 15.5 9.86438 15.5 11.75 15.5H50.25C52.1356 15.5 53.0784 15.5 53.6642 16.0858C54.25 16.6716 54.25 17.6144 54.25 19.5V42.5C54.25 44.3856 54.25 45.3284 53.6642 45.9142C53.0784 46.5 52.1356 46.5 50.25 46.5H11.75C9.86438 46.5 8.92157 46.5 8.33579 45.9142C7.75 45.3284 7.75 44.3856 7.75 42.5V19.5Z" fill="url(#paint0_linear_1010_4571)"/>
-                                        <ellipse cx="15.5001" cy="38.75" rx="2.58333" ry="2.58333" fill="#B6FFBD"/>
-                                        <rect x="7.75" y="23.25" width="46.5" height="5.16667" fill="#B6FFBD"/>
-                                        <defs>
-                                            <linearGradient id="paint0_linear_1010_4571" x1="7.75" y1="46.5" x2="52.5751" y2="13.2425" gradientUnits="userSpaceOnUse">
-                                                <stop stop-color="#1B8036"/>
-                                                <stop offset="1" stop-color="#00880E"/>
-                                            </linearGradient>
-                                        </defs>
-                                    </svg>
-                                    <span class="ms-5">Card</span>
-                                </a>
-                            </div> -->
                         </div>
                     </div>
 
