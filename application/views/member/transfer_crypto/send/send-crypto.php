@@ -52,63 +52,52 @@
 
                     <div class="row">
                         <div class="col-12 text-white">
-                            <h4 class="text-center">Topup USDX</h4>
-                            <p class="text-center">Make sure to have any FIAT balance available, in order to top up your USDX wallet to start to trade crypto</p>
+                            <h4 class="text-center">Send USDX</h4>
+                            <h2 class="text-center fw-bold">USDX balance   : 0.00</h2>
                         </div>
                     </div>
                     <form action="">
                         <div class="row mt-5">
-                            <h4 class="text-white">Exchange</h4>
+                            <h4 class="text-white">Recipient’s unique code</h4>
                             <div class="topup-input-card d-flex justify-content-between">
-                                <div class="d-flex align-items-center ms-3">
-                                    <div>
-                                        <span class="text-secondary">
-                                            from
-                                        </span>
-                                        <br>
-                                        <span class="text-crypto-topup-medium">
-                                            EUR
-                                        </span>
-                                    </div>
-                                </div>
-                                <div class="d-flex">
-                                    <div class="d-flex flex-column justify-content-center">
-                                        <span class="text-secondary">
-                                            your balance
-                                        </span>
-                                        <span class="d-flex justify-content-start text-crypto-topup-medium">
-                                            10000
-                                        </span>
-                                    </div>
-                                    <div class="mx-5 d-flex align-items-center topup-arrow-currency-change" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M17.6925 17.6152C16.2977 17.6152 14.9029 17.0773 13.8469 16.0212L0.855497 3.02984C0.27766 2.45201 0.27766 1.49559 0.855497 0.917752C1.43333 0.339916 2.38975 0.339916 2.96759 0.917752L15.9589 13.9091C16.9154 14.8655 18.4695 14.8655 19.426 13.9091L32.4173 0.917752C32.9952 0.339916 33.9516 0.339916 34.5294 0.917752C35.1073 1.49559 35.1073 2.45201 34.5294 3.02984L21.5381 16.0212C20.482 17.0773 19.0872 17.6152 17.6925 17.6152Z" fill="white"/>
-                                        </svg>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-
-                        <div class="row mt-5">
-                            <h4 class="text-white">Amount of Exchange</h4>
-                            <div class="topup-input-card d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
+                                <!-- <span class="d-flex align-items-center ms-3">
                                     <label  for="" class="text-crypto-topup-medium">EUR</label>
-                                </span>
-                                <input type="text" class="form-control money-input text-end" name="receive"
-                                    id="receive" placeholder="0.00" >
+                                </span> -->
+                                <input type="text" class="form-control text-start" name="receive"
+                                    id="receive" placeholder="Unique code" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="row mt-5">
-                            <h4 class="text-white">Amount USDX receive</h4>
+                            <h4 class="text-white">Confirm Recipient’s unique code</h4>
+                            <div class="topup-input-card d-flex justify-content-between">
+                                <!-- <span class="d-flex align-items-center ms-3">
+                                    <label  for="" class="text-crypto-topup-medium">EUR</label>
+                                </span> -->
+                                <input type="text" class="form-control text-start" name="receive"
+                                    id="receive" placeholder="Unique code" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <h4 class="text-white">Amount USDX</h4>
                             <div class="topup-input-card d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
                                     <label  for="" class="text-crypto-topup-medium">USDX</label>
                                 </span>
                                 <input type="text" class="form-control money-input text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="2000" readonly>
+                                    id="receive" placeholder="0.00" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="row mt-5">
+                            <h4 class="text-white">Confirm Amount USDX</h4>
+                            <div class="topup-input-card d-flex justify-content-between">
+                                <span class="d-flex align-items-center ms-3">
+                                    <label  for="" class="text-crypto-topup-medium">USDX</label>
+                                </span>
+                                <input type="text" class="form-control money-input text-end" name="receive"
+                                    id="receive" placeholder="0.00" autocomplete="off">
                             </div>
                         </div>
 
@@ -117,8 +106,8 @@
     
                     <div class="row d-flex justify-content-center mt-5">
                         <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex">
-                            <a href="<?= base_url() ?>topup_crypto/confirm_topup" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
-                                <span class="text-toggle-crypto-currency f-poppins">Convert</span>
+                            <a href="<?= base_url() ?>transfer_crypto/confirmsend_crypto" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
+                                <span class="text-toggle-crypto-currency f-poppins">Send</span>
                             </a>
                         </div>
                     </div>
@@ -126,36 +115,4 @@
             </div>
         </div>
     </div>
-</div>
-
-<!-- Modal -->
-<div class="modal fade crypto" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content crypto-modal">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5 text-center" id="exampleModalLabel">Select which currency you want to exchange to USDX </h1>
-        <!-- <button type="button" class="btn-close crypto-modal" data-bs-dismiss="modal" aria-label="Close"></button> -->
-      </div>
-      <div class="modal-body">
-            <div class="row my-2">
-                <div class="topup-input-card crypto-modal d-flex justify-content-between">
-                    <span class="d-flex align-items-center ms-3">
-                        <label  for="" class="text-crypto-topup-sm-medium">USD</label>
-                    </span>
-                    <input type="text" class="form-control text-end" name="receive"
-                        id="receive" placeholder="0.00" value="Your Balance : 2000 USD" readonly>
-                </div>
-            </div>
-            <div class="row my-2">
-                <div class="topup-input-card crypto-modal d-flex justify-content-between">
-                    <span class="d-flex align-items-center ms-3">
-                        <label  for="" class="text-crypto-topup-sm-medium">EUR</label>
-                    </span>
-                    <input type="text" class="form-control text-end" name="receive"
-                        id="receive" placeholder="0.00" value="Your Balance : 2000 USD" readonly>
-                </div>
-            </div>
-      </div>
-    </div>
-  </div>
 </div>

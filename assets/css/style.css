@@ -3205,6 +3205,10 @@ section {
   color: rgba(28, 103, 1, 1) !important;
 }
 
+.text-blue-freedy.crypto {
+  color: #00F318 !important;
+}
+
 .text-blue-freedy.black {
   color: #000 !important;
 }
@@ -12906,6 +12910,14 @@ section {
   background-position: right center;
 }
 
+.text-crypto-topup-small {
+  font-size: 16px;
+}
+
+.text-crypto-topup-sm-medium {
+  font-size: 20px;
+}
+
 .text-crypto-topup-medium {
   font-size: 24px;
 }
@@ -12946,6 +12958,70 @@ section {
 .topup-input-card.four {
   border-radius: 0px 0px 14px 14px ;
 }
+
+.topup-arrow-currency-change {
+  cursor: pointer;
+}
+
+.modal-content.crypto-modal {
+  background-color: #1D1D1D;
+  color: #ffffff;
+}
+
+.btn-close.crypto-modal {
+  background-color: #ffffff;
+}
+
+.topup-input-card.crypto-modal {
+  height: 70px;
+  background-color: #000000;
+  color: #ffffff;
+  border: 2px solid #007a0c;
+  /* padding: 15px 10px; */
+  border-radius: 10px;
+}
+
+.topup-input-card.crypto-modal input {
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+
+.transfer-crypto-select {
+  height: 150px;
+  color: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 15px;
+}
+
+.transfer-crypto-select:hover {
+  background-color: #23832C;
+  color: #ffffff;
+}
+
+.req-qrcode {
+  color: #ffffff;
+}
+
+.req-qrcode .wrap-qrcode-crypto {
+  width: 200px;
+  height: 200px;
+  background-color: white;
+}
+
+.btn-copy.req-qrcode-crypto {
+  color: #1C6701;
+  background-color: #ffffff;
+}
+
+.btn-copy.req-qrcode-crypto:hover {
+  color: #1C6701;
+  background-color: #ffffff;
+}
+
 
 /*--------------------------------------------------------------
 8. Crypto End 

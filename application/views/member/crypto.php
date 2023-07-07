@@ -2,13 +2,13 @@
     <div class="navbar-app fixed-top d-flex justify-content-center" >
         <div class="col-12 col-lg-8 col-xl-6 box-navbar-freedy d-flex flex-row justify-content-start align-items-center bottom"
             style="background-color: #121212;">
-            <a href="<?= base_url() ?>homepage" class="d-flex align-items-center border-0 ms-0 me-auto">
+            <a href="<?= base_url() ?>crypto" class="d-flex align-items-center border-0 ms-0 me-auto">
                 <div class="icon-menus d-flex align-items-center home-svg py-0">
                     <img src="<?= base_url() ?>assets/img/piggy-trade-off.png" alt="">
                 </div>
             </a>
     
-            <a href="<?= base_url() ?>soon" class="d-flex align-items-center border-0 mx-2">
+            <a href="<?= base_url() ?>search" class="d-flex align-items-center border-0 mx-2">
                 <div class="icon-menus d-flex align-items-center home-svg py-0">
                     <img src="<?= base_url() ?>assets/img/icon-search.png" alt="">
                 </div>
@@ -84,7 +84,7 @@
                                     </div>
                                 </a>
     
-                                <a href="" class="text-white">
+                                <a href="<?= base_url()?>transfer_crypto" class="text-white">
                                     <div class="btn-crypto-homepage d-flex justify-content-center align-items-center">
                                         <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M11.3467 13.8505H9.78004C8.67171 13.8505 7.76337 12.9171 7.76337 11.7671C7.76337 11.4255 8.0467 11.1421 8.38837 11.1421C8.73003 11.1421 9.01337 11.4255 9.01337 11.7671C9.01337 12.2255 9.35504 12.6005 9.78004 12.6005H11.3467C11.6717 12.6005 11.93 12.3088 11.93 11.9505C11.93 11.5005 11.805 11.4338 11.5217 11.3338L9.01337 10.4588C8.48003 10.2671 7.76337 9.88379 7.76337 8.65879C7.76337 7.61712 8.58838 6.75879 9.59671 6.75879H11.1634C12.2717 6.75879 13.18 7.69212 13.18 8.84212C13.18 9.18379 12.8967 9.46712 12.555 9.46712C12.2134 9.46712 11.93 9.18379 11.93 8.84212C11.93 8.38379 11.5884 8.00879 11.1634 8.00879H9.59671C9.27171 8.00879 9.01337 8.30045 9.01337 8.65879C9.01337 9.10879 9.13836 9.17545 9.42169 9.27545L11.93 10.1504C12.4634 10.3421 13.18 10.7255 13.18 11.9505C13.18 13.0005 12.355 13.8505 11.3467 13.8505Z" fill="white"/>
@@ -99,7 +99,7 @@
                                     </div>
                                 </a>
     
-                                <a href="" class="text-white">
+                                <a href="<?= base_url()?>withdraw_crypto" class="text-white">
                                     <div class="btn-crypto-homepage d-flex justify-content-center align-items-center">
                                         <svg width="25" height="23" viewBox="0 0 25 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M13.237 10.2005C14.5289 10.5214 15.7232 11.0915 15.7232 13.0796L15.7246 13.0798C15.7246 14.5862 14.8035 15.6511 13.3828 15.8682V17.0852C13.3828 17.5784 13.0518 17.8366 12.7247 17.8366C12.3976 17.8366 12.0669 17.5784 12.0669 17.0852V15.8466C10.2778 15.5326 9.91906 14.1251 9.75657 13.4807L9.74521 13.4215C9.73598 13.3698 9.72461 13.3059 9.72461 13.2307C9.72461 12.835 9.96701 12.5012 10.3282 12.4006L10.3504 12.3956C10.4241 12.3808 10.4852 12.3689 10.5614 12.3689C10.9107 12.3689 11.1939 12.6058 11.2833 12.9735C11.436 13.638 11.6644 14.2299 12.7847 14.2299C13.6478 14.2299 14.1626 13.804 14.1626 13.0896C14.1626 12.5049 13.9767 12.1822 12.9218 11.9305L12.1811 11.7459C11.0584 11.4742 9.90912 10.9344 9.90912 8.99791C9.90912 7.93362 10.4724 6.71266 12.0021 6.4318V5.24125C12.0021 4.25552 13.318 4.25552 13.318 5.24125V6.42471C14.742 6.67266 15.256 7.75881 15.4389 8.44889C15.4692 8.54327 15.4843 8.64037 15.4843 8.73829C15.4843 9.13313 15.2357 9.4665 14.8788 9.54984C14.8209 9.56359 14.7435 9.57901 14.6573 9.57901C14.3247 9.57901 14.0582 9.36899 13.9435 9.01687L13.9342 8.98332C13.8373 8.57953 13.6036 8.04197 12.6915 8.04197C11.9213 8.04197 11.4616 8.39972 11.4616 8.99832C11.4616 9.45962 11.5397 9.80424 12.5523 10.0378L13.237 10.2005Z" fill="white" fill-opacity="0.9"/>

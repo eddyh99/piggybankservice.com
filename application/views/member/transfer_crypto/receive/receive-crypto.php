@@ -52,66 +52,46 @@
 
                     <div class="row">
                         <div class="col-12 text-white">
-                            <h2 class="text-center">Confirmation</h2>
-                            <h4 class="text-center">You Convert</h4>
-                            <h4 class="text-center fw-bold text-success">EUR 10</h4>
+                            <h4 class="text-center fw-bold">Request order</h4>
+                            <h4 class="text-center fw-bold">Scan the QR code to get Receive address</h4>
                         </div>
                     </div>
                     <form action="">
+                        <div class="row req-qrcode mt-5 d-flex flex-column align-items-center justify-content-center">
+                            <div class="wrap-qrcode-crypto">
 
-                        <div class="row mt-5">
-                            <h4 class="text-white">You receive</h4>
-                            <div class="topup-input-card d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-medium">USDX</label>
-                                </span>
-                                <input type="text" class="form-control money-input text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="100" >
+                            </div>
+
+                            <p class="text-center">
+                                or
+                            </p>
+
+                            <h4 class="text-center">Your Address</h4>
+
+                            <div class="col-5">
+                                <div class="copy-refcode d-flex flex-column justify-content-center w-100 mb-4">
+                                    <input class="me-2 d-block p-2" type="text" name="" id="refcode"
+                                        value="<?= base_url() ?>auth/signup?ref=<?= $_SESSION["referral"] ?>" readonly>
+                                    
+                                    <div class="btn btn-copy req-qrcode-crypto mx-5 mt-4" id="btnref">
+                                        Copy Address
+                                    </div>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="row mt-5">
-                            <div class="topup-input-card one d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-sm-medium">From</label>
-                                </span>
-                                <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="EUR 100" readonly>
-                            </div>
-                            <div class="topup-input-card two d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">To</label>
-                                </span>
-                                <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="USDX 2000" readonly>
-                            </div>
-                            <div class="topup-input-card three d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">Transaction fees</label>
-                                </span>
-                                <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="EUR 12" readonly>
-                            </div>
-                            <div class="topup-input-card four d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">Total</label>
-                                </span>
-                                <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="EUR 2000" readonly>
-                            </div>
-                        </div>
-                        <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex">
-                                <a href="<?= base_url() ?>topup_crypto/notif_topup" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
-                                    <span class="text-toggle-crypto-currency f-poppins">Confirm</span>
-                                </a>
-                            </div>
-                        </div>
+
                     </form>
     
+                    <div class="row d-flex justify-content-center mt-5">
+                        <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex">
+                            <a href="<?= base_url() ?>crypto" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
+                                <span class="text-toggle-crypto-currency f-poppins">Done</span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>

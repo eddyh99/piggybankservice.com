@@ -53,8 +53,8 @@
                     <div class="row">
                         <div class="col-12 text-white">
                             <h2 class="text-center">Confirmation</h2>
-                            <h4 class="text-center">You Convert</h4>
-                            <h4 class="text-center fw-bold text-success">EUR 10</h4>
+                            <h4 class="text-center">You Withdraw</h4>
+                            <h4 class="text-center fw-bold text-success">USDX 10</h4>
                         </div>
                     </div>
                     <form action="">
@@ -63,7 +63,7 @@
                             <h4 class="text-white">You receive</h4>
                             <div class="topup-input-card d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-medium">USDX</label>
+                                    <label  for="" class="text-crypto-topup-medium">EUR</label>
                                 </span>
                                 <input type="text" class="form-control money-input text-end" name="receive"
                                     id="receive" placeholder="0.00" value="100" >
@@ -76,21 +76,21 @@
                                     <label  for="" class="text-crypto-topup-sm-medium">From</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="EUR 100" readonly>
+                                    id="receive" placeholder="0.00" value="USDX 100" readonly>
                             </div>
                             <div class="topup-input-card two d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
                                     <label  for="" class="text-crypto-topup-small">To</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="USDX 2000" readonly>
+                                    id="receive" placeholder="0.00" value="EUR 2000" readonly>
                             </div>
                             <div class="topup-input-card three d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
                                     <label  for="" class="text-crypto-topup-small">Transaction fees</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
-                                    id="receive" placeholder="0.00" value="EUR 12" readonly>
+                                    id="receive" placeholder="0.00" value="USDX 12" readonly>
                             </div>
                             <div class="topup-input-card four d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">

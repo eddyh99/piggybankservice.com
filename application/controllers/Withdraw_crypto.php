@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') or exit('No direct script access allowed');
 
-class Topup_crypto extends CI_Controller
+class Withdraw_crypto extends CI_Controller
 {
     public function __construct()
     {
@@ -15,32 +15,32 @@ class Topup_crypto extends CI_Controller
     {
 
         $mdata=array(
-            "title"         => NAMETITLE . " - Topup Crypto",
-            "content"       => "member/topup_crypto/index",
+            "title"         => NAMETITLE . " - Withdraw Crypto",
+            "content"       => "member/withdraw_crypto/index",
             "extra"         => "member/js/js_index"
         );
 
         $this->load->view('tamplate/wrapper', $mdata);
     }
 
-    public function confirm_topup()
+    public function confirm_withdraw()
     {
 
         $mdata=array(
-            "title"         => NAMETITLE . " - Topup Crypto",
-            "content"       => "member/topup_crypto/topup-confirm",
+            "title"         => NAMETITLE . " - Withdraw Crypto",
+            "content"       => "member/withdraw_crypto/withdraw-confirm",
             "extra"         => "member/js/js_index"
         );
 
         $this->load->view('tamplate/wrapper', $mdata);
     }
 
-    public function notif_topup()
+    public function notif_withdraw()
     {
 
         $mdata=array(
-            "title"         => NAMETITLE . " - Topup Crypto",
-            "content"       => "member/topup_crypto/topup-notif",
+            "title"         => NAMETITLE . " - Withdraw Crypto",
+            "content"       => "member/withdraw_crypto/withdraw-notif",
             "extra"         => "member/js/js_index"
         );
 
