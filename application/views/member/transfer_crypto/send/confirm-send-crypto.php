@@ -101,8 +101,8 @@
                             </div>
                         </div>
                         <div class="row d-flex justify-content-center mt-5">
-                            <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex">
-                                <a href="<?= base_url() ?>transfer_crypto/notifsend_crypto" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
+                            <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex justify-content-center">
+                                <a href="<?= base_url() ?>crypto/notification" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
                                     <span class="text-toggle-crypto-currency f-poppins">Confirm</span>
                                 </a>
                             </div>

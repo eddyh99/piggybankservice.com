@@ -80,7 +80,7 @@
                                             10000
                                         </span>
                                     </div>
-                                    <div class="mx-5 d-flex align-items-center topup-arrow-currency-change" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <div class="mx-1 mx-md-5 d-flex align-items-center topup-arrow-currency-change" data-bs-toggle="modal" data-bs-target="#exampleModal">
                                         <svg width="35" height="18" viewBox="0 0 35 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M17.6925 17.6152C16.2977 17.6152 14.9029 17.0773 13.8469 16.0212L0.855497 3.02984C0.27766 2.45201 0.27766 1.49559 0.855497 0.917752C1.43333 0.339916 2.38975 0.339916 2.96759 0.917752L15.9589 13.9091C16.9154 14.8655 18.4695 14.8655 19.426 13.9091L32.4173 0.917752C32.9952 0.339916 33.9516 0.339916 34.5294 0.917752C35.1073 1.49559 35.1073 2.45201 34.5294 3.02984L21.5381 16.0212C20.482 17.0773 19.0872 17.6152 17.6925 17.6152Z" fill="white"/>
                                         </svg>

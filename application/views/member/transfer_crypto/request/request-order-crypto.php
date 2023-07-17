@@ -68,7 +68,7 @@
 
                             <h4 class="text-center">Your Address</h4>
 
-                            <div class="col-5">
+                            <div class="col-12 col-md-5">
                                 <div class="copy-refcode d-flex flex-column justify-content-center w-100 mb-4">
                                     <input class="me-2 d-block p-2" type="text" name="" id="refcode"
                                         value="<?= base_url() ?>auth/signup?ref=<?= $_SESSION["referral"] ?>" readonly>

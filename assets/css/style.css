@@ -13022,7 +13022,173 @@ section {
   background-color: #ffffff;
 }
 
+.trade-menu {
+  border: 2px solid orange;
+  border-radius: 10px;
+}
 
+.trade-menu .trade-menu-top > div {
+  font-size: 20px;
+  padding: 20px;
+}
+
+.trade-menu .trade-menu-top div .trade-menu-text-white {
+  color: #ffffff;
+}
+
+.trade-menu .trade-menu-top div .trade-menu-text-gray {
+  color: #9096A2;
+}
+
+.trading-view-ext {
+  background-color: white;
+  height: 500px ;
+}
+
+.trade-menu-select {
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #ffffff;
+}
+
+.stabilo-orderbook {
+  background-color: #49694C;
+  color: #31C451;
+}
+
+.stabilo-orderbook-offer {
+  background-color: #694949;
+  color: #FF6666;
+}
+
+.trade-buy-sell {
+  background-color: #000000;
+  border: 1px solid #00990f;
+  border-radius: 10px;
+}
+
+.trade-buy-sell .btn-trade-buy {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #31C451;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+}
+
+.trade-buy-sell .btn-trade-sell {
+  display: block;
+  width: 200px;
+  height: 40px;
+  background-color: #22283A;
+  color: #ffffff;
+  text-transform: uppercase;
+  border-radius: 10px;
+  border: 1px solid #FF0000;
+}
+
+.balance-transaction {
+  background-color: #000000;
+  border-radius: 10px;
+  border: 1px solid #00990f;
+}
+
+.balance-transaction h3 {
+  color: #42FF00;
+  font-weight: bold;
+}
+
+.btn-transaction-buy-sell {
+  background-color: #22283A;
+  border-radius: 12px;
+}
+
+.btn-transaction-buy-sell a {
+  width: 50%;
+  height: 70px;
+  color: #ffffff;
+}
+
+.btn-transaction-buy-sell a.activesell {
+  background-color: red;
+  border-radius: 12px;
+}
+
+.btn-transaction-buy-sell a.activebuy {
+  background-color: #31C451;
+  border-radius: 12px;
+}
+
+.balance-during-transaction {
+  color: #ffffff;
+  padding: 15px 10px;
+  border-radius: 10px;
+}
+
+.btn-limit-transaction {
+  background-color: #22283A;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.btn-limit-transaction:hover {
+  background-color: #22283A;
+  color: #ffffff;
+}
+
+.inputprice-transaction {
+  width: 100%;
+  height: 60px;
+  background-color: #22283A;
+  color: #ffffff;
+  border-radius: 10px;
+  padding-left: 20px;
+  outline: none;
+  box-shadow: none;
+  border: none;
+}
+
+
+.input-transaction {
+  height: 60px;
+  background-color: #22283A;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+.input-transaction input {
+  height: 60px;
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.input-transaction input:focus {
+  background-color: transparent;
+  outline: none;
+  color: #ffffff;
+  box-shadow: none;
+}
+
+.percen-after-transaction div {
+  background-color: #00F318;
+  padding: 2px 10px;
+}
+
+.color-text-transaction span {
+  color: red;
+}
+
+.btn-cancelorder-transaction {
+  background-color: #22283A;
+  color: #ffffff;
+}
+
+.btn-buy-transaction {
+  background-color: #31C451;
+  color: #ffffff;
+}
 /*--------------------------------------------------------------
 8. Crypto End 
 --------------------------------------------------------------*/

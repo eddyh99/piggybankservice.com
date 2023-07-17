@@ -120,29 +120,31 @@
                                 </div>
                             </a>
                             <div>
-                                <div class="is-active-crypto-curr d-flex justify-content-between">
-                                    <div class="d-flex align-items-center">
-                                        <div class="me-2">
-                                            <img src="<?= base_url()?>assets/img/crypto-curr/bitcoin.png" alt="curr">
+                                <a href="<?= base_url()?>trade">
+                                    <div class="is-active-crypto-curr d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="me-2">
+                                                <img src="<?= base_url()?>assets/img/crypto-curr/bitcoin.png" alt="curr">
+                                            </div>
+                                            <div>
+                                                Bitcoin
+                                                <br>
+                                                <span>
+                                                    BTC
+                                                </span>
+                                            </div>
                                         </div>
                                         <div>
-                                            Bitcoin
-                                            <br>
                                             <span>
-                                                BTC
+                                                $1231213123
+                                            </span>
+                                            <br>
+                                            <span class="d-flex justify-content-end text-success">
+                                                +12%
                                             </span>
                                         </div>
                                     </div>
-                                    <div>
-                                        <span>
-                                            $1231213123
-                                        </span>
-                                        <br>
-                                        <span class="d-flex justify-content-end text-success">
-                                            +12%
-                                        </span>
-                                    </div>
-                                </div>
+                                </a>
                             </div>
                         </div>
                     </div>

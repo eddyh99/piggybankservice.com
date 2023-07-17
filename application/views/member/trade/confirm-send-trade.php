@@ -52,49 +52,49 @@
 
                     <div class="row">
                         <div class="col-12 text-white">
-                            <h2 class="text-center">Confirmation</h2>
-                            <h4 class="text-center">You Convert</h4>
-                            <h4 class="text-center fw-bold text-success">EUR 10</h4>
+                            <h2 class="text-center">Send Confirmation</h2>
+                            <h4 class="text-center">Your BTC Balance</h4>
+                            <h4 class="text-center fw-bold text-success">BTC 10,5</h4>
                         </div>
                     </div>
                     <form action="">
 
                         <div class="row mt-5">
-                            <h4 class="text-white">You receive</h4>
+                            <h4 class="text-white">Sending Amount</h4>
                             <div class="topup-input-card d-flex justify-content-between">
-                                <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-medium">USDX</label>
-                                </span>
-                                <input type="text" class="form-control money-input text-end" name="receive"
+                                <input type="text" class="form-control money-input text-start" name="receive"
                                     id="receive" placeholder="0.00" value="100" >
+                                <span class="d-flex align-items-center me-3">
+                                    <label  for="" class="text-crypto-topup-medium">BTC</label>
+                                </span>
                             </div>
                         </div>
 
                         <div class="row mt-5">
                             <div class="topup-input-card one d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-sm-medium">From</label>
+                                    <label  for="" class="text-crypto-topup-sm-medium">Send to</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
                                     id="receive" placeholder="0.00" value="EUR 100" readonly>
                             </div>
                             <div class="topup-input-card two d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">To</label>
+                                    <label  for="" class="text-crypto-topup-small">Transaction fees</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
                                     id="receive" placeholder="0.00" value="USDX 2000" readonly>
                             </div>
                             <div class="topup-input-card three d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">Transaction fees</label>
+                                    <label  for="" class="text-crypto-topup-small">Total send amount</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
                                     id="receive" placeholder="0.00" value="EUR 12" readonly>
                             </div>
                             <div class="topup-input-card four d-flex justify-content-between">
                                 <span class="d-flex align-items-center ms-3">
-                                    <label  for="" class="text-crypto-topup-small">Total</label>
+                                    <label  for="" class="text-crypto-topup-small">New balance</label>
                                 </span>
                                 <input type="text" class="form-control text-end" name="receive"
                                     id="receive" placeholder="0.00" value="EUR 2000" readonly>

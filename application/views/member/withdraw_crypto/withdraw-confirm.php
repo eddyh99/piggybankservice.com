@@ -102,7 +102,7 @@
                         </div>
                         <div class="row d-flex justify-content-center mt-5">
                             <div class="col-12 col-md-7 col-lg-7 settings-currency d-flex">
-                                <a href="<?= base_url() ?>topup_crypto/notif_topup" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
+                                <a href="<?= base_url() ?>crypto/notification" class="btn-toggle-crypto-currency d-flex justify-content-center align-items-center">
                                     <span class="text-toggle-crypto-currency f-poppins">Confirm</span>
                                 </a>
                             </div>

@@ -23,6 +23,17 @@ class Crypto extends CI_Controller
         $this->load->view('tamplate/wrapper', $mdata);
     }
 
+    public function notification()
+    {
+
+        $mdata=array(
+            "title"         => NAMETITLE . " - Notification Crypto",
+            "content"       => "member/crypto-success",
+        );
+
+        $this->load->view('tamplate/wrapper', $mdata);
+    }
+
     public function setting_currency()
     {
 

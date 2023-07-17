@@ -47,19 +47,6 @@ class Transfer_crypto extends CI_Controller
         $this->load->view('tamplate/wrapper', $mdata);
     }
 
-    public function notifsend_crypto()
-    {
-
-        $mdata=array(
-            "title"         => NAMETITLE . " - Transfer Crypto",
-            "content"       => "member/transfer_crypto/send/notif-send-crypto",
-            "extra"         => "member/js/js_index"
-        );
-
-        $this->load->view('tamplate/wrapper', $mdata);
-    }
-
-
     public function request_crypto()
     {
 

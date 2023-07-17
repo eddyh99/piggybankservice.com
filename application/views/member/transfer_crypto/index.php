@@ -69,7 +69,7 @@
                     <div class="row d-flex justify-content-center">
                         <div class="col-10">
                             <div class="receive-title d-flex flex-row justify-content-center align-items-center my-5">
-                                <h2 class="text-balance-crypto f-poppins">USDX Balance : 0,00</h2>
+                                <h2 class="text-balance-crypto f-poppins text-center">USDX Balance : 0,00</h2>
                             </div>
                             <div>
                                 <a href="<?= base_url()?>transfer_crypto/send_crypto" class="transfer-crypto-select d-flex justify-content-center align-items-center my-3">
