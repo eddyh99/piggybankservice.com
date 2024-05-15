@@ -12583,6 +12583,30 @@ section {
   background-color: #1b8036;
 }
 
+.btn-content-greedy {
+  font-size: 12px;
+  margin-bottom: 6px;
+  padding: 0.7rem 2rem;
+  font-weight: 600;
+  transition: 0.5s;
+  color: #000000;
+  background: linear-gradient(263.23deg, #BDFFCF  6.67%, #BDFFCF  70.3%, #BDFFCF  100%);
+  border-radius: 4px;
+  border: 1px solid #009b2a;
+}
+
+.btn-confirm {
+  margin-left: 13px;
+    margin-bottom: 6px;
+    padding: 0.7rem 3rem;
+    font-weight: 600;
+    transition: 0.5s;
+    color: #ffffff;
+    background: linear-gradient(263.23deg, rgb(27, 128, 54) 6.67%, rgb(27, 128, 54) 50.3%, rgb(27, 128, 54) 100%);
+    border-radius: 10px;
+    border: 1px solid #838383;
+}
+
 .input-piggy-style input,
 .input-piggy-style input:focus,
 .input-piggy-style input:hover {
