@@ -1,32 +1,12 @@
-/*----------------------------------------------------------
-    File Name  : style.css
-    Desc       : File ini merupakan styling untuk Landing dan Member
-
-------------------------------------------------------------*/ 
-
 /**
- * TABLE OF CONTENTS
- *
- * 0. General 
- * 1. Section
- * 2. Login & Registrasi
- * 3. Member Card
- * 4. Find Me
- * 5. Become Our Partner
- * 6. Breadcrumbs
- * 7. Navbar
- * ======== NEW MANAGE CSS ========
- * 8. Crypto
- * 9. Responsive New
- *
- */
-
-
-
-
+* Template Name: FlexStart - v1.11.1
+* Template URL: https://bootstrapmade.com/flexstart-bootstrap-startup-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*--------------------------------------------------------------
-0. General Start
+# General
 --------------------------------------------------------------*/
 :root {
   scroll-behavior: smooth;
@@ -57,11 +37,7 @@ h6 {
 }
 
 /*--------------------------------------------------------------
-0. General End
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-1. Sections Start
+# Sections
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
@@ -99,14 +75,9 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-1. Sections End
---------------------------------------------------------------*/
-
-
 
 /*--------------------------------------------------------------
-2. Login & Registrasi Start
+# Login & Registrasi
 --------------------------------------------------------------*/
 .password_info {
   background-color: #e3f6ff;
@@ -154,11 +125,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-2. Login & Registrasi End
---------------------------------------------------------------*/
-
-/*--------------------------------------------------------------
-3. Member Card Start
+# member card
 --------------------------------------------------------------*/
 
 .label-dhl {
@@ -520,15 +487,10 @@ section {
   overflow-x:auto;
 }
 
-/*--------------------------------------------------------------
-3. Member Card End
---------------------------------------------------------------*/
-
-
 
 
 /*--------------------------------------------------------------
-4 Find Me Start
+# Find Me
 --------------------------------------------------------------*/
 
 .gmaps-search-val {
@@ -740,15 +702,11 @@ section {
   font-size: 12px !important;
 }
 
-/*--------------------------------------------------------------
-4. Find Me End
---------------------------------------------------------------*/
-
 
 
 
 /*--------------------------------------------------------------
-5. Become Our Partner Start
+# Become Our PArtner
 --------------------------------------------------------------*/
 
 .become {
@@ -797,14 +755,10 @@ section {
   text-transform: uppercase;
 }
 
-/*--------------------------------------------------------------
-5. Become Our Partner End
------------------------
-
 
 
 /*--------------------------------------------------------------
-6. Breadcrumbs Start
+# Breadcrumbs
 --------------------------------------------------------------*/
 .breadcrumbs {
   padding: 15px 0;
@@ -853,9 +807,6 @@ section {
   color: #8894f6;
   content: "/";
 }
-/*--------------------------------------------------------------
-6. Breadcrumbs End
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Back to top button
@@ -936,7 +887,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-7. Navbar Start
+# Navigation Menu
 --------------------------------------------------------------*/
 /**
 * Desktop Navigation 
@@ -1174,9 +1125,6 @@ section {
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
-/*--------------------------------------------------------------
-7. Navbar End
---------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # Hero Section
@@ -3205,10 +3153,6 @@ section {
   color: rgba(28, 103, 1, 1) !important;
 }
 
-.text-blue-freedy.crypto {
-  color: #00F318 !important;
-}
-
 .text-blue-freedy.black {
   color: #000 !important;
 }
@@ -4617,6 +4561,7 @@ section {
     font-weight: 500;
     font-size: 12px;
     line-height: 18px;
+
     color: #1b8036;
   }
 
@@ -12726,24 +12671,6 @@ section {
   border-bottom: 1px solid #1b8036;
 }
 
-
-
-
-
-/*--------------------------------------------------------------
-8. Crypto Start 
---------------------------------------------------------------*/
-.wrapper-bg-crypto {
-  min-height: 100vh;
-  background-color: #121212;
-}
-
-.container-body-crypto  {
-  height: 100%;
-  background-color: #121212;
-  padding-bottom: 200px;
-}
-
 .btn-head-crypto {
   border: 1px solid #1b8036;
   border-radius: 8px;
@@ -12846,374 +12773,3 @@ section {
   margin: 0;
   font-weight: 700;
 }
-
-.text-balance-crypto {
-  color: #ffffff;
-}
-
-.btn-crypto-homepage {
-  width: 300px;
-  height: 45px;
-  background-color: rgba(255, 255, 255, 0.20);
-  border-radius: 10px;
-  border: 2px solid #1C6701;
-}
-
-.btn-toggle-crypto-currency {
-  width: 270px;
-  height: 60px;
-  background-color: #1B8036;
-  border-radius: 14px;
-}
-
-.text-toggle-crypto-currency {
-  color: #ffffff;
-  font-size: 13px;
-}
-
-.is-active-crypto-curr {
-  background-color: #000000;
-  color: #ffffff;
-  border: 2px solid #007a0c;
-  padding: 15px 10px;
-  border-radius: 10px;
-}
-
-
-.text-small-settings-curr {
-  font-size: 12px;
-}
-
-.crypto-toggle-curr .form-check-input.pill-currency {
-  display: block;
-  position: relative !important;
-  width: 3.5em;
-  height: 1.5em;
-  background-color: #efefef !important;
-  background: url(../img/checkbox-ball.png);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: left center;
-  box-shadow: inset 0px 6px 8px 3px rgba(0, 0, 0, 0.1);
-  border-radius: 9999px;
-} 
-
-.crypto-toggle-curr .form-check-input.pill-currency:checked {
-  display: block;
-  position: relative !important;
-  width: 3.5em;
-  height: 1.5em;
-  background-color: #2aff63 !important;
-  background: url(../img/checkbox-ball-chacked.png);
-  background-repeat: no-repeat;
-  background-size: auto 100%;
-  background-position: right center;
-}
-
-.text-crypto-topup-small {
-  font-size: 16px;
-}
-
-.text-crypto-topup-sm-medium {
-  font-size: 20px;
-}
-
-.text-crypto-topup-medium {
-  font-size: 24px;
-}
-
-.topup-input-card {
-  height: 100px;
-  background-color: #000000;
-  color: #ffffff;
-  border: 2px solid #007a0c;
-  /* padding: 15px 10px; */
-  border-radius: 10px;
-}
-
-.topup-input-card input {
-  height: 90px;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 20px;
-}
-
-.topup-input-card input:focus {
-  background-color: transparent;
-  outline: none;
-  color: #ffffff;
-  box-shadow: none;
-}
-
-.topup-input-card.one {
-  border-radius: 14px 14px 0px 0px;
-}
-
-.topup-input-card.two,
-.topup-input-card.three  {
-  border-radius: 0px;
-}
-
-.topup-input-card.four {
-  border-radius: 0px 0px 14px 14px ;
-}
-
-.topup-arrow-currency-change {
-  cursor: pointer;
-}
-
-.modal-content.crypto-modal {
-  background-color: #1D1D1D;
-  color: #ffffff;
-}
-
-.btn-close.crypto-modal {
-  background-color: #ffffff;
-}
-
-.topup-input-card.crypto-modal {
-  height: 70px;
-  background-color: #000000;
-  color: #ffffff;
-  border: 2px solid #007a0c;
-  /* padding: 15px 10px; */
-  border-radius: 10px;
-}
-
-.topup-input-card.crypto-modal input {
-  height: 60px;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-
-.transfer-crypto-select {
-  height: 150px;
-  color: #ffffff;
-  border: 2px solid #ffffff;
-  border-radius: 15px;
-}
-
-.transfer-crypto-select:hover {
-  background-color: #23832C;
-  color: #ffffff;
-}
-
-.req-qrcode {
-  color: #ffffff;
-}
-
-.req-qrcode .wrap-qrcode-crypto {
-  width: 200px;
-  height: 200px;
-  background-color: white;
-}
-
-.btn-copy.req-qrcode-crypto {
-  color: #1C6701;
-  background-color: #ffffff;
-}
-
-.btn-copy.req-qrcode-crypto:hover {
-  color: #1C6701;
-  background-color: #ffffff;
-}
-
-.trade-menu {
-  border: 2px solid orange;
-  border-radius: 10px;
-}
-
-.trade-menu .trade-menu-top > div {
-  font-size: 20px;
-  padding: 20px;
-}
-
-.trade-menu .trade-menu-top div .trade-menu-text-white {
-  color: #ffffff;
-}
-
-.trade-menu .trade-menu-top div .trade-menu-text-gray {
-  color: #9096A2;
-}
-
-.trading-view-ext {
-  background-color: white;
-  height: 500px ;
-}
-
-.trade-menu-select {
-   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-    color: #ffffff;
-}
-
-.stabilo-orderbook {
-  background-color: #49694C;
-  color: #31C451;
-}
-
-.stabilo-orderbook-offer {
-  background-color: #694949;
-  color: #FF6666;
-}
-
-.trade-buy-sell {
-  background-color: #000000;
-  border: 1px solid #00990f;
-  border-radius: 10px;
-}
-
-.trade-buy-sell .btn-trade-buy {
-  display: block;
-  width: 200px;
-  height: 40px;
-  background-color: #31C451;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px;
-}
-
-.trade-buy-sell .btn-trade-sell {
-  display: block;
-  width: 200px;
-  height: 40px;
-  background-color: #22283A;
-  color: #ffffff;
-  text-transform: uppercase;
-  border-radius: 10px;
-  border: 1px solid #FF0000;
-}
-
-.balance-transaction {
-  background-color: #000000;
-  border-radius: 10px;
-  border: 1px solid #00990f;
-}
-
-.balance-transaction h3 {
-  color: #42FF00;
-  font-weight: bold;
-}
-
-.btn-transaction-buy-sell {
-  background-color: #22283A;
-  border-radius: 12px;
-}
-
-.btn-transaction-buy-sell a {
-  width: 50%;
-  height: 70px;
-  color: #ffffff;
-}
-
-.btn-transaction-buy-sell a.activesell {
-  background-color: red;
-  border-radius: 12px;
-}
-
-.btn-transaction-buy-sell a.activebuy {
-  background-color: #31C451;
-  border-radius: 12px;
-}
-
-.balance-during-transaction {
-  color: #ffffff;
-  padding: 15px 10px;
-  border-radius: 10px;
-}
-
-.btn-limit-transaction {
-  background-color: #22283A;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-.btn-limit-transaction:hover {
-  background-color: #22283A;
-  color: #ffffff;
-}
-
-.inputprice-transaction {
-  width: 100%;
-  height: 60px;
-  background-color: #22283A;
-  color: #ffffff;
-  border-radius: 10px;
-  padding-left: 20px;
-  outline: none;
-  box-shadow: none;
-  border: none;
-}
-
-
-.input-transaction {
-  height: 60px;
-  background-color: #22283A;
-  color: #ffffff;
-  border-radius: 10px;
-}
-
-.input-transaction input {
-  height: 60px;
-  background-color: transparent;
-  border: none;
-  color: #ffffff;
-  font-size: 14px;
-}
-
-.input-transaction input:focus {
-  background-color: transparent;
-  outline: none;
-  color: #ffffff;
-  box-shadow: none;
-}
-
-.percen-after-transaction div {
-  background-color: #00F318;
-  padding: 2px 10px;
-}
-
-.color-text-transaction span {
-  color: red;
-}
-
-.btn-cancelorder-transaction {
-  background-color: #22283A;
-  color: #ffffff;
-}
-
-.btn-buy-transaction {
-  background-color: #31C451;
-  color: #ffffff;
-}
-/*--------------------------------------------------------------
-8. Crypto End 
---------------------------------------------------------------*/
-
-
-
-/*--------------------------------------------------------------
-9. Responsive New Start
---------------------------------------------------------------*/
-@media (min-width: 425px) {}
-@media (min-width: 576px) {}
-@media (min-width: 768px) {
-  .btn-crypto-homepage {
-    width: 161px;
-    height: 45px;
-  }
-
-  .btn-toggle-crypto-currency {
-    width: 450px;
-  }
-
-  .text-toggle-crypto-currency {
-    font-size: 18px;
-  }
-}
-/*--------------------------------------------------------------
-9. Responsive New End 
---------------------------------------------------------------*/

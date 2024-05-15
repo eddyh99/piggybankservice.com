@@ -13,7 +13,16 @@ class Receive extends CI_Controller
 
     public function index()
     {
-
+        /*$currency = $_SESSION["currency"];
+        $url = URLAPI. "/v1/bank/getBank?currency=" . $currency;
+        $result = apitrackless($url);
+        print_r();
+        if ($result->code != 200) {
+            $body["bank"] = NULL;
+        } else {
+            $body["bank"] = $result->message;
+        }
+*/
         $data['title'] = NAMETITLE . " - Add Receive";
 
         $this->load->view('tamplate/header', $data);
@@ -51,8 +60,6 @@ class Receive extends CI_Controller
         }
         $url = URLAPI . "/v1/trackless/bank/getBank?currency=" . $currency;
         $result = apitrackless($url);
-        // print_r(json_encode($result));
-        // die;
         if ($result->code != 200) {
             $body["bank"] = NULL;
         } else {

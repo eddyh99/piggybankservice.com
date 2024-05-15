@@ -122,11 +122,11 @@
                                 <div style="height: 1px; width: 100%; background-color: #207c39" class="mt-4"></div>
                             </div>
                             <div class="row my-4">
-                                <a href="<?= base_url(); ?>card/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
+<!--                                <a href="<?= base_url(); ?>card/topupcard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center">
                                     <span class="text-blue-freed fw-bold">
                                         Top Up Your Card
                                     </span>
-                                </a>
+                                </a>-->
                                 <a href="<?= base_url(); ?>card/historycard" class="col-12 mx-auto card-topup d-flex align-items-center justify-content-center mt-4">
                                     <span class="text-blue-freed fw-bold">
                                         History

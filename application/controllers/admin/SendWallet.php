@@ -27,7 +27,7 @@ class SendWallet extends CI_Controller
         $this->load->view('admin_template/wrapper2', $data);
     }
 
-    public function admin_confirm()
+    public function send_confirm()
     {
 
         $this->form_validation->set_rules('ucode', 'Unique Code', 'trim|required');
@@ -78,7 +78,7 @@ class SendWallet extends CI_Controller
         $this->load->view('admin_template/wrapper2', $data);
     }
 
-    public function admin_notif()
+    public function send_notif()
     {
         $data = array(
             "title"         => NAMETITLE . " - Master Wallet",

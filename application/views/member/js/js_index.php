@@ -23,7 +23,7 @@
             startDate: end,
             endDate: end,
             ranges: dateRange,
-            minDate: moment().subtract(90, 'days'),
+            minDate: moment().subtract(180, 'days'),
             maxDate: moment(),
             locale: {
                 format: 'MM/DD/YYYY'

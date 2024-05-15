@@ -6,7 +6,7 @@
                 <div class="row d-flex justify-content-center mt-5">
                     <div class="col-12 menus-list-app mb-4">
                         <div class="col-12 text-center">
-                            <a href="<?= base_url() ?>swap" class="d-inline-block border-0 py-2 my-2">
+                           <!-- <a href="<?= base_url() ?>swap" class="d-inline-block border-0 py-2 my-2">
                                 <div class="d-flex flex-column">
                                     <svg width="91" height="85" viewBox="0 0 91 85" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
                                     </svg>
                                     <span class="text-black">Swap</span>
                                 </div>
-                            </a>
+                            </a>-->
                             <a href="<?= base_url() ?>receive"
                                 class="d-flex flex-column justify-content-center align-items-center py-2 my-3 menus-blue">
                                 <svg width="48" height="48" viewBox="0 0 48 48" fill=""
